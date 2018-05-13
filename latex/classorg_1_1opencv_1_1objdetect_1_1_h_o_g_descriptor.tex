@@ -1,0 +1,335 @@
+\hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor}{}\section{org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor Class Reference}
+\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor}\index{org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor@{org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_ad8383a5cefe566e302158f35fb4ee8df}{H\+O\+G\+Descriptor}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a4589494b3db26bfd224ea8028171c335}{H\+O\+G\+Descriptor}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} \+\_\+win\+Size, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} \+\_\+block\+Size, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} \+\_\+block\+Stride, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} \+\_\+cell\+Size, int \+\_\+nbins, int \+\_\+deriv\+Aperture, double \+\_\+win\+Sigma, int \+\_\+histogram\+Norm\+Type, double \+\_\+\+L2\+Hys\+Threshold, boolean \+\_\+gamma\+Correction, int \+\_\+nlevels)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a9027ac957de8041e9bb9e5671c8d25ae}{H\+O\+G\+Descriptor}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} \+\_\+win\+Size, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} \+\_\+block\+Size, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} \+\_\+block\+Stride, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} \+\_\+cell\+Size, int \+\_\+nbins)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a0761b5d2d36b35ddd7135ea633475bf2}{H\+O\+G\+Descriptor}} (String filename)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a6d9f493e4172ff68153f43f95aaabdba}{check\+Detector\+Size}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a2615b75d8e014bc7c751448c8b4fb653}{compute}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} img, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_float}{Mat\+Of\+Float}} descriptors, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} win\+Stride, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} padding, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point}{Mat\+Of\+Point}} locations)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_ae6d657ee7efb071fa3944b64dfa7db18}{compute}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} img, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_float}{Mat\+Of\+Float}} descriptors)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_aed983cfea26dfd1de8befbf145b4f5b2}{compute\+Gradient}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} img, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} grad, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} angle\+Ofs, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} padding\+TL, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} padding\+BR)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a3901af3c2c750a427cb8bf250f00871d}{compute\+Gradient}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} img, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} grad, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} angle\+Ofs)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a030da8403a85d584e1dc1957838d4336}{detect}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} img, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point}{Mat\+Of\+Point}} found\+Locations, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_double}{Mat\+Of\+Double}} weights, double hit\+Threshold, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} win\+Stride, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} padding, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point}{Mat\+Of\+Point}} search\+Locations)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a48e794dbc6c306f564e56ad8ff4e34a9}{detect}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} img, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point}{Mat\+Of\+Point}} found\+Locations, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_double}{Mat\+Of\+Double}} weights)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a3f913308de613f4411e1798c18b32be6}{detect\+Multi\+Scale}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} img, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_rect}{Mat\+Of\+Rect}} found\+Locations, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_double}{Mat\+Of\+Double}} found\+Weights, double hit\+Threshold, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} win\+Stride, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} padding, double scale, double final\+Threshold, boolean use\+Meanshift\+Grouping)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a0792b6a9193c0bddb4d8a33b54c466f1}{detect\+Multi\+Scale}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} img, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_rect}{Mat\+Of\+Rect}} found\+Locations, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_double}{Mat\+Of\+Double}} found\+Weights)
+\item 
+long \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_abb6efea36d4eb6d8d7f90d1525607210}{get\+Descriptor\+Size}} ()
+\item 
+double \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a811c982f6e07fbd77b6108afd9d6359c}{get\+Win\+Sigma}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_ac381a148646d8c5a288b455bf3fb2564}{load}} (String filename, String objname)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_ab2806693fd58b1d2fa516c8c83a29225}{load}} (String filename)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_abe9384643a31fac6dc886b801a2fb15f}{save}} (String filename, String objname)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_ad6bb39073db4e5da7401f8f7338f1c36}{save}} (String filename)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_add61bdd56b6d457cc5b9355fa555a384}{set\+S\+V\+M\+Detector}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} \+\_\+svmdetector)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_af357f403e6c033e1555d2332b315ee57}{get\+\_\+win\+Size}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_adecd55f3c1025e3395ef576ff2a1bb47}{get\+\_\+block\+Size}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a56d8676505cc47ed53eb50fbdfd5ffea}{get\+\_\+block\+Stride}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_accb396f7b6d98d0796bb1eeb8f1f6bcb}{get\+\_\+cell\+Size}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_ac4c27c9e6d4802d97eaedec8ed571d93}{get\+\_\+nbins}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a96f819a4fab412673689e3c2ff49916c}{get\+\_\+deriv\+Aperture}} ()
+\item 
+double \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_ad776e2401540e8888b86890688d4fc98}{get\+\_\+win\+Sigma}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_aee1c2fc4f602738f37c4ca42daf6f8c9}{get\+\_\+histogram\+Norm\+Type}} ()
+\item 
+double \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a6ed247bb4cf037ed05445157f32f59d4}{get\+\_\+\+L2\+Hys\+Threshold}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a27b04d715c5d40c35e3ae52dc19c291b}{get\+\_\+gamma\+Correction}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_float}{Mat\+Of\+Float}} \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a939852045ed6582fcfaa0202d02bf422}{get\+\_\+svm\+Detector}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_add9b44c854e529778648f73042d44745}{get\+\_\+nlevels}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_float}{Mat\+Of\+Float}} \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a45f8ce21b9774da665b2398bfa87dfb7}{get\+Daimler\+People\+Detector}} ()
+\item 
+static \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_float}{Mat\+Of\+Float}} \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a2d2aabe51da0f247c0276dc1f0faa770}{get\+Default\+People\+Detector}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_acd4afb5abe08c9adfd04cb9e918a3891}{L2\+Hys}} = 0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a7c10bffe02b9b29ede8dca4c9c9da740}{H\+O\+G\+Descriptor}} (long addr)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a86a8daa844f72e4c2fb8dc133bf0acf0}{finalize}} ()  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final long \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a97c4daabbef26778df6a2fb4d6863e9d}{native\+Obj}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a7c10bffe02b9b29ede8dca4c9c9da740}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a7c10bffe02b9b29ede8dca4c9c9da740}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!H\+O\+G\+Descriptor@{H\+O\+G\+Descriptor}}
+\index{H\+O\+G\+Descriptor@{H\+O\+G\+Descriptor}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{H\+O\+G\+Descriptor()}{HOGDescriptor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+H\+O\+G\+Descriptor (\begin{DoxyParamCaption}\item[{long}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_ad8383a5cefe566e302158f35fb4ee8df}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_ad8383a5cefe566e302158f35fb4ee8df}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!H\+O\+G\+Descriptor@{H\+O\+G\+Descriptor}}
+\index{H\+O\+G\+Descriptor@{H\+O\+G\+Descriptor}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{H\+O\+G\+Descriptor()}{HOGDescriptor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+H\+O\+G\+Descriptor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a4589494b3db26bfd224ea8028171c335}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a4589494b3db26bfd224ea8028171c335}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!H\+O\+G\+Descriptor@{H\+O\+G\+Descriptor}}
+\index{H\+O\+G\+Descriptor@{H\+O\+G\+Descriptor}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{H\+O\+G\+Descriptor()}{HOGDescriptor()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+H\+O\+G\+Descriptor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}}}]{\+\_\+win\+Size,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}}}]{\+\_\+block\+Size,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}}}]{\+\_\+block\+Stride,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}}}]{\+\_\+cell\+Size,  }\item[{int}]{\+\_\+nbins,  }\item[{int}]{\+\_\+deriv\+Aperture,  }\item[{double}]{\+\_\+win\+Sigma,  }\item[{int}]{\+\_\+histogram\+Norm\+Type,  }\item[{double}]{\+\_\+\+L2\+Hys\+Threshold,  }\item[{boolean}]{\+\_\+gamma\+Correction,  }\item[{int}]{\+\_\+nlevels }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a9027ac957de8041e9bb9e5671c8d25ae}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a9027ac957de8041e9bb9e5671c8d25ae}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!H\+O\+G\+Descriptor@{H\+O\+G\+Descriptor}}
+\index{H\+O\+G\+Descriptor@{H\+O\+G\+Descriptor}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{H\+O\+G\+Descriptor()}{HOGDescriptor()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+H\+O\+G\+Descriptor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}}}]{\+\_\+win\+Size,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}}}]{\+\_\+block\+Size,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}}}]{\+\_\+block\+Stride,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}}}]{\+\_\+cell\+Size,  }\item[{int}]{\+\_\+nbins }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a0761b5d2d36b35ddd7135ea633475bf2}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a0761b5d2d36b35ddd7135ea633475bf2}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!H\+O\+G\+Descriptor@{H\+O\+G\+Descriptor}}
+\index{H\+O\+G\+Descriptor@{H\+O\+G\+Descriptor}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{H\+O\+G\+Descriptor()}{HOGDescriptor()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+H\+O\+G\+Descriptor (\begin{DoxyParamCaption}\item[{String}]{filename }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a6d9f493e4172ff68153f43f95aaabdba}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a6d9f493e4172ff68153f43f95aaabdba}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!check\+Detector\+Size@{check\+Detector\+Size}}
+\index{check\+Detector\+Size@{check\+Detector\+Size}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{check\+Detector\+Size()}{checkDetectorSize()}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+check\+Detector\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a2615b75d8e014bc7c751448c8b4fb653}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a2615b75d8e014bc7c751448c8b4fb653}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!compute@{compute}}
+\index{compute@{compute}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{compute()}{compute()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+compute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{img,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_float}{Mat\+Of\+Float}}}]{descriptors,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}}}]{win\+Stride,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}}}]{padding,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point}{Mat\+Of\+Point}}}]{locations }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_ae6d657ee7efb071fa3944b64dfa7db18}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_ae6d657ee7efb071fa3944b64dfa7db18}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!compute@{compute}}
+\index{compute@{compute}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{compute()}{compute()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+compute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{img,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_float}{Mat\+Of\+Float}}}]{descriptors }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_aed983cfea26dfd1de8befbf145b4f5b2}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_aed983cfea26dfd1de8befbf145b4f5b2}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!compute\+Gradient@{compute\+Gradient}}
+\index{compute\+Gradient@{compute\+Gradient}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{compute\+Gradient()}{computeGradient()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+compute\+Gradient (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{img,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{grad,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{angle\+Ofs,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}}}]{padding\+TL,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}}}]{padding\+BR }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a3901af3c2c750a427cb8bf250f00871d}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a3901af3c2c750a427cb8bf250f00871d}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!compute\+Gradient@{compute\+Gradient}}
+\index{compute\+Gradient@{compute\+Gradient}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{compute\+Gradient()}{computeGradient()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+compute\+Gradient (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{img,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{grad,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{angle\+Ofs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a030da8403a85d584e1dc1957838d4336}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a030da8403a85d584e1dc1957838d4336}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!detect@{detect}}
+\index{detect@{detect}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{detect()}{detect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+detect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{img,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point}{Mat\+Of\+Point}}}]{found\+Locations,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_double}{Mat\+Of\+Double}}}]{weights,  }\item[{double}]{hit\+Threshold,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}}}]{win\+Stride,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}}}]{padding,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point}{Mat\+Of\+Point}}}]{search\+Locations }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a48e794dbc6c306f564e56ad8ff4e34a9}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a48e794dbc6c306f564e56ad8ff4e34a9}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!detect@{detect}}
+\index{detect@{detect}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{detect()}{detect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+detect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{img,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point}{Mat\+Of\+Point}}}]{found\+Locations,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_double}{Mat\+Of\+Double}}}]{weights }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a3f913308de613f4411e1798c18b32be6}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a3f913308de613f4411e1798c18b32be6}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!detect\+Multi\+Scale@{detect\+Multi\+Scale}}
+\index{detect\+Multi\+Scale@{detect\+Multi\+Scale}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{detect\+Multi\+Scale()}{detectMultiScale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+detect\+Multi\+Scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{img,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_rect}{Mat\+Of\+Rect}}}]{found\+Locations,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_double}{Mat\+Of\+Double}}}]{found\+Weights,  }\item[{double}]{hit\+Threshold,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}}}]{win\+Stride,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}}}]{padding,  }\item[{double}]{scale,  }\item[{double}]{final\+Threshold,  }\item[{boolean}]{use\+Meanshift\+Grouping }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a0792b6a9193c0bddb4d8a33b54c466f1}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a0792b6a9193c0bddb4d8a33b54c466f1}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!detect\+Multi\+Scale@{detect\+Multi\+Scale}}
+\index{detect\+Multi\+Scale@{detect\+Multi\+Scale}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{detect\+Multi\+Scale()}{detectMultiScale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+detect\+Multi\+Scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{img,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_rect}{Mat\+Of\+Rect}}}]{found\+Locations,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_double}{Mat\+Of\+Double}}}]{found\+Weights }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a86a8daa844f72e4c2fb8dc133bf0acf0}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a86a8daa844f72e4c2fb8dc133bf0acf0}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!finalize@{finalize}}
+\index{finalize@{finalize}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily void org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Throwable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_adecd55f3c1025e3395ef576ff2a1bb47}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_adecd55f3c1025e3395ef576ff2a1bb47}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!get\+\_\+block\+Size@{get\+\_\+block\+Size}}
+\index{get\+\_\+block\+Size@{get\+\_\+block\+Size}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{get\+\_\+block\+Size()}{get\_blockSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+get\+\_\+block\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a56d8676505cc47ed53eb50fbdfd5ffea}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a56d8676505cc47ed53eb50fbdfd5ffea}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!get\+\_\+block\+Stride@{get\+\_\+block\+Stride}}
+\index{get\+\_\+block\+Stride@{get\+\_\+block\+Stride}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{get\+\_\+block\+Stride()}{get\_blockStride()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+get\+\_\+block\+Stride (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_accb396f7b6d98d0796bb1eeb8f1f6bcb}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_accb396f7b6d98d0796bb1eeb8f1f6bcb}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!get\+\_\+cell\+Size@{get\+\_\+cell\+Size}}
+\index{get\+\_\+cell\+Size@{get\+\_\+cell\+Size}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{get\+\_\+cell\+Size()}{get\_cellSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+get\+\_\+cell\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a96f819a4fab412673689e3c2ff49916c}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a96f819a4fab412673689e3c2ff49916c}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!get\+\_\+deriv\+Aperture@{get\+\_\+deriv\+Aperture}}
+\index{get\+\_\+deriv\+Aperture@{get\+\_\+deriv\+Aperture}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{get\+\_\+deriv\+Aperture()}{get\_derivAperture()}}
+{\footnotesize\ttfamily int org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+get\+\_\+deriv\+Aperture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a27b04d715c5d40c35e3ae52dc19c291b}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a27b04d715c5d40c35e3ae52dc19c291b}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!get\+\_\+gamma\+Correction@{get\+\_\+gamma\+Correction}}
+\index{get\+\_\+gamma\+Correction@{get\+\_\+gamma\+Correction}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{get\+\_\+gamma\+Correction()}{get\_gammaCorrection()}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+get\+\_\+gamma\+Correction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_aee1c2fc4f602738f37c4ca42daf6f8c9}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_aee1c2fc4f602738f37c4ca42daf6f8c9}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!get\+\_\+histogram\+Norm\+Type@{get\+\_\+histogram\+Norm\+Type}}
+\index{get\+\_\+histogram\+Norm\+Type@{get\+\_\+histogram\+Norm\+Type}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{get\+\_\+histogram\+Norm\+Type()}{get\_histogramNormType()}}
+{\footnotesize\ttfamily int org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+get\+\_\+histogram\+Norm\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a6ed247bb4cf037ed05445157f32f59d4}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a6ed247bb4cf037ed05445157f32f59d4}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!get\+\_\+\+L2\+Hys\+Threshold@{get\+\_\+\+L2\+Hys\+Threshold}}
+\index{get\+\_\+\+L2\+Hys\+Threshold@{get\+\_\+\+L2\+Hys\+Threshold}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{get\+\_\+\+L2\+Hys\+Threshold()}{get\_L2HysThreshold()}}
+{\footnotesize\ttfamily double org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+get\+\_\+\+L2\+Hys\+Threshold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_ac4c27c9e6d4802d97eaedec8ed571d93}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_ac4c27c9e6d4802d97eaedec8ed571d93}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!get\+\_\+nbins@{get\+\_\+nbins}}
+\index{get\+\_\+nbins@{get\+\_\+nbins}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{get\+\_\+nbins()}{get\_nbins()}}
+{\footnotesize\ttfamily int org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+get\+\_\+nbins (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_add9b44c854e529778648f73042d44745}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_add9b44c854e529778648f73042d44745}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!get\+\_\+nlevels@{get\+\_\+nlevels}}
+\index{get\+\_\+nlevels@{get\+\_\+nlevels}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{get\+\_\+nlevels()}{get\_nlevels()}}
+{\footnotesize\ttfamily int org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+get\+\_\+nlevels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a939852045ed6582fcfaa0202d02bf422}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a939852045ed6582fcfaa0202d02bf422}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!get\+\_\+svm\+Detector@{get\+\_\+svm\+Detector}}
+\index{get\+\_\+svm\+Detector@{get\+\_\+svm\+Detector}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{get\+\_\+svm\+Detector()}{get\_svmDetector()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_float}{Mat\+Of\+Float}} org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+get\+\_\+svm\+Detector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_ad776e2401540e8888b86890688d4fc98}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_ad776e2401540e8888b86890688d4fc98}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!get\+\_\+win\+Sigma@{get\+\_\+win\+Sigma}}
+\index{get\+\_\+win\+Sigma@{get\+\_\+win\+Sigma}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{get\+\_\+win\+Sigma()}{get\_winSigma()}}
+{\footnotesize\ttfamily double org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+get\+\_\+win\+Sigma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_af357f403e6c033e1555d2332b315ee57}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_af357f403e6c033e1555d2332b315ee57}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!get\+\_\+win\+Size@{get\+\_\+win\+Size}}
+\index{get\+\_\+win\+Size@{get\+\_\+win\+Size}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{get\+\_\+win\+Size()}{get\_winSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+get\+\_\+win\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a45f8ce21b9774da665b2398bfa87dfb7}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a45f8ce21b9774da665b2398bfa87dfb7}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!get\+Daimler\+People\+Detector@{get\+Daimler\+People\+Detector}}
+\index{get\+Daimler\+People\+Detector@{get\+Daimler\+People\+Detector}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{get\+Daimler\+People\+Detector()}{getDaimlerPeopleDetector()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_float}{Mat\+Of\+Float}} org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+get\+Daimler\+People\+Detector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a2d2aabe51da0f247c0276dc1f0faa770}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a2d2aabe51da0f247c0276dc1f0faa770}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!get\+Default\+People\+Detector@{get\+Default\+People\+Detector}}
+\index{get\+Default\+People\+Detector@{get\+Default\+People\+Detector}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{get\+Default\+People\+Detector()}{getDefaultPeopleDetector()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_float}{Mat\+Of\+Float}} org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+get\+Default\+People\+Detector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_abb6efea36d4eb6d8d7f90d1525607210}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_abb6efea36d4eb6d8d7f90d1525607210}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!get\+Descriptor\+Size@{get\+Descriptor\+Size}}
+\index{get\+Descriptor\+Size@{get\+Descriptor\+Size}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{get\+Descriptor\+Size()}{getDescriptorSize()}}
+{\footnotesize\ttfamily long org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+get\+Descriptor\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a811c982f6e07fbd77b6108afd9d6359c}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a811c982f6e07fbd77b6108afd9d6359c}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!get\+Win\+Sigma@{get\+Win\+Sigma}}
+\index{get\+Win\+Sigma@{get\+Win\+Sigma}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{get\+Win\+Sigma()}{getWinSigma()}}
+{\footnotesize\ttfamily double org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+get\+Win\+Sigma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_ac381a148646d8c5a288b455bf3fb2564}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_ac381a148646d8c5a288b455bf3fb2564}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!load@{load}}
+\index{load@{load}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+load (\begin{DoxyParamCaption}\item[{String}]{filename,  }\item[{String}]{objname }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_ab2806693fd58b1d2fa516c8c83a29225}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_ab2806693fd58b1d2fa516c8c83a29225}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!load@{load}}
+\index{load@{load}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+load (\begin{DoxyParamCaption}\item[{String}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_abe9384643a31fac6dc886b801a2fb15f}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_abe9384643a31fac6dc886b801a2fb15f}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!save@{save}}
+\index{save@{save}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{save()}{save()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+save (\begin{DoxyParamCaption}\item[{String}]{filename,  }\item[{String}]{objname }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_ad6bb39073db4e5da7401f8f7338f1c36}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_ad6bb39073db4e5da7401f8f7338f1c36}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!save@{save}}
+\index{save@{save}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{save()}{save()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+save (\begin{DoxyParamCaption}\item[{String}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_add61bdd56b6d457cc5b9355fa555a384}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_add61bdd56b6d457cc5b9355fa555a384}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!set\+S\+V\+M\+Detector@{set\+S\+V\+M\+Detector}}
+\index{set\+S\+V\+M\+Detector@{set\+S\+V\+M\+Detector}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{set\+S\+V\+M\+Detector()}{setSVMDetector()}}
+{\footnotesize\ttfamily void org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+set\+S\+V\+M\+Detector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{\+\_\+svmdetector }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_acd4afb5abe08c9adfd04cb9e918a3891}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_acd4afb5abe08c9adfd04cb9e918a3891}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!L2\+Hys@{L2\+Hys}}
+\index{L2\+Hys@{L2\+Hys}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{L2\+Hys}{L2Hys}}
+{\footnotesize\ttfamily final int org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+L2\+Hys = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a97c4daabbef26778df6a2fb4d6863e9d}\label{classorg_1_1opencv_1_1objdetect_1_1_h_o_g_descriptor_a97c4daabbef26778df6a2fb4d6863e9d}} 
+\index{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}!native\+Obj@{native\+Obj}}
+\index{native\+Obj@{native\+Obj}!org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor@{org\+::opencv\+::objdetect\+::\+H\+O\+G\+Descriptor}}
+\subsubsection{\texorpdfstring{native\+Obj}{nativeObj}}
+{\footnotesize\ttfamily final long org.\+opencv.\+objdetect.\+H\+O\+G\+Descriptor.\+native\+Obj\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/objdetect/\mbox{\hyperlink{_h_o_g_descriptor_8java}{H\+O\+G\+Descriptor.\+java}}\end{DoxyCompactItemize}

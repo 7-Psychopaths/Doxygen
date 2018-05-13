@@ -1,0 +1,207 @@
+\hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_boost_params}{}\section{org.\+opencv.\+ml.\+Cv\+Boost\+Params Class Reference}
+\label{classorg_1_1opencv_1_1ml_1_1_cv_boost_params}\index{org.\+opencv.\+ml.\+Cv\+Boost\+Params@{org.\+opencv.\+ml.\+Cv\+Boost\+Params}}
+Inheritance diagram for org.\+opencv.\+ml.\+Cv\+Boost\+Params\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1opencv_1_1ml_1_1_cv_boost_params}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_a5b9287c0c9f817592786a0b8009eea76}{Cv\+Boost\+Params}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_a42cf91885cadf7cc46a8b7bab8f8cadb}{get\+\_\+boost\+\_\+type}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_a937fc03c131ecd8e320fa93542a28485}{set\+\_\+boost\+\_\+type}} (int boost\+\_\+type)
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_a770c2b53bf754b1d1c8230222e1275c5}{get\+\_\+weak\+\_\+count}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_a09656aa079fe2a0136a7bbf120c7b123}{set\+\_\+weak\+\_\+count}} (int weak\+\_\+count)
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_af971d81de247e9001a8f3742ac18b681}{get\+\_\+split\+\_\+criteria}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_ad16866ac93f1425212f9232ebe11ad2f}{set\+\_\+split\+\_\+criteria}} (int split\+\_\+criteria)
+\item 
+double \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_a853036840d0b8a91b532c0a1a37448a5}{get\+\_\+weight\+\_\+trim\+\_\+rate}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_ac60d9279920a94d18301aa0cf9a6e8cc}{set\+\_\+weight\+\_\+trim\+\_\+rate}} (double weight\+\_\+trim\+\_\+rate)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_a69e879fc74d8c1305346387574de1f91}{Cv\+Boost\+Params}} (long addr)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_a93fe028fb7e0923faf605ee8c0ed084b}{finalize}} ()  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Boosting training parameters.
+
+There is one structure member that you can set directly\+:
+
+Splitting criteria used to choose optimal splits during a weak tree construction. Possible values are\+:
+
+
+\begin{DoxyItemize}
+\item Cv\+Boost.\+D\+E\+F\+A\+U\+LT Use the default for the particular boosting method, see below. 
+\end{DoxyItemize}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily  
+\begin{DoxyItemize}
+\item Cv\+Boost.\+G\+I\+NI Use Gini index. This is default option for Real Ada\+Boost; may be also used for Discrete Ada\+Boost. 
+\item Cv\+Boost.\+M\+I\+S\+C\+L\+A\+SS Use misclassification rate. This is default option for Discrete Ada\+Boost; may be also used for Real Ada\+Boost. 
+\item Cv\+Boost.\+S\+Q\+E\+RR Use least squares criteria. This is default and the only option for Logit\+Boost and Gentle Ada\+Boost. 
+\end{DoxyItemize}}
+
+{\ttfamily }
+
+{\ttfamily The structure is derived from \char`\"{}\+Cv\+D\+Tree\+Params\char`\"{} but not all of the decision tree parameters are supported. In particular, cross-\/validation is not supported. }
+
+All parameters are public. You can initialize them by a constructor and then override some of them directly if you want.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/boosting.html#cvboostparams}{\tt org.\+opencv.\+ml.\+Cv\+Boost\+Params \+: public Cv\+D\+Tree\+Params} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_a69e879fc74d8c1305346387574de1f91}\label{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_a69e879fc74d8c1305346387574de1f91}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params@{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params}!Cv\+Boost\+Params@{Cv\+Boost\+Params}}
+\index{Cv\+Boost\+Params@{Cv\+Boost\+Params}!org\+::opencv\+::ml\+::\+Cv\+Boost\+Params@{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params}}
+\subsubsection{\texorpdfstring{Cv\+Boost\+Params()}{CvBoostParams()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+Boost\+Params.\+Cv\+Boost\+Params (\begin{DoxyParamCaption}\item[{long}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_a5b9287c0c9f817592786a0b8009eea76}\label{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_a5b9287c0c9f817592786a0b8009eea76}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params@{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params}!Cv\+Boost\+Params@{Cv\+Boost\+Params}}
+\index{Cv\+Boost\+Params@{Cv\+Boost\+Params}!org\+::opencv\+::ml\+::\+Cv\+Boost\+Params@{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params}}
+\subsubsection{\texorpdfstring{Cv\+Boost\+Params()}{CvBoostParams()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+Boost\+Params.\+Cv\+Boost\+Params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The constructors.
+
+See \char`\"{}\+Cv\+D\+Tree\+Params.\+Cv\+D\+Tree\+Params\char`\"{} for description of other parameters.
+
+Default parameters are\+:
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_a5b9287c0c9f817592786a0b8009eea76}{Cv\+Boost\+Params.\+Cv\+Boost\+Params()}}}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily boost\+\_\+type = Cv\+Boost.\+R\+E\+AL;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily weak\+\_\+count = 100;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily weight\+\_\+trim\+\_\+rate = 0.\+95;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily cv\+\_\+folds = 0;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily max\+\_\+depth = 1;}
+
+{\ttfamily }
+
+{\ttfamily \begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/boosting.html#cvboostparams-cvboostparams}{\tt org.\+opencv.\+ml.\+Cv\+Boost\+Params.\+Cv\+Boost\+Params} 
+\end{DoxySeeAlso}
+}
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_a93fe028fb7e0923faf605ee8c0ed084b}\label{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_a93fe028fb7e0923faf605ee8c0ed084b}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params@{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params}!finalize@{finalize}}
+\index{finalize@{finalize}!org\+::opencv\+::ml\+::\+Cv\+Boost\+Params@{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+Boost\+Params.\+finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Throwable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_a42cf91885cadf7cc46a8b7bab8f8cadb}\label{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_a42cf91885cadf7cc46a8b7bab8f8cadb}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params@{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params}!get\+\_\+boost\+\_\+type@{get\+\_\+boost\+\_\+type}}
+\index{get\+\_\+boost\+\_\+type@{get\+\_\+boost\+\_\+type}!org\+::opencv\+::ml\+::\+Cv\+Boost\+Params@{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params}}
+\subsubsection{\texorpdfstring{get\+\_\+boost\+\_\+type()}{get\_boost\_type()}}
+{\footnotesize\ttfamily int org.\+opencv.\+ml.\+Cv\+Boost\+Params.\+get\+\_\+boost\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_af971d81de247e9001a8f3742ac18b681}\label{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_af971d81de247e9001a8f3742ac18b681}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params@{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params}!get\+\_\+split\+\_\+criteria@{get\+\_\+split\+\_\+criteria}}
+\index{get\+\_\+split\+\_\+criteria@{get\+\_\+split\+\_\+criteria}!org\+::opencv\+::ml\+::\+Cv\+Boost\+Params@{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params}}
+\subsubsection{\texorpdfstring{get\+\_\+split\+\_\+criteria()}{get\_split\_criteria()}}
+{\footnotesize\ttfamily int org.\+opencv.\+ml.\+Cv\+Boost\+Params.\+get\+\_\+split\+\_\+criteria (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_a770c2b53bf754b1d1c8230222e1275c5}\label{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_a770c2b53bf754b1d1c8230222e1275c5}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params@{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params}!get\+\_\+weak\+\_\+count@{get\+\_\+weak\+\_\+count}}
+\index{get\+\_\+weak\+\_\+count@{get\+\_\+weak\+\_\+count}!org\+::opencv\+::ml\+::\+Cv\+Boost\+Params@{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params}}
+\subsubsection{\texorpdfstring{get\+\_\+weak\+\_\+count()}{get\_weak\_count()}}
+{\footnotesize\ttfamily int org.\+opencv.\+ml.\+Cv\+Boost\+Params.\+get\+\_\+weak\+\_\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_a853036840d0b8a91b532c0a1a37448a5}\label{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_a853036840d0b8a91b532c0a1a37448a5}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params@{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params}!get\+\_\+weight\+\_\+trim\+\_\+rate@{get\+\_\+weight\+\_\+trim\+\_\+rate}}
+\index{get\+\_\+weight\+\_\+trim\+\_\+rate@{get\+\_\+weight\+\_\+trim\+\_\+rate}!org\+::opencv\+::ml\+::\+Cv\+Boost\+Params@{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params}}
+\subsubsection{\texorpdfstring{get\+\_\+weight\+\_\+trim\+\_\+rate()}{get\_weight\_trim\_rate()}}
+{\footnotesize\ttfamily double org.\+opencv.\+ml.\+Cv\+Boost\+Params.\+get\+\_\+weight\+\_\+trim\+\_\+rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_a937fc03c131ecd8e320fa93542a28485}\label{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_a937fc03c131ecd8e320fa93542a28485}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params@{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params}!set\+\_\+boost\+\_\+type@{set\+\_\+boost\+\_\+type}}
+\index{set\+\_\+boost\+\_\+type@{set\+\_\+boost\+\_\+type}!org\+::opencv\+::ml\+::\+Cv\+Boost\+Params@{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params}}
+\subsubsection{\texorpdfstring{set\+\_\+boost\+\_\+type()}{set\_boost\_type()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+Boost\+Params.\+set\+\_\+boost\+\_\+type (\begin{DoxyParamCaption}\item[{int}]{boost\+\_\+type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_ad16866ac93f1425212f9232ebe11ad2f}\label{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_ad16866ac93f1425212f9232ebe11ad2f}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params@{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params}!set\+\_\+split\+\_\+criteria@{set\+\_\+split\+\_\+criteria}}
+\index{set\+\_\+split\+\_\+criteria@{set\+\_\+split\+\_\+criteria}!org\+::opencv\+::ml\+::\+Cv\+Boost\+Params@{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params}}
+\subsubsection{\texorpdfstring{set\+\_\+split\+\_\+criteria()}{set\_split\_criteria()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+Boost\+Params.\+set\+\_\+split\+\_\+criteria (\begin{DoxyParamCaption}\item[{int}]{split\+\_\+criteria }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_a09656aa079fe2a0136a7bbf120c7b123}\label{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_a09656aa079fe2a0136a7bbf120c7b123}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params@{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params}!set\+\_\+weak\+\_\+count@{set\+\_\+weak\+\_\+count}}
+\index{set\+\_\+weak\+\_\+count@{set\+\_\+weak\+\_\+count}!org\+::opencv\+::ml\+::\+Cv\+Boost\+Params@{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params}}
+\subsubsection{\texorpdfstring{set\+\_\+weak\+\_\+count()}{set\_weak\_count()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+Boost\+Params.\+set\+\_\+weak\+\_\+count (\begin{DoxyParamCaption}\item[{int}]{weak\+\_\+count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_ac60d9279920a94d18301aa0cf9a6e8cc}\label{classorg_1_1opencv_1_1ml_1_1_cv_boost_params_ac60d9279920a94d18301aa0cf9a6e8cc}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params@{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params}!set\+\_\+weight\+\_\+trim\+\_\+rate@{set\+\_\+weight\+\_\+trim\+\_\+rate}}
+\index{set\+\_\+weight\+\_\+trim\+\_\+rate@{set\+\_\+weight\+\_\+trim\+\_\+rate}!org\+::opencv\+::ml\+::\+Cv\+Boost\+Params@{org\+::opencv\+::ml\+::\+Cv\+Boost\+Params}}
+\subsubsection{\texorpdfstring{set\+\_\+weight\+\_\+trim\+\_\+rate()}{set\_weight\_trim\_rate()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+Boost\+Params.\+set\+\_\+weight\+\_\+trim\+\_\+rate (\begin{DoxyParamCaption}\item[{double}]{weight\+\_\+trim\+\_\+rate }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/ml/\mbox{\hyperlink{_cv_boost_params_8java}{Cv\+Boost\+Params.\+java}}\end{DoxyCompactItemize}

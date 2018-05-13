@@ -1,0 +1,97 @@
+\hypertarget{classorg_1_1opencv_1_1android_1_1_base_loader_callback}{}\section{org.\+opencv.\+android.\+Base\+Loader\+Callback Class Reference}
+\label{classorg_1_1opencv_1_1android_1_1_base_loader_callback}\index{org.\+opencv.\+android.\+Base\+Loader\+Callback@{org.\+opencv.\+android.\+Base\+Loader\+Callback}}
+Inheritance diagram for org.\+opencv.\+android.\+Base\+Loader\+Callback\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1opencv_1_1android_1_1_base_loader_callback}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_base_loader_callback_aab909a71e602ef7ac00a53b0114e2375}{Base\+Loader\+Callback}} (Context App\+Context)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_base_loader_callback_a9d397061f3f7713e91c06685462bc12d}{on\+Manager\+Connected}} (int status)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_base_loader_callback_a2d6f2c826a2b94af9a46cc5e28a43bf2}{on\+Package\+Install}} (final int operation, final \mbox{\hyperlink{interfaceorg_1_1opencv_1_1android_1_1_install_callback_interface}{Install\+Callback\+Interface}} callback)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Context \mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_base_loader_callback_aac85fd9df548c4e068f1480e7f33bbf8}{m\+App\+Context}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Basic implementation of \mbox{\hyperlink{interfaceorg_1_1opencv_1_1android_1_1_loader_callback_interface}{Loader\+Callback\+Interface}}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_base_loader_callback_aab909a71e602ef7ac00a53b0114e2375}\label{classorg_1_1opencv_1_1android_1_1_base_loader_callback_aab909a71e602ef7ac00a53b0114e2375}} 
+\index{org\+::opencv\+::android\+::\+Base\+Loader\+Callback@{org\+::opencv\+::android\+::\+Base\+Loader\+Callback}!Base\+Loader\+Callback@{Base\+Loader\+Callback}}
+\index{Base\+Loader\+Callback@{Base\+Loader\+Callback}!org\+::opencv\+::android\+::\+Base\+Loader\+Callback@{org\+::opencv\+::android\+::\+Base\+Loader\+Callback}}
+\subsubsection{\texorpdfstring{Base\+Loader\+Callback()}{BaseLoaderCallback()}}
+{\footnotesize\ttfamily org.\+opencv.\+android.\+Base\+Loader\+Callback.\+Base\+Loader\+Callback (\begin{DoxyParamCaption}\item[{Context}]{App\+Context }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_base_loader_callback_a9d397061f3f7713e91c06685462bc12d}\label{classorg_1_1opencv_1_1android_1_1_base_loader_callback_a9d397061f3f7713e91c06685462bc12d}} 
+\index{org\+::opencv\+::android\+::\+Base\+Loader\+Callback@{org\+::opencv\+::android\+::\+Base\+Loader\+Callback}!on\+Manager\+Connected@{on\+Manager\+Connected}}
+\index{on\+Manager\+Connected@{on\+Manager\+Connected}!org\+::opencv\+::android\+::\+Base\+Loader\+Callback@{org\+::opencv\+::android\+::\+Base\+Loader\+Callback}}
+\subsubsection{\texorpdfstring{on\+Manager\+Connected()}{onManagerConnected()}}
+{\footnotesize\ttfamily void org.\+opencv.\+android.\+Base\+Loader\+Callback.\+on\+Manager\+Connected (\begin{DoxyParamCaption}\item[{int}]{status }\end{DoxyParamCaption})}
+
+Callback method, called after Open\+CV library initialization. 
+\begin{DoxyParams}{Parameters}
+{\em status} & status of initialization (see initialization status constants). \\
+\hline
+\end{DoxyParams}
+Open\+CV initialization was successful. ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ Application must override this method to handle successful library initialization. ~\newline
+~\newline
+~\newline
+~\newline
+ Open\+CV loader can not start Google Play Market. ~\newline
+~\newline
+~\newline
+ Package installation has been canceled. ~\newline
+~\newline
+ Application is incompatible with this version of Open\+CV Manager. Possibly, a service update is required. ~\newline
+ Other status, i.\+e. I\+N\+I\+T\+\_\+\+F\+A\+I\+L\+ED. 
+
+Implements \mbox{\hyperlink{interfaceorg_1_1opencv_1_1android_1_1_loader_callback_interface_ad2407cf1886354b965b8ebd97b7164ff}{org.\+opencv.\+android.\+Loader\+Callback\+Interface}}.
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_base_loader_callback_a2d6f2c826a2b94af9a46cc5e28a43bf2}\label{classorg_1_1opencv_1_1android_1_1_base_loader_callback_a2d6f2c826a2b94af9a46cc5e28a43bf2}} 
+\index{org\+::opencv\+::android\+::\+Base\+Loader\+Callback@{org\+::opencv\+::android\+::\+Base\+Loader\+Callback}!on\+Package\+Install@{on\+Package\+Install}}
+\index{on\+Package\+Install@{on\+Package\+Install}!org\+::opencv\+::android\+::\+Base\+Loader\+Callback@{org\+::opencv\+::android\+::\+Base\+Loader\+Callback}}
+\subsubsection{\texorpdfstring{on\+Package\+Install()}{onPackageInstall()}}
+{\footnotesize\ttfamily void org.\+opencv.\+android.\+Base\+Loader\+Callback.\+on\+Package\+Install (\begin{DoxyParamCaption}\item[{final int}]{operation,  }\item[{final \mbox{\hyperlink{interfaceorg_1_1opencv_1_1android_1_1_install_callback_interface}{Install\+Callback\+Interface}}}]{callback }\end{DoxyParamCaption})}
+
+Callback method, called in case the package installation is needed. 
+\begin{DoxyParams}{Parameters}
+{\em callback} & answer object with approve and cancel methods and the package description. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1opencv_1_1android_1_1_loader_callback_interface_a996cd7844145b1e99ceeda27af9a6713}{org.\+opencv.\+android.\+Loader\+Callback\+Interface}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_base_loader_callback_aac85fd9df548c4e068f1480e7f33bbf8}\label{classorg_1_1opencv_1_1android_1_1_base_loader_callback_aac85fd9df548c4e068f1480e7f33bbf8}} 
+\index{org\+::opencv\+::android\+::\+Base\+Loader\+Callback@{org\+::opencv\+::android\+::\+Base\+Loader\+Callback}!m\+App\+Context@{m\+App\+Context}}
+\index{m\+App\+Context@{m\+App\+Context}!org\+::opencv\+::android\+::\+Base\+Loader\+Callback@{org\+::opencv\+::android\+::\+Base\+Loader\+Callback}}
+\subsubsection{\texorpdfstring{m\+App\+Context}{mAppContext}}
+{\footnotesize\ttfamily Context org.\+opencv.\+android.\+Base\+Loader\+Callback.\+m\+App\+Context\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/android/\mbox{\hyperlink{_base_loader_callback_8java}{Base\+Loader\+Callback.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,674 @@
+\hypertarget{classorg_1_1opencv_1_1contrib_1_1_face_recognizer}{}\section{org.\+opencv.\+contrib.\+Face\+Recognizer Class Reference}
+\label{classorg_1_1opencv_1_1contrib_1_1_face_recognizer}\index{org.\+opencv.\+contrib.\+Face\+Recognizer@{org.\+opencv.\+contrib.\+Face\+Recognizer}}
+Inheritance diagram for org.\+opencv.\+contrib.\+Face\+Recognizer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1opencv_1_1contrib_1_1_face_recognizer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_a3deb06ef030354b7e805eba3eec638f6}{load}} (String filename)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_afed81d21859557ca5680504353d7454e}{predict}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} src, int\mbox{[}$\,$\mbox{]} label, double\mbox{[}$\,$\mbox{]} confidence)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_aef1ba7d7342373b5da025c96fcd2c1d6}{save}} (String filename)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_a2b9e657ee7276997ab184449c3251c08}{train}} (List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$ src, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} labels)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_aeda4a33d567af3958ff63c79355aaa72}{update}} (List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$ src, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} labels)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_a697f676af90ddfdcbe27bae82fb201be}{Face\+Recognizer}} (long addr)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_ae4529f57531f3d3f91dafa7f82e9418d}{finalize}} ()  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+All face recognition models in Open\+CV are derived from the abstract base class \char`\"{}\+Face\+Recognizer\char`\"{}, which provides a unified access to all face recongition algorithms in Open\+CV.
+
+class \mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_face_recognizer}{Face\+Recognizer}} \+: public Algorithm {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily public\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //! virtual destructor}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual $\sim$\+Face\+Recognizer() \{\}}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // Trains a \mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_face_recognizer}{Face\+Recognizer}}.}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void train(\+Input\+Array src, Input\+Array labels) = 0;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // Updates a \mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_face_recognizer}{Face\+Recognizer}}.}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void update(\+Input\+Array\+Of\+Arrays src, Input\+Array labels);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // Gets a prediction from a \mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_face_recognizer}{Face\+Recognizer}}.}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual int predict(\+Input\+Array src) const = 0;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // Predicts the label and confidence for a given sample.}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void predict(\+Input\+Array src, int \&label, double \&confidence) const = 0;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // Serializes this object to a given filename.}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void save(const string\& filename) const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // Deserializes this object from a given filename.}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void load(const string\& filename);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // Serializes this object to a given cv.\+File\+Storage.}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void save(\+File\+Storage\& fs) const = 0;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // Deserializes this object from a given cv.\+File\+Storage.}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void load(const File\+Storage\& fs) = 0;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \};}
+
+{\ttfamily }
+
+{\ttfamily \begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/contrib/doc/facerec_api.html#facerecognizer}{\tt org.\+opencv.\+contrib.\+Face\+Recognizer \+: public Algorithm} 
+\end{DoxySeeAlso}
+}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_a697f676af90ddfdcbe27bae82fb201be}\label{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_a697f676af90ddfdcbe27bae82fb201be}} 
+\index{org\+::opencv\+::contrib\+::\+Face\+Recognizer@{org\+::opencv\+::contrib\+::\+Face\+Recognizer}!Face\+Recognizer@{Face\+Recognizer}}
+\index{Face\+Recognizer@{Face\+Recognizer}!org\+::opencv\+::contrib\+::\+Face\+Recognizer@{org\+::opencv\+::contrib\+::\+Face\+Recognizer}}
+\subsubsection{\texorpdfstring{Face\+Recognizer()}{FaceRecognizer()}}
+{\footnotesize\ttfamily org.\+opencv.\+contrib.\+Face\+Recognizer.\+Face\+Recognizer (\begin{DoxyParamCaption}\item[{long}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_ae4529f57531f3d3f91dafa7f82e9418d}\label{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_ae4529f57531f3d3f91dafa7f82e9418d}} 
+\index{org\+::opencv\+::contrib\+::\+Face\+Recognizer@{org\+::opencv\+::contrib\+::\+Face\+Recognizer}!finalize@{finalize}}
+\index{finalize@{finalize}!org\+::opencv\+::contrib\+::\+Face\+Recognizer@{org\+::opencv\+::contrib\+::\+Face\+Recognizer}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily void org.\+opencv.\+contrib.\+Face\+Recognizer.\+finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Throwable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_a3deb06ef030354b7e805eba3eec638f6}\label{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_a3deb06ef030354b7e805eba3eec638f6}} 
+\index{org\+::opencv\+::contrib\+::\+Face\+Recognizer@{org\+::opencv\+::contrib\+::\+Face\+Recognizer}!load@{load}}
+\index{load@{load}!org\+::opencv\+::contrib\+::\+Face\+Recognizer@{org\+::opencv\+::contrib\+::\+Face\+Recognizer}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void org.\+opencv.\+contrib.\+Face\+Recognizer.\+load (\begin{DoxyParamCaption}\item[{String}]{filename }\end{DoxyParamCaption})}
+
+Loads a \char`\"{}\+Face\+Recognizer\char`\"{} and its model state.
+
+Loads a persisted model and state from a given X\+ML or Y\+A\+ML file. Every \char`\"{}\+Face\+Recognizer\char`\"{} has to overwrite {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_a3deb06ef030354b7e805eba3eec638f6}{Face\+Recognizer.\+load}}(File\+Storage\& fs)} to enable loading the model state. {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_a3deb06ef030354b7e805eba3eec638f6}{Face\+Recognizer.\+load}}(File\+Storage\& fs)} in turn gets called by {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_a3deb06ef030354b7e805eba3eec638f6}{Face\+Recognizer.\+load}}(const string\& filename)}, to ease saving a model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & a filename\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/contrib/doc/facerec_api.html#facerecognizer-load}{\tt org.\+opencv.\+contrib.\+Face\+Recognizer.\+load} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_afed81d21859557ca5680504353d7454e}\label{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_afed81d21859557ca5680504353d7454e}} 
+\index{org\+::opencv\+::contrib\+::\+Face\+Recognizer@{org\+::opencv\+::contrib\+::\+Face\+Recognizer}!predict@{predict}}
+\index{predict@{predict}!org\+::opencv\+::contrib\+::\+Face\+Recognizer@{org\+::opencv\+::contrib\+::\+Face\+Recognizer}}
+\subsubsection{\texorpdfstring{predict()}{predict()}}
+{\footnotesize\ttfamily void org.\+opencv.\+contrib.\+Face\+Recognizer.\+predict (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{src,  }\item[{int \mbox{[}$\,$\mbox{]}}]{label,  }\item[{double \mbox{[}$\,$\mbox{]}}]{confidence }\end{DoxyParamCaption})}
+
+Predicts a label and associated confidence (e.\+g. distance) for a given input image.
+
+The suffix {\ttfamily const} means that prediction does not affect the internal model state, so the method can be safely called from within different threads.
+
+The following example shows how to get a prediction from a trained model\+: using namespace cv; {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // Do your initialization here (create the cv.\+Face\+Recognizer model)...}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //...}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // Read in a sample image\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Mat img = imread(\char`\"{}person1/3.\+jpg\char`\"{}, C\+V\+\_\+\+L\+O\+A\+D\+\_\+\+I\+M\+A\+G\+E\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+LE);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // And get a prediction from the cv.\+Face\+Recognizer\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily int predicted = model-\/$>$predict(img);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Or to get a prediction and the associated confidence (e.\+g. distance)\+: }
+
+using namespace cv; {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // Do your initialization here (create the cv.\+Face\+Recognizer model)...}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //...}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Mat img = imread(\char`\"{}person1/3.\+jpg\char`\"{}, C\+V\+\_\+\+L\+O\+A\+D\+\_\+\+I\+M\+A\+G\+E\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+LE);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // Some variables for the predicted label and associated confidence (e.\+g. distance)\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily int predicted\+\_\+label = -\/1;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily double predicted\+\_\+confidence = 0.\+0;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // Get the prediction and associated confidence from the model}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily model-\/$>$predict(img, predicted\+\_\+label, predicted\+\_\+confidence);}
+
+{\ttfamily }
+
+{\ttfamily 
+\begin{DoxyParams}{Parameters}
+{\em src} & Sample image to get a prediction from. \\
+\hline
+{\em label} & The predicted label for the given image. \\
+\hline
+{\em confidence} & Associated confidence (e.\+g. distance) for the predicted label.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/contrib/doc/facerec_api.html#facerecognizer-predict}{\tt org.\+opencv.\+contrib.\+Face\+Recognizer.\+predict} 
+\end{DoxySeeAlso}
+}\mbox{\Hypertarget{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_aef1ba7d7342373b5da025c96fcd2c1d6}\label{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_aef1ba7d7342373b5da025c96fcd2c1d6}} 
+\index{org\+::opencv\+::contrib\+::\+Face\+Recognizer@{org\+::opencv\+::contrib\+::\+Face\+Recognizer}!save@{save}}
+\index{save@{save}!org\+::opencv\+::contrib\+::\+Face\+Recognizer@{org\+::opencv\+::contrib\+::\+Face\+Recognizer}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void org.\+opencv.\+contrib.\+Face\+Recognizer.\+save (\begin{DoxyParamCaption}\item[{String}]{filename }\end{DoxyParamCaption})}
+
+Saves a \char`\"{}\+Face\+Recognizer\char`\"{} and its model state.
+
+Saves this model to a given filename, either as X\+ML or Y\+A\+ML.
+
+Saves this model to a given \char`\"{}\+File\+Storage\char`\"{}.
+
+Every \char`\"{}\+Face\+Recognizer\char`\"{} overwrites {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_aef1ba7d7342373b5da025c96fcd2c1d6}{Face\+Recognizer.\+save}}(File\+Storage\& fs)} to save the internal model state. {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_aef1ba7d7342373b5da025c96fcd2c1d6}{Face\+Recognizer.\+save}}(const string\& filename)} saves the state of a model to the given filename.
+
+The suffix {\ttfamily const} means that prediction does not affect the internal model state, so the method can be safely called from within different threads.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename to store this \char`\"{}\+Face\+Recognizer\char`\"{} to (either X\+M\+L/\+Y\+A\+ML).\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/contrib/doc/facerec_api.html#facerecognizer-save}{\tt org.\+opencv.\+contrib.\+Face\+Recognizer.\+save} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_a2b9e657ee7276997ab184449c3251c08}\label{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_a2b9e657ee7276997ab184449c3251c08}} 
+\index{org\+::opencv\+::contrib\+::\+Face\+Recognizer@{org\+::opencv\+::contrib\+::\+Face\+Recognizer}!train@{train}}
+\index{train@{train}!org\+::opencv\+::contrib\+::\+Face\+Recognizer@{org\+::opencv\+::contrib\+::\+Face\+Recognizer}}
+\subsubsection{\texorpdfstring{train()}{train()}}
+{\footnotesize\ttfamily void org.\+opencv.\+contrib.\+Face\+Recognizer.\+train (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$}]{src,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{labels }\end{DoxyParamCaption})}
+
+Trains a \mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_face_recognizer}{Face\+Recognizer}} with given data and associated labels.
+
+The following source code snippet shows you how to learn a Fisherfaces model on a given set of images. The images are read with \char`\"{}imread\char`\"{} and pushed into a {\ttfamily std.\+vector$<$\+Mat$>$}. The labels of each image are stored within a {\ttfamily std.\+vector$<$int$>$} (you could also use a \char`\"{}\+Mat\char`\"{} of type \char`\"{}\+C\+V\+\_\+32\+S\+C1\char`\"{}). Think of the label as the subject (the person) this image belongs to, so same subjects (persons) should have the same label. For the available \char`\"{}\+Face\+Recognizer\char`\"{} you don\textquotesingle{}t have to pay any attention to the order of the labels, just make sure same persons have the same label\+: // holds images and labels {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily vector$<$\+Mat$>$ images;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily vector$<$int$>$ labels;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // images for first person}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily images.\+push\+\_\+back(imread(\char`\"{}person0/0.\+jpg\char`\"{}, C\+V\+\_\+\+L\+O\+A\+D\+\_\+\+I\+M\+A\+G\+E\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+LE)); labels.\+push\+\_\+back(0);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily images.\+push\+\_\+back(imread(\char`\"{}person0/1.\+jpg\char`\"{}, C\+V\+\_\+\+L\+O\+A\+D\+\_\+\+I\+M\+A\+G\+E\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+LE)); labels.\+push\+\_\+back(0);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily images.\+push\+\_\+back(imread(\char`\"{}person0/2.\+jpg\char`\"{}, C\+V\+\_\+\+L\+O\+A\+D\+\_\+\+I\+M\+A\+G\+E\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+LE)); labels.\+push\+\_\+back(0);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // images for second person}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily images.\+push\+\_\+back(imread(\char`\"{}person1/0.\+jpg\char`\"{}, C\+V\+\_\+\+L\+O\+A\+D\+\_\+\+I\+M\+A\+G\+E\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+LE)); labels.\+push\+\_\+back(1);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily images.\+push\+\_\+back(imread(\char`\"{}person1/1.\+jpg\char`\"{}, C\+V\+\_\+\+L\+O\+A\+D\+\_\+\+I\+M\+A\+G\+E\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+LE)); labels.\+push\+\_\+back(1);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily images.\+push\+\_\+back(imread(\char`\"{}person1/2.\+jpg\char`\"{}, C\+V\+\_\+\+L\+O\+A\+D\+\_\+\+I\+M\+A\+G\+E\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+LE)); labels.\+push\+\_\+back(1);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Now that you have read some images, we can create a new \char`\"{}\+Face\+Recognizer\char`\"{}. In this example I\textquotesingle{}ll create a Fisherfaces model and decide to keep all of the possible Fisherfaces\+: }
+
+// Create a new Fisherfaces model and retain all available Fisherfaces, {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // this is the most common usage of this specific \mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_face_recognizer}{Face\+Recognizer}}\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Ptr$<$\+Face\+Recognizer$>$ model = create\+Fisher\+Face\+Recognizer();}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily And finally train it on the given dataset (the face images and labels)\+: }
+
+// This is the common interface to train all of the available cv.\+Face\+Recognizer {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // implementations\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily model-\/$>$train(images, labels);}
+
+{\ttfamily }
+
+{\ttfamily 
+\begin{DoxyParams}{Parameters}
+{\em src} & The training images, that means the faces you want to learn. The data has to be given as a {\ttfamily vector$<$\+Mat$>$}. \\
+\hline
+{\em labels} & The labels corresponding to the images have to be given either as a {\ttfamily vector$<$int$>$} or a\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/contrib/doc/facerec_api.html#facerecognizer-train}{\tt org.\+opencv.\+contrib.\+Face\+Recognizer.\+train} 
+\end{DoxySeeAlso}
+}\mbox{\Hypertarget{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_aeda4a33d567af3958ff63c79355aaa72}\label{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_aeda4a33d567af3958ff63c79355aaa72}} 
+\index{org\+::opencv\+::contrib\+::\+Face\+Recognizer@{org\+::opencv\+::contrib\+::\+Face\+Recognizer}!update@{update}}
+\index{update@{update}!org\+::opencv\+::contrib\+::\+Face\+Recognizer@{org\+::opencv\+::contrib\+::\+Face\+Recognizer}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void org.\+opencv.\+contrib.\+Face\+Recognizer.\+update (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$}]{src,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{labels }\end{DoxyParamCaption})}
+
+Updates a \mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_face_recognizer}{Face\+Recognizer}} with given data and associated labels.
+
+This method updates a (probably trained) \char`\"{}\+Face\+Recognizer\char`\"{}, but only if the algorithm supports it. The Local Binary Patterns Histograms (L\+B\+PH) recognizer (see \char`\"{}create\+L\+B\+P\+H\+Face\+Recognizer\char`\"{}) can be updated. For the Eigenfaces and Fisherfaces method, this is algorithmically not possible and you have to re-\/estimate the model with \char`\"{}\+Face\+Recognizer.\+train\char`\"{}. In any case, a call to train empties the existing model and learns a new model, while update does not delete any model data. // Create a new L\+B\+PH model (it can be updated) and use the default parameters, {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // this is the most common usage of this specific \mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_face_recognizer}{Face\+Recognizer}}\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Ptr$<$\+Face\+Recognizer$>$ model = create\+L\+B\+P\+H\+Face\+Recognizer();}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // This is the common interface to train all of the available cv.\+Face\+Recognizer}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // implementations\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily model-\/$>$train(images, labels);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // Some containers to hold new image\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily vector$<$\+Mat$>$ new\+Images;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily vector$<$int$>$ new\+Labels;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // You should add some images to the containers\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //...}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // Now updating the model is as easy as calling\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily model-\/$>$update(new\+Images,new\+Labels);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // This will preserve the old model data and extend the existing model}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // with the new features extracted from new\+Images!}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Calling update on an Eigenfaces model (see \char`\"{}create\+Eigen\+Face\+Recognizer\char`\"{}), which doesn\textquotesingle{}t support updating, will throw an error similar to\+: }
+
+Open\+CV Error\+: The function/feature is not implemented (This \mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_face_recognizer}{Face\+Recognizer}} (Face\+Recognizer.\+Eigenfaces) does not support updating, you have to use \mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_face_recognizer_a2b9e657ee7276997ab184449c3251c08}{Face\+Recognizer.\+train}} to update it.) in update, file /home/philipp/git/opencv/modules/contrib/src/facerec.cpp, line 305 {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily terminate called after throwing an instance of \textquotesingle{}cv.\+Exception\textquotesingle{}}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Please note\+: The \char`\"{}\+Face\+Recognizer\char`\"{} does not store your training images, because this would be very memory intense and it\textquotesingle{}s not the responsibility of te \char`\"{}\+Face\+Recognizer\char`\"{} to do so. The caller is responsible for maintaining the dataset, he want to work with. }
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & The training images, that means the faces you want to learn. The data has to be given as a {\ttfamily vector$<$\+Mat$>$}. \\
+\hline
+{\em labels} & The labels corresponding to the images have to be given either as a {\ttfamily vector$<$int$>$} or a\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/contrib/doc/facerec_api.html#facerecognizer-update}{\tt org.\+opencv.\+contrib.\+Face\+Recognizer.\+update} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/contrib/\mbox{\hyperlink{_face_recognizer_8java}{Face\+Recognizer.\+java}}\end{DoxyCompactItemize}

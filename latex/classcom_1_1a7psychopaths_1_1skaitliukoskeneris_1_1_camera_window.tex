@@ -1,0 +1,97 @@
+\hypertarget{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window}{}\section{com.\+a7psychopaths.\+skaitliukoskeneris.\+Camera\+Window Class Reference}
+\label{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window}\index{com.\+a7psychopaths.\+skaitliukoskeneris.\+Camera\+Window@{com.\+a7psychopaths.\+skaitliukoskeneris.\+Camera\+Window}}
+Inheritance diagram for com.\+a7psychopaths.\+skaitliukoskeneris.\+Camera\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.342926cm]{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window_a204ec7def65b3ce5a29720b67b03a77c}{on\+Camera\+View\+Started}} (int width, int height)
+\item 
+void \mbox{\hyperlink{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window_a17537fd517c83369e27b6ff3f26b38e7}{on\+Camera\+View\+Stopped}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} \mbox{\hyperlink{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window_a2ee3840e4c61b7ab95e2dc3f6407aad0}{on\+Camera\+Frame}} (Camera\+Bridge\+View\+Base.\+Cv\+Camera\+View\+Frame input\+Frame)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window_ab1a9b0e84f3a97826c665d40a3df91a5}{on\+Create}} (Bundle saved\+Instance\+State)
+\item 
+void \mbox{\hyperlink{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window_aadb82216e2fa64f7081100aaccf2d75a}{on\+Pause}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window_a3a739c080b032f16a599e3473e169acb}{on\+Destroy}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window_abd0a1b9f76fb6b6a601515d1fcd49283}{on\+Resume}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window_a2ee3840e4c61b7ab95e2dc3f6407aad0}\label{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window_a2ee3840e4c61b7ab95e2dc3f6407aad0}} 
+\index{com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window@{com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window}!on\+Camera\+Frame@{on\+Camera\+Frame}}
+\index{on\+Camera\+Frame@{on\+Camera\+Frame}!com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window@{com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window}}
+\subsubsection{\texorpdfstring{on\+Camera\+Frame()}{onCameraFrame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} com.\+a7psychopaths.\+skaitliukoskeneris.\+Camera\+Window.\+on\+Camera\+Frame (\begin{DoxyParamCaption}\item[{Camera\+Bridge\+View\+Base.\+Cv\+Camera\+View\+Frame}]{input\+Frame }\end{DoxyParamCaption})}
+
+This method is invoked when delivery of the frame needs to be done. The returned values -\/ is a modified frame which needs to be displayed on the screen. T\+O\+DO\+: pass the parameters specifying the format of the frame (B\+PP, Y\+UV or R\+GB and etc) 
+
+Implements \mbox{\hyperlink{interfaceorg_1_1opencv_1_1android_1_1_camera_bridge_view_base_1_1_cv_camera_view_listener2_aa8cf69267ec5580344728dbadbf6ae0f}{org.\+opencv.\+android.\+Camera\+Bridge\+View\+Base.\+Cv\+Camera\+View\+Listener2}}.
+
+\mbox{\Hypertarget{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window_a204ec7def65b3ce5a29720b67b03a77c}\label{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window_a204ec7def65b3ce5a29720b67b03a77c}} 
+\index{com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window@{com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window}!on\+Camera\+View\+Started@{on\+Camera\+View\+Started}}
+\index{on\+Camera\+View\+Started@{on\+Camera\+View\+Started}!com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window@{com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window}}
+\subsubsection{\texorpdfstring{on\+Camera\+View\+Started()}{onCameraViewStarted()}}
+{\footnotesize\ttfamily void com.\+a7psychopaths.\+skaitliukoskeneris.\+Camera\+Window.\+on\+Camera\+View\+Started (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+This method is invoked when camera preview has started. After this method is invoked the frames will start to be delivered to client via the \mbox{\hyperlink{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window_a2ee3840e4c61b7ab95e2dc3f6407aad0}{on\+Camera\+Frame()}} callback. 
+\begin{DoxyParams}{Parameters}
+{\em width} & -\/ the width of the frames that will be delivered \\
+\hline
+{\em height} & -\/ the height of the frames that will be delivered \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1opencv_1_1android_1_1_camera_bridge_view_base_1_1_cv_camera_view_listener2_a8229eca0048f11f06e2cd798c10a1b4d}{org.\+opencv.\+android.\+Camera\+Bridge\+View\+Base.\+Cv\+Camera\+View\+Listener2}}.
+
+\mbox{\Hypertarget{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window_a17537fd517c83369e27b6ff3f26b38e7}\label{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window_a17537fd517c83369e27b6ff3f26b38e7}} 
+\index{com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window@{com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window}!on\+Camera\+View\+Stopped@{on\+Camera\+View\+Stopped}}
+\index{on\+Camera\+View\+Stopped@{on\+Camera\+View\+Stopped}!com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window@{com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window}}
+\subsubsection{\texorpdfstring{on\+Camera\+View\+Stopped()}{onCameraViewStopped()}}
+{\footnotesize\ttfamily void com.\+a7psychopaths.\+skaitliukoskeneris.\+Camera\+Window.\+on\+Camera\+View\+Stopped (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method is invoked when camera preview has been stopped for some reason. No frames will be delivered via \mbox{\hyperlink{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window_a2ee3840e4c61b7ab95e2dc3f6407aad0}{on\+Camera\+Frame()}} callback after this method is called. 
+
+Implements \mbox{\hyperlink{interfaceorg_1_1opencv_1_1android_1_1_camera_bridge_view_base_1_1_cv_camera_view_listener2_a0c02fc823ee690e08e6076611cff430b}{org.\+opencv.\+android.\+Camera\+Bridge\+View\+Base.\+Cv\+Camera\+View\+Listener2}}.
+
+\mbox{\Hypertarget{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window_ab1a9b0e84f3a97826c665d40a3df91a5}\label{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window_ab1a9b0e84f3a97826c665d40a3df91a5}} 
+\index{com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window@{com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window}!on\+Create@{on\+Create}}
+\index{on\+Create@{on\+Create}!com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window@{com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window}}
+\subsubsection{\texorpdfstring{on\+Create()}{onCreate()}}
+{\footnotesize\ttfamily void com.\+a7psychopaths.\+skaitliukoskeneris.\+Camera\+Window.\+on\+Create (\begin{DoxyParamCaption}\item[{Bundle}]{saved\+Instance\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window_a3a739c080b032f16a599e3473e169acb}\label{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window_a3a739c080b032f16a599e3473e169acb}} 
+\index{com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window@{com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window}!on\+Destroy@{on\+Destroy}}
+\index{on\+Destroy@{on\+Destroy}!com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window@{com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window}}
+\subsubsection{\texorpdfstring{on\+Destroy()}{onDestroy()}}
+{\footnotesize\ttfamily void com.\+a7psychopaths.\+skaitliukoskeneris.\+Camera\+Window.\+on\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window_aadb82216e2fa64f7081100aaccf2d75a}\label{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window_aadb82216e2fa64f7081100aaccf2d75a}} 
+\index{com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window@{com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window}!on\+Pause@{on\+Pause}}
+\index{on\+Pause@{on\+Pause}!com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window@{com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window}}
+\subsubsection{\texorpdfstring{on\+Pause()}{onPause()}}
+{\footnotesize\ttfamily void com.\+a7psychopaths.\+skaitliukoskeneris.\+Camera\+Window.\+on\+Pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window_abd0a1b9f76fb6b6a601515d1fcd49283}\label{classcom_1_1a7psychopaths_1_1skaitliukoskeneris_1_1_camera_window_abd0a1b9f76fb6b6a601515d1fcd49283}} 
+\index{com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window@{com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window}!on\+Resume@{on\+Resume}}
+\index{on\+Resume@{on\+Resume}!com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window@{com\+::a7psychopaths\+::skaitliukoskeneris\+::\+Camera\+Window}}
+\subsubsection{\texorpdfstring{on\+Resume()}{onResume()}}
+{\footnotesize\ttfamily void com.\+a7psychopaths.\+skaitliukoskeneris.\+Camera\+Window.\+on\+Resume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/app/src/main/java/com/a7psychopaths/skaitliukoskeneris/\mbox{\hyperlink{_camera_window_8java}{Camera\+Window.\+java}}\end{DoxyCompactItemize}

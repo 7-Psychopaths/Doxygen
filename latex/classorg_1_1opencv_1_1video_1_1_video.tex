@@ -1,0 +1,667 @@
+\hypertarget{classorg_1_1opencv_1_1video_1_1_video}{}\section{org.\+opencv.\+video.\+Video Class Reference}
+\label{classorg_1_1opencv_1_1video_1_1_video}\index{org.\+opencv.\+video.\+Video@{org.\+opencv.\+video.\+Video}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_rotated_rect}{Rotated\+Rect}} \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_video_a7fea50982bba688250537e83cd11fabd}{Cam\+Shift}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} prob\+Image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_rect}{Rect}} window, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria}{Term\+Criteria}} criteria)
+\item 
+static int \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_video_a84281eba959eb6d424d94aca84ae738f}{build\+Optical\+Flow\+Pyramid}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} img, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$ pyramid, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} win\+Size, int max\+Level, boolean with\+Derivatives, int pyr\+Border, int deriv\+Border, boolean try\+Reuse\+Input\+Image)
+\item 
+static int \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_video_ac702001e72ad8f8b5b8ae410e50da9f8}{build\+Optical\+Flow\+Pyramid}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} img, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$ pyramid, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} win\+Size, int max\+Level)
+\item 
+static double \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_video_af1c43b47c6d850912e164484269ee8d1}{calc\+Global\+Orientation}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} orientation, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} mask, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} mhi, double timestamp, double duration)
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_video_a9e39d32cda591f5413791f116cfc1a8b}{calc\+Motion\+Gradient}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} mhi, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} mask, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} orientation, double delta1, double delta2, int aperture\+Size)
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_video_a71bdf0bf465515f5d89eb2e3e11614b3}{calc\+Motion\+Gradient}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} mhi, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} mask, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} orientation, double delta1, double delta2)
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_video_a313914fdcd3024f6c5d9519854ac48f3}{calc\+Optical\+Flow\+Farneback}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} prev, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} next, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} flow, double pyr\+\_\+scale, int levels, int winsize, int iterations, int poly\+\_\+n, double poly\+\_\+sigma, int flags)
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_video_af905ed0b09b612cdbfd3196135e40ef1}{calc\+Optical\+Flow\+Pyr\+LK}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} prev\+Img, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} next\+Img, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point2f}{Mat\+Of\+Point2f}} prev\+Pts, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point2f}{Mat\+Of\+Point2f}} next\+Pts, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_byte}{Mat\+Of\+Byte}} status, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_float}{Mat\+Of\+Float}} err, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} win\+Size, int max\+Level, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria}{Term\+Criteria}} criteria, int flags, double min\+Eig\+Threshold)
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_video_a009d13895ec508ed780d60688d850b4c}{calc\+Optical\+Flow\+Pyr\+LK}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} prev\+Img, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} next\+Img, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point2f}{Mat\+Of\+Point2f}} prev\+Pts, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point2f}{Mat\+Of\+Point2f}} next\+Pts, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_byte}{Mat\+Of\+Byte}} status, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_float}{Mat\+Of\+Float}} err, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} win\+Size, int max\+Level)
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_video_a45406270ec0e90776d151c4778cc577c}{calc\+Optical\+Flow\+Pyr\+LK}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} prev\+Img, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} next\+Img, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point2f}{Mat\+Of\+Point2f}} prev\+Pts, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point2f}{Mat\+Of\+Point2f}} next\+Pts, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_byte}{Mat\+Of\+Byte}} status, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_float}{Mat\+Of\+Float}} err)
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_video_a18283efc105943b982df4e5b24774acd}{calc\+Optical\+Flow\+SF}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} from, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} to, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} flow, int layers, int averaging\+\_\+block\+\_\+size, int max\+\_\+flow)
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_video_a796c757720a739be9d8d31e1fbc38b9a}{calc\+Optical\+Flow\+SF}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} from, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} to, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} flow, int layers, int averaging\+\_\+block\+\_\+size, int max\+\_\+flow, double sigma\+\_\+dist, double sigma\+\_\+color, int postprocess\+\_\+window, double sigma\+\_\+dist\+\_\+fix, double sigma\+\_\+color\+\_\+fix, double occ\+\_\+thr, int upscale\+\_\+averaging\+\_\+radius, double upscale\+\_\+sigma\+\_\+dist, double upscale\+\_\+sigma\+\_\+color, double speed\+\_\+up\+\_\+thr)
+\item 
+static \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_video_ad9c2fbb377a485b9619be2c78eaf7cee}{estimate\+Rigid\+Transform}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} src, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} dst, boolean full\+Affine)
+\item 
+static int \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_video_a3de9542ac0e9d45fec178bbad1539c51}{mean\+Shift}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} prob\+Image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_rect}{Rect}} window, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria}{Term\+Criteria}} criteria)
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_video_a60660bfd1343bdaf7e2336ae884ddbb1}{segment\+Motion}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} mhi, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} segmask, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_rect}{Mat\+Of\+Rect}} bounding\+Rects, double timestamp, double seg\+Thresh)
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_video_a8015dfe15987374863ba664441b88c36}{update\+Motion\+History}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} silhouette, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} mhi, double timestamp, double duration)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_video_a85d678f02873f6767ade353c697d06ae}{O\+P\+T\+F\+L\+O\+W\+\_\+\+U\+S\+E\+\_\+\+I\+N\+I\+T\+I\+A\+L\+\_\+\+F\+L\+OW}} = C\+V\+\_\+\+L\+K\+F\+L\+O\+W\+\_\+\+I\+N\+I\+T\+I\+A\+L\+\_\+\+G\+U\+E\+S\+S\+ES
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_video_a84281eba959eb6d424d94aca84ae738f}\label{classorg_1_1opencv_1_1video_1_1_video_a84281eba959eb6d424d94aca84ae738f}} 
+\index{org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}!build\+Optical\+Flow\+Pyramid@{build\+Optical\+Flow\+Pyramid}}
+\index{build\+Optical\+Flow\+Pyramid@{build\+Optical\+Flow\+Pyramid}!org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}}
+\subsubsection{\texorpdfstring{build\+Optical\+Flow\+Pyramid()}{buildOpticalFlowPyramid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static int org.\+opencv.\+video.\+Video.\+build\+Optical\+Flow\+Pyramid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{img,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$}]{pyramid,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}}}]{win\+Size,  }\item[{int}]{max\+Level,  }\item[{boolean}]{with\+Derivatives,  }\item[{int}]{pyr\+Border,  }\item[{int}]{deriv\+Border,  }\item[{boolean}]{try\+Reuse\+Input\+Image }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Constructs the image pyramid which can be passed to \char`\"{}calc\+Optical\+Flow\+Pyr\+L\+K\char`\"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & 8-\/bit input image. \\
+\hline
+{\em pyramid} & output pyramid. \\
+\hline
+{\em win\+Size} & window size of optical flow algorithm. Must be not less than {\ttfamily win\+Size} argument of \char`\"{}calc\+Optical\+Flow\+Pyr\+L\+K\char`\"{}. It is needed to calculate required padding for pyramid levels. \\
+\hline
+{\em max\+Level} & 0-\/based maximal pyramid level number. \\
+\hline
+{\em with\+Derivatives} & set to precompute gradients for the every pyramid level. If pyramid is constructed without the gradients then \char`\"{}calc\+Optical\+Flow\+Pyr\+L\+K\char`\"{} will calculate them internally. \\
+\hline
+{\em pyr\+Border} & the border mode for pyramid layers. \\
+\hline
+{\em deriv\+Border} & the border mode for gradients. \\
+\hline
+{\em try\+Reuse\+Input\+Image} & put R\+OI of input image into the pyramid if possible. You can pass {\ttfamily false} to force data copying.\\
+\hline
+\end{DoxyParams}
+
+
+\+:return\+: number of levels in constructed pyramid. Can be less than {\ttfamily max\+Level}.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#buildopticalflowpyramid}{\tt org.\+opencv.\+video.\+Video.\+build\+Optical\+Flow\+Pyramid} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_video_ac702001e72ad8f8b5b8ae410e50da9f8}\label{classorg_1_1opencv_1_1video_1_1_video_ac702001e72ad8f8b5b8ae410e50da9f8}} 
+\index{org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}!build\+Optical\+Flow\+Pyramid@{build\+Optical\+Flow\+Pyramid}}
+\index{build\+Optical\+Flow\+Pyramid@{build\+Optical\+Flow\+Pyramid}!org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}}
+\subsubsection{\texorpdfstring{build\+Optical\+Flow\+Pyramid()}{buildOpticalFlowPyramid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static int org.\+opencv.\+video.\+Video.\+build\+Optical\+Flow\+Pyramid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{img,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$}]{pyramid,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}}}]{win\+Size,  }\item[{int}]{max\+Level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Constructs the image pyramid which can be passed to \char`\"{}calc\+Optical\+Flow\+Pyr\+L\+K\char`\"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & 8-\/bit input image. \\
+\hline
+{\em pyramid} & output pyramid. \\
+\hline
+{\em win\+Size} & window size of optical flow algorithm. Must be not less than {\ttfamily win\+Size} argument of \char`\"{}calc\+Optical\+Flow\+Pyr\+L\+K\char`\"{}. It is needed to calculate required padding for pyramid levels. \\
+\hline
+{\em max\+Level} & 0-\/based maximal pyramid level number.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#buildopticalflowpyramid}{\tt org.\+opencv.\+video.\+Video.\+build\+Optical\+Flow\+Pyramid} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_video_af1c43b47c6d850912e164484269ee8d1}\label{classorg_1_1opencv_1_1video_1_1_video_af1c43b47c6d850912e164484269ee8d1}} 
+\index{org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}!calc\+Global\+Orientation@{calc\+Global\+Orientation}}
+\index{calc\+Global\+Orientation@{calc\+Global\+Orientation}!org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}}
+\subsubsection{\texorpdfstring{calc\+Global\+Orientation()}{calcGlobalOrientation()}}
+{\footnotesize\ttfamily static double org.\+opencv.\+video.\+Video.\+calc\+Global\+Orientation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{orientation,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{mask,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{mhi,  }\item[{double}]{timestamp,  }\item[{double}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculates a global motion orientation in a selected region.
+
+The function calculates an average motion direction in the selected region and returns the angle between 0 degrees and 360 degrees. The average direction is computed from the weighted orientation histogram, where a recent motion has a larger weight and the motion occurred in the past has a smaller weight, as recorded in {\ttfamily mhi}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em orientation} & Motion gradient orientation image calculated by the function \char`\"{}calc\+Motion\+Gradient\char`\"{}. \\
+\hline
+{\em mask} & Mask image. It may be a conjunction of a valid gradient mask, also calculated by \char`\"{}calc\+Motion\+Gradient\char`\"{}, and the mask of a region whose direction needs to be calculated. \\
+\hline
+{\em mhi} & Motion history image calculated by \char`\"{}update\+Motion\+History\char`\"{}. \\
+\hline
+{\em timestamp} & Timestamp passed to \char`\"{}update\+Motion\+History\char`\"{}. \\
+\hline
+{\em duration} & Maximum duration of a motion track in milliseconds, passed to \char`\"{}update\+Motion\+History\char`\"{}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#calcglobalorientation}{\tt org.\+opencv.\+video.\+Video.\+calc\+Global\+Orientation} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_video_a9e39d32cda591f5413791f116cfc1a8b}\label{classorg_1_1opencv_1_1video_1_1_video_a9e39d32cda591f5413791f116cfc1a8b}} 
+\index{org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}!calc\+Motion\+Gradient@{calc\+Motion\+Gradient}}
+\index{calc\+Motion\+Gradient@{calc\+Motion\+Gradient}!org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}}
+\subsubsection{\texorpdfstring{calc\+Motion\+Gradient()}{calcMotionGradient()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void org.\+opencv.\+video.\+Video.\+calc\+Motion\+Gradient (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{mhi,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{mask,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{orientation,  }\item[{double}]{delta1,  }\item[{double}]{delta2,  }\item[{int}]{aperture\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculates a gradient orientation of a motion history image.
+
+The function calculates a gradient orientation at each pixel {\itshape (x, y)} as\+:
+
+{\itshape orientation(x,y)= arctan((dmhi/dy)/(dmhi/dx))}
+
+In fact, \char`\"{}fast\+Atan2\char`\"{} and \char`\"{}phase\char`\"{} are used so that the computed angle is measured in degrees and covers the full range 0..360. Also, the {\ttfamily mask} is filled to indicate pixels where the computed angle is valid.
+
+Note\+:
+
+
+\begin{DoxyItemize}
+\item (Python) An example on how to perform a motion template technique can be found at opencv\+\_\+source\+\_\+code/samples/python2/motempl.\+py 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em mhi} & Motion history single-\/channel floating-\/point image. \\
+\hline
+{\em mask} & Output mask image that has the type {\ttfamily C\+V\+\_\+8\+U\+C1} and the same size as {\ttfamily mhi}. Its non-\/zero elements mark pixels where the motion gradient data is correct. \\
+\hline
+{\em orientation} & Output motion gradient orientation image that has the same type and the same size as {\ttfamily mhi}. Each pixel of the image is a motion orientation, from 0 to 360 degrees. \\
+\hline
+{\em delta1} & Minimal (or maximal) allowed difference between {\ttfamily mhi} values within a pixel neighborhood. \\
+\hline
+{\em delta2} & Maximal (or minimal) allowed difference between {\ttfamily mhi} values within a pixel neighborhood. That is, the function finds the minimum ({\itshape m(x,y)}) and maximum ({\itshape M(x,y)}) {\ttfamily mhi} values over {\itshape 3 x 3} neighborhood of each pixel and marks the motion orientation at {\itshape (x, y)} as valid only if\\
+\hline
+\end{DoxyParams}
+
+
+{\itshape min(delta1, delta2) $<$= M(x,y)-\/m(x,y) $<$= max(delta1, delta2).}
+
+
+\begin{DoxyParams}{Parameters}
+{\em aperture\+Size} & Aperture size of the \char`\"{}\+Sobel\char`\"{} operator.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#calcmotiongradient}{\tt org.\+opencv.\+video.\+Video.\+calc\+Motion\+Gradient} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_video_a71bdf0bf465515f5d89eb2e3e11614b3}\label{classorg_1_1opencv_1_1video_1_1_video_a71bdf0bf465515f5d89eb2e3e11614b3}} 
+\index{org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}!calc\+Motion\+Gradient@{calc\+Motion\+Gradient}}
+\index{calc\+Motion\+Gradient@{calc\+Motion\+Gradient}!org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}}
+\subsubsection{\texorpdfstring{calc\+Motion\+Gradient()}{calcMotionGradient()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void org.\+opencv.\+video.\+Video.\+calc\+Motion\+Gradient (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{mhi,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{mask,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{orientation,  }\item[{double}]{delta1,  }\item[{double}]{delta2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculates a gradient orientation of a motion history image.
+
+The function calculates a gradient orientation at each pixel {\itshape (x, y)} as\+:
+
+{\itshape orientation(x,y)= arctan((dmhi/dy)/(dmhi/dx))}
+
+In fact, \char`\"{}fast\+Atan2\char`\"{} and \char`\"{}phase\char`\"{} are used so that the computed angle is measured in degrees and covers the full range 0..360. Also, the {\ttfamily mask} is filled to indicate pixels where the computed angle is valid.
+
+Note\+:
+
+
+\begin{DoxyItemize}
+\item (Python) An example on how to perform a motion template technique can be found at opencv\+\_\+source\+\_\+code/samples/python2/motempl.\+py 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em mhi} & Motion history single-\/channel floating-\/point image. \\
+\hline
+{\em mask} & Output mask image that has the type {\ttfamily C\+V\+\_\+8\+U\+C1} and the same size as {\ttfamily mhi}. Its non-\/zero elements mark pixels where the motion gradient data is correct. \\
+\hline
+{\em orientation} & Output motion gradient orientation image that has the same type and the same size as {\ttfamily mhi}. Each pixel of the image is a motion orientation, from 0 to 360 degrees. \\
+\hline
+{\em delta1} & Minimal (or maximal) allowed difference between {\ttfamily mhi} values within a pixel neighborhood. \\
+\hline
+{\em delta2} & Maximal (or minimal) allowed difference between {\ttfamily mhi} values within a pixel neighborhood. That is, the function finds the minimum ({\itshape m(x,y)}) and maximum ({\itshape M(x,y)}) {\ttfamily mhi} values over {\itshape 3 x 3} neighborhood of each pixel and marks the motion orientation at {\itshape (x, y)} as valid only if\\
+\hline
+\end{DoxyParams}
+
+
+{\itshape min(delta1, delta2) $<$= M(x,y)-\/m(x,y) $<$= max(delta1, delta2).}
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#calcmotiongradient}{\tt org.\+opencv.\+video.\+Video.\+calc\+Motion\+Gradient} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_video_a313914fdcd3024f6c5d9519854ac48f3}\label{classorg_1_1opencv_1_1video_1_1_video_a313914fdcd3024f6c5d9519854ac48f3}} 
+\index{org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}!calc\+Optical\+Flow\+Farneback@{calc\+Optical\+Flow\+Farneback}}
+\index{calc\+Optical\+Flow\+Farneback@{calc\+Optical\+Flow\+Farneback}!org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}}
+\subsubsection{\texorpdfstring{calc\+Optical\+Flow\+Farneback()}{calcOpticalFlowFarneback()}}
+{\footnotesize\ttfamily static void org.\+opencv.\+video.\+Video.\+calc\+Optical\+Flow\+Farneback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{prev,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{next,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{flow,  }\item[{double}]{pyr\+\_\+scale,  }\item[{int}]{levels,  }\item[{int}]{winsize,  }\item[{int}]{iterations,  }\item[{int}]{poly\+\_\+n,  }\item[{double}]{poly\+\_\+sigma,  }\item[{int}]{flags }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Computes a dense optical flow using the Gunnar Farneback\textquotesingle{}s algorithm.
+
+The function finds an optical flow for each {\ttfamily prev} pixel using the \mbox{[}Farneback2003\mbox{]} algorithm so that
+
+{\itshape prev(y,x) $\sim$ next(y + flow(y,x)\mbox{[}1\mbox{]}, x + flow(y,x)\mbox{[}0\mbox{]})}
+
+Note\+:
+
+
+\begin{DoxyItemize}
+\item An example using the optical flow algorithm described by Gunnar Farneback can be found at opencv\+\_\+source\+\_\+code/samples/cpp/fback.\+cpp 
+\item (Python) An example using the optical flow algorithm described by Gunnar Farneback can be found at opencv\+\_\+source\+\_\+code/samples/python2/opt\+\_\+flow.\+py 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em prev} & first 8-\/bit single-\/channel input image. \\
+\hline
+{\em next} & second input image of the same size and the same type as {\ttfamily prev}. \\
+\hline
+{\em flow} & computed flow image that has the same size as {\ttfamily prev} and type {\ttfamily C\+V\+\_\+32\+F\+C2}. \\
+\hline
+{\em pyr\+\_\+scale} & parameter, specifying the image scale ($<$1) to build pyramids for each image; {\ttfamily pyr\+\_\+scale=0.\+5} means a classical pyramid, where each next layer is twice smaller than the previous one. \\
+\hline
+{\em levels} & number of pyramid layers including the initial image; {\ttfamily levels=1} means that no extra layers are created and only the original images are used. \\
+\hline
+{\em winsize} & averaging window size; larger values increase the algorithm robustness to image noise and give more chances for fast motion detection, but yield more blurred motion field. \\
+\hline
+{\em iterations} & number of iterations the algorithm does at each pyramid level. \\
+\hline
+{\em poly\+\_\+n} & size of the pixel neighborhood used to find polynomial expansion in each pixel; larger values mean that the image will be approximated with smoother surfaces, yielding more robust algorithm and more blurred motion field, typically {\ttfamily poly\+\_\+n} =5 or 7. \\
+\hline
+{\em poly\+\_\+sigma} & standard deviation of the Gaussian that is used to smooth derivatives used as a basis for the polynomial expansion; for {\ttfamily poly\+\_\+n=5}, you can set {\ttfamily poly\+\_\+sigma=1.\+1}, for {\ttfamily poly\+\_\+n=7}, a good value would be {\ttfamily poly\+\_\+sigma=1.\+5}. \\
+\hline
+{\em flags} & operation flags that can be a combination of the following\+: 
+\begin{DoxyItemize}
+\item O\+P\+T\+F\+L\+O\+W\+\_\+\+U\+S\+E\+\_\+\+I\+N\+I\+T\+I\+A\+L\+\_\+\+F\+L\+OW uses the input {\ttfamily flow} as an initial flow approximation. 
+\item O\+P\+T\+F\+L\+O\+W\+\_\+\+F\+A\+R\+N\+E\+B\+A\+C\+K\+\_\+\+G\+A\+U\+S\+S\+I\+AN uses the Gaussian {\itshape winsizexwinsize} filter instead of a box filter of the same size for optical flow estimation; usually, this option gives z more accurate flow than with a box filter, at the cost of lower speed; normally, {\ttfamily winsize} for a Gaussian window should be set to a larger value to achieve the same level of robustness. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#calcopticalflowfarneback}{\tt org.\+opencv.\+video.\+Video.\+calc\+Optical\+Flow\+Farneback} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_video_af905ed0b09b612cdbfd3196135e40ef1}\label{classorg_1_1opencv_1_1video_1_1_video_af905ed0b09b612cdbfd3196135e40ef1}} 
+\index{org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}!calc\+Optical\+Flow\+Pyr\+LK@{calc\+Optical\+Flow\+Pyr\+LK}}
+\index{calc\+Optical\+Flow\+Pyr\+LK@{calc\+Optical\+Flow\+Pyr\+LK}!org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}}
+\subsubsection{\texorpdfstring{calc\+Optical\+Flow\+Pyr\+L\+K()}{calcOpticalFlowPyrLK()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static void org.\+opencv.\+video.\+Video.\+calc\+Optical\+Flow\+Pyr\+LK (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{prev\+Img,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{next\+Img,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point2f}{Mat\+Of\+Point2f}}}]{prev\+Pts,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point2f}{Mat\+Of\+Point2f}}}]{next\+Pts,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_byte}{Mat\+Of\+Byte}}}]{status,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_float}{Mat\+Of\+Float}}}]{err,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}}}]{win\+Size,  }\item[{int}]{max\+Level,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria}{Term\+Criteria}}}]{criteria,  }\item[{int}]{flags,  }\item[{double}]{min\+Eig\+Threshold }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculates an optical flow for a sparse feature set using the iterative Lucas-\/\+Kanade method with pyramids.
+
+The function implements a sparse iterative version of the Lucas-\/\+Kanade optical flow in pyramids. See \mbox{[}Bouguet00\mbox{]}. The function is parallelized with the T\+BB library.
+
+Note\+:
+
+
+\begin{DoxyItemize}
+\item An example using the Lucas-\/\+Kanade optical flow algorithm can be found at opencv\+\_\+source\+\_\+code/samples/cpp/lkdemo.\+cpp 
+\item (Python) An example using the Lucas-\/\+Kanade optical flow algorithm can be found at opencv\+\_\+source\+\_\+code/samples/python2/lk\+\_\+track.\+py 
+\item (Python) An example using the Lucas-\/\+Kanade tracker for homography matching can be found at opencv\+\_\+source\+\_\+code/samples/python2/lk\+\_\+homography.\+py 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em prev\+Img} & first 8-\/bit input image or pyramid constructed by \char`\"{}build\+Optical\+Flow\+Pyramid\char`\"{}. \\
+\hline
+{\em next\+Img} & second input image or pyramid of the same size and the same type as {\ttfamily prev\+Img}. \\
+\hline
+{\em prev\+Pts} & vector of 2D points for which the flow needs to be found; point coordinates must be single-\/precision floating-\/point numbers. \\
+\hline
+{\em next\+Pts} & output vector of 2D points (with single-\/precision floating-\/point coordinates) containing the calculated new positions of input features in the second image; when {\ttfamily O\+P\+T\+F\+L\+O\+W\+\_\+\+U\+S\+E\+\_\+\+I\+N\+I\+T\+I\+A\+L\+\_\+\+F\+L\+OW} flag is passed, the vector must have the same size as in the input. \\
+\hline
+{\em status} & output status vector (of unsigned chars); each element of the vector is set to 1 if the flow for the corresponding features has been found, otherwise, it is set to 0. \\
+\hline
+{\em err} & output vector of errors; each element of the vector is set to an error for the corresponding feature, type of the error measure can be set in {\ttfamily flags} parameter; if the flow wasn\textquotesingle{}t found then the error is not defined (use the {\ttfamily status} parameter to find such cases). \\
+\hline
+{\em win\+Size} & size of the search window at each pyramid level. \\
+\hline
+{\em max\+Level} & 0-\/based maximal pyramid level number; if set to 0, pyramids are not used (single level), if set to 1, two levels are used, and so on; if pyramids are passed to input then algorithm will use as many levels as pyramids have but no more than {\ttfamily max\+Level}. \\
+\hline
+{\em criteria} & parameter, specifying the termination criteria of the iterative search algorithm (after the specified maximum number of iterations {\ttfamily criteria.\+max\+Count} or when the search window moves by less than {\ttfamily criteria.\+epsilon}. \\
+\hline
+{\em flags} & operation flags\+: 
+\begin{DoxyItemize}
+\item O\+P\+T\+F\+L\+O\+W\+\_\+\+U\+S\+E\+\_\+\+I\+N\+I\+T\+I\+A\+L\+\_\+\+F\+L\+OW uses initial estimations, stored in {\ttfamily next\+Pts}; if the flag is not set, then {\ttfamily prev\+Pts} is copied to {\ttfamily next\+Pts} and is considered the initial estimate. 
+\item O\+P\+T\+F\+L\+O\+W\+\_\+\+L\+K\+\_\+\+G\+E\+T\+\_\+\+M\+I\+N\+\_\+\+E\+I\+G\+E\+N\+V\+A\+LS use minimum eigen values as an error measure (see {\ttfamily min\+Eig\+Threshold} description); if the flag is not set, then L1 distance between patches around the original and a moved point, divided by number of pixels in a window, is used as a error measure. 
+\end{DoxyItemize}\\
+\hline
+{\em min\+Eig\+Threshold} & the algorithm calculates the minimum eigen value of a 2x2 normal matrix of optical flow equations (this matrix is called a spatial gradient matrix in \mbox{[}Bouguet00\mbox{]}), divided by number of pixels in a window; if this value is less than {\ttfamily min\+Eig\+Threshold}, then a corresponding feature is filtered out and its flow is not processed, so it allows to remove bad points and get a performance boost.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#calcopticalflowpyrlk}{\tt org.\+opencv.\+video.\+Video.\+calc\+Optical\+Flow\+Pyr\+LK} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_video_a009d13895ec508ed780d60688d850b4c}\label{classorg_1_1opencv_1_1video_1_1_video_a009d13895ec508ed780d60688d850b4c}} 
+\index{org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}!calc\+Optical\+Flow\+Pyr\+LK@{calc\+Optical\+Flow\+Pyr\+LK}}
+\index{calc\+Optical\+Flow\+Pyr\+LK@{calc\+Optical\+Flow\+Pyr\+LK}!org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}}
+\subsubsection{\texorpdfstring{calc\+Optical\+Flow\+Pyr\+L\+K()}{calcOpticalFlowPyrLK()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static void org.\+opencv.\+video.\+Video.\+calc\+Optical\+Flow\+Pyr\+LK (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{prev\+Img,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{next\+Img,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point2f}{Mat\+Of\+Point2f}}}]{prev\+Pts,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point2f}{Mat\+Of\+Point2f}}}]{next\+Pts,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_byte}{Mat\+Of\+Byte}}}]{status,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_float}{Mat\+Of\+Float}}}]{err,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}}}]{win\+Size,  }\item[{int}]{max\+Level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculates an optical flow for a sparse feature set using the iterative Lucas-\/\+Kanade method with pyramids.
+
+The function implements a sparse iterative version of the Lucas-\/\+Kanade optical flow in pyramids. See \mbox{[}Bouguet00\mbox{]}. The function is parallelized with the T\+BB library.
+
+Note\+:
+
+
+\begin{DoxyItemize}
+\item An example using the Lucas-\/\+Kanade optical flow algorithm can be found at opencv\+\_\+source\+\_\+code/samples/cpp/lkdemo.\+cpp 
+\item (Python) An example using the Lucas-\/\+Kanade optical flow algorithm can be found at opencv\+\_\+source\+\_\+code/samples/python2/lk\+\_\+track.\+py 
+\item (Python) An example using the Lucas-\/\+Kanade tracker for homography matching can be found at opencv\+\_\+source\+\_\+code/samples/python2/lk\+\_\+homography.\+py 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em prev\+Img} & first 8-\/bit input image or pyramid constructed by \char`\"{}build\+Optical\+Flow\+Pyramid\char`\"{}. \\
+\hline
+{\em next\+Img} & second input image or pyramid of the same size and the same type as {\ttfamily prev\+Img}. \\
+\hline
+{\em prev\+Pts} & vector of 2D points for which the flow needs to be found; point coordinates must be single-\/precision floating-\/point numbers. \\
+\hline
+{\em next\+Pts} & output vector of 2D points (with single-\/precision floating-\/point coordinates) containing the calculated new positions of input features in the second image; when {\ttfamily O\+P\+T\+F\+L\+O\+W\+\_\+\+U\+S\+E\+\_\+\+I\+N\+I\+T\+I\+A\+L\+\_\+\+F\+L\+OW} flag is passed, the vector must have the same size as in the input. \\
+\hline
+{\em status} & output status vector (of unsigned chars); each element of the vector is set to 1 if the flow for the corresponding features has been found, otherwise, it is set to 0. \\
+\hline
+{\em err} & output vector of errors; each element of the vector is set to an error for the corresponding feature, type of the error measure can be set in {\ttfamily flags} parameter; if the flow wasn\textquotesingle{}t found then the error is not defined (use the {\ttfamily status} parameter to find such cases). \\
+\hline
+{\em win\+Size} & size of the search window at each pyramid level. \\
+\hline
+{\em max\+Level} & 0-\/based maximal pyramid level number; if set to 0, pyramids are not used (single level), if set to 1, two levels are used, and so on; if pyramids are passed to input then algorithm will use as many levels as pyramids have but no more than {\ttfamily max\+Level}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#calcopticalflowpyrlk}{\tt org.\+opencv.\+video.\+Video.\+calc\+Optical\+Flow\+Pyr\+LK} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_video_a45406270ec0e90776d151c4778cc577c}\label{classorg_1_1opencv_1_1video_1_1_video_a45406270ec0e90776d151c4778cc577c}} 
+\index{org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}!calc\+Optical\+Flow\+Pyr\+LK@{calc\+Optical\+Flow\+Pyr\+LK}}
+\index{calc\+Optical\+Flow\+Pyr\+LK@{calc\+Optical\+Flow\+Pyr\+LK}!org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}}
+\subsubsection{\texorpdfstring{calc\+Optical\+Flow\+Pyr\+L\+K()}{calcOpticalFlowPyrLK()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static void org.\+opencv.\+video.\+Video.\+calc\+Optical\+Flow\+Pyr\+LK (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{prev\+Img,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{next\+Img,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point2f}{Mat\+Of\+Point2f}}}]{prev\+Pts,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point2f}{Mat\+Of\+Point2f}}}]{next\+Pts,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_byte}{Mat\+Of\+Byte}}}]{status,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_float}{Mat\+Of\+Float}}}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculates an optical flow for a sparse feature set using the iterative Lucas-\/\+Kanade method with pyramids.
+
+The function implements a sparse iterative version of the Lucas-\/\+Kanade optical flow in pyramids. See \mbox{[}Bouguet00\mbox{]}. The function is parallelized with the T\+BB library.
+
+Note\+:
+
+
+\begin{DoxyItemize}
+\item An example using the Lucas-\/\+Kanade optical flow algorithm can be found at opencv\+\_\+source\+\_\+code/samples/cpp/lkdemo.\+cpp 
+\item (Python) An example using the Lucas-\/\+Kanade optical flow algorithm can be found at opencv\+\_\+source\+\_\+code/samples/python2/lk\+\_\+track.\+py 
+\item (Python) An example using the Lucas-\/\+Kanade tracker for homography matching can be found at opencv\+\_\+source\+\_\+code/samples/python2/lk\+\_\+homography.\+py 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em prev\+Img} & first 8-\/bit input image or pyramid constructed by \char`\"{}build\+Optical\+Flow\+Pyramid\char`\"{}. \\
+\hline
+{\em next\+Img} & second input image or pyramid of the same size and the same type as {\ttfamily prev\+Img}. \\
+\hline
+{\em prev\+Pts} & vector of 2D points for which the flow needs to be found; point coordinates must be single-\/precision floating-\/point numbers. \\
+\hline
+{\em next\+Pts} & output vector of 2D points (with single-\/precision floating-\/point coordinates) containing the calculated new positions of input features in the second image; when {\ttfamily O\+P\+T\+F\+L\+O\+W\+\_\+\+U\+S\+E\+\_\+\+I\+N\+I\+T\+I\+A\+L\+\_\+\+F\+L\+OW} flag is passed, the vector must have the same size as in the input. \\
+\hline
+{\em status} & output status vector (of unsigned chars); each element of the vector is set to 1 if the flow for the corresponding features has been found, otherwise, it is set to 0. \\
+\hline
+{\em err} & output vector of errors; each element of the vector is set to an error for the corresponding feature, type of the error measure can be set in {\ttfamily flags} parameter; if the flow wasn\textquotesingle{}t found then the error is not defined (use the {\ttfamily status} parameter to find such cases).\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#calcopticalflowpyrlk}{\tt org.\+opencv.\+video.\+Video.\+calc\+Optical\+Flow\+Pyr\+LK} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_video_a18283efc105943b982df4e5b24774acd}\label{classorg_1_1opencv_1_1video_1_1_video_a18283efc105943b982df4e5b24774acd}} 
+\index{org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}!calc\+Optical\+Flow\+SF@{calc\+Optical\+Flow\+SF}}
+\index{calc\+Optical\+Flow\+SF@{calc\+Optical\+Flow\+SF}!org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}}
+\subsubsection{\texorpdfstring{calc\+Optical\+Flow\+S\+F()}{calcOpticalFlowSF()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void org.\+opencv.\+video.\+Video.\+calc\+Optical\+Flow\+SF (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{from,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{to,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{flow,  }\item[{int}]{layers,  }\item[{int}]{averaging\+\_\+block\+\_\+size,  }\item[{int}]{max\+\_\+flow }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculate an optical flow using \char`\"{}\+Simple\+Flow\char`\"{} algorithm.
+
+See \mbox{[}Tao2012\mbox{]}. And site of project -\/ \href{http://graphics.berkeley.edu/papers/Tao-SAN-2012-05/}{\tt http\+://graphics.\+berkeley.\+edu/papers/\+Tao-\/\+S\+A\+N-\/2012-\/05/}.
+
+Note\+:
+
+
+\begin{DoxyItemize}
+\item An example using the simple\+Flow algorithm can be found at opencv\+\_\+source\+\_\+code/samples/cpp/simpleflow\+\_\+demo.\+cpp 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & a from \\
+\hline
+{\em to} & a to \\
+\hline
+{\em flow} & a flow \\
+\hline
+{\em layers} & Number of layers \\
+\hline
+{\em averaging\+\_\+block\+\_\+size} & Size of block through which we sum up when calculate cost function for pixel \\
+\hline
+{\em max\+\_\+flow} & maximal flow that we search at each level\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#calcopticalflowsf}{\tt org.\+opencv.\+video.\+Video.\+calc\+Optical\+Flow\+SF} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_video_a796c757720a739be9d8d31e1fbc38b9a}\label{classorg_1_1opencv_1_1video_1_1_video_a796c757720a739be9d8d31e1fbc38b9a}} 
+\index{org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}!calc\+Optical\+Flow\+SF@{calc\+Optical\+Flow\+SF}}
+\index{calc\+Optical\+Flow\+SF@{calc\+Optical\+Flow\+SF}!org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}}
+\subsubsection{\texorpdfstring{calc\+Optical\+Flow\+S\+F()}{calcOpticalFlowSF()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void org.\+opencv.\+video.\+Video.\+calc\+Optical\+Flow\+SF (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{from,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{to,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{flow,  }\item[{int}]{layers,  }\item[{int}]{averaging\+\_\+block\+\_\+size,  }\item[{int}]{max\+\_\+flow,  }\item[{double}]{sigma\+\_\+dist,  }\item[{double}]{sigma\+\_\+color,  }\item[{int}]{postprocess\+\_\+window,  }\item[{double}]{sigma\+\_\+dist\+\_\+fix,  }\item[{double}]{sigma\+\_\+color\+\_\+fix,  }\item[{double}]{occ\+\_\+thr,  }\item[{int}]{upscale\+\_\+averaging\+\_\+radius,  }\item[{double}]{upscale\+\_\+sigma\+\_\+dist,  }\item[{double}]{upscale\+\_\+sigma\+\_\+color,  }\item[{double}]{speed\+\_\+up\+\_\+thr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculate an optical flow using \char`\"{}\+Simple\+Flow\char`\"{} algorithm.
+
+See \mbox{[}Tao2012\mbox{]}. And site of project -\/ \href{http://graphics.berkeley.edu/papers/Tao-SAN-2012-05/}{\tt http\+://graphics.\+berkeley.\+edu/papers/\+Tao-\/\+S\+A\+N-\/2012-\/05/}.
+
+Note\+:
+
+
+\begin{DoxyItemize}
+\item An example using the simple\+Flow algorithm can be found at opencv\+\_\+source\+\_\+code/samples/cpp/simpleflow\+\_\+demo.\+cpp 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & a from \\
+\hline
+{\em to} & a to \\
+\hline
+{\em flow} & a flow \\
+\hline
+{\em layers} & Number of layers \\
+\hline
+{\em averaging\+\_\+block\+\_\+size} & Size of block through which we sum up when calculate cost function for pixel \\
+\hline
+{\em max\+\_\+flow} & maximal flow that we search at each level \\
+\hline
+{\em sigma\+\_\+dist} & vector smooth spatial sigma parameter \\
+\hline
+{\em sigma\+\_\+color} & vector smooth color sigma parameter \\
+\hline
+{\em postprocess\+\_\+window} & window size for postprocess cross bilateral filter \\
+\hline
+{\em sigma\+\_\+dist\+\_\+fix} & spatial sigma for postprocess cross bilateralf filter \\
+\hline
+{\em sigma\+\_\+color\+\_\+fix} & color sigma for postprocess cross bilateral filter \\
+\hline
+{\em occ\+\_\+thr} & threshold for detecting occlusions \\
+\hline
+{\em upscale\+\_\+averaging\+\_\+radius} & a upscale\+\_\+averaging\+\_\+radius \\
+\hline
+{\em upscale\+\_\+sigma\+\_\+dist} & spatial sigma for bilateral upscale operation \\
+\hline
+{\em upscale\+\_\+sigma\+\_\+color} & color sigma for bilateral upscale operation \\
+\hline
+{\em speed\+\_\+up\+\_\+thr} & threshold to detect point with irregular flow -\/ where flow should be recalculated after upscale\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#calcopticalflowsf}{\tt org.\+opencv.\+video.\+Video.\+calc\+Optical\+Flow\+SF} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_video_a7fea50982bba688250537e83cd11fabd}\label{classorg_1_1opencv_1_1video_1_1_video_a7fea50982bba688250537e83cd11fabd}} 
+\index{org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}!Cam\+Shift@{Cam\+Shift}}
+\index{Cam\+Shift@{Cam\+Shift}!org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}}
+\subsubsection{\texorpdfstring{Cam\+Shift()}{CamShift()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_rotated_rect}{Rotated\+Rect}} org.\+opencv.\+video.\+Video.\+Cam\+Shift (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{prob\+Image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_rect}{Rect}}}]{window,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria}{Term\+Criteria}}}]{criteria }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Finds an object center, size, and orientation.
+
+The function implements the C\+A\+M\+S\+H\+I\+FT object tracking algorithm \mbox{[}Bradski98\mbox{]}. First, it finds an object center using \char`\"{}mean\+Shift\char`\"{} and then adjusts the window size and finds the optimal rotation. The function returns the rotated rectangle structure that includes the object position, size, and orientation. The next position of the search window can be obtained with {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_rotated_rect_a2d0d8f49a786e5f15673e699659ee0b7}{Rotated\+Rect.\+bounding\+Rect()}}}.
+
+See the Open\+CV sample {\ttfamily camshiftdemo.\+c} that tracks colored objects.
+
+Note\+:
+
+
+\begin{DoxyItemize}
+\item (Python) A sample explaining the camshift tracking algorithm can be found at opencv\+\_\+source\+\_\+code/samples/python2/camshift.\+py 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em prob\+Image} & Back projection of the object histogram. See \char`\"{}calc\+Back\+Project\char`\"{}. \\
+\hline
+{\em window} & Initial search window. \\
+\hline
+{\em criteria} & Stop criteria for the underlying \char`\"{}mean\+Shift\char`\"{}.\\
+\hline
+\end{DoxyParams}
+
+
+\+:returns\+: (in old interfaces) Number of iterations C\+A\+M\+S\+H\+I\+FT took to converge
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#camshift}{\tt org.\+opencv.\+video.\+Video.\+Cam\+Shift} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_video_ad9c2fbb377a485b9619be2c78eaf7cee}\label{classorg_1_1opencv_1_1video_1_1_video_ad9c2fbb377a485b9619be2c78eaf7cee}} 
+\index{org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}!estimate\+Rigid\+Transform@{estimate\+Rigid\+Transform}}
+\index{estimate\+Rigid\+Transform@{estimate\+Rigid\+Transform}!org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}}
+\subsubsection{\texorpdfstring{estimate\+Rigid\+Transform()}{estimateRigidTransform()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} org.\+opencv.\+video.\+Video.\+estimate\+Rigid\+Transform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{src,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{dst,  }\item[{boolean}]{full\+Affine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Computes an optimal affine transformation between two 2D point sets.
+
+The function finds an optimal affine transform {\itshape \mbox{[}A$\vert$b\mbox{]}} (a {\ttfamily 2 x 3} floating-\/point matrix) that approximates best the affine transformation between\+:
+
+
+\begin{DoxyItemize}
+\item Two point sets 
+\item Two raster images. In this case, the function first finds some features in the {\ttfamily src} image and finds the corresponding features in {\ttfamily dst} image. After that, the problem is reduced to the first case. 
+\end{DoxyItemize}
+
+In case of point sets, the problem is formulated as follows\+: you need to find a 2x2 matrix {\itshape A} and 2x1 vector {\itshape b} so that\+:
+
+{\itshape \mbox{[}A$^\wedge$$\ast$$\vert$b$^\wedge$$\ast$\mbox{]} = arg min \+\_\+(\mbox{[}A$\vert$b\mbox{]}) sum \+\_\+i$\vert$dst\mbox{[}i\mbox{]} -\/ A (src\mbox{[}i\mbox{]})$^\wedge$T -\/ b$\vert$ $^\wedge$2}
+
+where {\ttfamily src\mbox{[}i\mbox{]}} and {\ttfamily dst\mbox{[}i\mbox{]}} are the i-\/th points in {\ttfamily src} and {\ttfamily dst}, respectively
+
+{\itshape \mbox{[}A$\vert$b\mbox{]}} can be either arbitrary (when {\ttfamily full\+Affine=true}) or have a form of
+
+{\itshape a\+\_\+11 a\+\_\+12 b\+\_\+1 -\/a\+\_\+12 a\+\_\+11 b\+\_\+2 }
+
+when {\ttfamily full\+Affine=false}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & First input 2D point set stored in {\ttfamily std.\+vector} or {\ttfamily Mat}, or an image stored in {\ttfamily Mat}. \\
+\hline
+{\em dst} & Second input 2D point set of the same size and the same type as {\ttfamily A}, or another image. \\
+\hline
+{\em full\+Affine} & If true, the function finds an optimal affine transformation with no additional restrictions (6 degrees of freedom). Otherwise, the class of transformations to choose from is limited to combinations of translation, rotation, and uniform scaling (5 degrees of freedom).\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#estimaterigidtransform}{\tt org.\+opencv.\+video.\+Video.\+estimate\+Rigid\+Transform} 
+
+\mbox{\hyperlink{classorg_1_1opencv_1_1calib3d_1_1_calib3d_a2c32d44d2f35dc41aa09d54eb6829ab8}{org.\+opencv.\+calib3d.\+Calib3d\+::find\+Homography}} 
+
+\mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_imgproc_a283e61c00d4e6ba9625264d8d7f5f8db}{org.\+opencv.\+imgproc.\+Imgproc\+::get\+Affine\+Transform}} 
+
+\mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_imgproc_ab3727363e269af640d5254f76e14ddb6}{org.\+opencv.\+imgproc.\+Imgproc\+::get\+Perspective\+Transform}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_video_a3de9542ac0e9d45fec178bbad1539c51}\label{classorg_1_1opencv_1_1video_1_1_video_a3de9542ac0e9d45fec178bbad1539c51}} 
+\index{org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}!mean\+Shift@{mean\+Shift}}
+\index{mean\+Shift@{mean\+Shift}!org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}}
+\subsubsection{\texorpdfstring{mean\+Shift()}{meanShift()}}
+{\footnotesize\ttfamily static int org.\+opencv.\+video.\+Video.\+mean\+Shift (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{prob\+Image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_rect}{Rect}}}]{window,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria}{Term\+Criteria}}}]{criteria }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Finds an object on a back projection image.
+
+The function implements the iterative object search algorithm. It takes the input back projection of an object and the initial position. The mass center in {\ttfamily window} of the back projection image is computed and the search window center shifts to the mass center. The procedure is repeated until the specified number of iterations {\ttfamily criteria.\+max\+Count} is done or until the window center shifts by less than {\ttfamily criteria.\+epsilon}. The algorithm is used inside \char`\"{}\+Cam\+Shift\char`\"{} and, unlike \char`\"{}\+Cam\+Shift\char`\"{}, the search window size or orientation do not change during the search. You can simply pass the output of \char`\"{}calc\+Back\+Project\char`\"{} to this function. But better results can be obtained if you pre-\/filter the back projection and remove the noise. For example, you can do this by retrieving connected components with \char`\"{}find\+Contours\char`\"{}, throwing away contours with small area (\char`\"{}contour\+Area\char`\"{}), and rendering the remaining contours with \char`\"{}draw\+Contours\char`\"{}.
+
+Note\+:
+
+
+\begin{DoxyItemize}
+\item A mean-\/shift tracking sample can be found at opencv\+\_\+source\+\_\+code/samples/cpp/camshiftdemo.\+cpp 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em prob\+Image} & Back projection of the object histogram. See \char`\"{}calc\+Back\+Project\char`\"{} for details. \\
+\hline
+{\em window} & Initial search window. \\
+\hline
+{\em criteria} & Stop criteria for the iterative search algorithm.\\
+\hline
+\end{DoxyParams}
+
+
+\+:returns\+: Number of iterations C\+A\+M\+S\+H\+I\+FT took to converge.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#meanshift}{\tt org.\+opencv.\+video.\+Video.\+mean\+Shift} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_video_a60660bfd1343bdaf7e2336ae884ddbb1}\label{classorg_1_1opencv_1_1video_1_1_video_a60660bfd1343bdaf7e2336ae884ddbb1}} 
+\index{org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}!segment\+Motion@{segment\+Motion}}
+\index{segment\+Motion@{segment\+Motion}!org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}}
+\subsubsection{\texorpdfstring{segment\+Motion()}{segmentMotion()}}
+{\footnotesize\ttfamily static void org.\+opencv.\+video.\+Video.\+segment\+Motion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{mhi,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{segmask,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_rect}{Mat\+Of\+Rect}}}]{bounding\+Rects,  }\item[{double}]{timestamp,  }\item[{double}]{seg\+Thresh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Splits a motion history image into a few parts corresponding to separate independent motions (for example, left hand, right hand).
+
+The function finds all of the motion segments and marks them in {\ttfamily segmask} with individual values (1,2,...). It also computes a vector with R\+O\+Is of motion connected components. After that the motion direction for every component can be calculated with \char`\"{}calc\+Global\+Orientation\char`\"{} using the extracted mask of the particular component.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mhi} & Motion history image. \\
+\hline
+{\em segmask} & Image where the found mask should be stored, single-\/channel, 32-\/bit floating-\/point. \\
+\hline
+{\em bounding\+Rects} & Vector containing R\+O\+Is of motion connected components. \\
+\hline
+{\em timestamp} & Current time in milliseconds or other units. \\
+\hline
+{\em seg\+Thresh} & Segmentation threshold that is recommended to be equal to the interval between motion history \char`\"{}steps\char`\"{} or greater.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#segmentmotion}{\tt org.\+opencv.\+video.\+Video.\+segment\+Motion} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_video_a8015dfe15987374863ba664441b88c36}\label{classorg_1_1opencv_1_1video_1_1_video_a8015dfe15987374863ba664441b88c36}} 
+\index{org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}!update\+Motion\+History@{update\+Motion\+History}}
+\index{update\+Motion\+History@{update\+Motion\+History}!org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}}
+\subsubsection{\texorpdfstring{update\+Motion\+History()}{updateMotionHistory()}}
+{\footnotesize\ttfamily static void org.\+opencv.\+video.\+Video.\+update\+Motion\+History (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{silhouette,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{mhi,  }\item[{double}]{timestamp,  }\item[{double}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Updates the motion history image by a moving silhouette.
+
+The function updates the motion history image as follows\+:
+
+{\itshape mhi(x,y)= timestamp if silhouette(x,y) != 0; 0 if silhouette(x,y) = 0 and mhi \&lt(timestamp -\/ duration); mhi(x,y) otherwise}
+
+That is, M\+HI pixels where the motion occurs are set to the current {\ttfamily timestamp}, while the pixels where the motion happened last time a long time ago are cleared.
+
+The function, together with \char`\"{}calc\+Motion\+Gradient\char`\"{} and \char`\"{}calc\+Global\+Orientation\char`\"{}, implements a motion templates technique described in \mbox{[}Davis97\mbox{]} and \mbox{[}Bradski00\mbox{]}. See also the Open\+CV sample {\ttfamily motempl.\+c} that demonstrates the use of all the motion template functions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em silhouette} & Silhouette mask that has non-\/zero pixels where the motion occurs. \\
+\hline
+{\em mhi} & Motion history image that is updated by the function (single-\/channel, 32-\/bit floating-\/point). \\
+\hline
+{\em timestamp} & Current time in milliseconds or other units. \\
+\hline
+{\em duration} & Maximal duration of the motion track in the same units as {\ttfamily timestamp}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#updatemotionhistory}{\tt org.\+opencv.\+video.\+Video.\+update\+Motion\+History} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_video_a85d678f02873f6767ade353c697d06ae}\label{classorg_1_1opencv_1_1video_1_1_video_a85d678f02873f6767ade353c697d06ae}} 
+\index{org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}!O\+P\+T\+F\+L\+O\+W\+\_\+\+U\+S\+E\+\_\+\+I\+N\+I\+T\+I\+A\+L\+\_\+\+F\+L\+OW@{O\+P\+T\+F\+L\+O\+W\+\_\+\+U\+S\+E\+\_\+\+I\+N\+I\+T\+I\+A\+L\+\_\+\+F\+L\+OW}}
+\index{O\+P\+T\+F\+L\+O\+W\+\_\+\+U\+S\+E\+\_\+\+I\+N\+I\+T\+I\+A\+L\+\_\+\+F\+L\+OW@{O\+P\+T\+F\+L\+O\+W\+\_\+\+U\+S\+E\+\_\+\+I\+N\+I\+T\+I\+A\+L\+\_\+\+F\+L\+OW}!org\+::opencv\+::video\+::\+Video@{org\+::opencv\+::video\+::\+Video}}
+\subsubsection{\texorpdfstring{O\+P\+T\+F\+L\+O\+W\+\_\+\+U\+S\+E\+\_\+\+I\+N\+I\+T\+I\+A\+L\+\_\+\+F\+L\+OW}{OPTFLOW\_USE\_INITIAL\_FLOW}}
+{\footnotesize\ttfamily final int org.\+opencv.\+video.\+Video.\+O\+P\+T\+F\+L\+O\+W\+\_\+\+U\+S\+E\+\_\+\+I\+N\+I\+T\+I\+A\+L\+\_\+\+F\+L\+OW = C\+V\+\_\+\+L\+K\+F\+L\+O\+W\+\_\+\+I\+N\+I\+T\+I\+A\+L\+\_\+\+G\+U\+E\+S\+S\+ES\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/video/\mbox{\hyperlink{_video_8java}{Video.\+java}}\end{DoxyCompactItemize}

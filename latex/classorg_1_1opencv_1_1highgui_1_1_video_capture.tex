@@ -1,0 +1,414 @@
+\hypertarget{classorg_1_1opencv_1_1highgui_1_1_video_capture}{}\section{org.\+opencv.\+highgui.\+Video\+Capture Class Reference}
+\label{classorg_1_1opencv_1_1highgui_1_1_video_capture}\index{org.\+opencv.\+highgui.\+Video\+Capture@{org.\+opencv.\+highgui.\+Video\+Capture}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture_a7c6a4c2222f20a8dee2cdb20eb5dbe55}{Video\+Capture}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture_a4f451acfdc7f7abe0959c615b6c6407a}{Video\+Capture}} (int device)
+\item 
+double \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture_ab31e0dd0ba5df72ba518944ae09c1b28}{get}} (int prop\+Id)
+\item 
+List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} $>$ \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture_af645d9aa2b7849cfe13664b7b064ab8f}{get\+Supported\+Preview\+Sizes}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture_adfd842fc225468ef9ba91b148a551297}{grab}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture_a9bb9204765ebe45c6958adad5aaa1319}{is\+Opened}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture_ae7887d274bcced3330caa11478da608a}{open}} (int device)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture_a33443c8030b858c185c586cf33a91883}{read}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} image)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture_a605d177774ab4ad8b92270a9d7682262}{release}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture_a222457b750c7be22da0f867e4759c631}{retrieve}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} image, int channel)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture_a5b76f1b3ed4a3c37249c3e06af9bbeba}{retrieve}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} image)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture_a49596c3c8d967eb4ab09ad54d9cf2909}{set}} (int prop\+Id, double value)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture_a64df16f6351123a0c1040c00d23a2db8}{Video\+Capture}} (long addr)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture_a13e45dabaaaabe98c0eb1138e2846f03}{finalize}} ()  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final long \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture_a370c3d9b73ba1c8267f10d77c2ea9d11}{native\+Obj}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for video capturing from video files or cameras. The class provides C++ A\+PI for capturing video from cameras or for reading video files. Here is how the class can be used\+:
+
+\#include \char`\"{}opencv2/opencv.\+hpp\char`\"{} {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily using namespace cv;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily int main(int, char)}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture}{Video\+Capture}} cap(0); // open the default camera}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily if(!cap.\mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture_a9bb9204765ebe45c6958adad5aaa1319}{is\+Opened()}}) // check if we succeeded}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily return -\/1;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Mat edges;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily named\+Window(\char`\"{}edges\char`\"{},1);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily for(;;)}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Mat frame;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily cap $>$$>$ frame; // get a new frame from camera}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily cvt\+Color(frame, edges, C\+V\+\_\+\+B\+G\+R2\+G\+R\+A\+Y);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Gaussian\+Blur(edges, edges, Size(7,7), 1.\+5, 1.\+5);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Canny(edges, edges, 0, 30, 3);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily imshow(\char`\"{}edges\char`\"{}, edges);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily if(wait\+Key(30) $>$= 0) break;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // the camera will be deinitialized automatically in \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture}{Video\+Capture}} destructor}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily return 0;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Note\+: In C A\+PI the black-\/box structure {\ttfamily Cv\+Capture} is used instead of {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture}{Video\+Capture}}}. }
+
+Note\+:
+
+
+\begin{DoxyItemize}
+\item A basic sample on using the \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture}{Video\+Capture}} interface can be found at opencv\+\_\+source\+\_\+code/samples/cpp/starter\+\_\+video.\+cpp 
+\item Another basic video processing sample can be found at opencv\+\_\+source\+\_\+code/samples/cpp/video\+\_\+dmtx.\+cpp 
+\item (Python) A basic sample on using the \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture}{Video\+Capture}} interface can be found at opencv\+\_\+source\+\_\+code/samples/python2/video.\+py 
+\item (Python) Another basic video processing sample can be found at opencv\+\_\+source\+\_\+code/samples/python2/video\+\_\+dmtx.\+py 
+\item (Python) A multi threaded video processing sample can be found at opencv\+\_\+source\+\_\+code/samples/python2/video\+\_\+threaded.\+py 
+\end{DoxyItemize}
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/highgui/doc/reading_and_writing_images_and_video.html#videocapture}{\tt org.\+opencv.\+highgui.\+Video\+Capture} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1highgui_1_1_video_capture_a64df16f6351123a0c1040c00d23a2db8}\label{classorg_1_1opencv_1_1highgui_1_1_video_capture_a64df16f6351123a0c1040c00d23a2db8}} 
+\index{org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}!Video\+Capture@{Video\+Capture}}
+\index{Video\+Capture@{Video\+Capture}!org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}}
+\subsubsection{\texorpdfstring{Video\+Capture()}{VideoCapture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily org.\+opencv.\+highgui.\+Video\+Capture.\+Video\+Capture (\begin{DoxyParamCaption}\item[{long}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1highgui_1_1_video_capture_a7c6a4c2222f20a8dee2cdb20eb5dbe55}\label{classorg_1_1opencv_1_1highgui_1_1_video_capture_a7c6a4c2222f20a8dee2cdb20eb5dbe55}} 
+\index{org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}!Video\+Capture@{Video\+Capture}}
+\index{Video\+Capture@{Video\+Capture}!org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}}
+\subsubsection{\texorpdfstring{Video\+Capture()}{VideoCapture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily org.\+opencv.\+highgui.\+Video\+Capture.\+Video\+Capture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture}{Video\+Capture}} constructors.
+
+Note\+: In C A\+PI, when you finished working with video, release {\ttfamily Cv\+Capture} structure with {\ttfamily cv\+Release\+Capture()}, or use {\ttfamily Ptr$<$\+Cv\+Capture$>$} that calls {\ttfamily cv\+Release\+Capture()} automatically in the destructor.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/highgui/doc/reading_and_writing_images_and_video.html#videocapture-videocapture}{\tt org.\+opencv.\+highgui.\+Video\+Capture.\+Video\+Capture} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1highgui_1_1_video_capture_a4f451acfdc7f7abe0959c615b6c6407a}\label{classorg_1_1opencv_1_1highgui_1_1_video_capture_a4f451acfdc7f7abe0959c615b6c6407a}} 
+\index{org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}!Video\+Capture@{Video\+Capture}}
+\index{Video\+Capture@{Video\+Capture}!org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}}
+\subsubsection{\texorpdfstring{Video\+Capture()}{VideoCapture()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily org.\+opencv.\+highgui.\+Video\+Capture.\+Video\+Capture (\begin{DoxyParamCaption}\item[{int}]{device }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture}{Video\+Capture}} constructors.
+
+Note\+: In C A\+PI, when you finished working with video, release {\ttfamily Cv\+Capture} structure with {\ttfamily cv\+Release\+Capture()}, or use {\ttfamily Ptr$<$\+Cv\+Capture$>$} that calls {\ttfamily cv\+Release\+Capture()} automatically in the destructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & id of the opened video capturing device (i.\+e. a camera index). If there is a single camera connected, just pass 0.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/highgui/doc/reading_and_writing_images_and_video.html#videocapture-videocapture}{\tt org.\+opencv.\+highgui.\+Video\+Capture.\+Video\+Capture} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1highgui_1_1_video_capture_a13e45dabaaaabe98c0eb1138e2846f03}\label{classorg_1_1opencv_1_1highgui_1_1_video_capture_a13e45dabaaaabe98c0eb1138e2846f03}} 
+\index{org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}!finalize@{finalize}}
+\index{finalize@{finalize}!org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily void org.\+opencv.\+highgui.\+Video\+Capture.\+finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Throwable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1highgui_1_1_video_capture_ab31e0dd0ba5df72ba518944ae09c1b28}\label{classorg_1_1opencv_1_1highgui_1_1_video_capture_ab31e0dd0ba5df72ba518944ae09c1b28}} 
+\index{org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}!get@{get}}
+\index{get@{get}!org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily double org.\+opencv.\+highgui.\+Video\+Capture.\+get (\begin{DoxyParamCaption}\item[{int}]{prop\+Id }\end{DoxyParamCaption})}
+
+Returns the specified \char`\"{}\+Video\+Capture\char`\"{} property.
+
+Note\+: When querying a property that is not supported by the backend used by the \char`\"{}\+Video\+Capture\char`\"{} class, value 0 is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em prop\+Id} & property identifier; it can be one of the following\+:
+\begin{DoxyItemize}
+\item C\+V\+\_\+\+C\+A\+P\+\_\+\+P\+R\+O\+P\+\_\+\+F\+R\+A\+M\+E\+\_\+\+W\+I\+D\+TH width of the frames in the video stream.
+\item C\+V\+\_\+\+C\+A\+P\+\_\+\+P\+R\+O\+P\+\_\+\+F\+R\+A\+M\+E\+\_\+\+H\+E\+I\+G\+HT height of the frames in the video stream.
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/highgui/doc/reading_and_writing_images_and_video.html#videocapture-get}{\tt org.\+opencv.\+highgui.\+Video\+Capture.\+get} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1highgui_1_1_video_capture_af645d9aa2b7849cfe13664b7b064ab8f}\label{classorg_1_1opencv_1_1highgui_1_1_video_capture_af645d9aa2b7849cfe13664b7b064ab8f}} 
+\index{org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}!get\+Supported\+Preview\+Sizes@{get\+Supported\+Preview\+Sizes}}
+\index{get\+Supported\+Preview\+Sizes@{get\+Supported\+Preview\+Sizes}!org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}}
+\subsubsection{\texorpdfstring{get\+Supported\+Preview\+Sizes()}{getSupportedPreviewSizes()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}}$>$ org.\+opencv.\+highgui.\+Video\+Capture.\+get\+Supported\+Preview\+Sizes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1highgui_1_1_video_capture_adfd842fc225468ef9ba91b148a551297}\label{classorg_1_1opencv_1_1highgui_1_1_video_capture_adfd842fc225468ef9ba91b148a551297}} 
+\index{org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}!grab@{grab}}
+\index{grab@{grab}!org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}}
+\subsubsection{\texorpdfstring{grab()}{grab()}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+highgui.\+Video\+Capture.\+grab (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Grabs the next frame from video file or capturing device.
+
+The methods/functions grab the next frame from video file or camera and return true (non-\/zero) in the case of success.
+
+The primary use of the function is in multi-\/camera environments, especially when the cameras do not have hardware synchronization. That is, you call {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture_adfd842fc225468ef9ba91b148a551297}{Video\+Capture.\+grab()}}} for each camera and after that call the slower method {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture_a222457b750c7be22da0f867e4759c631}{Video\+Capture.\+retrieve()}}} to decode and get frame from each camera. This way the overhead on demosaicing or motion jpeg decompression etc. is eliminated and the retrieved frames from different cameras will be closer in time.
+
+Also, when a connected camera is multi-\/head (for example, a stereo camera or a Kinect device), the correct way of retrieving data from it is to call \char`\"{}\+Video\+Capture.\+grab\char`\"{} first and then call \char`\"{}\+Video\+Capture.\+retrieve\char`\"{} one or more times with different values of the {\ttfamily channel} parameter. See \href{https://github.com/Itseez/opencv/tree/master/samples/cpp/openni_capture.cpp}{\tt https\+://github.\+com/\+Itseez/opencv/tree/master/samples/cpp/openni\+\_\+capture.\+cpp}
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/highgui/doc/reading_and_writing_images_and_video.html#videocapture-grab}{\tt org.\+opencv.\+highgui.\+Video\+Capture.\+grab} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1highgui_1_1_video_capture_a9bb9204765ebe45c6958adad5aaa1319}\label{classorg_1_1opencv_1_1highgui_1_1_video_capture_a9bb9204765ebe45c6958adad5aaa1319}} 
+\index{org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}!is\+Opened@{is\+Opened}}
+\index{is\+Opened@{is\+Opened}!org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}}
+\subsubsection{\texorpdfstring{is\+Opened()}{isOpened()}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+highgui.\+Video\+Capture.\+is\+Opened (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true if video capturing has been initialized already.
+
+If the previous call to {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture}{Video\+Capture}}} constructor or {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture_ae7887d274bcced3330caa11478da608a}{Video\+Capture.\+open}}} succeeded, the method returns true.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/highgui/doc/reading_and_writing_images_and_video.html#videocapture-isopened}{\tt org.\+opencv.\+highgui.\+Video\+Capture.\+is\+Opened} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1highgui_1_1_video_capture_ae7887d274bcced3330caa11478da608a}\label{classorg_1_1opencv_1_1highgui_1_1_video_capture_ae7887d274bcced3330caa11478da608a}} 
+\index{org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}!open@{open}}
+\index{open@{open}!org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}}
+\subsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+highgui.\+Video\+Capture.\+open (\begin{DoxyParamCaption}\item[{int}]{device }\end{DoxyParamCaption})}
+
+Open video file or a capturing device for video capturing
+
+The methods first call \char`\"{}\+Video\+Capture.\+release\char`\"{} to close the already opened file or camera.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & id of the opened video capturing device (i.\+e. a camera index).\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/highgui/doc/reading_and_writing_images_and_video.html#videocapture-open}{\tt org.\+opencv.\+highgui.\+Video\+Capture.\+open} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1highgui_1_1_video_capture_a33443c8030b858c185c586cf33a91883}\label{classorg_1_1opencv_1_1highgui_1_1_video_capture_a33443c8030b858c185c586cf33a91883}} 
+\index{org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}!read@{read}}
+\index{read@{read}!org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+highgui.\+Video\+Capture.\+read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{image }\end{DoxyParamCaption})}
+
+Grabs, decodes and returns the next video frame.
+
+The methods/functions combine \char`\"{}\+Video\+Capture.\+grab\char`\"{} and \char`\"{}\+Video\+Capture.\+retrieve\char`\"{} in one call. This is the most convenient method for reading video files or capturing data from decode and return the just grabbed frame. If no frames has been grabbed (camera has been disconnected, or there are no more frames in video file), the methods return false and the functions return N\+U\+LL pointer.
+
+Note\+: Open\+CV 1.\+x functions {\ttfamily cv\+Retrieve\+Frame} and {\ttfamily cv.\+Retrieve\+Frame} return image stored inside the video capturing structure. It is not allowed to modify or release the image! You can copy the frame using \char`\"{}cv\+Clone\+Image\char`\"{} and then do whatever you want with the copy.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & a image\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/highgui/doc/reading_and_writing_images_and_video.html#videocapture-read}{\tt org.\+opencv.\+highgui.\+Video\+Capture.\+read} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1highgui_1_1_video_capture_a605d177774ab4ad8b92270a9d7682262}\label{classorg_1_1opencv_1_1highgui_1_1_video_capture_a605d177774ab4ad8b92270a9d7682262}} 
+\index{org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}!release@{release}}
+\index{release@{release}!org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}}
+\subsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily void org.\+opencv.\+highgui.\+Video\+Capture.\+release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Closes video file or capturing device.
+
+The methods are automatically called by subsequent \char`\"{}\+Video\+Capture.\+open\char`\"{} and by {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture}{Video\+Capture}}} destructor.
+
+The C function also deallocates memory and clears {\ttfamily $\ast$capture} pointer.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/highgui/doc/reading_and_writing_images_and_video.html#videocapture-release}{\tt org.\+opencv.\+highgui.\+Video\+Capture.\+release} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1highgui_1_1_video_capture_a222457b750c7be22da0f867e4759c631}\label{classorg_1_1opencv_1_1highgui_1_1_video_capture_a222457b750c7be22da0f867e4759c631}} 
+\index{org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}!retrieve@{retrieve}}
+\index{retrieve@{retrieve}!org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}}
+\subsubsection{\texorpdfstring{retrieve()}{retrieve()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+highgui.\+Video\+Capture.\+retrieve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{image,  }\item[{int}]{channel }\end{DoxyParamCaption})}
+
+Decodes and returns the grabbed video frame.
+
+The methods/functions decode and return the just grabbed frame. If no frames has been grabbed (camera has been disconnected, or there are no more frames in video file), the methods return false and the functions return N\+U\+LL pointer.
+
+Note\+: Open\+CV 1.\+x functions {\ttfamily cv\+Retrieve\+Frame} and {\ttfamily cv.\+Retrieve\+Frame} return image stored inside the video capturing structure. It is not allowed to modify or release the image! You can copy the frame using \char`\"{}cv\+Clone\+Image\char`\"{} and then do whatever you want with the copy.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & a image \\
+\hline
+{\em channel} & a channel\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/highgui/doc/reading_and_writing_images_and_video.html#videocapture-retrieve}{\tt org.\+opencv.\+highgui.\+Video\+Capture.\+retrieve} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1highgui_1_1_video_capture_a5b76f1b3ed4a3c37249c3e06af9bbeba}\label{classorg_1_1opencv_1_1highgui_1_1_video_capture_a5b76f1b3ed4a3c37249c3e06af9bbeba}} 
+\index{org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}!retrieve@{retrieve}}
+\index{retrieve@{retrieve}!org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}}
+\subsubsection{\texorpdfstring{retrieve()}{retrieve()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+highgui.\+Video\+Capture.\+retrieve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{image }\end{DoxyParamCaption})}
+
+Decodes and returns the grabbed video frame.
+
+The methods/functions decode and return the just grabbed frame. If no frames has been grabbed (camera has been disconnected, or there are no more frames in video file), the methods return false and the functions return N\+U\+LL pointer.
+
+Note\+: Open\+CV 1.\+x functions {\ttfamily cv\+Retrieve\+Frame} and {\ttfamily cv.\+Retrieve\+Frame} return image stored inside the video capturing structure. It is not allowed to modify or release the image! You can copy the frame using \char`\"{}cv\+Clone\+Image\char`\"{} and then do whatever you want with the copy.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & a image\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/highgui/doc/reading_and_writing_images_and_video.html#videocapture-retrieve}{\tt org.\+opencv.\+highgui.\+Video\+Capture.\+retrieve} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1highgui_1_1_video_capture_a49596c3c8d967eb4ab09ad54d9cf2909}\label{classorg_1_1opencv_1_1highgui_1_1_video_capture_a49596c3c8d967eb4ab09ad54d9cf2909}} 
+\index{org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}!set@{set}}
+\index{set@{set}!org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+highgui.\+Video\+Capture.\+set (\begin{DoxyParamCaption}\item[{int}]{prop\+Id,  }\item[{double}]{value }\end{DoxyParamCaption})}
+
+Sets a property in the \char`\"{}\+Video\+Capture\char`\"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em prop\+Id} & property identifier; it can be one of the following\+:
+\begin{DoxyItemize}
+\item C\+V\+\_\+\+C\+A\+P\+\_\+\+P\+R\+O\+P\+\_\+\+F\+R\+A\+M\+E\+\_\+\+W\+I\+D\+TH width of the frames in the video stream.
+\item C\+V\+\_\+\+C\+A\+P\+\_\+\+P\+R\+O\+P\+\_\+\+F\+R\+A\+M\+E\+\_\+\+H\+E\+I\+G\+HT height of the frames in the video stream. 
+\end{DoxyItemize}\\
+\hline
+{\em value} & value of the property.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/highgui/doc/reading_and_writing_images_and_video.html#videocapture-set}{\tt org.\+opencv.\+highgui.\+Video\+Capture.\+set} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1highgui_1_1_video_capture_a370c3d9b73ba1c8267f10d77c2ea9d11}\label{classorg_1_1opencv_1_1highgui_1_1_video_capture_a370c3d9b73ba1c8267f10d77c2ea9d11}} 
+\index{org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}!native\+Obj@{native\+Obj}}
+\index{native\+Obj@{native\+Obj}!org\+::opencv\+::highgui\+::\+Video\+Capture@{org\+::opencv\+::highgui\+::\+Video\+Capture}}
+\subsubsection{\texorpdfstring{native\+Obj}{nativeObj}}
+{\footnotesize\ttfamily final long org.\+opencv.\+highgui.\+Video\+Capture.\+native\+Obj\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/highgui/\mbox{\hyperlink{_video_capture_8java}{Video\+Capture.\+java}}\end{DoxyCompactItemize}

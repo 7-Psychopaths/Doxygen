@@ -1,0 +1,271 @@
+\hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees}{}\section{org.\+opencv.\+ml.\+Cv\+G\+B\+Trees Class Reference}
+\label{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees}\index{org.\+opencv.\+ml.\+Cv\+G\+B\+Trees@{org.\+opencv.\+ml.\+Cv\+G\+B\+Trees}}
+Inheritance diagram for org.\+opencv.\+ml.\+Cv\+G\+B\+Trees\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a167ee377daaa83e7d946ccf21e8a1a54}{Cv\+G\+B\+Trees}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_acf09cb12799921e5df03a3ce320163c7}{Cv\+G\+B\+Trees}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Data, int tflag, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} responses, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} var\+Idx, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample\+Idx, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} var\+Type, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} missing\+Data\+Mask, \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params}{Cv\+G\+B\+Trees\+Params}} params)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a6ec90d0351c434a29a19fc94e8eaf9f4}{Cv\+G\+B\+Trees}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Data, int tflag, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} responses)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a9327b48fd0132661c3af5c04a198af4f}{clear}} ()
+\item 
+float \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a3311e584ea329ff9193da76e124919c5}{predict}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} missing, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range}{Range}} slice, int k)
+\item 
+float \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_ad333d70edc4ce626ae759a0b1d445bf7}{predict}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a248cd65534718871f62730e8c8ac142a}{train}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Data, int tflag, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} responses, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} var\+Idx, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample\+Idx, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} var\+Type, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} missing\+Data\+Mask, \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params}{Cv\+G\+B\+Trees\+Params}} params, boolean update)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a0c06240d5ade519aae56c6915671b630}{train}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Data, int tflag, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} responses)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a2fa66daa8dd429f356068b3856b891fd}{S\+Q\+U\+A\+R\+E\+D\+\_\+\+L\+O\+SS}} = 0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a5b414f4e7eebad65399c0f80e11483c7}{Cv\+G\+B\+Trees}} (long addr)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a50a588f4d215381826abc7c622f22969}{finalize}} ()  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The class implements the Gradient boosted tree model as described in the beginning of this section.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/gradient_boosted_trees.html#cvgbtrees}{\tt org.\+opencv.\+ml.\+Cv\+G\+B\+Trees \+: public Cv\+Stat\+Model} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a5b414f4e7eebad65399c0f80e11483c7}\label{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a5b414f4e7eebad65399c0f80e11483c7}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees}!Cv\+G\+B\+Trees@{Cv\+G\+B\+Trees}}
+\index{Cv\+G\+B\+Trees@{Cv\+G\+B\+Trees}!org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees}}
+\subsubsection{\texorpdfstring{Cv\+G\+B\+Trees()}{CvGBTrees()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+G\+B\+Trees.\+Cv\+G\+B\+Trees (\begin{DoxyParamCaption}\item[{long}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a167ee377daaa83e7d946ccf21e8a1a54}\label{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a167ee377daaa83e7d946ccf21e8a1a54}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees}!Cv\+G\+B\+Trees@{Cv\+G\+B\+Trees}}
+\index{Cv\+G\+B\+Trees@{Cv\+G\+B\+Trees}!org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees}}
+\subsubsection{\texorpdfstring{Cv\+G\+B\+Trees()}{CvGBTrees()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+G\+B\+Trees.\+Cv\+G\+B\+Trees (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default and training constructors.
+
+The constructors follow conventions of \char`\"{}\+Cv\+Stat\+Model.\+Cv\+Stat\+Model\char`\"{}. See \char`\"{}\+Cv\+Stat\+Model.\+train\char`\"{} for parameters descriptions.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/gradient_boosted_trees.html#cvgbtrees-cvgbtrees}{\tt org.\+opencv.\+ml.\+Cv\+G\+B\+Trees.\+Cv\+G\+B\+Trees} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_acf09cb12799921e5df03a3ce320163c7}\label{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_acf09cb12799921e5df03a3ce320163c7}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees}!Cv\+G\+B\+Trees@{Cv\+G\+B\+Trees}}
+\index{Cv\+G\+B\+Trees@{Cv\+G\+B\+Trees}!org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees}}
+\subsubsection{\texorpdfstring{Cv\+G\+B\+Trees()}{CvGBTrees()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+G\+B\+Trees.\+Cv\+G\+B\+Trees (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Data,  }\item[{int}]{tflag,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{responses,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{var\+Idx,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample\+Idx,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{var\+Type,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{missing\+Data\+Mask,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params}{Cv\+G\+B\+Trees\+Params}}}]{params }\end{DoxyParamCaption})}
+
+Default and training constructors.
+
+The constructors follow conventions of \char`\"{}\+Cv\+Stat\+Model.\+Cv\+Stat\+Model\char`\"{}. See \char`\"{}\+Cv\+Stat\+Model.\+train\char`\"{} for parameters descriptions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Data} & a train\+Data \\
+\hline
+{\em tflag} & a tflag \\
+\hline
+{\em responses} & a responses \\
+\hline
+{\em var\+Idx} & a var\+Idx \\
+\hline
+{\em sample\+Idx} & a sample\+Idx \\
+\hline
+{\em var\+Type} & a var\+Type \\
+\hline
+{\em missing\+Data\+Mask} & a missing\+Data\+Mask \\
+\hline
+{\em params} & a params\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/gradient_boosted_trees.html#cvgbtrees-cvgbtrees}{\tt org.\+opencv.\+ml.\+Cv\+G\+B\+Trees.\+Cv\+G\+B\+Trees} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a6ec90d0351c434a29a19fc94e8eaf9f4}\label{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a6ec90d0351c434a29a19fc94e8eaf9f4}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees}!Cv\+G\+B\+Trees@{Cv\+G\+B\+Trees}}
+\index{Cv\+G\+B\+Trees@{Cv\+G\+B\+Trees}!org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees}}
+\subsubsection{\texorpdfstring{Cv\+G\+B\+Trees()}{CvGBTrees()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+G\+B\+Trees.\+Cv\+G\+B\+Trees (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Data,  }\item[{int}]{tflag,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{responses }\end{DoxyParamCaption})}
+
+Default and training constructors.
+
+The constructors follow conventions of \char`\"{}\+Cv\+Stat\+Model.\+Cv\+Stat\+Model\char`\"{}. See \char`\"{}\+Cv\+Stat\+Model.\+train\char`\"{} for parameters descriptions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Data} & a train\+Data \\
+\hline
+{\em tflag} & a tflag \\
+\hline
+{\em responses} & a responses\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/gradient_boosted_trees.html#cvgbtrees-cvgbtrees}{\tt org.\+opencv.\+ml.\+Cv\+G\+B\+Trees.\+Cv\+G\+B\+Trees} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a9327b48fd0132661c3af5c04a198af4f}\label{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a9327b48fd0132661c3af5c04a198af4f}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees}!clear@{clear}}
+\index{clear@{clear}!org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+G\+B\+Trees.\+clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clears the model.
+
+The function deletes the data set information and all the weak models and sets all internal variables to the initial state. The function is called in \char`\"{}\+Cv\+G\+B\+Trees.\+train\char`\"{} and in the destructor.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/gradient_boosted_trees.html#cvgbtrees-clear}{\tt org.\+opencv.\+ml.\+Cv\+G\+B\+Trees.\+clear} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a50a588f4d215381826abc7c622f22969}\label{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a50a588f4d215381826abc7c622f22969}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees}!finalize@{finalize}}
+\index{finalize@{finalize}!org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+G\+B\+Trees.\+finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Throwable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a3311e584ea329ff9193da76e124919c5}\label{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a3311e584ea329ff9193da76e124919c5}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees}!predict@{predict}}
+\index{predict@{predict}!org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees}}
+\subsubsection{\texorpdfstring{predict()}{predict()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float org.\+opencv.\+ml.\+Cv\+G\+B\+Trees.\+predict (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{missing,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range}{Range}}}]{slice,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+Predicts a response for an input sample.
+
+The method predicts the response corresponding to the given sample (see \char`\"{}\+Predicting with G\+B\+T\char`\"{}). The result is either the class label or the estimated function value. The \char`\"{}\+Cv\+G\+B\+Trees.\+predict\char`\"{} method enables using the parallel version of the G\+BT model prediction if the Open\+CV is built with the T\+BB library. In this case, predictions of single trees are computed in a parallel fashion.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sample} & Input feature vector that has the same format as every training set element. If not all the variables were actually used during training, {\ttfamily sample} contains forged values at the appropriate places. \\
+\hline
+{\em missing} & Missing values mask, which is a dimensional matrix of the same size as {\ttfamily sample} having the {\ttfamily C\+V\+\_\+8U} type. {\ttfamily 1} corresponds to the missing value in the same position in the {\ttfamily sample} vector. If there are no missing values in the feature vector, an empty matrix can be passed instead of the missing mask. \\
+\hline
+{\em slice} & Parameter defining the part of the ensemble used for prediction. \\
+\hline
+\end{DoxyParams}
+If {\ttfamily slice = \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range_a2dd4a07a9715665aacee5c7cdf79a175}{Range.\+all()}}}, all trees are used. Use this parameter to get predictions of the G\+BT models with different ensemble sizes learning only one model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & Number of tree ensembles built in case of the classification problem (see \char`\"{}\+Training G\+B\+T\char`\"{}). Use this parameter to change the output to sum of the trees\textquotesingle{} predictions in the {\ttfamily k}-\/th ensemble only. To get the total G\+BT model prediction, {\ttfamily k} value must be -\/1. For regression problems, {\ttfamily k} is also equal to -\/1.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/gradient_boosted_trees.html#cvgbtrees-predict}{\tt org.\+opencv.\+ml.\+Cv\+G\+B\+Trees.\+predict} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_ad333d70edc4ce626ae759a0b1d445bf7}\label{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_ad333d70edc4ce626ae759a0b1d445bf7}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees}!predict@{predict}}
+\index{predict@{predict}!org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees}}
+\subsubsection{\texorpdfstring{predict()}{predict()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float org.\+opencv.\+ml.\+Cv\+G\+B\+Trees.\+predict (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample }\end{DoxyParamCaption})}
+
+Predicts a response for an input sample.
+
+The method predicts the response corresponding to the given sample (see \char`\"{}\+Predicting with G\+B\+T\char`\"{}). The result is either the class label or the estimated function value. The \char`\"{}\+Cv\+G\+B\+Trees.\+predict\char`\"{} method enables using the parallel version of the G\+BT model prediction if the Open\+CV is built with the T\+BB library. In this case, predictions of single trees are computed in a parallel fashion.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sample} & Input feature vector that has the same format as every training set element. If not all the variables were actually used during training, {\ttfamily sample} contains forged values at the appropriate places.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/gradient_boosted_trees.html#cvgbtrees-predict}{\tt org.\+opencv.\+ml.\+Cv\+G\+B\+Trees.\+predict} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a248cd65534718871f62730e8c8ac142a}\label{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a248cd65534718871f62730e8c8ac142a}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees}!train@{train}}
+\index{train@{train}!org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees}}
+\subsubsection{\texorpdfstring{train()}{train()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+ml.\+Cv\+G\+B\+Trees.\+train (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Data,  }\item[{int}]{tflag,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{responses,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{var\+Idx,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample\+Idx,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{var\+Type,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{missing\+Data\+Mask,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params}{Cv\+G\+B\+Trees\+Params}}}]{params,  }\item[{boolean}]{update }\end{DoxyParamCaption})}
+
+Trains a Gradient boosted tree model.
+
+The first train method follows the common template (see \char`\"{}\+Cv\+Stat\+Model.\+train\char`\"{}). Both {\ttfamily tflag} values ({\ttfamily C\+V\+\_\+\+R\+O\+W\+\_\+\+S\+A\+M\+P\+LE}, {\ttfamily C\+V\+\_\+\+C\+O\+L\+\_\+\+S\+A\+M\+P\+LE}) are supported. {\ttfamily train\+Data} must be of the {\ttfamily C\+V\+\_\+32F} type. {\ttfamily responses} must be a matrix of type {\ttfamily C\+V\+\_\+32S} or {\ttfamily C\+V\+\_\+32F}. In both cases it is converted into the {\ttfamily C\+V\+\_\+32F} matrix inside the training procedure. {\ttfamily var\+Idx} and {\ttfamily sample\+Idx} must be a list of indices ({\ttfamily C\+V\+\_\+32S}) or a mask ({\ttfamily C\+V\+\_\+8U} or {\ttfamily C\+V\+\_\+8S}). {\ttfamily update} is a dummy parameter.
+
+The second form of \char`\"{}\+Cv\+G\+B\+Trees.\+train\char`\"{} function uses \char`\"{}\+Cv\+M\+L\+Data\char`\"{} as a data set container. {\ttfamily update} is still a dummy parameter.
+
+All parameters specific to the G\+BT model are passed into the training function as a \char`\"{}\+Cv\+G\+B\+Trees\+Params\char`\"{} structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Data} & a train\+Data \\
+\hline
+{\em tflag} & a tflag \\
+\hline
+{\em responses} & a responses \\
+\hline
+{\em var\+Idx} & a var\+Idx \\
+\hline
+{\em sample\+Idx} & a sample\+Idx \\
+\hline
+{\em var\+Type} & a var\+Type \\
+\hline
+{\em missing\+Data\+Mask} & a missing\+Data\+Mask \\
+\hline
+{\em params} & a params \\
+\hline
+{\em update} & a update\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/gradient_boosted_trees.html#cvgbtrees-train}{\tt org.\+opencv.\+ml.\+Cv\+G\+B\+Trees.\+train} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a0c06240d5ade519aae56c6915671b630}\label{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a0c06240d5ade519aae56c6915671b630}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees}!train@{train}}
+\index{train@{train}!org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees}}
+\subsubsection{\texorpdfstring{train()}{train()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+ml.\+Cv\+G\+B\+Trees.\+train (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Data,  }\item[{int}]{tflag,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{responses }\end{DoxyParamCaption})}
+
+Trains a Gradient boosted tree model.
+
+The first train method follows the common template (see \char`\"{}\+Cv\+Stat\+Model.\+train\char`\"{}). Both {\ttfamily tflag} values ({\ttfamily C\+V\+\_\+\+R\+O\+W\+\_\+\+S\+A\+M\+P\+LE}, {\ttfamily C\+V\+\_\+\+C\+O\+L\+\_\+\+S\+A\+M\+P\+LE}) are supported. {\ttfamily train\+Data} must be of the {\ttfamily C\+V\+\_\+32F} type. {\ttfamily responses} must be a matrix of type {\ttfamily C\+V\+\_\+32S} or {\ttfamily C\+V\+\_\+32F}. In both cases it is converted into the {\ttfamily C\+V\+\_\+32F} matrix inside the training procedure. {\ttfamily var\+Idx} and {\ttfamily sample\+Idx} must be a list of indices ({\ttfamily C\+V\+\_\+32S}) or a mask ({\ttfamily C\+V\+\_\+8U} or {\ttfamily C\+V\+\_\+8S}). {\ttfamily update} is a dummy parameter.
+
+The second form of \char`\"{}\+Cv\+G\+B\+Trees.\+train\char`\"{} function uses \char`\"{}\+Cv\+M\+L\+Data\char`\"{} as a data set container. {\ttfamily update} is still a dummy parameter.
+
+All parameters specific to the G\+BT model are passed into the training function as a \char`\"{}\+Cv\+G\+B\+Trees\+Params\char`\"{} structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Data} & a train\+Data \\
+\hline
+{\em tflag} & a tflag \\
+\hline
+{\em responses} & a responses\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/gradient_boosted_trees.html#cvgbtrees-train}{\tt org.\+opencv.\+ml.\+Cv\+G\+B\+Trees.\+train} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a2fa66daa8dd429f356068b3856b891fd}\label{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a2fa66daa8dd429f356068b3856b891fd}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees}!S\+Q\+U\+A\+R\+E\+D\+\_\+\+L\+O\+SS@{S\+Q\+U\+A\+R\+E\+D\+\_\+\+L\+O\+SS}}
+\index{S\+Q\+U\+A\+R\+E\+D\+\_\+\+L\+O\+SS@{S\+Q\+U\+A\+R\+E\+D\+\_\+\+L\+O\+SS}!org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees}}
+\subsubsection{\texorpdfstring{S\+Q\+U\+A\+R\+E\+D\+\_\+\+L\+O\+SS}{SQUARED\_LOSS}}
+{\footnotesize\ttfamily final int org.\+opencv.\+ml.\+Cv\+G\+B\+Trees.\+S\+Q\+U\+A\+R\+E\+D\+\_\+\+L\+O\+SS = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/ml/\mbox{\hyperlink{_cv_g_b_trees_8java}{Cv\+G\+B\+Trees.\+java}}\end{DoxyCompactItemize}

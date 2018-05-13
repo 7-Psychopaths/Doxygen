@@ -1,0 +1,298 @@
+\hypertarget{classorg_1_1opencv_1_1features2d_1_1_feature_detector}{}\section{org.\+opencv.\+features2d.\+Feature\+Detector Class Reference}
+\label{classorg_1_1opencv_1_1features2d_1_1_feature_detector}\index{org.\+opencv.\+features2d.\+Feature\+Detector@{org.\+opencv.\+features2d.\+Feature\+Detector}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_feature_detector_a0682aacc52f2a50b80ba5d439acc6aef}{detect}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} keypoints, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} mask)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_feature_detector_ad86c751e11de7193dd1215421e56c901}{detect}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} keypoints)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_feature_detector_a2d08427ba77652f525490016e7ee5419}{detect}} (List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$ images, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} $>$ keypoints, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$ masks)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_feature_detector_a5fbed25fbb3c683ae67b1d4b737866a9}{detect}} (List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$ images, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} $>$ keypoints)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_feature_detector_ae6bf0d1c57cad788985a945b78cf5095}{empty}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_feature_detector_a16df09d148858d3ee52a5de88172bae3}{read}} (String file\+Name)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_feature_detector_ab00d5084ee71b9f6ee7d5c1b41007321}{write}} (String file\+Name)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_feature_detector}{Feature\+Detector}} \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_feature_detector_a012b14ed443bac6369ac490c46f0bbe6}{create}} (int detector\+Type)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_feature_detector_ac186edb6ab9f9488b538a0e90a93a25e}{F\+A\+ST}} = 1
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_feature_detector_a70444b12fbe0bf54bcdc5f2776d6c0e7}{Feature\+Detector}} (long addr)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_feature_detector_a5a738fcae17faaff22d9ce400190d166}{finalize}} ()  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final long \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_feature_detector_a6ab4158ea606cd45ed8a4b6d2d2e7be1}{native\+Obj}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract base class for 2D image feature detectors.
+
+class C\+V\+\_\+\+E\+X\+P\+O\+R\+TS \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_feature_detector}{Feature\+Detector}} {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily public\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual $\sim$\+Feature\+Detector();}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily void detect(const Mat\& image, vector$<$\+Key\+Point$>$\& keypoints,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily const Mat\& mask=Mat()) const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily void detect(const vector$<$\+Mat$>$\& images,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily vector$<$vector$<$\+Key\+Point$>$ $>$\& keypoints,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily const vector$<$\+Mat$>$\& masks=vector$<$\+Mat$>$()) const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void read(const File\+Node\&);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void write(\+File\+Storage\&) const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily static Ptr$<$\+Feature\+Detector$>$ create(const string\& detector\+Type);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily protected\+:...}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \};}
+
+{\ttfamily }
+
+{\ttfamily \begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_feature_detectors.html#featuredetector}{\tt org.\+opencv.\+features2d.\+Feature\+Detector \+: public Algorithm} 
+\end{DoxySeeAlso}
+}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_feature_detector_a70444b12fbe0bf54bcdc5f2776d6c0e7}\label{classorg_1_1opencv_1_1features2d_1_1_feature_detector_a70444b12fbe0bf54bcdc5f2776d6c0e7}} 
+\index{org\+::opencv\+::features2d\+::\+Feature\+Detector@{org\+::opencv\+::features2d\+::\+Feature\+Detector}!Feature\+Detector@{Feature\+Detector}}
+\index{Feature\+Detector@{Feature\+Detector}!org\+::opencv\+::features2d\+::\+Feature\+Detector@{org\+::opencv\+::features2d\+::\+Feature\+Detector}}
+\subsubsection{\texorpdfstring{Feature\+Detector()}{FeatureDetector()}}
+{\footnotesize\ttfamily org.\+opencv.\+features2d.\+Feature\+Detector.\+Feature\+Detector (\begin{DoxyParamCaption}\item[{long}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_feature_detector_a012b14ed443bac6369ac490c46f0bbe6}\label{classorg_1_1opencv_1_1features2d_1_1_feature_detector_a012b14ed443bac6369ac490c46f0bbe6}} 
+\index{org\+::opencv\+::features2d\+::\+Feature\+Detector@{org\+::opencv\+::features2d\+::\+Feature\+Detector}!create@{create}}
+\index{create@{create}!org\+::opencv\+::features2d\+::\+Feature\+Detector@{org\+::opencv\+::features2d\+::\+Feature\+Detector}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_feature_detector}{Feature\+Detector}} org.\+opencv.\+features2d.\+Feature\+Detector.\+create (\begin{DoxyParamCaption}\item[{int}]{detector\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a feature detector by its name.
+
+The following detector types are supported\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily \char`\"{}\+F\+A\+S\+T\char`\"{}} -- \char`\"{}\+Fast\+Feature\+Detector\char`\"{} 
+\item {\ttfamily \char`\"{}\+S\+T\+A\+R\char`\"{}} -- \char`\"{}\+Star\+Feature\+Detector\char`\"{} 
+\item {\ttfamily \char`\"{}\+S\+I\+F\+T\char`\"{}} -- \char`\"{}\+S\+I\+F\+T\char`\"{} (nonfree module) 
+\item {\ttfamily \char`\"{}\+S\+U\+R\+F\char`\"{}} -- \char`\"{}\+S\+U\+R\+F\char`\"{} (nonfree module) 
+\item {\ttfamily \char`\"{}\+O\+R\+B\char`\"{}} -- \char`\"{}\+O\+R\+B\char`\"{} 
+\item {\ttfamily \char`\"{}\+B\+R\+I\+S\+K\char`\"{}} -- \char`\"{}\+B\+R\+I\+S\+K\char`\"{} 
+\item {\ttfamily \char`\"{}\+M\+S\+E\+R\char`\"{}} -- \char`\"{}\+M\+S\+E\+R\char`\"{} 
+\item {\ttfamily \char`\"{}\+G\+F\+T\+T\char`\"{}} -- \char`\"{}\+Good\+Features\+To\+Track\+Detector\char`\"{} 
+\item {\ttfamily \char`\"{}\+H\+A\+R\+R\+I\+S\char`\"{}} -- \char`\"{}\+Good\+Features\+To\+Track\+Detector\char`\"{} with Harris detector enabled 
+\item {\ttfamily \char`\"{}\+Dense\char`\"{}} -- \char`\"{}\+Dense\+Feature\+Detector\char`\"{} 
+\item {\ttfamily \char`\"{}\+Simple\+Blob\char`\"{}} -- \char`\"{}\+Simple\+Blob\+Detector\char`\"{} 
+\end{DoxyItemize}
+
+Also a combined format is supported\+: feature detector adapter name ({\ttfamily \char`\"{}\+Grid\char`\"{}} -- \char`\"{}\+Grid\+Adapted\+Feature\+Detector\char`\"{}, {\ttfamily \char`\"{}\+Pyramid\char`\"{}} -- \char`\"{}\+Pyramid\+Adapted\+Feature\+Detector\char`\"{}) + feature detector name (see above), for example\+: {\ttfamily \char`\"{}\+Grid\+F\+A\+S\+T\char`\"{}}, {\ttfamily \char`\"{}\+Pyramid\+S\+T\+A\+R\char`\"{}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em detector\+Type} & Feature detector type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_feature_detectors.html#featuredetector-create}{\tt org.\+opencv.\+features2d.\+Feature\+Detector.\+create} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_feature_detector_a0682aacc52f2a50b80ba5d439acc6aef}\label{classorg_1_1opencv_1_1features2d_1_1_feature_detector_a0682aacc52f2a50b80ba5d439acc6aef}} 
+\index{org\+::opencv\+::features2d\+::\+Feature\+Detector@{org\+::opencv\+::features2d\+::\+Feature\+Detector}!detect@{detect}}
+\index{detect@{detect}!org\+::opencv\+::features2d\+::\+Feature\+Detector@{org\+::opencv\+::features2d\+::\+Feature\+Detector}}
+\subsubsection{\texorpdfstring{detect()}{detect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Feature\+Detector.\+detect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}}}]{keypoints,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{mask }\end{DoxyParamCaption})}
+
+Detects keypoints in an image (first variant) or image set (second variant).
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & Image. \\
+\hline
+{\em keypoints} & The detected keypoints. In the second variant of the method {\ttfamily keypoints\mbox{[}i\mbox{]}} is a set of keypoints detected in {\ttfamily images\mbox{[}i\mbox{]}}. \\
+\hline
+{\em mask} & Mask specifying where to look for keypoints (optional). It must be a 8-\/bit integer matrix with non-\/zero values in the region of interest.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_feature_detectors.html#featuredetector-detect}{\tt org.\+opencv.\+features2d.\+Feature\+Detector.\+detect} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_feature_detector_ad86c751e11de7193dd1215421e56c901}\label{classorg_1_1opencv_1_1features2d_1_1_feature_detector_ad86c751e11de7193dd1215421e56c901}} 
+\index{org\+::opencv\+::features2d\+::\+Feature\+Detector@{org\+::opencv\+::features2d\+::\+Feature\+Detector}!detect@{detect}}
+\index{detect@{detect}!org\+::opencv\+::features2d\+::\+Feature\+Detector@{org\+::opencv\+::features2d\+::\+Feature\+Detector}}
+\subsubsection{\texorpdfstring{detect()}{detect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Feature\+Detector.\+detect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}}}]{keypoints }\end{DoxyParamCaption})}
+
+Detects keypoints in an image (first variant) or image set (second variant).
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & Image. \\
+\hline
+{\em keypoints} & The detected keypoints. In the second variant of the method {\ttfamily keypoints\mbox{[}i\mbox{]}} is a set of keypoints detected in {\ttfamily images\mbox{[}i\mbox{]}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_feature_detectors.html#featuredetector-detect}{\tt org.\+opencv.\+features2d.\+Feature\+Detector.\+detect} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_feature_detector_a2d08427ba77652f525490016e7ee5419}\label{classorg_1_1opencv_1_1features2d_1_1_feature_detector_a2d08427ba77652f525490016e7ee5419}} 
+\index{org\+::opencv\+::features2d\+::\+Feature\+Detector@{org\+::opencv\+::features2d\+::\+Feature\+Detector}!detect@{detect}}
+\index{detect@{detect}!org\+::opencv\+::features2d\+::\+Feature\+Detector@{org\+::opencv\+::features2d\+::\+Feature\+Detector}}
+\subsubsection{\texorpdfstring{detect()}{detect()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Feature\+Detector.\+detect (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$}]{images,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} $>$}]{keypoints,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$}]{masks }\end{DoxyParamCaption})}
+
+Detects keypoints in an image (first variant) or image set (second variant).
+
+
+\begin{DoxyParams}{Parameters}
+{\em images} & Image set. \\
+\hline
+{\em keypoints} & The detected keypoints. In the second variant of the method {\ttfamily keypoints\mbox{[}i\mbox{]}} is a set of keypoints detected in {\ttfamily images\mbox{[}i\mbox{]}}. \\
+\hline
+{\em masks} & Masks for each input image specifying where to look for keypoints (optional). {\ttfamily masks\mbox{[}i\mbox{]}} is a mask for {\ttfamily images\mbox{[}i\mbox{]}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_feature_detectors.html#featuredetector-detect}{\tt org.\+opencv.\+features2d.\+Feature\+Detector.\+detect} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_feature_detector_a5fbed25fbb3c683ae67b1d4b737866a9}\label{classorg_1_1opencv_1_1features2d_1_1_feature_detector_a5fbed25fbb3c683ae67b1d4b737866a9}} 
+\index{org\+::opencv\+::features2d\+::\+Feature\+Detector@{org\+::opencv\+::features2d\+::\+Feature\+Detector}!detect@{detect}}
+\index{detect@{detect}!org\+::opencv\+::features2d\+::\+Feature\+Detector@{org\+::opencv\+::features2d\+::\+Feature\+Detector}}
+\subsubsection{\texorpdfstring{detect()}{detect()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Feature\+Detector.\+detect (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$}]{images,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} $>$}]{keypoints }\end{DoxyParamCaption})}
+
+Detects keypoints in an image (first variant) or image set (second variant).
+
+
+\begin{DoxyParams}{Parameters}
+{\em images} & Image set. \\
+\hline
+{\em keypoints} & The detected keypoints. In the second variant of the method {\ttfamily keypoints\mbox{[}i\mbox{]}} is a set of keypoints detected in {\ttfamily images\mbox{[}i\mbox{]}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_feature_detectors.html#featuredetector-detect}{\tt org.\+opencv.\+features2d.\+Feature\+Detector.\+detect} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_feature_detector_ae6bf0d1c57cad788985a945b78cf5095}\label{classorg_1_1opencv_1_1features2d_1_1_feature_detector_ae6bf0d1c57cad788985a945b78cf5095}} 
+\index{org\+::opencv\+::features2d\+::\+Feature\+Detector@{org\+::opencv\+::features2d\+::\+Feature\+Detector}!empty@{empty}}
+\index{empty@{empty}!org\+::opencv\+::features2d\+::\+Feature\+Detector@{org\+::opencv\+::features2d\+::\+Feature\+Detector}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+features2d.\+Feature\+Detector.\+empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_feature_detector_a5a738fcae17faaff22d9ce400190d166}\label{classorg_1_1opencv_1_1features2d_1_1_feature_detector_a5a738fcae17faaff22d9ce400190d166}} 
+\index{org\+::opencv\+::features2d\+::\+Feature\+Detector@{org\+::opencv\+::features2d\+::\+Feature\+Detector}!finalize@{finalize}}
+\index{finalize@{finalize}!org\+::opencv\+::features2d\+::\+Feature\+Detector@{org\+::opencv\+::features2d\+::\+Feature\+Detector}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Feature\+Detector.\+finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Throwable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_feature_detector_a16df09d148858d3ee52a5de88172bae3}\label{classorg_1_1opencv_1_1features2d_1_1_feature_detector_a16df09d148858d3ee52a5de88172bae3}} 
+\index{org\+::opencv\+::features2d\+::\+Feature\+Detector@{org\+::opencv\+::features2d\+::\+Feature\+Detector}!read@{read}}
+\index{read@{read}!org\+::opencv\+::features2d\+::\+Feature\+Detector@{org\+::opencv\+::features2d\+::\+Feature\+Detector}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Feature\+Detector.\+read (\begin{DoxyParamCaption}\item[{String}]{file\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_feature_detector_ab00d5084ee71b9f6ee7d5c1b41007321}\label{classorg_1_1opencv_1_1features2d_1_1_feature_detector_ab00d5084ee71b9f6ee7d5c1b41007321}} 
+\index{org\+::opencv\+::features2d\+::\+Feature\+Detector@{org\+::opencv\+::features2d\+::\+Feature\+Detector}!write@{write}}
+\index{write@{write}!org\+::opencv\+::features2d\+::\+Feature\+Detector@{org\+::opencv\+::features2d\+::\+Feature\+Detector}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Feature\+Detector.\+write (\begin{DoxyParamCaption}\item[{String}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_feature_detector_ac186edb6ab9f9488b538a0e90a93a25e}\label{classorg_1_1opencv_1_1features2d_1_1_feature_detector_ac186edb6ab9f9488b538a0e90a93a25e}} 
+\index{org\+::opencv\+::features2d\+::\+Feature\+Detector@{org\+::opencv\+::features2d\+::\+Feature\+Detector}!F\+A\+ST@{F\+A\+ST}}
+\index{F\+A\+ST@{F\+A\+ST}!org\+::opencv\+::features2d\+::\+Feature\+Detector@{org\+::opencv\+::features2d\+::\+Feature\+Detector}}
+\subsubsection{\texorpdfstring{F\+A\+ST}{FAST}}
+{\footnotesize\ttfamily final int org.\+opencv.\+features2d.\+Feature\+Detector.\+F\+A\+ST = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_feature_detector_a6ab4158ea606cd45ed8a4b6d2d2e7be1}\label{classorg_1_1opencv_1_1features2d_1_1_feature_detector_a6ab4158ea606cd45ed8a4b6d2d2e7be1}} 
+\index{org\+::opencv\+::features2d\+::\+Feature\+Detector@{org\+::opencv\+::features2d\+::\+Feature\+Detector}!native\+Obj@{native\+Obj}}
+\index{native\+Obj@{native\+Obj}!org\+::opencv\+::features2d\+::\+Feature\+Detector@{org\+::opencv\+::features2d\+::\+Feature\+Detector}}
+\subsubsection{\texorpdfstring{native\+Obj}{nativeObj}}
+{\footnotesize\ttfamily final long org.\+opencv.\+features2d.\+Feature\+Detector.\+native\+Obj\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/features2d/\mbox{\hyperlink{_feature_detector_8java}{Feature\+Detector.\+java}}\end{DoxyCompactItemize}

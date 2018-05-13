@@ -1,0 +1,147 @@
+\hypertarget{classorg_1_1opencv_1_1contrib_1_1_contrib}{}\section{org.\+opencv.\+contrib.\+Contrib Class Reference}
+\label{classorg_1_1opencv_1_1contrib_1_1_contrib}\index{org.\+opencv.\+contrib.\+Contrib@{org.\+opencv.\+contrib.\+Contrib}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_contrib_a58729ce6ba4fd94066f5f6b18ae2543b}{apply\+Color\+Map}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} src, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} dst, int colormap)
+\item 
+static int \mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_contrib_ac1cce3fcb7051272fa74b7c6c043d3dc}{chamer\+Matching}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} img, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} templ, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point}{Mat\+Of\+Point}} $>$ results, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_float}{Mat\+Of\+Float}} cost, double templ\+Scale, int max\+Matches, double min\+Match\+Distance, int padX, int padY, int scales, double min\+Scale, double max\+Scale, double orientation\+Weight, double truncate)
+\item 
+static int \mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_contrib_a591ee5c93fd25c8209189898e55f7026}{chamer\+Matching}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} img, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} templ, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point}{Mat\+Of\+Point}} $>$ results, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_float}{Mat\+Of\+Float}} cost)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1opencv_1_1contrib_1_1_contrib_aa29c053a83a2ef41e1d07a0eba03bb91}{R\+E\+T\+I\+N\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+R\+A\+N\+D\+OM}} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1contrib_1_1_contrib_a58729ce6ba4fd94066f5f6b18ae2543b}\label{classorg_1_1opencv_1_1contrib_1_1_contrib_a58729ce6ba4fd94066f5f6b18ae2543b}} 
+\index{org\+::opencv\+::contrib\+::\+Contrib@{org\+::opencv\+::contrib\+::\+Contrib}!apply\+Color\+Map@{apply\+Color\+Map}}
+\index{apply\+Color\+Map@{apply\+Color\+Map}!org\+::opencv\+::contrib\+::\+Contrib@{org\+::opencv\+::contrib\+::\+Contrib}}
+\subsubsection{\texorpdfstring{apply\+Color\+Map()}{applyColorMap()}}
+{\footnotesize\ttfamily static void org.\+opencv.\+contrib.\+Contrib.\+apply\+Color\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{src,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{dst,  }\item[{int}]{colormap }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Applies a G\+NU Octave/\+M\+A\+T\+L\+AB equivalent colormap on a given image.
+
+Currently the following G\+NU Octave/\+M\+A\+T\+L\+AB equivalent colormaps are implemented\+: enum {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily C\+O\+L\+O\+R\+M\+A\+P\+\_\+\+A\+U\+T\+U\+MN = 0,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily C\+O\+L\+O\+R\+M\+A\+P\+\_\+\+B\+O\+NE = 1,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily C\+O\+L\+O\+R\+M\+A\+P\+\_\+\+J\+ET = 2,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily C\+O\+L\+O\+R\+M\+A\+P\+\_\+\+W\+I\+N\+T\+ER = 3,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily C\+O\+L\+O\+R\+M\+A\+P\+\_\+\+R\+A\+I\+N\+B\+OW = 4,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily C\+O\+L\+O\+R\+M\+A\+P\+\_\+\+O\+C\+E\+AN = 5,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily C\+O\+L\+O\+R\+M\+A\+P\+\_\+\+S\+U\+M\+M\+ER = 6,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily C\+O\+L\+O\+R\+M\+A\+P\+\_\+\+S\+P\+R\+I\+NG = 7,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily C\+O\+L\+O\+R\+M\+A\+P\+\_\+\+C\+O\+OL = 8,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily C\+O\+L\+O\+R\+M\+A\+P\+\_\+\+H\+SV = 9,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily C\+O\+L\+O\+R\+M\+A\+P\+\_\+\+P\+I\+NK = 10,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily C\+O\+L\+O\+R\+M\+A\+P\+\_\+\+H\+OT = 11}
+
+{\ttfamily }
+
+{\ttfamily 
+\begin{DoxyParams}{Parameters}
+{\em src} & The source image, grayscale or colored does not matter. \\
+\hline
+{\em dst} & The result is the colormapped source image. Note\+: \char`\"{}\+Mat.\+create\char`\"{} is called on dst. \\
+\hline
+{\em colormap} & The colormap to apply, see the list of available colormaps below.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/contrib/doc/colormaps.html#applycolormap}{\tt org.\+opencv.\+contrib.\+Contrib.\+apply\+Color\+Map} 
+\end{DoxySeeAlso}
+}\mbox{\Hypertarget{classorg_1_1opencv_1_1contrib_1_1_contrib_ac1cce3fcb7051272fa74b7c6c043d3dc}\label{classorg_1_1opencv_1_1contrib_1_1_contrib_ac1cce3fcb7051272fa74b7c6c043d3dc}} 
+\index{org\+::opencv\+::contrib\+::\+Contrib@{org\+::opencv\+::contrib\+::\+Contrib}!chamer\+Matching@{chamer\+Matching}}
+\index{chamer\+Matching@{chamer\+Matching}!org\+::opencv\+::contrib\+::\+Contrib@{org\+::opencv\+::contrib\+::\+Contrib}}
+\subsubsection{\texorpdfstring{chamer\+Matching()}{chamerMatching()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static int org.\+opencv.\+contrib.\+Contrib.\+chamer\+Matching (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{img,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{templ,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point}{Mat\+Of\+Point}} $>$}]{results,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_float}{Mat\+Of\+Float}}}]{cost,  }\item[{double}]{templ\+Scale,  }\item[{int}]{max\+Matches,  }\item[{double}]{min\+Match\+Distance,  }\item[{int}]{padX,  }\item[{int}]{padY,  }\item[{int}]{scales,  }\item[{double}]{min\+Scale,  }\item[{double}]{max\+Scale,  }\item[{double}]{orientation\+Weight,  }\item[{double}]{truncate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1contrib_1_1_contrib_a591ee5c93fd25c8209189898e55f7026}\label{classorg_1_1opencv_1_1contrib_1_1_contrib_a591ee5c93fd25c8209189898e55f7026}} 
+\index{org\+::opencv\+::contrib\+::\+Contrib@{org\+::opencv\+::contrib\+::\+Contrib}!chamer\+Matching@{chamer\+Matching}}
+\index{chamer\+Matching@{chamer\+Matching}!org\+::opencv\+::contrib\+::\+Contrib@{org\+::opencv\+::contrib\+::\+Contrib}}
+\subsubsection{\texorpdfstring{chamer\+Matching()}{chamerMatching()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static int org.\+opencv.\+contrib.\+Contrib.\+chamer\+Matching (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{img,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{templ,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point}{Mat\+Of\+Point}} $>$}]{results,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_float}{Mat\+Of\+Float}}}]{cost }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1contrib_1_1_contrib_aa29c053a83a2ef41e1d07a0eba03bb91}\label{classorg_1_1opencv_1_1contrib_1_1_contrib_aa29c053a83a2ef41e1d07a0eba03bb91}} 
+\index{org\+::opencv\+::contrib\+::\+Contrib@{org\+::opencv\+::contrib\+::\+Contrib}!R\+E\+T\+I\+N\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+R\+A\+N\+D\+OM@{R\+E\+T\+I\+N\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+R\+A\+N\+D\+OM}}
+\index{R\+E\+T\+I\+N\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+R\+A\+N\+D\+OM@{R\+E\+T\+I\+N\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+R\+A\+N\+D\+OM}!org\+::opencv\+::contrib\+::\+Contrib@{org\+::opencv\+::contrib\+::\+Contrib}}
+\subsubsection{\texorpdfstring{R\+E\+T\+I\+N\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+R\+A\+N\+D\+OM}{RETINA\_COLOR\_RANDOM}}
+{\footnotesize\ttfamily final int org.\+opencv.\+contrib.\+Contrib.\+R\+E\+T\+I\+N\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+R\+A\+N\+D\+OM = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/contrib/\mbox{\hyperlink{_contrib_8java}{Contrib.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,734 @@
+\hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher}{}\section{org.\+opencv.\+features2d.\+Descriptor\+Matcher Class Reference}
+\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher}\index{org.\+opencv.\+features2d.\+Descriptor\+Matcher@{org.\+opencv.\+features2d.\+Descriptor\+Matcher}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_aae08a476f7626406fb238bd32b28d1a3}{add}} (List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$ descriptors)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a1e843e5c3ff04bf99a5a3d5333da2115}{clear}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher}{Descriptor\+Matcher}} \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_aa7e081a62ed26d64d4700a4609b33253}{clone}} (boolean empty\+Train\+Data)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher}{Descriptor\+Matcher}} \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a4ff8536e8a907010eaacb98ebe996a24}{clone}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a95a7d890bb409e13791a4f7702631e59}{empty}} ()
+\item 
+List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$ \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_aeb2d3f129adc9afcb18a318d8f9464ea}{get\+Train\+Descriptors}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a33fddc130bf7d2458fcec231490322e2}{is\+Mask\+Supported}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_ac00ee4a90434accdd31bac8edbb3a39f}{knn\+Match}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Descriptors, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Descriptors, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$ matches, int k, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} mask, boolean compact\+Result)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a1cc8ec08cbc3bf8b61be266e82a9ea85}{knn\+Match}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Descriptors, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Descriptors, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$ matches, int k)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_ac7f13b131eeee7b6a1feb67427dda08e}{knn\+Match}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Descriptors, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$ matches, int k, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$ masks, boolean compact\+Result)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a3aa08a4e72ad403da2642ee0e5e1f0a1}{knn\+Match}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Descriptors, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$ matches, int k)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a6fb64417f5a906242f853ac835abc1aa}{match}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Descriptors, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Descriptors, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} matches, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} mask)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_ab247b9dc77e60a34295e01d26abd8aab}{match}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Descriptors, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Descriptors, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} matches)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a517bcdfb65926533bd6778e14a013914}{match}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Descriptors, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} matches, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$ masks)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_aad343fd5829596ee48af551bfade532b}{match}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Descriptors, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} matches)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_ac2151f66d3a14d78678b3474554cd677}{radius\+Match}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Descriptors, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Descriptors, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$ matches, float max\+Distance, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} mask, boolean compact\+Result)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_afb838636cf307ab425920d3acfb18076}{radius\+Match}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Descriptors, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Descriptors, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$ matches, float max\+Distance)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_afb19b0c0b4e476a1cd181cacb11fd327}{radius\+Match}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Descriptors, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$ matches, float max\+Distance, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$ masks, boolean compact\+Result)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_adefcd4d38b57790bd4bd5df93f7b2388}{radius\+Match}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Descriptors, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$ matches, float max\+Distance)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a3f7b8b0f65dd65d0c2169ee33615a6e8}{read}} (String file\+Name)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a6c4da7f3f15fbea1000c509fec8ad1b9}{train}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a9cb97b589f0af378c86f98f2f66c9c6b}{write}} (String file\+Name)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher}{Descriptor\+Matcher}} \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a14964b877eda32f47ed2d37d22dba3d1}{create}} (int matcher\+Type)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_ab63db8f54105cd9d4712c2fe371fa7b9}{F\+L\+A\+N\+N\+B\+A\+S\+ED}} = 1
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_ae55724836cc8b37a853391ff97d24e44}{Descriptor\+Matcher}} (long addr)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_ad785f08a619cbbaf5dcb926fdc12aef6}{finalize}} ()  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final long \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a9e8464485925fc0504cfefec24d4b299}{native\+Obj}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract base class for matching keypoint descriptors. It has two groups of match methods\+: for matching descriptors of an image with another image or with an image set.
+
+class \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher}{Descriptor\+Matcher}} {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily public\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual $\sim$\+Descriptor\+Matcher();}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void add(const vector$<$\+Mat$>$\& descriptors);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily const vector$<$\+Mat$>$\& get\+Train\+Descriptors() const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a1e843e5c3ff04bf99a5a3d5333da2115}{clear()}};}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily bool empty() const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual bool is\+Mask\+Supported() const = 0;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a6c4da7f3f15fbea1000c509fec8ad1b9}{train()}};}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily / $\ast$}
+
+{\ttfamily  
+\begin{DoxyItemize}
+\item Group of methods to match descriptors from an image pair. 
+\item / 
+\end{DoxyItemize}}
+
+{\ttfamily }
+
+{\ttfamily void match(const Mat\& query\+Descriptors, const Mat\& train\+Descriptors,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily vector$<$\+D\+Match$>$\& matches, const Mat\& mask=Mat()) const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily void knn\+Match(const Mat\& query\+Descriptors, const Mat\& train\+Descriptors,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily vector$<$vector$<$\+D\+Match$>$ $>$\& matches, int k,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily const Mat\& mask=Mat(), bool compact\+Result=false) const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily void radius\+Match(const Mat\& query\+Descriptors, const Mat\& train\+Descriptors,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily vector$<$vector$<$\+D\+Match$>$ $>$\& matches, float max\+Distance,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily const Mat\& mask=Mat(), bool compact\+Result=false) const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily / $\ast$}
+
+{\ttfamily  
+\begin{DoxyItemize}
+\item Group of methods to match descriptors from one image to an image set. 
+\item / 
+\end{DoxyItemize}}
+
+{\ttfamily }
+
+{\ttfamily void match(const Mat\& query\+Descriptors, vector$<$\+D\+Match$>$\& matches,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily const vector$<$\+Mat$>$\& masks=vector$<$\+Mat$>$());}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily void knn\+Match(const Mat\& query\+Descriptors, vector$<$vector$<$\+D\+Match$>$ $>$\& matches,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily int k, const vector$<$\+Mat$>$\& masks=vector$<$\+Mat$>$(),}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily bool compact\+Result=false);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily void radius\+Match(const Mat\& query\+Descriptors, vector$<$vector$<$\+D\+Match$>$ $>$\& matches,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily float max\+Distance, const vector$<$\+Mat$>$\& masks=vector$<$\+Mat$>$(),}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily bool compact\+Result=false);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void read(const File\+Node\&);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void write(\+File\+Storage\&) const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual Ptr$<$\+Descriptor\+Matcher$>$ clone(bool empty\+Train\+Data=false) const = 0;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily static Ptr$<$\+Descriptor\+Matcher$>$ create(const string\& descriptor\+Matcher\+Type);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily protected\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily vector$<$\+Mat$>$ train\+Desc\+Collection;...}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \};}
+
+{\ttfamily }
+
+{\ttfamily \begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#descriptormatcher}{\tt org.\+opencv.\+features2d.\+Descriptor\+Matcher \+: public Algorithm} 
+\end{DoxySeeAlso}
+}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_ae55724836cc8b37a853391ff97d24e44}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_ae55724836cc8b37a853391ff97d24e44}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!Descriptor\+Matcher@{Descriptor\+Matcher}}
+\index{Descriptor\+Matcher@{Descriptor\+Matcher}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{Descriptor\+Matcher()}{DescriptorMatcher()}}
+{\footnotesize\ttfamily org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+Descriptor\+Matcher (\begin{DoxyParamCaption}\item[{long}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_aae08a476f7626406fb238bd32b28d1a3}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_aae08a476f7626406fb238bd32b28d1a3}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!add@{add}}
+\index{add@{add}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+add (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$}]{descriptors }\end{DoxyParamCaption})}
+
+Adds descriptors to train a descriptor collection. If the collection {\ttfamily train\+Desc\+Collectionis} is not empty, the new descriptors are added to existing train descriptors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em descriptors} & Descriptors to add. Each {\ttfamily descriptors\mbox{[}i\mbox{]}} is a set of descriptors from the same train image.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#descriptormatcher-add}{\tt org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+add} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a1e843e5c3ff04bf99a5a3d5333da2115}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a1e843e5c3ff04bf99a5a3d5333da2115}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!clear@{clear}}
+\index{clear@{clear}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clears the train descriptor collection.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#descriptormatcher-clear}{\tt org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+clear} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_aa7e081a62ed26d64d4700a4609b33253}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_aa7e081a62ed26d64d4700a4609b33253}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!clone@{clone}}
+\index{clone@{clone}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{clone()}{clone()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher}{Descriptor\+Matcher}} org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+clone (\begin{DoxyParamCaption}\item[{boolean}]{empty\+Train\+Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a4ff8536e8a907010eaacb98ebe996a24}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a4ff8536e8a907010eaacb98ebe996a24}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!clone@{clone}}
+\index{clone@{clone}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{clone()}{clone()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher}{Descriptor\+Matcher}} org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a14964b877eda32f47ed2d37d22dba3d1}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a14964b877eda32f47ed2d37d22dba3d1}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!create@{create}}
+\index{create@{create}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher}{Descriptor\+Matcher}} org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+create (\begin{DoxyParamCaption}\item[{int}]{matcher\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a descriptor matcher of a given type with the default parameters (using default constructor).
+
+
+\begin{DoxyParams}{Parameters}
+{\em matcher\+Type} & a matcher\+Type\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#descriptormatcher-create}{\tt org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+create} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a95a7d890bb409e13791a4f7702631e59}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a95a7d890bb409e13791a4f7702631e59}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!empty@{empty}}
+\index{empty@{empty}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true if there are no train descriptors in the collection.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#descriptormatcher-empty}{\tt org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+empty} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_ad785f08a619cbbaf5dcb926fdc12aef6}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_ad785f08a619cbbaf5dcb926fdc12aef6}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!finalize@{finalize}}
+\index{finalize@{finalize}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Throwable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_aeb2d3f129adc9afcb18a318d8f9464ea}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_aeb2d3f129adc9afcb18a318d8f9464ea}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!get\+Train\+Descriptors@{get\+Train\+Descriptors}}
+\index{get\+Train\+Descriptors@{get\+Train\+Descriptors}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{get\+Train\+Descriptors()}{getTrainDescriptors()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}$>$ org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+get\+Train\+Descriptors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a constant link to the train descriptor collection {\ttfamily train\+Desc\+Collection}.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#descriptormatcher-gettraindescriptors}{\tt org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+get\+Train\+Descriptors} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a33fddc130bf7d2458fcec231490322e2}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a33fddc130bf7d2458fcec231490322e2}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!is\+Mask\+Supported@{is\+Mask\+Supported}}
+\index{is\+Mask\+Supported@{is\+Mask\+Supported}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{is\+Mask\+Supported()}{isMaskSupported()}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+is\+Mask\+Supported (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true if the descriptor matcher supports masking permissible matches.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#descriptormatcher-ismasksupported}{\tt org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+is\+Mask\+Supported} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_ac00ee4a90434accdd31bac8edbb3a39f}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_ac00ee4a90434accdd31bac8edbb3a39f}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!knn\+Match@{knn\+Match}}
+\index{knn\+Match@{knn\+Match}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{knn\+Match()}{knnMatch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+knn\+Match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Descriptors,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Descriptors,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$}]{matches,  }\item[{int}]{k,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{mask,  }\item[{boolean}]{compact\+Result }\end{DoxyParamCaption})}
+
+Finds the k best matches for each descriptor from a query set.
+
+These extended variants of \char`\"{}\+Descriptor\+Matcher.\+match\char`\"{} methods find several best matches for each query descriptor. The matches are returned in the distance increasing order. See \char`\"{}\+Descriptor\+Matcher.\+match\char`\"{} for the details about query and train descriptors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Descriptors} & Query set of descriptors. \\
+\hline
+{\em train\+Descriptors} & Train set of descriptors. This set is not added to the train descriptors collection stored in the class object. \\
+\hline
+{\em matches} & Matches. Each {\ttfamily matches\mbox{[}i\mbox{]}} is k or less matches for the same query descriptor. \\
+\hline
+{\em k} & Count of best matches found per each query descriptor or less if a query descriptor has less than k possible matches in total. \\
+\hline
+{\em mask} & Mask specifying permissible matches between an input query and train matrices of descriptors. \\
+\hline
+{\em compact\+Result} & Parameter used when the mask (or masks) is not empty. If {\ttfamily compact\+Result} is false, the {\ttfamily matches} vector has the same size as {\ttfamily query\+Descriptors} rows. If {\ttfamily compact\+Result} is true, the {\ttfamily matches} vector does not contain matches for fully masked-\/out query descriptors.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#descriptormatcher-knnmatch}{\tt org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+knn\+Match} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a1cc8ec08cbc3bf8b61be266e82a9ea85}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a1cc8ec08cbc3bf8b61be266e82a9ea85}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!knn\+Match@{knn\+Match}}
+\index{knn\+Match@{knn\+Match}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{knn\+Match()}{knnMatch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+knn\+Match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Descriptors,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Descriptors,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$}]{matches,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+Finds the k best matches for each descriptor from a query set.
+
+These extended variants of \char`\"{}\+Descriptor\+Matcher.\+match\char`\"{} methods find several best matches for each query descriptor. The matches are returned in the distance increasing order. See \char`\"{}\+Descriptor\+Matcher.\+match\char`\"{} for the details about query and train descriptors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Descriptors} & Query set of descriptors. \\
+\hline
+{\em train\+Descriptors} & Train set of descriptors. This set is not added to the train descriptors collection stored in the class object. \\
+\hline
+{\em matches} & Matches. Each {\ttfamily matches\mbox{[}i\mbox{]}} is k or less matches for the same query descriptor. \\
+\hline
+{\em k} & Count of best matches found per each query descriptor or less if a query descriptor has less than k possible matches in total.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#descriptormatcher-knnmatch}{\tt org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+knn\+Match} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_ac7f13b131eeee7b6a1feb67427dda08e}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_ac7f13b131eeee7b6a1feb67427dda08e}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!knn\+Match@{knn\+Match}}
+\index{knn\+Match@{knn\+Match}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{knn\+Match()}{knnMatch()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+knn\+Match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Descriptors,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$}]{matches,  }\item[{int}]{k,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$}]{masks,  }\item[{boolean}]{compact\+Result }\end{DoxyParamCaption})}
+
+Finds the k best matches for each descriptor from a query set.
+
+These extended variants of \char`\"{}\+Descriptor\+Matcher.\+match\char`\"{} methods find several best matches for each query descriptor. The matches are returned in the distance increasing order. See \char`\"{}\+Descriptor\+Matcher.\+match\char`\"{} for the details about query and train descriptors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Descriptors} & Query set of descriptors. \\
+\hline
+{\em matches} & Matches. Each {\ttfamily matches\mbox{[}i\mbox{]}} is k or less matches for the same query descriptor. \\
+\hline
+{\em k} & Count of best matches found per each query descriptor or less if a query descriptor has less than k possible matches in total. \\
+\hline
+{\em masks} & Set of masks. Each {\ttfamily masks\mbox{[}i\mbox{]}} specifies permissible matches between the input query descriptors and stored train descriptors from the i-\/th image {\ttfamily train\+Desc\+Collection\mbox{[}i\mbox{]}}. \\
+\hline
+{\em compact\+Result} & Parameter used when the mask (or masks) is not empty. If {\ttfamily compact\+Result} is false, the {\ttfamily matches} vector has the same size as {\ttfamily query\+Descriptors} rows. If {\ttfamily compact\+Result} is true, the {\ttfamily matches} vector does not contain matches for fully masked-\/out query descriptors.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#descriptormatcher-knnmatch}{\tt org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+knn\+Match} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a3aa08a4e72ad403da2642ee0e5e1f0a1}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a3aa08a4e72ad403da2642ee0e5e1f0a1}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!knn\+Match@{knn\+Match}}
+\index{knn\+Match@{knn\+Match}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{knn\+Match()}{knnMatch()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+knn\+Match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Descriptors,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$}]{matches,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+Finds the k best matches for each descriptor from a query set.
+
+These extended variants of \char`\"{}\+Descriptor\+Matcher.\+match\char`\"{} methods find several best matches for each query descriptor. The matches are returned in the distance increasing order. See \char`\"{}\+Descriptor\+Matcher.\+match\char`\"{} for the details about query and train descriptors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Descriptors} & Query set of descriptors. \\
+\hline
+{\em matches} & Matches. Each {\ttfamily matches\mbox{[}i\mbox{]}} is k or less matches for the same query descriptor. \\
+\hline
+{\em k} & Count of best matches found per each query descriptor or less if a query descriptor has less than k possible matches in total.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#descriptormatcher-knnmatch}{\tt org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+knn\+Match} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a6fb64417f5a906242f853ac835abc1aa}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a6fb64417f5a906242f853ac835abc1aa}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!match@{match}}
+\index{match@{match}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{match()}{match()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Descriptors,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Descriptors,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}}}]{matches,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{mask }\end{DoxyParamCaption})}
+
+Finds the best match for each descriptor from a query set.
+
+In the first variant of this method, the train descriptors are passed as an input argument. In the second variant of the method, train descriptors collection that was set by {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_aae08a476f7626406fb238bd32b28d1a3}{Descriptor\+Matcher.\+add}}} is used. Optional mask (or masks) can be passed to specify which query and training descriptors can be matched. Namely, {\ttfamily query\+Descriptors\mbox{[}i\mbox{]}} can be matched with {\ttfamily train\+Descriptors\mbox{[}j\mbox{]}} only if {\ttfamily mask.\+at$<$uchar$>$(i,j)} is non-\/zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Descriptors} & Query set of descriptors. \\
+\hline
+{\em train\+Descriptors} & Train set of descriptors. This set is not added to the train descriptors collection stored in the class object. \\
+\hline
+{\em matches} & Matches. If a query descriptor is masked out in {\ttfamily mask}, no match is added for this descriptor. So, {\ttfamily matches} size may be smaller than the query descriptors count. \\
+\hline
+{\em mask} & Mask specifying permissible matches between an input query and train matrices of descriptors.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#descriptormatcher-match}{\tt org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+match} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_ab247b9dc77e60a34295e01d26abd8aab}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_ab247b9dc77e60a34295e01d26abd8aab}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!match@{match}}
+\index{match@{match}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{match()}{match()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Descriptors,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Descriptors,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}}}]{matches }\end{DoxyParamCaption})}
+
+Finds the best match for each descriptor from a query set.
+
+In the first variant of this method, the train descriptors are passed as an input argument. In the second variant of the method, train descriptors collection that was set by {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_aae08a476f7626406fb238bd32b28d1a3}{Descriptor\+Matcher.\+add}}} is used. Optional mask (or masks) can be passed to specify which query and training descriptors can be matched. Namely, {\ttfamily query\+Descriptors\mbox{[}i\mbox{]}} can be matched with {\ttfamily train\+Descriptors\mbox{[}j\mbox{]}} only if {\ttfamily mask.\+at$<$uchar$>$(i,j)} is non-\/zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Descriptors} & Query set of descriptors. \\
+\hline
+{\em train\+Descriptors} & Train set of descriptors. This set is not added to the train descriptors collection stored in the class object. \\
+\hline
+{\em matches} & Matches. If a query descriptor is masked out in {\ttfamily mask}, no match is added for this descriptor. So, {\ttfamily matches} size may be smaller than the query descriptors count.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#descriptormatcher-match}{\tt org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+match} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a517bcdfb65926533bd6778e14a013914}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a517bcdfb65926533bd6778e14a013914}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!match@{match}}
+\index{match@{match}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{match()}{match()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Descriptors,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}}}]{matches,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$}]{masks }\end{DoxyParamCaption})}
+
+Finds the best match for each descriptor from a query set.
+
+In the first variant of this method, the train descriptors are passed as an input argument. In the second variant of the method, train descriptors collection that was set by {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_aae08a476f7626406fb238bd32b28d1a3}{Descriptor\+Matcher.\+add}}} is used. Optional mask (or masks) can be passed to specify which query and training descriptors can be matched. Namely, {\ttfamily query\+Descriptors\mbox{[}i\mbox{]}} can be matched with {\ttfamily train\+Descriptors\mbox{[}j\mbox{]}} only if {\ttfamily mask.\+at$<$uchar$>$(i,j)} is non-\/zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Descriptors} & Query set of descriptors. \\
+\hline
+{\em matches} & Matches. If a query descriptor is masked out in {\ttfamily mask}, no match is added for this descriptor. So, {\ttfamily matches} size may be smaller than the query descriptors count. \\
+\hline
+{\em masks} & Set of masks. Each {\ttfamily masks\mbox{[}i\mbox{]}} specifies permissible matches between the input query descriptors and stored train descriptors from the i-\/th image {\ttfamily train\+Desc\+Collection\mbox{[}i\mbox{]}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#descriptormatcher-match}{\tt org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+match} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_aad343fd5829596ee48af551bfade532b}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_aad343fd5829596ee48af551bfade532b}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!match@{match}}
+\index{match@{match}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{match()}{match()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Descriptors,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}}}]{matches }\end{DoxyParamCaption})}
+
+Finds the best match for each descriptor from a query set.
+
+In the first variant of this method, the train descriptors are passed as an input argument. In the second variant of the method, train descriptors collection that was set by {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_aae08a476f7626406fb238bd32b28d1a3}{Descriptor\+Matcher.\+add}}} is used. Optional mask (or masks) can be passed to specify which query and training descriptors can be matched. Namely, {\ttfamily query\+Descriptors\mbox{[}i\mbox{]}} can be matched with {\ttfamily train\+Descriptors\mbox{[}j\mbox{]}} only if {\ttfamily mask.\+at$<$uchar$>$(i,j)} is non-\/zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Descriptors} & Query set of descriptors. \\
+\hline
+{\em matches} & Matches. If a query descriptor is masked out in {\ttfamily mask}, no match is added for this descriptor. So, {\ttfamily matches} size may be smaller than the query descriptors count.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#descriptormatcher-match}{\tt org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+match} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_ac2151f66d3a14d78678b3474554cd677}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_ac2151f66d3a14d78678b3474554cd677}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!radius\+Match@{radius\+Match}}
+\index{radius\+Match@{radius\+Match}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{radius\+Match()}{radiusMatch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+radius\+Match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Descriptors,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Descriptors,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$}]{matches,  }\item[{float}]{max\+Distance,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{mask,  }\item[{boolean}]{compact\+Result }\end{DoxyParamCaption})}
+
+For each query descriptor, finds the training descriptors not farther than the specified distance.
+
+For each query descriptor, the methods find such training descriptors that the distance between the query descriptor and the training descriptor is equal or smaller than {\ttfamily max\+Distance}. Found matches are returned in the distance increasing order.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Descriptors} & Query set of descriptors. \\
+\hline
+{\em train\+Descriptors} & Train set of descriptors. This set is not added to the train descriptors collection stored in the class object. \\
+\hline
+{\em matches} & Found matches. \\
+\hline
+{\em max\+Distance} & Threshold for the distance between matched descriptors. Distance means here metric distance (e.\+g. Hamming distance), not the distance between coordinates (which is measured in Pixels)! \\
+\hline
+{\em mask} & Mask specifying permissible matches between an input query and train matrices of descriptors. \\
+\hline
+{\em compact\+Result} & Parameter used when the mask (or masks) is not empty. If {\ttfamily compact\+Result} is false, the {\ttfamily matches} vector has the same size as {\ttfamily query\+Descriptors} rows. If {\ttfamily compact\+Result} is true, the {\ttfamily matches} vector does not contain matches for fully masked-\/out query descriptors.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#descriptormatcher-radiusmatch}{\tt org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+radius\+Match} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_afb838636cf307ab425920d3acfb18076}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_afb838636cf307ab425920d3acfb18076}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!radius\+Match@{radius\+Match}}
+\index{radius\+Match@{radius\+Match}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{radius\+Match()}{radiusMatch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+radius\+Match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Descriptors,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Descriptors,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$}]{matches,  }\item[{float}]{max\+Distance }\end{DoxyParamCaption})}
+
+For each query descriptor, finds the training descriptors not farther than the specified distance.
+
+For each query descriptor, the methods find such training descriptors that the distance between the query descriptor and the training descriptor is equal or smaller than {\ttfamily max\+Distance}. Found matches are returned in the distance increasing order.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Descriptors} & Query set of descriptors. \\
+\hline
+{\em train\+Descriptors} & Train set of descriptors. This set is not added to the train descriptors collection stored in the class object. \\
+\hline
+{\em matches} & Found matches. \\
+\hline
+{\em max\+Distance} & Threshold for the distance between matched descriptors. Distance means here metric distance (e.\+g. Hamming distance), not the distance between coordinates (which is measured in Pixels)!\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#descriptormatcher-radiusmatch}{\tt org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+radius\+Match} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_afb19b0c0b4e476a1cd181cacb11fd327}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_afb19b0c0b4e476a1cd181cacb11fd327}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!radius\+Match@{radius\+Match}}
+\index{radius\+Match@{radius\+Match}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{radius\+Match()}{radiusMatch()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+radius\+Match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Descriptors,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$}]{matches,  }\item[{float}]{max\+Distance,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$}]{masks,  }\item[{boolean}]{compact\+Result }\end{DoxyParamCaption})}
+
+For each query descriptor, finds the training descriptors not farther than the specified distance.
+
+For each query descriptor, the methods find such training descriptors that the distance between the query descriptor and the training descriptor is equal or smaller than {\ttfamily max\+Distance}. Found matches are returned in the distance increasing order.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Descriptors} & Query set of descriptors. \\
+\hline
+{\em matches} & Found matches. \\
+\hline
+{\em max\+Distance} & Threshold for the distance between matched descriptors. Distance means here metric distance (e.\+g. Hamming distance), not the distance between coordinates (which is measured in Pixels)! \\
+\hline
+{\em masks} & Set of masks. Each {\ttfamily masks\mbox{[}i\mbox{]}} specifies permissible matches between the input query descriptors and stored train descriptors from the i-\/th image {\ttfamily train\+Desc\+Collection\mbox{[}i\mbox{]}}. \\
+\hline
+{\em compact\+Result} & Parameter used when the mask (or masks) is not empty. If {\ttfamily compact\+Result} is false, the {\ttfamily matches} vector has the same size as {\ttfamily query\+Descriptors} rows. If {\ttfamily compact\+Result} is true, the {\ttfamily matches} vector does not contain matches for fully masked-\/out query descriptors.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#descriptormatcher-radiusmatch}{\tt org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+radius\+Match} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_adefcd4d38b57790bd4bd5df93f7b2388}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_adefcd4d38b57790bd4bd5df93f7b2388}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!radius\+Match@{radius\+Match}}
+\index{radius\+Match@{radius\+Match}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{radius\+Match()}{radiusMatch()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+radius\+Match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Descriptors,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$}]{matches,  }\item[{float}]{max\+Distance }\end{DoxyParamCaption})}
+
+For each query descriptor, finds the training descriptors not farther than the specified distance.
+
+For each query descriptor, the methods find such training descriptors that the distance between the query descriptor and the training descriptor is equal or smaller than {\ttfamily max\+Distance}. Found matches are returned in the distance increasing order.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Descriptors} & Query set of descriptors. \\
+\hline
+{\em matches} & Found matches. \\
+\hline
+{\em max\+Distance} & Threshold for the distance between matched descriptors. Distance means here metric distance (e.\+g. Hamming distance), not the distance between coordinates (which is measured in Pixels)!\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#descriptormatcher-radiusmatch}{\tt org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+radius\+Match} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a3f7b8b0f65dd65d0c2169ee33615a6e8}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a3f7b8b0f65dd65d0c2169ee33615a6e8}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!read@{read}}
+\index{read@{read}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+read (\begin{DoxyParamCaption}\item[{String}]{file\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a6c4da7f3f15fbea1000c509fec8ad1b9}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a6c4da7f3f15fbea1000c509fec8ad1b9}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!train@{train}}
+\index{train@{train}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{train()}{train()}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+train (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Trains a descriptor matcher
+
+Trains a descriptor matcher (for example, the flann index). In all methods to match, the method {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a6c4da7f3f15fbea1000c509fec8ad1b9}{train()}}} is run every time before matching. Some descriptor matchers (for example, {\ttfamily Brute\+Force\+Matcher}) have an empty implementation of this method. Other matchers really train their inner structures (for example, {\ttfamily Flann\+Based\+Matcher} trains {\ttfamily flann.\+Index}).
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#descriptormatcher-train}{\tt org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+train} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a9cb97b589f0af378c86f98f2f66c9c6b}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a9cb97b589f0af378c86f98f2f66c9c6b}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!write@{write}}
+\index{write@{write}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+write (\begin{DoxyParamCaption}\item[{String}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_ab63db8f54105cd9d4712c2fe371fa7b9}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_ab63db8f54105cd9d4712c2fe371fa7b9}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!F\+L\+A\+N\+N\+B\+A\+S\+ED@{F\+L\+A\+N\+N\+B\+A\+S\+ED}}
+\index{F\+L\+A\+N\+N\+B\+A\+S\+ED@{F\+L\+A\+N\+N\+B\+A\+S\+ED}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{F\+L\+A\+N\+N\+B\+A\+S\+ED}{FLANNBASED}}
+{\footnotesize\ttfamily final int org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+F\+L\+A\+N\+N\+B\+A\+S\+ED = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a9e8464485925fc0504cfefec24d4b299}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_a9e8464485925fc0504cfefec24d4b299}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}!native\+Obj@{native\+Obj}}
+\index{native\+Obj@{native\+Obj}!org\+::opencv\+::features2d\+::\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{native\+Obj}{nativeObj}}
+{\footnotesize\ttfamily final long org.\+opencv.\+features2d.\+Descriptor\+Matcher.\+native\+Obj\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/features2d/\mbox{\hyperlink{_descriptor_matcher_8java}{Descriptor\+Matcher.\+java}}\end{DoxyCompactItemize}

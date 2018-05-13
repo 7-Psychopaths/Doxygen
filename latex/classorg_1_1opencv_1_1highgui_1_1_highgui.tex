@@ -1,0 +1,598 @@
+\hypertarget{classorg_1_1opencv_1_1highgui_1_1_highgui}{}\section{org.\+opencv.\+highgui.\+Highgui Class Reference}
+\label{classorg_1_1opencv_1_1highgui_1_1_highgui}\index{org.\+opencv.\+highgui.\+Highgui@{org.\+opencv.\+highgui.\+Highgui}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_highgui_a6d7448d231f18708a101435c0eef2a09}{imdecode}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} buf, int flags)
+\item 
+static boolean \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_highgui_a884983c417b1783e2463afbce0ac7581}{imencode}} (String ext, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} img, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_byte}{Mat\+Of\+Byte}} buf, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_int}{Mat\+Of\+Int}} params)
+\item 
+static boolean \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_highgui_a953566e88b2a160276647bd2e84c8ed2}{imencode}} (String ext, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} img, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_byte}{Mat\+Of\+Byte}} buf)
+\item 
+static \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_highgui_abca0208ca1f1e3966c0b87d537dcb3f6}{imread}} (String filename, int flags)
+\item 
+static \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_highgui_a5a6663aa4361aeee0ac48902d46a15f6}{imread}} (String filename)
+\item 
+static boolean \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_highgui_a096ee9b12d8d232cf9b93b69f765c0be}{imwrite}} (String filename, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} img, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_int}{Mat\+Of\+Int}} params)
+\item 
+static boolean \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_highgui_ab3f296e86b1e2348d4d9325cab008f01}{imwrite}} (String filename, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} img)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_highgui_a7c1682eaa282f2d7f586689734ca723c}{C\+V\+\_\+\+F\+O\+N\+T\+\_\+\+L\+I\+G\+HT}} = 25
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1highgui_1_1_highgui_a6d7448d231f18708a101435c0eef2a09}\label{classorg_1_1opencv_1_1highgui_1_1_highgui_a6d7448d231f18708a101435c0eef2a09}} 
+\index{org\+::opencv\+::highgui\+::\+Highgui@{org\+::opencv\+::highgui\+::\+Highgui}!imdecode@{imdecode}}
+\index{imdecode@{imdecode}!org\+::opencv\+::highgui\+::\+Highgui@{org\+::opencv\+::highgui\+::\+Highgui}}
+\subsubsection{\texorpdfstring{imdecode()}{imdecode()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} org.\+opencv.\+highgui.\+Highgui.\+imdecode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{buf,  }\item[{int}]{flags }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Reads an image from a buffer in memory.
+
+The function reads an image from the specified buffer in the memory. If the buffer is too short or contains invalid data, the empty matrix/image is returned.
+
+See \char`\"{}imread\char`\"{} for the list of supported formats and flags description.
+
+Note\+: In the case of color images, the decoded images will have the channels stored in {\ttfamily B G \mbox{\hyperlink{classorg_1_1opencv_1_1_r}{R}}} order.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & Input array or vector of bytes. \\
+\hline
+{\em flags} & The same flags as in \char`\"{}imread\char`\"{}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/highgui/doc/reading_and_writing_images_and_video.html#imdecode}{\tt org.\+opencv.\+highgui.\+Highgui.\+imdecode} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1highgui_1_1_highgui_a884983c417b1783e2463afbce0ac7581}\label{classorg_1_1opencv_1_1highgui_1_1_highgui_a884983c417b1783e2463afbce0ac7581}} 
+\index{org\+::opencv\+::highgui\+::\+Highgui@{org\+::opencv\+::highgui\+::\+Highgui}!imencode@{imencode}}
+\index{imencode@{imencode}!org\+::opencv\+::highgui\+::\+Highgui@{org\+::opencv\+::highgui\+::\+Highgui}}
+\subsubsection{\texorpdfstring{imencode()}{imencode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static boolean org.\+opencv.\+highgui.\+Highgui.\+imencode (\begin{DoxyParamCaption}\item[{String}]{ext,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{img,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_byte}{Mat\+Of\+Byte}}}]{buf,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_int}{Mat\+Of\+Int}}}]{params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Encodes an image into a memory buffer.
+
+The function compresses the image and stores it in the memory buffer that is resized to fit the result. See \char`\"{}imwrite\char`\"{} for the list of supported formats and flags description.
+
+Note\+: {\ttfamily cv\+Encode\+Image} returns single-\/row matrix of type {\ttfamily C\+V\+\_\+8\+U\+C1} that contains encoded image as array of bytes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ext} & File extension that defines the output format. \\
+\hline
+{\em img} & Image to be written. \\
+\hline
+{\em buf} & Output buffer resized to fit the compressed image. \\
+\hline
+{\em params} & Format-\/specific parameters. See \char`\"{}imwrite\char`\"{}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/highgui/doc/reading_and_writing_images_and_video.html#imencode}{\tt org.\+opencv.\+highgui.\+Highgui.\+imencode} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1highgui_1_1_highgui_a953566e88b2a160276647bd2e84c8ed2}\label{classorg_1_1opencv_1_1highgui_1_1_highgui_a953566e88b2a160276647bd2e84c8ed2}} 
+\index{org\+::opencv\+::highgui\+::\+Highgui@{org\+::opencv\+::highgui\+::\+Highgui}!imencode@{imencode}}
+\index{imencode@{imencode}!org\+::opencv\+::highgui\+::\+Highgui@{org\+::opencv\+::highgui\+::\+Highgui}}
+\subsubsection{\texorpdfstring{imencode()}{imencode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static boolean org.\+opencv.\+highgui.\+Highgui.\+imencode (\begin{DoxyParamCaption}\item[{String}]{ext,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{img,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_byte}{Mat\+Of\+Byte}}}]{buf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Encodes an image into a memory buffer.
+
+The function compresses the image and stores it in the memory buffer that is resized to fit the result. See \char`\"{}imwrite\char`\"{} for the list of supported formats and flags description.
+
+Note\+: {\ttfamily cv\+Encode\+Image} returns single-\/row matrix of type {\ttfamily C\+V\+\_\+8\+U\+C1} that contains encoded image as array of bytes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ext} & File extension that defines the output format. \\
+\hline
+{\em img} & Image to be written. \\
+\hline
+{\em buf} & Output buffer resized to fit the compressed image.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/highgui/doc/reading_and_writing_images_and_video.html#imencode}{\tt org.\+opencv.\+highgui.\+Highgui.\+imencode} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1highgui_1_1_highgui_abca0208ca1f1e3966c0b87d537dcb3f6}\label{classorg_1_1opencv_1_1highgui_1_1_highgui_abca0208ca1f1e3966c0b87d537dcb3f6}} 
+\index{org\+::opencv\+::highgui\+::\+Highgui@{org\+::opencv\+::highgui\+::\+Highgui}!imread@{imread}}
+\index{imread@{imread}!org\+::opencv\+::highgui\+::\+Highgui@{org\+::opencv\+::highgui\+::\+Highgui}}
+\subsubsection{\texorpdfstring{imread()}{imread()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} org.\+opencv.\+highgui.\+Highgui.\+imread (\begin{DoxyParamCaption}\item[{String}]{filename,  }\item[{int}]{flags }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Loads an image from a file.
+
+The function {\ttfamily imread} loads an image from the specified file and returns it. If the image cannot be read (because of missing file, improper permissions, unsupported or invalid format), the function returns an empty matrix ({\ttfamily Mat.\+data==N\+U\+LL}). Currently, the following file formats are supported\+:
+
+
+\begin{DoxyItemize}
+\item Windows bitmaps -\/ {\ttfamily $\ast$.bmp, $\ast$.dib} (always supported) 
+\item J\+P\+EG files -\/ {\ttfamily $\ast$.jpeg, $\ast$.jpg, $\ast$.jpe} (see the {\itshape Notes} section) 
+\item J\+P\+EG 2000 files -\/ {\ttfamily $\ast$.jp2} (see the {\itshape Notes} section) 
+\item Portable Network Graphics -\/ {\ttfamily $\ast$.png} (see the {\itshape Notes} section) 
+\item Portable image format -\/ {\ttfamily $\ast$.pbm, $\ast$.pgm, $\ast$.ppm} (always supported) 
+\item Sun rasters -\/ {\ttfamily $\ast$.sr, $\ast$.ras} (always supported) 
+\item T\+I\+FF files -\/ {\ttfamily $\ast$.tiff, $\ast$.tif} (see the {\itshape Notes} section) 
+\end{DoxyItemize}
+
+Note\+:
+
+
+\begin{DoxyItemize}
+\item The function determines the type of an image by the content, not by the file extension. 
+\item On Microsoft Windows$\ast$ OS and Mac\+O\+S\+X$\ast$, the codecs shipped with an Open\+CV image (libjpeg, libpng, libtiff, and libjasper) are used by default. So, Open\+CV can always read J\+P\+E\+Gs, P\+N\+Gs, and T\+I\+F\+Fs. On Mac\+O\+SX, there is also an option to use native Mac\+O\+SX image readers. But beware that currently these native image loaders give images with different pixel values because of the color management embedded into Mac\+O\+SX. 
+\item On Linux$\ast$, B\+SD flavors and other Unix-\/like open-\/source operating systems, Open\+CV looks for codecs supplied with an OS image. Install the relevant packages (do not forget the development files, for example, \char`\"{}libjpeg-\/dev\char`\"{}, in Debian$\ast$ and Ubuntu$\ast$) to get the codec support or turn on the {\ttfamily O\+P\+E\+N\+C\+V\+\_\+\+B\+U\+I\+L\+D\+\_\+3\+R\+D\+P\+A\+R\+T\+Y\+\_\+\+L\+I\+BS} flag in C\+Make. 
+\end{DoxyItemize}
+
+Note\+: In the case of color images, the decoded images will have the channels stored in {\ttfamily B G \mbox{\hyperlink{classorg_1_1opencv_1_1_r}{R}}} order.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of file to be loaded. \\
+\hline
+{\em flags} & Flags specifying the color type of a loaded image\+: 
+\begin{DoxyItemize}
+\item C\+V\+\_\+\+L\+O\+A\+D\+\_\+\+I\+M\+A\+G\+E\+\_\+\+A\+N\+Y\+D\+E\+P\+TH -\/ If set, return 16-\/bit/32-\/bit image when the input has the corresponding depth, otherwise convert it to 8-\/bit. 
+\item C\+V\+\_\+\+L\+O\+A\+D\+\_\+\+I\+M\+A\+G\+E\+\_\+\+C\+O\+L\+OR -\/ If set, always convert image to the color one 
+\item C\+V\+\_\+\+L\+O\+A\+D\+\_\+\+I\+M\+A\+G\+E\+\_\+\+G\+R\+A\+Y\+S\+C\+A\+LE -\/ If set, always convert image to the grayscale one 
+\item $>$0 Return a 3-\/channel color image. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+Note\+: In the current implementation the alpha channel, if any, is stripped from the output image. Use negative value if you need the alpha channel.
+
+
+\begin{DoxyItemize}
+\item =0 Return a grayscale image. 
+\item $<$0 Return the loaded image as is (with alpha channel). 
+\end{DoxyItemize}
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/highgui/doc/reading_and_writing_images_and_video.html#imread}{\tt org.\+opencv.\+highgui.\+Highgui.\+imread} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1highgui_1_1_highgui_a5a6663aa4361aeee0ac48902d46a15f6}\label{classorg_1_1opencv_1_1highgui_1_1_highgui_a5a6663aa4361aeee0ac48902d46a15f6}} 
+\index{org\+::opencv\+::highgui\+::\+Highgui@{org\+::opencv\+::highgui\+::\+Highgui}!imread@{imread}}
+\index{imread@{imread}!org\+::opencv\+::highgui\+::\+Highgui@{org\+::opencv\+::highgui\+::\+Highgui}}
+\subsubsection{\texorpdfstring{imread()}{imread()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} org.\+opencv.\+highgui.\+Highgui.\+imread (\begin{DoxyParamCaption}\item[{String}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Loads an image from a file.
+
+The function {\ttfamily imread} loads an image from the specified file and returns it. If the image cannot be read (because of missing file, improper permissions, unsupported or invalid format), the function returns an empty matrix ({\ttfamily Mat.\+data==N\+U\+LL}). Currently, the following file formats are supported\+:
+
+
+\begin{DoxyItemize}
+\item Windows bitmaps -\/ {\ttfamily $\ast$.bmp, $\ast$.dib} (always supported) 
+\item J\+P\+EG files -\/ {\ttfamily $\ast$.jpeg, $\ast$.jpg, $\ast$.jpe} (see the {\itshape Notes} section) 
+\item J\+P\+EG 2000 files -\/ {\ttfamily $\ast$.jp2} (see the {\itshape Notes} section) 
+\item Portable Network Graphics -\/ {\ttfamily $\ast$.png} (see the {\itshape Notes} section) 
+\item Portable image format -\/ {\ttfamily $\ast$.pbm, $\ast$.pgm, $\ast$.ppm} (always supported) 
+\item Sun rasters -\/ {\ttfamily $\ast$.sr, $\ast$.ras} (always supported) 
+\item T\+I\+FF files -\/ {\ttfamily $\ast$.tiff, $\ast$.tif} (see the {\itshape Notes} section) 
+\end{DoxyItemize}
+
+Note\+:
+
+
+\begin{DoxyItemize}
+\item The function determines the type of an image by the content, not by the file extension. 
+\item On Microsoft Windows$\ast$ OS and Mac\+O\+S\+X$\ast$, the codecs shipped with an Open\+CV image (libjpeg, libpng, libtiff, and libjasper) are used by default. So, Open\+CV can always read J\+P\+E\+Gs, P\+N\+Gs, and T\+I\+F\+Fs. On Mac\+O\+SX, there is also an option to use native Mac\+O\+SX image readers. But beware that currently these native image loaders give images with different pixel values because of the color management embedded into Mac\+O\+SX. 
+\item On Linux$\ast$, B\+SD flavors and other Unix-\/like open-\/source operating systems, Open\+CV looks for codecs supplied with an OS image. Install the relevant packages (do not forget the development files, for example, \char`\"{}libjpeg-\/dev\char`\"{}, in Debian$\ast$ and Ubuntu$\ast$) to get the codec support or turn on the {\ttfamily O\+P\+E\+N\+C\+V\+\_\+\+B\+U\+I\+L\+D\+\_\+3\+R\+D\+P\+A\+R\+T\+Y\+\_\+\+L\+I\+BS} flag in C\+Make. 
+\end{DoxyItemize}
+
+Note\+: In the case of color images, the decoded images will have the channels stored in {\ttfamily B G \mbox{\hyperlink{classorg_1_1opencv_1_1_r}{R}}} order.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of file to be loaded.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/highgui/doc/reading_and_writing_images_and_video.html#imread}{\tt org.\+opencv.\+highgui.\+Highgui.\+imread} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1highgui_1_1_highgui_a096ee9b12d8d232cf9b93b69f765c0be}\label{classorg_1_1opencv_1_1highgui_1_1_highgui_a096ee9b12d8d232cf9b93b69f765c0be}} 
+\index{org\+::opencv\+::highgui\+::\+Highgui@{org\+::opencv\+::highgui\+::\+Highgui}!imwrite@{imwrite}}
+\index{imwrite@{imwrite}!org\+::opencv\+::highgui\+::\+Highgui@{org\+::opencv\+::highgui\+::\+Highgui}}
+\subsubsection{\texorpdfstring{imwrite()}{imwrite()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static boolean org.\+opencv.\+highgui.\+Highgui.\+imwrite (\begin{DoxyParamCaption}\item[{String}]{filename,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{img,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_int}{Mat\+Of\+Int}}}]{params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Saves an image to a specified file.
+
+The function {\ttfamily imwrite} saves the image to the specified file. The image format is chosen based on the {\ttfamily filename} extension (see \char`\"{}imread\char`\"{} for the list of extensions). Only 8-\/bit (or 16-\/bit unsigned ({\ttfamily C\+V\+\_\+16U}) in case of P\+NG, J\+P\+EG 2000, and T\+I\+FF) single-\/channel or 3-\/channel (with \textquotesingle{}B\+GR\textquotesingle{} channel order) images can be saved using this function. If the format, depth or channel order is different, use \char`\"{}\+Mat.\+convert\+To\char`\"{}, and \char`\"{}cvt\+Color\char`\"{} to convert it before saving. Or, use the universal X\+ML I/O functions to save the image to X\+ML or Y\+A\+ML format. It is possible to store P\+NG images with an alpha channel using this function. To do this, create 8-\/bit (or 16-\/bit) 4-\/channel image B\+G\+RA, where the alpha channel goes last. Fully transparent pixels should have alpha set to 0, fully opaque pixels should have alpha set to 255/65535. The sample below shows how to create such a B\+G\+RA image and store to P\+NG file. It also demonstrates how to set custom compression parameters {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \#include $<$vector$>$}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \#include $<$stdio.\+h$>$}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \#include $<$opencv2/opencv.\+hpp$>$}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily using namespace cv;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily using namespace std;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily void create\+Alpha\+Mat(\+Mat \&mat)}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily for (int i = 0; i $<$ mat.\+rows; ++i) \{}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily for (int j = 0; j $<$ mat.\+cols; ++j) \{}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Vec4b\& rgba = mat.\+at$<$\+Vec4b$>$(i, j);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily rgba\mbox{[}0\mbox{]} = U\+C\+H\+A\+R\+\_\+\+M\+AX;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily rgba\mbox{[}1\mbox{]} = saturate\+\_\+cast$<$uchar$>$((float (mat.\+cols -\/ j)) / ((float)mat.\+cols) $\ast$ U\+C\+H\+A\+R\+\_\+\+M\+AX);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily rgba\mbox{[}2\mbox{]} = saturate\+\_\+cast$<$uchar$>$((float (mat.\+rows -\/ i)) / ((float)mat.\+rows) $\ast$ U\+C\+H\+A\+R\+\_\+\+M\+AX);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily rgba\mbox{[}3\mbox{]} = saturate\+\_\+cast$<$uchar$>$(0.\+5 $\ast$ (rgba\mbox{[}1\mbox{]} + rgba\mbox{[}2\mbox{]}));}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily int main(int argv, char argc)}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // Create mat with alpha channel}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Mat mat(480, 640, C\+V\+\_\+8\+U\+C4);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily create\+Alpha\+Mat(mat);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily vector$<$int$>$ compression\+\_\+params;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily compression\+\_\+params.\+push\+\_\+back(\+C\+V\+\_\+\+I\+M\+W\+R\+I\+T\+E\+\_\+\+P\+N\+G\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+I\+O\+N);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily compression\+\_\+params.\+push\+\_\+back(9);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily try \{}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily imwrite(\char`\"{}alpha.\+png\char`\"{}, mat, compression\+\_\+params);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily catch (runtime\+\_\+error\& ex) \{}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily fprintf(stderr, \char`\"{}\+Exception converting image to P\+N\+G format\+: \%sn\char`\"{}, ex.\+what());}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily return 1;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily fprintf(stdout, \char`\"{}\+Saved P\+N\+G file with alpha data.\+n\char`\"{});}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily return 0;}
+
+{\ttfamily }
+
+{\ttfamily 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of the file. \\
+\hline
+{\em img} & a img \\
+\hline
+{\em params} & Format-\/specific save parameters encoded as pairs {\ttfamily param\+Id\+\_\+1, param\+Value\+\_\+1, param\+Id\+\_\+2, param\+Value\+\_\+2,...}. The following parameters are currently supported\+: 
+\begin{DoxyItemize}
+\item For J\+P\+EG, it can be a quality ({\ttfamily C\+V\+\_\+\+I\+M\+W\+R\+I\+T\+E\+\_\+\+J\+P\+E\+G\+\_\+\+Q\+U\+A\+L\+I\+TY}) from 0 to 100 (the higher is the better). Default value is 95. 
+\item For P\+NG, it can be the compression level ({\ttfamily C\+V\+\_\+\+I\+M\+W\+R\+I\+T\+E\+\_\+\+P\+N\+G\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+I\+ON}) from 0 to 9. A higher value means a smaller size and longer compression time. Default value is 3. 
+\item For P\+PM, P\+GM, or P\+BM, it can be a binary format flag ({\ttfamily C\+V\+\_\+\+I\+M\+W\+R\+I\+T\+E\+\_\+\+P\+X\+M\+\_\+\+B\+I\+N\+A\+RY}), 0 or 1. Default value is 1. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/highgui/doc/reading_and_writing_images_and_video.html#imwrite}{\tt org.\+opencv.\+highgui.\+Highgui.\+imwrite} 
+\end{DoxySeeAlso}
+}\mbox{\Hypertarget{classorg_1_1opencv_1_1highgui_1_1_highgui_ab3f296e86b1e2348d4d9325cab008f01}\label{classorg_1_1opencv_1_1highgui_1_1_highgui_ab3f296e86b1e2348d4d9325cab008f01}} 
+\index{org\+::opencv\+::highgui\+::\+Highgui@{org\+::opencv\+::highgui\+::\+Highgui}!imwrite@{imwrite}}
+\index{imwrite@{imwrite}!org\+::opencv\+::highgui\+::\+Highgui@{org\+::opencv\+::highgui\+::\+Highgui}}
+\subsubsection{\texorpdfstring{imwrite()}{imwrite()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static boolean org.\+opencv.\+highgui.\+Highgui.\+imwrite (\begin{DoxyParamCaption}\item[{String}]{filename,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Saves an image to a specified file.
+
+The function {\ttfamily imwrite} saves the image to the specified file. The image format is chosen based on the {\ttfamily filename} extension (see \char`\"{}imread\char`\"{} for the list of extensions). Only 8-\/bit (or 16-\/bit unsigned ({\ttfamily C\+V\+\_\+16U}) in case of P\+NG, J\+P\+EG 2000, and T\+I\+FF) single-\/channel or 3-\/channel (with \textquotesingle{}B\+GR\textquotesingle{} channel order) images can be saved using this function. If the format, depth or channel order is different, use \char`\"{}\+Mat.\+convert\+To\char`\"{}, and \char`\"{}cvt\+Color\char`\"{} to convert it before saving. Or, use the universal X\+ML I/O functions to save the image to X\+ML or Y\+A\+ML format. It is possible to store P\+NG images with an alpha channel using this function. To do this, create 8-\/bit (or 16-\/bit) 4-\/channel image B\+G\+RA, where the alpha channel goes last. Fully transparent pixels should have alpha set to 0, fully opaque pixels should have alpha set to 255/65535. The sample below shows how to create such a B\+G\+RA image and store to P\+NG file. It also demonstrates how to set custom compression parameters {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \#include $<$vector$>$}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \#include $<$stdio.\+h$>$}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \#include $<$opencv2/opencv.\+hpp$>$}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily using namespace cv;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily using namespace std;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily void create\+Alpha\+Mat(\+Mat \&mat)}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily for (int i = 0; i $<$ mat.\+rows; ++i) \{}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily for (int j = 0; j $<$ mat.\+cols; ++j) \{}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Vec4b\& rgba = mat.\+at$<$\+Vec4b$>$(i, j);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily rgba\mbox{[}0\mbox{]} = U\+C\+H\+A\+R\+\_\+\+M\+AX;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily rgba\mbox{[}1\mbox{]} = saturate\+\_\+cast$<$uchar$>$((float (mat.\+cols -\/ j)) / ((float)mat.\+cols) $\ast$ U\+C\+H\+A\+R\+\_\+\+M\+AX);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily rgba\mbox{[}2\mbox{]} = saturate\+\_\+cast$<$uchar$>$((float (mat.\+rows -\/ i)) / ((float)mat.\+rows) $\ast$ U\+C\+H\+A\+R\+\_\+\+M\+AX);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily rgba\mbox{[}3\mbox{]} = saturate\+\_\+cast$<$uchar$>$(0.\+5 $\ast$ (rgba\mbox{[}1\mbox{]} + rgba\mbox{[}2\mbox{]}));}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily int main(int argv, char argc)}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // Create mat with alpha channel}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Mat mat(480, 640, C\+V\+\_\+8\+U\+C4);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily create\+Alpha\+Mat(mat);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily vector$<$int$>$ compression\+\_\+params;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily compression\+\_\+params.\+push\+\_\+back(\+C\+V\+\_\+\+I\+M\+W\+R\+I\+T\+E\+\_\+\+P\+N\+G\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+I\+O\+N);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily compression\+\_\+params.\+push\+\_\+back(9);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily try \{}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily imwrite(\char`\"{}alpha.\+png\char`\"{}, mat, compression\+\_\+params);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily catch (runtime\+\_\+error\& ex) \{}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily fprintf(stderr, \char`\"{}\+Exception converting image to P\+N\+G format\+: \%sn\char`\"{}, ex.\+what());}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily return 1;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily fprintf(stdout, \char`\"{}\+Saved P\+N\+G file with alpha data.\+n\char`\"{});}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily return 0;}
+
+{\ttfamily }
+
+{\ttfamily 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of the file. \\
+\hline
+{\em img} & a img\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/highgui/doc/reading_and_writing_images_and_video.html#imwrite}{\tt org.\+opencv.\+highgui.\+Highgui.\+imwrite} 
+\end{DoxySeeAlso}
+}
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1highgui_1_1_highgui_a7c1682eaa282f2d7f586689734ca723c}\label{classorg_1_1opencv_1_1highgui_1_1_highgui_a7c1682eaa282f2d7f586689734ca723c}} 
+\index{org\+::opencv\+::highgui\+::\+Highgui@{org\+::opencv\+::highgui\+::\+Highgui}!C\+V\+\_\+\+F\+O\+N\+T\+\_\+\+L\+I\+G\+HT@{C\+V\+\_\+\+F\+O\+N\+T\+\_\+\+L\+I\+G\+HT}}
+\index{C\+V\+\_\+\+F\+O\+N\+T\+\_\+\+L\+I\+G\+HT@{C\+V\+\_\+\+F\+O\+N\+T\+\_\+\+L\+I\+G\+HT}!org\+::opencv\+::highgui\+::\+Highgui@{org\+::opencv\+::highgui\+::\+Highgui}}
+\subsubsection{\texorpdfstring{C\+V\+\_\+\+F\+O\+N\+T\+\_\+\+L\+I\+G\+HT}{CV\_FONT\_LIGHT}}
+{\footnotesize\ttfamily final int org.\+opencv.\+highgui.\+Highgui.\+C\+V\+\_\+\+F\+O\+N\+T\+\_\+\+L\+I\+G\+HT = 25\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/highgui/\mbox{\hyperlink{_highgui_8java}{Highgui.\+java}}\end{DoxyCompactItemize}

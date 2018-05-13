@@ -1,0 +1,77 @@
+\hypertarget{classorg_1_1opencv_1_1objdetect_1_1_objdetect}{}\section{org.\+opencv.\+objdetect.\+Objdetect Class Reference}
+\label{classorg_1_1opencv_1_1objdetect_1_1_objdetect}\index{org.\+opencv.\+objdetect.\+Objdetect@{org.\+opencv.\+objdetect.\+Objdetect}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_objdetect_a191a5f60a172b0995d608c60c0bda94a}{group\+Rectangles}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_rect}{Mat\+Of\+Rect}} rect\+List, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_int}{Mat\+Of\+Int}} weights, int group\+Threshold, double eps)
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_objdetect_afc480a65db1a8f163fd502f3078b47a4}{group\+Rectangles}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_rect}{Mat\+Of\+Rect}} rect\+List, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_int}{Mat\+Of\+Int}} weights, int group\+Threshold)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_objdetect_a83223136aeee1402bbf0b95ec7efa0d8}{C\+A\+S\+C\+A\+D\+E\+\_\+\+D\+O\+\_\+\+C\+A\+N\+N\+Y\+\_\+\+P\+R\+U\+N\+I\+NG}} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_objdetect_a191a5f60a172b0995d608c60c0bda94a}\label{classorg_1_1opencv_1_1objdetect_1_1_objdetect_a191a5f60a172b0995d608c60c0bda94a}} 
+\index{org\+::opencv\+::objdetect\+::\+Objdetect@{org\+::opencv\+::objdetect\+::\+Objdetect}!group\+Rectangles@{group\+Rectangles}}
+\index{group\+Rectangles@{group\+Rectangles}!org\+::opencv\+::objdetect\+::\+Objdetect@{org\+::opencv\+::objdetect\+::\+Objdetect}}
+\subsubsection{\texorpdfstring{group\+Rectangles()}{groupRectangles()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void org.\+opencv.\+objdetect.\+Objdetect.\+group\+Rectangles (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_rect}{Mat\+Of\+Rect}}}]{rect\+List,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_int}{Mat\+Of\+Int}}}]{weights,  }\item[{int}]{group\+Threshold,  }\item[{double}]{eps }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Groups the object candidate rectangles.
+
+The function is a wrapper for the generic function \char`\"{}partition\char`\"{}. It clusters all the input rectangles using the rectangle equivalence criteria that combines rectangles with similar sizes and similar locations. The similarity is defined by {\ttfamily eps}. When {\ttfamily eps=0}, no clustering is done at all. If {\itshape eps-\/$>$ +inf}, all the rectangles are put in one cluster. Then, the small clusters containing less than or equal to {\ttfamily group\+Threshold} rectangles are rejected. In each other cluster, the average rectangle is computed and put into the output rectangle list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rect\+List} & Input/output vector of rectangles. Output vector includes retained and grouped rectangles. (The Python list is not modified in place.) \\
+\hline
+{\em weights} & a weights \\
+\hline
+{\em group\+Threshold} & Minimum possible number of rectangles minus 1. The threshold is used in a group of rectangles to retain it. \\
+\hline
+{\em eps} & Relative difference between sides of the rectangles to merge them into a group.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/objdetect/doc/cascade_classification.html#grouprectangles}{\tt org.\+opencv.\+objdetect.\+Objdetect.\+group\+Rectangles} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_objdetect_afc480a65db1a8f163fd502f3078b47a4}\label{classorg_1_1opencv_1_1objdetect_1_1_objdetect_afc480a65db1a8f163fd502f3078b47a4}} 
+\index{org\+::opencv\+::objdetect\+::\+Objdetect@{org\+::opencv\+::objdetect\+::\+Objdetect}!group\+Rectangles@{group\+Rectangles}}
+\index{group\+Rectangles@{group\+Rectangles}!org\+::opencv\+::objdetect\+::\+Objdetect@{org\+::opencv\+::objdetect\+::\+Objdetect}}
+\subsubsection{\texorpdfstring{group\+Rectangles()}{groupRectangles()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void org.\+opencv.\+objdetect.\+Objdetect.\+group\+Rectangles (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_rect}{Mat\+Of\+Rect}}}]{rect\+List,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_int}{Mat\+Of\+Int}}}]{weights,  }\item[{int}]{group\+Threshold }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Groups the object candidate rectangles.
+
+The function is a wrapper for the generic function \char`\"{}partition\char`\"{}. It clusters all the input rectangles using the rectangle equivalence criteria that combines rectangles with similar sizes and similar locations. The similarity is defined by {\ttfamily eps}. When {\ttfamily eps=0}, no clustering is done at all. If {\itshape eps-\/$>$ +inf}, all the rectangles are put in one cluster. Then, the small clusters containing less than or equal to {\ttfamily group\+Threshold} rectangles are rejected. In each other cluster, the average rectangle is computed and put into the output rectangle list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rect\+List} & Input/output vector of rectangles. Output vector includes retained and grouped rectangles. (The Python list is not modified in place.) \\
+\hline
+{\em weights} & a weights \\
+\hline
+{\em group\+Threshold} & Minimum possible number of rectangles minus 1. The threshold is used in a group of rectangles to retain it.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/objdetect/doc/cascade_classification.html#grouprectangles}{\tt org.\+opencv.\+objdetect.\+Objdetect.\+group\+Rectangles} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_objdetect_a83223136aeee1402bbf0b95ec7efa0d8}\label{classorg_1_1opencv_1_1objdetect_1_1_objdetect_a83223136aeee1402bbf0b95ec7efa0d8}} 
+\index{org\+::opencv\+::objdetect\+::\+Objdetect@{org\+::opencv\+::objdetect\+::\+Objdetect}!C\+A\+S\+C\+A\+D\+E\+\_\+\+D\+O\+\_\+\+C\+A\+N\+N\+Y\+\_\+\+P\+R\+U\+N\+I\+NG@{C\+A\+S\+C\+A\+D\+E\+\_\+\+D\+O\+\_\+\+C\+A\+N\+N\+Y\+\_\+\+P\+R\+U\+N\+I\+NG}}
+\index{C\+A\+S\+C\+A\+D\+E\+\_\+\+D\+O\+\_\+\+C\+A\+N\+N\+Y\+\_\+\+P\+R\+U\+N\+I\+NG@{C\+A\+S\+C\+A\+D\+E\+\_\+\+D\+O\+\_\+\+C\+A\+N\+N\+Y\+\_\+\+P\+R\+U\+N\+I\+NG}!org\+::opencv\+::objdetect\+::\+Objdetect@{org\+::opencv\+::objdetect\+::\+Objdetect}}
+\subsubsection{\texorpdfstring{C\+A\+S\+C\+A\+D\+E\+\_\+\+D\+O\+\_\+\+C\+A\+N\+N\+Y\+\_\+\+P\+R\+U\+N\+I\+NG}{CASCADE\_DO\_CANNY\_PRUNING}}
+{\footnotesize\ttfamily final int org.\+opencv.\+objdetect.\+Objdetect.\+C\+A\+S\+C\+A\+D\+E\+\_\+\+D\+O\+\_\+\+C\+A\+N\+N\+Y\+\_\+\+P\+R\+U\+N\+I\+NG = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/objdetect/\mbox{\hyperlink{_objdetect_8java}{Objdetect.\+java}}\end{DoxyCompactItemize}

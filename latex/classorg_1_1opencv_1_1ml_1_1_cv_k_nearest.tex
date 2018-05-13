@@ -1,0 +1,228 @@
+\hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest}{}\section{org.\+opencv.\+ml.\+Cv\+K\+Nearest Class Reference}
+\label{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest}\index{org.\+opencv.\+ml.\+Cv\+K\+Nearest@{org.\+opencv.\+ml.\+Cv\+K\+Nearest}}
+Inheritance diagram for org.\+opencv.\+ml.\+Cv\+K\+Nearest\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest_af6d22d07534fa138fbf3c2279bbe8300}{Cv\+K\+Nearest}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest_aaf56327cf25a554fcabadbd32b5e5622}{Cv\+K\+Nearest}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Data, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} responses, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample\+Idx, boolean is\+Regression, int max\+\_\+k)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest_a0971b80fa2de3df95ba0b87efd8dbb9a}{Cv\+K\+Nearest}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Data, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} responses)
+\item 
+float \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest_a43433439f169e81fb05a101e84e3ed57}{find\+\_\+nearest}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} samples, int k, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} results, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} neighbor\+Responses, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} dists)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest_aeba1551faef0374791568c47fdb253ac}{train}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Data, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} responses, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample\+Idx, boolean is\+Regression, int maxK, boolean update\+Base)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest_a0d82009c9e1e9a4c327e354bca6a1347}{train}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Data, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} responses)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest_a101ba1d24437af035d8fbb695256c16d}{Cv\+K\+Nearest}} (long addr)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest_a11e3b4a4d8bfc437637fdd9ecb23ad55}{finalize}} ()  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The class implements K-\/\+Nearest Neighbors model as described in the beginning of this section.
+
+Note\+:
+
+
+\begin{DoxyItemize}
+\item (Python) An example of digit recognition using K\+Nearest can be found at opencv\+\_\+source/samples/python2/digits.\+py 
+\item (Python) An example of grid search digit recognition using K\+Nearest can be found at opencv\+\_\+source/samples/python2/digits\+\_\+adjust.\+py 
+\item (Python) An example of video digit recognition using K\+Nearest can be found at opencv\+\_\+source/samples/python2/digits\+\_\+video.\+py 
+\end{DoxyItemize}
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/k_nearest_neighbors.html#cvknearest}{\tt org.\+opencv.\+ml.\+Cv\+K\+Nearest \+: public Cv\+Stat\+Model} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest_a101ba1d24437af035d8fbb695256c16d}\label{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest_a101ba1d24437af035d8fbb695256c16d}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+K\+Nearest@{org\+::opencv\+::ml\+::\+Cv\+K\+Nearest}!Cv\+K\+Nearest@{Cv\+K\+Nearest}}
+\index{Cv\+K\+Nearest@{Cv\+K\+Nearest}!org\+::opencv\+::ml\+::\+Cv\+K\+Nearest@{org\+::opencv\+::ml\+::\+Cv\+K\+Nearest}}
+\subsubsection{\texorpdfstring{Cv\+K\+Nearest()}{CvKNearest()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+K\+Nearest.\+Cv\+K\+Nearest (\begin{DoxyParamCaption}\item[{long}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest_af6d22d07534fa138fbf3c2279bbe8300}\label{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest_af6d22d07534fa138fbf3c2279bbe8300}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+K\+Nearest@{org\+::opencv\+::ml\+::\+Cv\+K\+Nearest}!Cv\+K\+Nearest@{Cv\+K\+Nearest}}
+\index{Cv\+K\+Nearest@{Cv\+K\+Nearest}!org\+::opencv\+::ml\+::\+Cv\+K\+Nearest@{org\+::opencv\+::ml\+::\+Cv\+K\+Nearest}}
+\subsubsection{\texorpdfstring{Cv\+K\+Nearest()}{CvKNearest()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+K\+Nearest.\+Cv\+K\+Nearest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default and training constructors.
+
+See \char`\"{}\+Cv\+K\+Nearest.\+train\char`\"{} for additional parameters descriptions.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/k_nearest_neighbors.html#cvknearest-cvknearest}{\tt org.\+opencv.\+ml.\+Cv\+K\+Nearest.\+Cv\+K\+Nearest} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest_aaf56327cf25a554fcabadbd32b5e5622}\label{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest_aaf56327cf25a554fcabadbd32b5e5622}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+K\+Nearest@{org\+::opencv\+::ml\+::\+Cv\+K\+Nearest}!Cv\+K\+Nearest@{Cv\+K\+Nearest}}
+\index{Cv\+K\+Nearest@{Cv\+K\+Nearest}!org\+::opencv\+::ml\+::\+Cv\+K\+Nearest@{org\+::opencv\+::ml\+::\+Cv\+K\+Nearest}}
+\subsubsection{\texorpdfstring{Cv\+K\+Nearest()}{CvKNearest()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+K\+Nearest.\+Cv\+K\+Nearest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Data,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{responses,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample\+Idx,  }\item[{boolean}]{is\+Regression,  }\item[{int}]{max\+\_\+k }\end{DoxyParamCaption})}
+
+Default and training constructors.
+
+See \char`\"{}\+Cv\+K\+Nearest.\+train\char`\"{} for additional parameters descriptions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Data} & a train\+Data \\
+\hline
+{\em responses} & a responses \\
+\hline
+{\em sample\+Idx} & a sample\+Idx \\
+\hline
+{\em is\+Regression} & a is\+Regression \\
+\hline
+{\em max\+\_\+k} & a max\+\_\+k\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/k_nearest_neighbors.html#cvknearest-cvknearest}{\tt org.\+opencv.\+ml.\+Cv\+K\+Nearest.\+Cv\+K\+Nearest} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest_a0971b80fa2de3df95ba0b87efd8dbb9a}\label{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest_a0971b80fa2de3df95ba0b87efd8dbb9a}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+K\+Nearest@{org\+::opencv\+::ml\+::\+Cv\+K\+Nearest}!Cv\+K\+Nearest@{Cv\+K\+Nearest}}
+\index{Cv\+K\+Nearest@{Cv\+K\+Nearest}!org\+::opencv\+::ml\+::\+Cv\+K\+Nearest@{org\+::opencv\+::ml\+::\+Cv\+K\+Nearest}}
+\subsubsection{\texorpdfstring{Cv\+K\+Nearest()}{CvKNearest()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+K\+Nearest.\+Cv\+K\+Nearest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Data,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{responses }\end{DoxyParamCaption})}
+
+Default and training constructors.
+
+See \char`\"{}\+Cv\+K\+Nearest.\+train\char`\"{} for additional parameters descriptions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Data} & a train\+Data \\
+\hline
+{\em responses} & a responses\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/k_nearest_neighbors.html#cvknearest-cvknearest}{\tt org.\+opencv.\+ml.\+Cv\+K\+Nearest.\+Cv\+K\+Nearest} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest_a11e3b4a4d8bfc437637fdd9ecb23ad55}\label{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest_a11e3b4a4d8bfc437637fdd9ecb23ad55}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+K\+Nearest@{org\+::opencv\+::ml\+::\+Cv\+K\+Nearest}!finalize@{finalize}}
+\index{finalize@{finalize}!org\+::opencv\+::ml\+::\+Cv\+K\+Nearest@{org\+::opencv\+::ml\+::\+Cv\+K\+Nearest}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+K\+Nearest.\+finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Throwable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest_a43433439f169e81fb05a101e84e3ed57}\label{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest_a43433439f169e81fb05a101e84e3ed57}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+K\+Nearest@{org\+::opencv\+::ml\+::\+Cv\+K\+Nearest}!find\+\_\+nearest@{find\+\_\+nearest}}
+\index{find\+\_\+nearest@{find\+\_\+nearest}!org\+::opencv\+::ml\+::\+Cv\+K\+Nearest@{org\+::opencv\+::ml\+::\+Cv\+K\+Nearest}}
+\subsubsection{\texorpdfstring{find\+\_\+nearest()}{find\_nearest()}}
+{\footnotesize\ttfamily float org.\+opencv.\+ml.\+Cv\+K\+Nearest.\+find\+\_\+nearest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{samples,  }\item[{int}]{k,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{results,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{neighbor\+Responses,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{dists }\end{DoxyParamCaption})}
+
+Finds the neighbors and predicts responses for input vectors.
+
+For each input vector (a row of the matrix {\ttfamily samples}), the method finds the {\ttfamily k} nearest neighbors. In case of regression, the predicted result is a mean value of the particular vector\textquotesingle{}s neighbor responses. In case of classification, the class is determined by voting.
+
+For each input vector, the neighbors are sorted by their distances to the vector.
+
+In case of C++ interface you can use output pointers to empty matrices and the function will allocate memory itself.
+
+If only a single input vector is passed, all output matrices are optional and the predicted value is returned by the method.
+
+The function is parallelized with the T\+BB library.
+
+
+\begin{DoxyParams}{Parameters}
+{\em samples} & Input samples stored by rows. It is a single-\/precision floating-\/point matrix of {\itshape number\+\_\+of\+\_\+samples x number\+\_\+of\+\_\+features} size. \\
+\hline
+{\em k} & Number of used nearest neighbors. It must satisfy constraint\+: {\itshape k $<$= } \char`\"{}\+Cv\+K\+Nearest.\+get\+\_\+max\+\_\+k\char`\"{}. \\
+\hline
+{\em results} & Vector with results of prediction (regression or classification) for each input sample. It is a single-\/precision floating-\/point vector with {\ttfamily number\+\_\+of\+\_\+samples} elements. \\
+\hline
+{\em neighbor\+Responses} & Optional output values for corresponding {\ttfamily neighbors}. It is a single-\/precision floating-\/point matrix of {\itshape number\+\_\+of\+\_\+samples x k} size. \\
+\hline
+{\em dists} & a dists\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/k_nearest_neighbors.html#cvknearest-find-nearest}{\tt org.\+opencv.\+ml.\+Cv\+K\+Nearest.\+find\+\_\+nearest} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest_aeba1551faef0374791568c47fdb253ac}\label{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest_aeba1551faef0374791568c47fdb253ac}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+K\+Nearest@{org\+::opencv\+::ml\+::\+Cv\+K\+Nearest}!train@{train}}
+\index{train@{train}!org\+::opencv\+::ml\+::\+Cv\+K\+Nearest@{org\+::opencv\+::ml\+::\+Cv\+K\+Nearest}}
+\subsubsection{\texorpdfstring{train()}{train()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+ml.\+Cv\+K\+Nearest.\+train (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Data,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{responses,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample\+Idx,  }\item[{boolean}]{is\+Regression,  }\item[{int}]{maxK,  }\item[{boolean}]{update\+Base }\end{DoxyParamCaption})}
+
+Trains the model.
+
+The method trains the K-\/\+Nearest model. It follows the conventions of the generic \char`\"{}\+Cv\+Stat\+Model.\+train\char`\"{} approach with the following limitations\+:
+
+
+\begin{DoxyItemize}
+\item Only {\ttfamily C\+V\+\_\+\+R\+O\+W\+\_\+\+S\+A\+M\+P\+LE} data layout is supported. 
+\item Input variables are all ordered. 
+\item Output variables can be either categorical ({\ttfamily is\+\_\+regression=false}) or ordered ({\ttfamily is\+\_\+regression=true}). 
+\item Variable subsets ({\ttfamily var\+\_\+idx}) and missing measurements are not supported. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Data} & a train\+Data \\
+\hline
+{\em responses} & a responses \\
+\hline
+{\em sample\+Idx} & a sample\+Idx \\
+\hline
+{\em is\+Regression} & Type of the problem\+: {\ttfamily true} for regression and {\ttfamily false} for classification. \\
+\hline
+{\em maxK} & Number of maximum neighbors that may be passed to the method \char`\"{}\+Cv\+K\+Nearest.\+find\+\_\+nearest\char`\"{}. \\
+\hline
+{\em update\+Base} & Specifies whether the model is trained from scratch ({\ttfamily update\+\_\+base=false}), or it is updated using the new training data ({\ttfamily update\+\_\+base=true}). In the latter case, the parameter {\ttfamily maxK} must not be larger than the original value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/k_nearest_neighbors.html#cvknearest-train}{\tt org.\+opencv.\+ml.\+Cv\+K\+Nearest.\+train} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest_a0d82009c9e1e9a4c327e354bca6a1347}\label{classorg_1_1opencv_1_1ml_1_1_cv_k_nearest_a0d82009c9e1e9a4c327e354bca6a1347}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+K\+Nearest@{org\+::opencv\+::ml\+::\+Cv\+K\+Nearest}!train@{train}}
+\index{train@{train}!org\+::opencv\+::ml\+::\+Cv\+K\+Nearest@{org\+::opencv\+::ml\+::\+Cv\+K\+Nearest}}
+\subsubsection{\texorpdfstring{train()}{train()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+ml.\+Cv\+K\+Nearest.\+train (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Data,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{responses }\end{DoxyParamCaption})}
+
+Trains the model.
+
+The method trains the K-\/\+Nearest model. It follows the conventions of the generic \char`\"{}\+Cv\+Stat\+Model.\+train\char`\"{} approach with the following limitations\+:
+
+
+\begin{DoxyItemize}
+\item Only {\ttfamily C\+V\+\_\+\+R\+O\+W\+\_\+\+S\+A\+M\+P\+LE} data layout is supported. 
+\item Input variables are all ordered. 
+\item Output variables can be either categorical ({\ttfamily is\+\_\+regression=false}) or ordered ({\ttfamily is\+\_\+regression=true}). 
+\item Variable subsets ({\ttfamily var\+\_\+idx}) and missing measurements are not supported. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Data} & a train\+Data \\
+\hline
+{\em responses} & a responses\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/k_nearest_neighbors.html#cvknearest-train}{\tt org.\+opencv.\+ml.\+Cv\+K\+Nearest.\+train} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/ml/\mbox{\hyperlink{_cv_k_nearest_8java}{Cv\+K\+Nearest.\+java}}\end{DoxyCompactItemize}

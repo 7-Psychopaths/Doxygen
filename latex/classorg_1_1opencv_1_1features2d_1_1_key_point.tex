@@ -1,0 +1,265 @@
+\hypertarget{classorg_1_1opencv_1_1features2d_1_1_key_point}{}\section{org.\+opencv.\+features2d.\+Key\+Point Class Reference}
+\label{classorg_1_1opencv_1_1features2d_1_1_key_point}\index{org.\+opencv.\+features2d.\+Key\+Point@{org.\+opencv.\+features2d.\+Key\+Point}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_key_point_ab881124337e7ed8f8901941a93480b3e}{Key\+Point}} (float x, float y, float \+\_\+size, float \+\_\+angle, float \+\_\+response, int \+\_\+octave, int \+\_\+class\+\_\+id)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_key_point_a39069c7576099d221fc93f6ab772d7b3}{Key\+Point}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_key_point_ac2dbc2add9b446a669e9cc2772786437}{Key\+Point}} (float x, float y, float \+\_\+size, float \+\_\+angle, float \+\_\+response, int \+\_\+octave)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_key_point_a5c15743886f15eb89338d4303231eea6}{Key\+Point}} (float x, float y, float \+\_\+size, float \+\_\+angle, float \+\_\+response)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_key_point_a576359f028d9203d944f74c72d1c57c0}{Key\+Point}} (float x, float y, float \+\_\+size, float \+\_\+angle)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_key_point_a962b7142aae6bd95afcb6c9188b67668}{Key\+Point}} (float x, float y, float \+\_\+size)
+\item 
+String \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_key_point_a2326d3eaa541219cf29f60b734910ba3}{to\+String}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point}{Point}} \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_key_point_aa32e9c9c90cf525a04137368636205c9}{pt}}
+\item 
+float \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_key_point_aff65ea537ec0b3510fc0eb1472588c68}{size}}
+\item 
+float \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_key_point_a3b851700d50a8e8bc8e1c1340dac7470}{angle}}
+\item 
+float \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_key_point_a161c4cf71a23c1716c3e9636e1d0ab71}{response}}
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_key_point_a63257aa818d9c7546c92305b0af79218}{octave}}
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_key_point_a4f705d04c9d7bc8d8d0360146d087dae}{class\+\_\+id}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Data structure for salient point detectors.
+
+coordinates of the keypoint
+
+diameter of the meaningful keypoint neighborhood {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily computed orientation of the keypoint (-\/1 if not applicable). Its possible values are in a range \mbox{[}0,360) degrees. It is measured relative to image coordinate system (y-\/axis is directed downward), ie in clockwise.}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily the response by which the most strong keypoints have been selected. Can be used for further sorting or subsampling}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily octave (pyramid layer) from which the keypoint has been extracted}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily object id that can be used to clustered keypoints by an object they belong to}
+
+{\ttfamily }
+
+{\ttfamily \begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_feature_detectors.html#keypoint}{\tt org.\+opencv.\+features2d.\+Key\+Point} 
+\end{DoxySeeAlso}
+}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_key_point_ab881124337e7ed8f8901941a93480b3e}\label{classorg_1_1opencv_1_1features2d_1_1_key_point_ab881124337e7ed8f8901941a93480b3e}} 
+\index{org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}!Key\+Point@{Key\+Point}}
+\index{Key\+Point@{Key\+Point}!org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}}
+\subsubsection{\texorpdfstring{Key\+Point()}{KeyPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily org.\+opencv.\+features2d.\+Key\+Point.\+Key\+Point (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{\+\_\+size,  }\item[{float}]{\+\_\+angle,  }\item[{float}]{\+\_\+response,  }\item[{int}]{\+\_\+octave,  }\item[{int}]{\+\_\+class\+\_\+id }\end{DoxyParamCaption})}
+
+The keypoint constructors
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x-\/coordinate of the keypoint \\
+\hline
+{\em y} & y-\/coordinate of the keypoint \\
+\hline
+{\em \+\_\+size} & keypoint diameter \\
+\hline
+{\em \+\_\+angle} & keypoint orientation \\
+\hline
+{\em \+\_\+response} & keypoint detector response on the keypoint (that is, strength of the keypoint) \\
+\hline
+{\em \+\_\+octave} & pyramid octave in which the keypoint has been detected \\
+\hline
+{\em \+\_\+class\+\_\+id} & object id\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_feature_detectors.html#keypoint-keypoint}{\tt org.\+opencv.\+features2d.\+Key\+Point.\+Key\+Point} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_key_point_a39069c7576099d221fc93f6ab772d7b3}\label{classorg_1_1opencv_1_1features2d_1_1_key_point_a39069c7576099d221fc93f6ab772d7b3}} 
+\index{org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}!Key\+Point@{Key\+Point}}
+\index{Key\+Point@{Key\+Point}!org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}}
+\subsubsection{\texorpdfstring{Key\+Point()}{KeyPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily org.\+opencv.\+features2d.\+Key\+Point.\+Key\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The keypoint constructors
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_feature_detectors.html#keypoint-keypoint}{\tt org.\+opencv.\+features2d.\+Key\+Point.\+Key\+Point} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_key_point_ac2dbc2add9b446a669e9cc2772786437}\label{classorg_1_1opencv_1_1features2d_1_1_key_point_ac2dbc2add9b446a669e9cc2772786437}} 
+\index{org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}!Key\+Point@{Key\+Point}}
+\index{Key\+Point@{Key\+Point}!org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}}
+\subsubsection{\texorpdfstring{Key\+Point()}{KeyPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily org.\+opencv.\+features2d.\+Key\+Point.\+Key\+Point (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{\+\_\+size,  }\item[{float}]{\+\_\+angle,  }\item[{float}]{\+\_\+response,  }\item[{int}]{\+\_\+octave }\end{DoxyParamCaption})}
+
+The keypoint constructors
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x-\/coordinate of the keypoint \\
+\hline
+{\em y} & y-\/coordinate of the keypoint \\
+\hline
+{\em \+\_\+size} & keypoint diameter \\
+\hline
+{\em \+\_\+angle} & keypoint orientation \\
+\hline
+{\em \+\_\+response} & keypoint detector response on the keypoint (that is, strength of the keypoint) \\
+\hline
+{\em \+\_\+octave} & pyramid octave in which the keypoint has been detected\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_feature_detectors.html#keypoint-keypoint}{\tt org.\+opencv.\+features2d.\+Key\+Point.\+Key\+Point} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_key_point_a5c15743886f15eb89338d4303231eea6}\label{classorg_1_1opencv_1_1features2d_1_1_key_point_a5c15743886f15eb89338d4303231eea6}} 
+\index{org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}!Key\+Point@{Key\+Point}}
+\index{Key\+Point@{Key\+Point}!org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}}
+\subsubsection{\texorpdfstring{Key\+Point()}{KeyPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily org.\+opencv.\+features2d.\+Key\+Point.\+Key\+Point (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{\+\_\+size,  }\item[{float}]{\+\_\+angle,  }\item[{float}]{\+\_\+response }\end{DoxyParamCaption})}
+
+The keypoint constructors
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x-\/coordinate of the keypoint \\
+\hline
+{\em y} & y-\/coordinate of the keypoint \\
+\hline
+{\em \+\_\+size} & keypoint diameter \\
+\hline
+{\em \+\_\+angle} & keypoint orientation \\
+\hline
+{\em \+\_\+response} & keypoint detector response on the keypoint (that is, strength of the keypoint)\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_feature_detectors.html#keypoint-keypoint}{\tt org.\+opencv.\+features2d.\+Key\+Point.\+Key\+Point} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_key_point_a576359f028d9203d944f74c72d1c57c0}\label{classorg_1_1opencv_1_1features2d_1_1_key_point_a576359f028d9203d944f74c72d1c57c0}} 
+\index{org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}!Key\+Point@{Key\+Point}}
+\index{Key\+Point@{Key\+Point}!org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}}
+\subsubsection{\texorpdfstring{Key\+Point()}{KeyPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily org.\+opencv.\+features2d.\+Key\+Point.\+Key\+Point (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{\+\_\+size,  }\item[{float}]{\+\_\+angle }\end{DoxyParamCaption})}
+
+The keypoint constructors
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x-\/coordinate of the keypoint \\
+\hline
+{\em y} & y-\/coordinate of the keypoint \\
+\hline
+{\em \+\_\+size} & keypoint diameter \\
+\hline
+{\em \+\_\+angle} & keypoint orientation\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_feature_detectors.html#keypoint-keypoint}{\tt org.\+opencv.\+features2d.\+Key\+Point.\+Key\+Point} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_key_point_a962b7142aae6bd95afcb6c9188b67668}\label{classorg_1_1opencv_1_1features2d_1_1_key_point_a962b7142aae6bd95afcb6c9188b67668}} 
+\index{org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}!Key\+Point@{Key\+Point}}
+\index{Key\+Point@{Key\+Point}!org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}}
+\subsubsection{\texorpdfstring{Key\+Point()}{KeyPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily org.\+opencv.\+features2d.\+Key\+Point.\+Key\+Point (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{\+\_\+size }\end{DoxyParamCaption})}
+
+The keypoint constructors
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x-\/coordinate of the keypoint \\
+\hline
+{\em y} & y-\/coordinate of the keypoint \\
+\hline
+{\em \+\_\+size} & keypoint diameter\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_feature_detectors.html#keypoint-keypoint}{\tt org.\+opencv.\+features2d.\+Key\+Point.\+Key\+Point} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_key_point_a2326d3eaa541219cf29f60b734910ba3}\label{classorg_1_1opencv_1_1features2d_1_1_key_point_a2326d3eaa541219cf29f60b734910ba3}} 
+\index{org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily String org.\+opencv.\+features2d.\+Key\+Point.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_key_point_a3b851700d50a8e8bc8e1c1340dac7470}\label{classorg_1_1opencv_1_1features2d_1_1_key_point_a3b851700d50a8e8bc8e1c1340dac7470}} 
+\index{org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}!angle@{angle}}
+\index{angle@{angle}!org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}}
+\subsubsection{\texorpdfstring{angle}{angle}}
+{\footnotesize\ttfamily float org.\+opencv.\+features2d.\+Key\+Point.\+angle}
+
+Computed orientation of the keypoint (-\/1 if not applicable). \mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_key_point_a4f705d04c9d7bc8d8d0360146d087dae}\label{classorg_1_1opencv_1_1features2d_1_1_key_point_a4f705d04c9d7bc8d8d0360146d087dae}} 
+\index{org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}!class\+\_\+id@{class\+\_\+id}}
+\index{class\+\_\+id@{class\+\_\+id}!org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}}
+\subsubsection{\texorpdfstring{class\+\_\+id}{class\_id}}
+{\footnotesize\ttfamily int org.\+opencv.\+features2d.\+Key\+Point.\+class\+\_\+id}
+
+Object ID, that can be used to cluster keypoints by an object they belong to. \mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_key_point_a63257aa818d9c7546c92305b0af79218}\label{classorg_1_1opencv_1_1features2d_1_1_key_point_a63257aa818d9c7546c92305b0af79218}} 
+\index{org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}!octave@{octave}}
+\index{octave@{octave}!org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}}
+\subsubsection{\texorpdfstring{octave}{octave}}
+{\footnotesize\ttfamily int org.\+opencv.\+features2d.\+Key\+Point.\+octave}
+
+Octave (pyramid layer), from which the keypoint has been extracted. \mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_key_point_aa32e9c9c90cf525a04137368636205c9}\label{classorg_1_1opencv_1_1features2d_1_1_key_point_aa32e9c9c90cf525a04137368636205c9}} 
+\index{org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}!pt@{pt}}
+\index{pt@{pt}!org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}}
+\subsubsection{\texorpdfstring{pt}{pt}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point}{Point}} org.\+opencv.\+features2d.\+Key\+Point.\+pt}
+
+Coordinates of the keypoint. \mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_key_point_a161c4cf71a23c1716c3e9636e1d0ab71}\label{classorg_1_1opencv_1_1features2d_1_1_key_point_a161c4cf71a23c1716c3e9636e1d0ab71}} 
+\index{org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}!response@{response}}
+\index{response@{response}!org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}}
+\subsubsection{\texorpdfstring{response}{response}}
+{\footnotesize\ttfamily float org.\+opencv.\+features2d.\+Key\+Point.\+response}
+
+The response, by which the strongest keypoints have been selected. Can be used for further sorting or subsampling. \mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_key_point_aff65ea537ec0b3510fc0eb1472588c68}\label{classorg_1_1opencv_1_1features2d_1_1_key_point_aff65ea537ec0b3510fc0eb1472588c68}} 
+\index{org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}!size@{size}}
+\index{size@{size}!org\+::opencv\+::features2d\+::\+Key\+Point@{org\+::opencv\+::features2d\+::\+Key\+Point}}
+\subsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily float org.\+opencv.\+features2d.\+Key\+Point.\+size}
+
+Diameter of the useful keypoint adjacent area. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/features2d/\mbox{\hyperlink{_key_point_8java}{Key\+Point.\+java}}\end{DoxyCompactItemize}

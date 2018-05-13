@@ -1,0 +1,276 @@
+\hypertarget{classorg_1_1opencv_1_1core_1_1_term_criteria}{}\section{org.\+opencv.\+core.\+Term\+Criteria Class Reference}
+\label{classorg_1_1opencv_1_1core_1_1_term_criteria}\index{org.\+opencv.\+core.\+Term\+Criteria@{org.\+opencv.\+core.\+Term\+Criteria}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria_aab618b09e5c0396892be99f3723c1280}{Term\+Criteria}} (int \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria_a0ec4f89d9e2f07a48fdf3ac94fe1420c}{type}}, int \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria_a4e0c8aa19649f1be17d3c4f5301c52ec}{max\+Count}}, double \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria_aafbb2d64dbc1bef799e7378ce70e5545}{epsilon}})
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria_abba54a5a885a351eb8dd7faea5a5220c}{Term\+Criteria}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria_a5b2a060465f7c9bb947d830cabb5c025}{Term\+Criteria}} (double\mbox{[}$\,$\mbox{]} vals)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria_a47eda2e7810cd047bd48694e8fd012c0}{set}} (double\mbox{[}$\,$\mbox{]} vals)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria}{Term\+Criteria}} \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria_ae5b02a1631cb0f906979161c4482c94f}{clone}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria_a99aca444cf3d7bbba3318cc9120a4f66}{hash\+Code}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria_a2cce86b2d64109a22c65423606ed9141}{equals}} (Object obj)
+\item 
+String \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria_a774d39ad7dd4910aae4a1fa531c6b21b}{to\+String}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria_a0ec4f89d9e2f07a48fdf3ac94fe1420c}{type}}
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria_a4e0c8aa19649f1be17d3c4f5301c52ec}{max\+Count}}
+\item 
+double \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria_aafbb2d64dbc1bef799e7378ce70e5545}{epsilon}}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria_a0f76277287df20de243f9e6102a8ebd3}{C\+O\+U\+NT}} = 1
+\item 
+static final int \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria_ad378dbfc8700c3c967e3cb01b503d0db}{M\+A\+X\+\_\+\+I\+T\+ER}} = \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria_a0f76277287df20de243f9e6102a8ebd3}{C\+O\+U\+NT}}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria_a111f1613d13f414f4cde48e2ce866367}{E\+PS}} = 2
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class C\+V\+\_\+\+E\+X\+P\+O\+R\+TS \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria}{Term\+Criteria}} {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily public\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily enum}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily C\+O\+U\+NT=1, //!$<$ the maximum number of iterations or elements to compute}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily M\+A\+X\+\_\+\+I\+T\+ER=C\+O\+U\+NT, //!$<$ ditto}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily E\+PS=2 //!$<$ the desired accuracy or change in parameters at which the iterative algorithm stops}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \};}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //! default constructor}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria_abba54a5a885a351eb8dd7faea5a5220c}{Term\+Criteria()}};}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //! full constructor}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria_aab618b09e5c0396892be99f3723c1280}{Term\+Criteria(int type, int max\+Count, double epsilon)}};}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //! conversion from Cv\+Term\+Criteria}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Term\+Criteria(const Cv\+Term\+Criteria\& criteria);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //! conversion to Cv\+Term\+Criteria}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily operator Cv\+Term\+Criteria() const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily int type; //!$<$ the type of termination criteria\+: C\+O\+U\+NT, E\+PS or C\+O\+U\+NT + E\+PS}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily int max\+Count; // the maximum number of iterations/elements}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily double epsilon; // the desired accuracy}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \};}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily The class defining termination criteria for iterative algorithms. You can initialize it by default constructor and then override any parameters, or the structure may be fully initialized using the advanced variant of the constructor. }
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/core/doc/basic_structures.html#termcriteria}{\tt org.\+opencv.\+core.\+Term\+Criteria} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_term_criteria_aab618b09e5c0396892be99f3723c1280}\label{classorg_1_1opencv_1_1core_1_1_term_criteria_aab618b09e5c0396892be99f3723c1280}} 
+\index{org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}!Term\+Criteria@{Term\+Criteria}}
+\index{Term\+Criteria@{Term\+Criteria}!org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}}
+\subsubsection{\texorpdfstring{Term\+Criteria()}{TermCriteria()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily org.\+opencv.\+core.\+Term\+Criteria.\+Term\+Criteria (\begin{DoxyParamCaption}\item[{int}]{type,  }\item[{int}]{max\+Count,  }\item[{double}]{epsilon }\end{DoxyParamCaption})}
+
+Termination criteria for iterative algorithms.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & the type of termination criteria\+: C\+O\+U\+NT, E\+PS or C\+O\+U\+NT + E\+PS. \\
+\hline
+{\em max\+Count} & the maximum number of iterations/elements. \\
+\hline
+{\em epsilon} & the desired accuracy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_term_criteria_abba54a5a885a351eb8dd7faea5a5220c}\label{classorg_1_1opencv_1_1core_1_1_term_criteria_abba54a5a885a351eb8dd7faea5a5220c}} 
+\index{org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}!Term\+Criteria@{Term\+Criteria}}
+\index{Term\+Criteria@{Term\+Criteria}!org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}}
+\subsubsection{\texorpdfstring{Term\+Criteria()}{TermCriteria()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily org.\+opencv.\+core.\+Term\+Criteria.\+Term\+Criteria (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Termination criteria for iterative algorithms. \mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_term_criteria_a5b2a060465f7c9bb947d830cabb5c025}\label{classorg_1_1opencv_1_1core_1_1_term_criteria_a5b2a060465f7c9bb947d830cabb5c025}} 
+\index{org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}!Term\+Criteria@{Term\+Criteria}}
+\index{Term\+Criteria@{Term\+Criteria}!org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}}
+\subsubsection{\texorpdfstring{Term\+Criteria()}{TermCriteria()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily org.\+opencv.\+core.\+Term\+Criteria.\+Term\+Criteria (\begin{DoxyParamCaption}\item[{double \mbox{[}$\,$\mbox{]}}]{vals }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_term_criteria_ae5b02a1631cb0f906979161c4482c94f}\label{classorg_1_1opencv_1_1core_1_1_term_criteria_ae5b02a1631cb0f906979161c4482c94f}} 
+\index{org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}!clone@{clone}}
+\index{clone@{clone}!org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria}{Term\+Criteria}} org.\+opencv.\+core.\+Term\+Criteria.\+clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_term_criteria_a2cce86b2d64109a22c65423606ed9141}\label{classorg_1_1opencv_1_1core_1_1_term_criteria_a2cce86b2d64109a22c65423606ed9141}} 
+\index{org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}!equals@{equals}}
+\index{equals@{equals}!org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}}
+\subsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+core.\+Term\+Criteria.\+equals (\begin{DoxyParamCaption}\item[{Object}]{obj }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_term_criteria_a99aca444cf3d7bbba3318cc9120a4f66}\label{classorg_1_1opencv_1_1core_1_1_term_criteria_a99aca444cf3d7bbba3318cc9120a4f66}} 
+\index{org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}!hash\+Code@{hash\+Code}}
+\index{hash\+Code@{hash\+Code}!org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}}
+\subsubsection{\texorpdfstring{hash\+Code()}{hashCode()}}
+{\footnotesize\ttfamily int org.\+opencv.\+core.\+Term\+Criteria.\+hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_term_criteria_a47eda2e7810cd047bd48694e8fd012c0}\label{classorg_1_1opencv_1_1core_1_1_term_criteria_a47eda2e7810cd047bd48694e8fd012c0}} 
+\index{org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}!set@{set}}
+\index{set@{set}!org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void org.\+opencv.\+core.\+Term\+Criteria.\+set (\begin{DoxyParamCaption}\item[{double \mbox{[}$\,$\mbox{]}}]{vals }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_term_criteria_a774d39ad7dd4910aae4a1fa531c6b21b}\label{classorg_1_1opencv_1_1core_1_1_term_criteria_a774d39ad7dd4910aae4a1fa531c6b21b}} 
+\index{org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily String org.\+opencv.\+core.\+Term\+Criteria.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_term_criteria_a0f76277287df20de243f9e6102a8ebd3}\label{classorg_1_1opencv_1_1core_1_1_term_criteria_a0f76277287df20de243f9e6102a8ebd3}} 
+\index{org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}!C\+O\+U\+NT@{C\+O\+U\+NT}}
+\index{C\+O\+U\+NT@{C\+O\+U\+NT}!org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}}
+\subsubsection{\texorpdfstring{C\+O\+U\+NT}{COUNT}}
+{\footnotesize\ttfamily final int org.\+opencv.\+core.\+Term\+Criteria.\+C\+O\+U\+NT = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+The maximum number of iterations or elements to compute \mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_term_criteria_a111f1613d13f414f4cde48e2ce866367}\label{classorg_1_1opencv_1_1core_1_1_term_criteria_a111f1613d13f414f4cde48e2ce866367}} 
+\index{org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}!E\+PS@{E\+PS}}
+\index{E\+PS@{E\+PS}!org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}}
+\subsubsection{\texorpdfstring{E\+PS}{EPS}}
+{\footnotesize\ttfamily final int org.\+opencv.\+core.\+Term\+Criteria.\+E\+PS = 2\hspace{0.3cm}{\ttfamily [static]}}
+
+The desired accuracy threshold or change in parameters at which the iterative algorithm is terminated. \mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_term_criteria_aafbb2d64dbc1bef799e7378ce70e5545}\label{classorg_1_1opencv_1_1core_1_1_term_criteria_aafbb2d64dbc1bef799e7378ce70e5545}} 
+\index{org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}!epsilon@{epsilon}}
+\index{epsilon@{epsilon}!org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}}
+\subsubsection{\texorpdfstring{epsilon}{epsilon}}
+{\footnotesize\ttfamily double org.\+opencv.\+core.\+Term\+Criteria.\+epsilon}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_term_criteria_ad378dbfc8700c3c967e3cb01b503d0db}\label{classorg_1_1opencv_1_1core_1_1_term_criteria_ad378dbfc8700c3c967e3cb01b503d0db}} 
+\index{org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}!M\+A\+X\+\_\+\+I\+T\+ER@{M\+A\+X\+\_\+\+I\+T\+ER}}
+\index{M\+A\+X\+\_\+\+I\+T\+ER@{M\+A\+X\+\_\+\+I\+T\+ER}!org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+I\+T\+ER}{MAX\_ITER}}
+{\footnotesize\ttfamily final int org.\+opencv.\+core.\+Term\+Criteria.\+M\+A\+X\+\_\+\+I\+T\+ER = \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_term_criteria_a0f76277287df20de243f9e6102a8ebd3}{C\+O\+U\+NT}}\hspace{0.3cm}{\ttfamily [static]}}
+
+The maximum number of iterations or elements to compute \mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_term_criteria_a4e0c8aa19649f1be17d3c4f5301c52ec}\label{classorg_1_1opencv_1_1core_1_1_term_criteria_a4e0c8aa19649f1be17d3c4f5301c52ec}} 
+\index{org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}!max\+Count@{max\+Count}}
+\index{max\+Count@{max\+Count}!org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}}
+\subsubsection{\texorpdfstring{max\+Count}{maxCount}}
+{\footnotesize\ttfamily int org.\+opencv.\+core.\+Term\+Criteria.\+max\+Count}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_term_criteria_a0ec4f89d9e2f07a48fdf3ac94fe1420c}\label{classorg_1_1opencv_1_1core_1_1_term_criteria_a0ec4f89d9e2f07a48fdf3ac94fe1420c}} 
+\index{org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}!type@{type}}
+\index{type@{type}!org\+::opencv\+::core\+::\+Term\+Criteria@{org\+::opencv\+::core\+::\+Term\+Criteria}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily int org.\+opencv.\+core.\+Term\+Criteria.\+type}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/core/\mbox{\hyperlink{_term_criteria_8java}{Term\+Criteria.\+java}}\end{DoxyCompactItemize}

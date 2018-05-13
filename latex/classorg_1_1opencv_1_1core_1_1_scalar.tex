@@ -1,0 +1,297 @@
+\hypertarget{classorg_1_1opencv_1_1core_1_1_scalar}{}\section{org.\+opencv.\+core.\+Scalar Class Reference}
+\label{classorg_1_1opencv_1_1core_1_1_scalar}\index{org.\+opencv.\+core.\+Scalar@{org.\+opencv.\+core.\+Scalar}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar_a04b29c5652d074c999eaf60878ed859e}{Scalar}} (double v0, double v1, double v2, double v3)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar_ac7e4a16663084e22ce81338ed51b901d}{Scalar}} (double v0, double v1, double v2)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar_af0dc66669d16d1a30ed0b44981a25b69}{Scalar}} (double v0, double v1)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar_a5fdded9cf5c81f48e83edd85fde8d435}{Scalar}} (double v0)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar_a26051d6b5f968bc26ec4b1ce51885de3}{Scalar}} (double\mbox{[}$\,$\mbox{]} vals)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar_a4ca58ccf95a87d6e7a7b7db3deb9f25b}{set}} (double\mbox{[}$\,$\mbox{]} vals)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar}{Scalar}} \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar_a4c3e3f4170f39b101790d5c47e6367b2}{clone}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar}{Scalar}} \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar_a67dfcb24ec507020e3e4e9a77c683e2b}{mul}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar}{Scalar}} it, double scale)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar}{Scalar}} \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar_aa667cb58f9591cdc47b2eff0ec429155}{mul}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar}{Scalar}} it)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar}{Scalar}} \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar_a88324b97617f5300cb2eaccfe8cc1372}{conj}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar_adb5fa226bef53c802266aa92dd990eb9}{is\+Real}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar_af8ce69511ac02979ea924ee58faa566c}{hash\+Code}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar_aa31070a4b7d142d715dc0d2a98a97d30}{equals}} (Object obj)
+\item 
+String \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar_a356103a63673efc5aa249ee1d9746b27}{to\+String}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar}{Scalar}} \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar_a23961589549dcb0c16f97418e26464e7}{all}} (double v)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar_ad5d5ede832d661889ead64c3353f9dd5}{val}} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Template class for a 4-\/element vector derived from Vec.
+
+template$<$typename \+\_\+\+Tp$>$ class C\+V\+\_\+\+E\+X\+P\+O\+R\+TS Scalar\+\_\+ \+: public Vec$<$\+\_\+\+Tp, 4$>$ {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily public\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //! various constructors}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Scalar\+\_\+();}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Scalar\+\_\+(\+\_\+\+Tp v0, \+\_\+\+Tp v1, \+\_\+\+Tp v2=0, \+\_\+\+Tp v3=0);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Scalar\+\_\+(const Cv\+Scalar\& s);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Scalar\+\_\+(\+\_\+\+Tp v0);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //! returns a scalar with all elements set to v0}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily static Scalar\+\_\+$<$\+\_\+\+Tp$>$ all(\+\_\+\+Tp v0);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //! conversion to the old-\/style Cv\+Scalar}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily operator Cv\+Scalar() const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //! conversion to another data type}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily template$<$typename T2$>$ operator Scalar\+\_\+$<$\+T2$>$() const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //! per-\/element product}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Scalar\+\_\+$<${\itshape Tp$>$ mul(const \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar}{Scalar}}}$<$\+\_\+\+Tp$>$\& t, double scale=1) const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // returns (v0, -\/v1, -\/v2, -\/v3)}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Scalar\+\_\+$<$\+\_\+\+Tp$>$ conj() const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // returns true iff v1 == v2 == v3 == 0}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily bool is\+Real() const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \};}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily typedef Scalar\+\_\+$<$double$>$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar}{Scalar}};}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Being derived from {\ttfamily Vec$<${\itshape Tp, 4$>$, {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar}{Scalar}}} and {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar}{Scalar}}} can be used just as typical 4-\/element vectors. In addition, they can be converted to/from {\ttfamily Cv\+Scalar}. The type {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar}{Scalar}}} is widely used in Open\+CV to pass pixel values. }}}
+
+{\ttfamily {\ttfamily {\itshape }}}
+
+{\ttfamily {\ttfamily {\itshape \begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/core/doc/basic_structures.html#scalar}{\tt org.\+opencv.\+core.\+Scalar\+\_\+} 
+\end{DoxySeeAlso}
+}}}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_scalar_a04b29c5652d074c999eaf60878ed859e}\label{classorg_1_1opencv_1_1core_1_1_scalar_a04b29c5652d074c999eaf60878ed859e}} 
+\index{org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}!Scalar@{Scalar}}
+\index{Scalar@{Scalar}!org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}}
+\subsubsection{\texorpdfstring{Scalar()}{Scalar()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily org.\+opencv.\+core.\+Scalar.\+Scalar (\begin{DoxyParamCaption}\item[{double}]{v0,  }\item[{double}]{v1,  }\item[{double}]{v2,  }\item[{double}]{v3 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_scalar_ac7e4a16663084e22ce81338ed51b901d}\label{classorg_1_1opencv_1_1core_1_1_scalar_ac7e4a16663084e22ce81338ed51b901d}} 
+\index{org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}!Scalar@{Scalar}}
+\index{Scalar@{Scalar}!org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}}
+\subsubsection{\texorpdfstring{Scalar()}{Scalar()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily org.\+opencv.\+core.\+Scalar.\+Scalar (\begin{DoxyParamCaption}\item[{double}]{v0,  }\item[{double}]{v1,  }\item[{double}]{v2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_scalar_af0dc66669d16d1a30ed0b44981a25b69}\label{classorg_1_1opencv_1_1core_1_1_scalar_af0dc66669d16d1a30ed0b44981a25b69}} 
+\index{org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}!Scalar@{Scalar}}
+\index{Scalar@{Scalar}!org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}}
+\subsubsection{\texorpdfstring{Scalar()}{Scalar()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily org.\+opencv.\+core.\+Scalar.\+Scalar (\begin{DoxyParamCaption}\item[{double}]{v0,  }\item[{double}]{v1 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_scalar_a5fdded9cf5c81f48e83edd85fde8d435}\label{classorg_1_1opencv_1_1core_1_1_scalar_a5fdded9cf5c81f48e83edd85fde8d435}} 
+\index{org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}!Scalar@{Scalar}}
+\index{Scalar@{Scalar}!org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}}
+\subsubsection{\texorpdfstring{Scalar()}{Scalar()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily org.\+opencv.\+core.\+Scalar.\+Scalar (\begin{DoxyParamCaption}\item[{double}]{v0 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_scalar_a26051d6b5f968bc26ec4b1ce51885de3}\label{classorg_1_1opencv_1_1core_1_1_scalar_a26051d6b5f968bc26ec4b1ce51885de3}} 
+\index{org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}!Scalar@{Scalar}}
+\index{Scalar@{Scalar}!org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}}
+\subsubsection{\texorpdfstring{Scalar()}{Scalar()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily org.\+opencv.\+core.\+Scalar.\+Scalar (\begin{DoxyParamCaption}\item[{double \mbox{[}$\,$\mbox{]}}]{vals }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_scalar_a23961589549dcb0c16f97418e26464e7}\label{classorg_1_1opencv_1_1core_1_1_scalar_a23961589549dcb0c16f97418e26464e7}} 
+\index{org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}!all@{all}}
+\index{all@{all}!org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}}
+\subsubsection{\texorpdfstring{all()}{all()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar}{Scalar}} org.\+opencv.\+core.\+Scalar.\+all (\begin{DoxyParamCaption}\item[{double}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_scalar_a4c3e3f4170f39b101790d5c47e6367b2}\label{classorg_1_1opencv_1_1core_1_1_scalar_a4c3e3f4170f39b101790d5c47e6367b2}} 
+\index{org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}!clone@{clone}}
+\index{clone@{clone}!org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar}{Scalar}} org.\+opencv.\+core.\+Scalar.\+clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_scalar_a88324b97617f5300cb2eaccfe8cc1372}\label{classorg_1_1opencv_1_1core_1_1_scalar_a88324b97617f5300cb2eaccfe8cc1372}} 
+\index{org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}!conj@{conj}}
+\index{conj@{conj}!org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}}
+\subsubsection{\texorpdfstring{conj()}{conj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar}{Scalar}} org.\+opencv.\+core.\+Scalar.\+conj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_scalar_aa31070a4b7d142d715dc0d2a98a97d30}\label{classorg_1_1opencv_1_1core_1_1_scalar_aa31070a4b7d142d715dc0d2a98a97d30}} 
+\index{org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}!equals@{equals}}
+\index{equals@{equals}!org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}}
+\subsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+core.\+Scalar.\+equals (\begin{DoxyParamCaption}\item[{Object}]{obj }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_scalar_af8ce69511ac02979ea924ee58faa566c}\label{classorg_1_1opencv_1_1core_1_1_scalar_af8ce69511ac02979ea924ee58faa566c}} 
+\index{org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}!hash\+Code@{hash\+Code}}
+\index{hash\+Code@{hash\+Code}!org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}}
+\subsubsection{\texorpdfstring{hash\+Code()}{hashCode()}}
+{\footnotesize\ttfamily int org.\+opencv.\+core.\+Scalar.\+hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_scalar_adb5fa226bef53c802266aa92dd990eb9}\label{classorg_1_1opencv_1_1core_1_1_scalar_adb5fa226bef53c802266aa92dd990eb9}} 
+\index{org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}!is\+Real@{is\+Real}}
+\index{is\+Real@{is\+Real}!org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}}
+\subsubsection{\texorpdfstring{is\+Real()}{isReal()}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+core.\+Scalar.\+is\+Real (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_scalar_a67dfcb24ec507020e3e4e9a77c683e2b}\label{classorg_1_1opencv_1_1core_1_1_scalar_a67dfcb24ec507020e3e4e9a77c683e2b}} 
+\index{org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}!mul@{mul}}
+\index{mul@{mul}!org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}}
+\subsubsection{\texorpdfstring{mul()}{mul()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar}{Scalar}} org.\+opencv.\+core.\+Scalar.\+mul (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar}{Scalar}}}]{it,  }\item[{double}]{scale }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_scalar_aa667cb58f9591cdc47b2eff0ec429155}\label{classorg_1_1opencv_1_1core_1_1_scalar_aa667cb58f9591cdc47b2eff0ec429155}} 
+\index{org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}!mul@{mul}}
+\index{mul@{mul}!org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}}
+\subsubsection{\texorpdfstring{mul()}{mul()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar}{Scalar}} org.\+opencv.\+core.\+Scalar.\+mul (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_scalar}{Scalar}}}]{it }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_scalar_a4ca58ccf95a87d6e7a7b7db3deb9f25b}\label{classorg_1_1opencv_1_1core_1_1_scalar_a4ca58ccf95a87d6e7a7b7db3deb9f25b}} 
+\index{org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}!set@{set}}
+\index{set@{set}!org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void org.\+opencv.\+core.\+Scalar.\+set (\begin{DoxyParamCaption}\item[{double \mbox{[}$\,$\mbox{]}}]{vals }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_scalar_a356103a63673efc5aa249ee1d9746b27}\label{classorg_1_1opencv_1_1core_1_1_scalar_a356103a63673efc5aa249ee1d9746b27}} 
+\index{org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily String org.\+opencv.\+core.\+Scalar.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_scalar_ad5d5ede832d661889ead64c3353f9dd5}\label{classorg_1_1opencv_1_1core_1_1_scalar_ad5d5ede832d661889ead64c3353f9dd5}} 
+\index{org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}!val@{val}}
+\index{val@{val}!org\+::opencv\+::core\+::\+Scalar@{org\+::opencv\+::core\+::\+Scalar}}
+\subsubsection{\texorpdfstring{val}{val}}
+{\footnotesize\ttfamily double org.\+opencv.\+core.\+Scalar.\+val\mbox{[}$\,$\mbox{]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/core/\mbox{\hyperlink{_scalar_8java}{Scalar.\+java}}\end{DoxyCompactItemize}

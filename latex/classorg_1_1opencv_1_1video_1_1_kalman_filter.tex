@@ -1,0 +1,184 @@
+\hypertarget{classorg_1_1opencv_1_1video_1_1_kalman_filter}{}\section{org.\+opencv.\+video.\+Kalman\+Filter Class Reference}
+\label{classorg_1_1opencv_1_1video_1_1_kalman_filter}\index{org.\+opencv.\+video.\+Kalman\+Filter@{org.\+opencv.\+video.\+Kalman\+Filter}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_kalman_filter_a49a321fdcc081e6f68aceb24b8397111}{Kalman\+Filter}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_kalman_filter_a924d7dd0b8d06dd45b8987425a28b365}{Kalman\+Filter}} (int dynam\+Params, int measure\+Params, int control\+Params, int type)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_kalman_filter_af518121ee4593481d3642c3163443eaf}{Kalman\+Filter}} (int dynam\+Params, int measure\+Params)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_kalman_filter_a7c610a98cf5e5aae5d9600b99a476127}{correct}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} measurement)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_kalman_filter_a0a93554e79d5b33f3747247fde5d25f8}{predict}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} control)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_kalman_filter_ab79a85e63d61abc81fba2e121104ddc9}{predict}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_kalman_filter_a81505b4a99d47a000f0a6e8000d8307f}{Kalman\+Filter}} (long addr)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_kalman_filter_a89fc46ce23e571ad964c3db45baeadc6}{finalize}} ()  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final long \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_kalman_filter_a7cf49cefeb229d5e91ee31d40dde3104}{native\+Obj}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Kalman filter class.
+
+The class implements a standard Kalman filter \href{http://en.wikipedia.org/wiki/Kalman_filter,}{\tt http\+://en.\+wikipedia.\+org/wiki/\+Kalman\+\_\+filter,} \mbox{[}Welch95\mbox{]}. However, you can modify {\ttfamily transition\+Matrix}, {\ttfamily control\+Matrix}, and {\ttfamily measurement\+Matrix} to get an extended Kalman filter functionality. See the Open\+CV sample {\ttfamily kalman.\+cpp}.
+
+Note\+:
+
+
+\begin{DoxyItemize}
+\item An example using the standard Kalman filter can be found at opencv\+\_\+source\+\_\+code/samples/cpp/kalman.\+cpp 
+\end{DoxyItemize}
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#kalmanfilter}{\tt org.\+opencv.\+video.\+Kalman\+Filter} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_kalman_filter_a81505b4a99d47a000f0a6e8000d8307f}\label{classorg_1_1opencv_1_1video_1_1_kalman_filter_a81505b4a99d47a000f0a6e8000d8307f}} 
+\index{org\+::opencv\+::video\+::\+Kalman\+Filter@{org\+::opencv\+::video\+::\+Kalman\+Filter}!Kalman\+Filter@{Kalman\+Filter}}
+\index{Kalman\+Filter@{Kalman\+Filter}!org\+::opencv\+::video\+::\+Kalman\+Filter@{org\+::opencv\+::video\+::\+Kalman\+Filter}}
+\subsubsection{\texorpdfstring{Kalman\+Filter()}{KalmanFilter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+video.\+Kalman\+Filter.\+Kalman\+Filter (\begin{DoxyParamCaption}\item[{long}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_kalman_filter_a49a321fdcc081e6f68aceb24b8397111}\label{classorg_1_1opencv_1_1video_1_1_kalman_filter_a49a321fdcc081e6f68aceb24b8397111}} 
+\index{org\+::opencv\+::video\+::\+Kalman\+Filter@{org\+::opencv\+::video\+::\+Kalman\+Filter}!Kalman\+Filter@{Kalman\+Filter}}
+\index{Kalman\+Filter@{Kalman\+Filter}!org\+::opencv\+::video\+::\+Kalman\+Filter@{org\+::opencv\+::video\+::\+Kalman\+Filter}}
+\subsubsection{\texorpdfstring{Kalman\+Filter()}{KalmanFilter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+video.\+Kalman\+Filter.\+Kalman\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The constructors.
+
+The full constructor.
+
+Note\+: In C A\+PI when {\ttfamily Cv\+Kalman$\ast$ kalman\+Filter} structure is not needed anymore, it should be released with {\ttfamily cv\+Release\+Kalman(\&kalman\+Filter)}
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#kalmanfilter-kalmanfilter}{\tt org.\+opencv.\+video.\+Kalman\+Filter.\+Kalman\+Filter} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_kalman_filter_a924d7dd0b8d06dd45b8987425a28b365}\label{classorg_1_1opencv_1_1video_1_1_kalman_filter_a924d7dd0b8d06dd45b8987425a28b365}} 
+\index{org\+::opencv\+::video\+::\+Kalman\+Filter@{org\+::opencv\+::video\+::\+Kalman\+Filter}!Kalman\+Filter@{Kalman\+Filter}}
+\index{Kalman\+Filter@{Kalman\+Filter}!org\+::opencv\+::video\+::\+Kalman\+Filter@{org\+::opencv\+::video\+::\+Kalman\+Filter}}
+\subsubsection{\texorpdfstring{Kalman\+Filter()}{KalmanFilter()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+video.\+Kalman\+Filter.\+Kalman\+Filter (\begin{DoxyParamCaption}\item[{int}]{dynam\+Params,  }\item[{int}]{measure\+Params,  }\item[{int}]{control\+Params,  }\item[{int}]{type }\end{DoxyParamCaption})}
+
+The constructors.
+
+The full constructor.
+
+Note\+: In C A\+PI when {\ttfamily Cv\+Kalman$\ast$ kalman\+Filter} structure is not needed anymore, it should be released with {\ttfamily cv\+Release\+Kalman(\&kalman\+Filter)}
+
+
+\begin{DoxyParams}{Parameters}
+{\em dynam\+Params} & Dimensionality of the state. \\
+\hline
+{\em measure\+Params} & Dimensionality of the measurement. \\
+\hline
+{\em control\+Params} & Dimensionality of the control vector. \\
+\hline
+{\em type} & Type of the created matrices that should be {\ttfamily C\+V\+\_\+32F} or {\ttfamily C\+V\+\_\+64F}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#kalmanfilter-kalmanfilter}{\tt org.\+opencv.\+video.\+Kalman\+Filter.\+Kalman\+Filter} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_kalman_filter_af518121ee4593481d3642c3163443eaf}\label{classorg_1_1opencv_1_1video_1_1_kalman_filter_af518121ee4593481d3642c3163443eaf}} 
+\index{org\+::opencv\+::video\+::\+Kalman\+Filter@{org\+::opencv\+::video\+::\+Kalman\+Filter}!Kalman\+Filter@{Kalman\+Filter}}
+\index{Kalman\+Filter@{Kalman\+Filter}!org\+::opencv\+::video\+::\+Kalman\+Filter@{org\+::opencv\+::video\+::\+Kalman\+Filter}}
+\subsubsection{\texorpdfstring{Kalman\+Filter()}{KalmanFilter()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+video.\+Kalman\+Filter.\+Kalman\+Filter (\begin{DoxyParamCaption}\item[{int}]{dynam\+Params,  }\item[{int}]{measure\+Params }\end{DoxyParamCaption})}
+
+The constructors.
+
+The full constructor.
+
+Note\+: In C A\+PI when {\ttfamily Cv\+Kalman$\ast$ kalman\+Filter} structure is not needed anymore, it should be released with {\ttfamily cv\+Release\+Kalman(\&kalman\+Filter)}
+
+
+\begin{DoxyParams}{Parameters}
+{\em dynam\+Params} & Dimensionality of the state. \\
+\hline
+{\em measure\+Params} & Dimensionality of the measurement.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#kalmanfilter-kalmanfilter}{\tt org.\+opencv.\+video.\+Kalman\+Filter.\+Kalman\+Filter} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_kalman_filter_a7c610a98cf5e5aae5d9600b99a476127}\label{classorg_1_1opencv_1_1video_1_1_kalman_filter_a7c610a98cf5e5aae5d9600b99a476127}} 
+\index{org\+::opencv\+::video\+::\+Kalman\+Filter@{org\+::opencv\+::video\+::\+Kalman\+Filter}!correct@{correct}}
+\index{correct@{correct}!org\+::opencv\+::video\+::\+Kalman\+Filter@{org\+::opencv\+::video\+::\+Kalman\+Filter}}
+\subsubsection{\texorpdfstring{correct()}{correct()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} org.\+opencv.\+video.\+Kalman\+Filter.\+correct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{measurement }\end{DoxyParamCaption})}
+
+Updates the predicted state from the measurement.
+
+
+\begin{DoxyParams}{Parameters}
+{\em measurement} & The measured system parameters\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#kalmanfilter-correct}{\tt org.\+opencv.\+video.\+Kalman\+Filter.\+correct} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_kalman_filter_a89fc46ce23e571ad964c3db45baeadc6}\label{classorg_1_1opencv_1_1video_1_1_kalman_filter_a89fc46ce23e571ad964c3db45baeadc6}} 
+\index{org\+::opencv\+::video\+::\+Kalman\+Filter@{org\+::opencv\+::video\+::\+Kalman\+Filter}!finalize@{finalize}}
+\index{finalize@{finalize}!org\+::opencv\+::video\+::\+Kalman\+Filter@{org\+::opencv\+::video\+::\+Kalman\+Filter}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily void org.\+opencv.\+video.\+Kalman\+Filter.\+finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Throwable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_kalman_filter_a0a93554e79d5b33f3747247fde5d25f8}\label{classorg_1_1opencv_1_1video_1_1_kalman_filter_a0a93554e79d5b33f3747247fde5d25f8}} 
+\index{org\+::opencv\+::video\+::\+Kalman\+Filter@{org\+::opencv\+::video\+::\+Kalman\+Filter}!predict@{predict}}
+\index{predict@{predict}!org\+::opencv\+::video\+::\+Kalman\+Filter@{org\+::opencv\+::video\+::\+Kalman\+Filter}}
+\subsubsection{\texorpdfstring{predict()}{predict()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} org.\+opencv.\+video.\+Kalman\+Filter.\+predict (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{control }\end{DoxyParamCaption})}
+
+Computes a predicted state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em control} & The optional input control\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#kalmanfilter-predict}{\tt org.\+opencv.\+video.\+Kalman\+Filter.\+predict} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_kalman_filter_ab79a85e63d61abc81fba2e121104ddc9}\label{classorg_1_1opencv_1_1video_1_1_kalman_filter_ab79a85e63d61abc81fba2e121104ddc9}} 
+\index{org\+::opencv\+::video\+::\+Kalman\+Filter@{org\+::opencv\+::video\+::\+Kalman\+Filter}!predict@{predict}}
+\index{predict@{predict}!org\+::opencv\+::video\+::\+Kalman\+Filter@{org\+::opencv\+::video\+::\+Kalman\+Filter}}
+\subsubsection{\texorpdfstring{predict()}{predict()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} org.\+opencv.\+video.\+Kalman\+Filter.\+predict (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Computes a predicted state.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#kalmanfilter-predict}{\tt org.\+opencv.\+video.\+Kalman\+Filter.\+predict} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_kalman_filter_a7cf49cefeb229d5e91ee31d40dde3104}\label{classorg_1_1opencv_1_1video_1_1_kalman_filter_a7cf49cefeb229d5e91ee31d40dde3104}} 
+\index{org\+::opencv\+::video\+::\+Kalman\+Filter@{org\+::opencv\+::video\+::\+Kalman\+Filter}!native\+Obj@{native\+Obj}}
+\index{native\+Obj@{native\+Obj}!org\+::opencv\+::video\+::\+Kalman\+Filter@{org\+::opencv\+::video\+::\+Kalman\+Filter}}
+\subsubsection{\texorpdfstring{native\+Obj}{nativeObj}}
+{\footnotesize\ttfamily final long org.\+opencv.\+video.\+Kalman\+Filter.\+native\+Obj\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/video/\mbox{\hyperlink{_kalman_filter_8java}{Kalman\+Filter.\+java}}\end{DoxyCompactItemize}

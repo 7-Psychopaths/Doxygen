@@ -1,0 +1,183 @@
+\hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_param_grid}{}\section{org.\+opencv.\+ml.\+Cv\+Param\+Grid Class Reference}
+\label{classorg_1_1opencv_1_1ml_1_1_cv_param_grid}\index{org.\+opencv.\+ml.\+Cv\+Param\+Grid@{org.\+opencv.\+ml.\+Cv\+Param\+Grid}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_a409b566be9702a9f184fd0a548ee3d92}{Cv\+Param\+Grid}} ()
+\item 
+double \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_afa3d0c4269f9baf2c21622620abaafe7}{get\+\_\+min\+\_\+val}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_ac5ee1f681067809a0cd6bb48fa411ac5}{set\+\_\+min\+\_\+val}} (double min\+\_\+val)
+\item 
+double \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_a60b9890cbbabd9526e18730cf009774c}{get\+\_\+max\+\_\+val}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_a20b79f13b4154a552ef128c5a17843b6}{set\+\_\+max\+\_\+val}} (double max\+\_\+val)
+\item 
+double \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_a8066afc3b21aa89164ea329acff24993}{get\+\_\+step}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_a4bcde1d01e8a5acc3d13b54206a0e70b}{set\+\_\+step}} (double step)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_addeb58a617bc6516e19cd763cacdb633}{S\+V\+M\+\_\+C}} = 0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_a3cb0b612b0dfdba5b7dc81579dce10a7}{Cv\+Param\+Grid}} (long addr)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_af2b8d44b18d54e72dd55d7297cb4e447}{finalize}} ()  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final long \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_a0618043fc753d4986cdcfe1d8538e83f}{native\+Obj}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The structure represents the logarithmic grid range of statmodel parameters. It is used for optimizing statmodel accuracy by varying model parameters, the accuracy estimate being computed by cross-\/validation.
+
+Minimum value of the statmodel parameter.
+
+Maximum value of the statmodel parameter. {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Logarithmic step for iterating the statmodel parameter.}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily The grid determines the following iteration sequence of the statmodel parameter values\+: }
+
+{\itshape (min\+\_\+val, min\+\_\+val$\ast$step, min\+\_\+val$\ast$(step)$^\wedge$2, dots, min\+\_\+val$\ast$(step)$^\wedge$n),}
+
+where {\itshape n} is the maximal index satisfying
+
+{\itshape min\+\_\+val $\ast$ step $^\wedge$n \&lt max\+\_\+val}
+
+The grid is logarithmic, so {\ttfamily step} must always be greater then 1.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/support_vector_machines.html#cvparamgrid}{\tt org.\+opencv.\+ml.\+Cv\+Param\+Grid} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_a3cb0b612b0dfdba5b7dc81579dce10a7}\label{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_a3cb0b612b0dfdba5b7dc81579dce10a7}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid@{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid}!Cv\+Param\+Grid@{Cv\+Param\+Grid}}
+\index{Cv\+Param\+Grid@{Cv\+Param\+Grid}!org\+::opencv\+::ml\+::\+Cv\+Param\+Grid@{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid}}
+\subsubsection{\texorpdfstring{Cv\+Param\+Grid()}{CvParamGrid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+Param\+Grid.\+Cv\+Param\+Grid (\begin{DoxyParamCaption}\item[{long}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_a409b566be9702a9f184fd0a548ee3d92}\label{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_a409b566be9702a9f184fd0a548ee3d92}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid@{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid}!Cv\+Param\+Grid@{Cv\+Param\+Grid}}
+\index{Cv\+Param\+Grid@{Cv\+Param\+Grid}!org\+::opencv\+::ml\+::\+Cv\+Param\+Grid@{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid}}
+\subsubsection{\texorpdfstring{Cv\+Param\+Grid()}{CvParamGrid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+Param\+Grid.\+Cv\+Param\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The constructors.
+
+The full constructor initializes corresponding members. The default constructor creates a dummy grid\+:
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_a409b566be9702a9f184fd0a548ee3d92}{Cv\+Param\+Grid.\+Cv\+Param\+Grid()}}}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily min\+\_\+val = max\+\_\+val = step = 0;}
+
+{\ttfamily }
+
+{\ttfamily \begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/support_vector_machines.html#cvparamgrid-cvparamgrid}{\tt org.\+opencv.\+ml.\+Cv\+Param\+Grid.\+Cv\+Param\+Grid} 
+\end{DoxySeeAlso}
+}
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_af2b8d44b18d54e72dd55d7297cb4e447}\label{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_af2b8d44b18d54e72dd55d7297cb4e447}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid@{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid}!finalize@{finalize}}
+\index{finalize@{finalize}!org\+::opencv\+::ml\+::\+Cv\+Param\+Grid@{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+Param\+Grid.\+finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Throwable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_a60b9890cbbabd9526e18730cf009774c}\label{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_a60b9890cbbabd9526e18730cf009774c}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid@{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid}!get\+\_\+max\+\_\+val@{get\+\_\+max\+\_\+val}}
+\index{get\+\_\+max\+\_\+val@{get\+\_\+max\+\_\+val}!org\+::opencv\+::ml\+::\+Cv\+Param\+Grid@{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid}}
+\subsubsection{\texorpdfstring{get\+\_\+max\+\_\+val()}{get\_max\_val()}}
+{\footnotesize\ttfamily double org.\+opencv.\+ml.\+Cv\+Param\+Grid.\+get\+\_\+max\+\_\+val (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_afa3d0c4269f9baf2c21622620abaafe7}\label{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_afa3d0c4269f9baf2c21622620abaafe7}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid@{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid}!get\+\_\+min\+\_\+val@{get\+\_\+min\+\_\+val}}
+\index{get\+\_\+min\+\_\+val@{get\+\_\+min\+\_\+val}!org\+::opencv\+::ml\+::\+Cv\+Param\+Grid@{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid}}
+\subsubsection{\texorpdfstring{get\+\_\+min\+\_\+val()}{get\_min\_val()}}
+{\footnotesize\ttfamily double org.\+opencv.\+ml.\+Cv\+Param\+Grid.\+get\+\_\+min\+\_\+val (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_a8066afc3b21aa89164ea329acff24993}\label{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_a8066afc3b21aa89164ea329acff24993}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid@{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid}!get\+\_\+step@{get\+\_\+step}}
+\index{get\+\_\+step@{get\+\_\+step}!org\+::opencv\+::ml\+::\+Cv\+Param\+Grid@{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid}}
+\subsubsection{\texorpdfstring{get\+\_\+step()}{get\_step()}}
+{\footnotesize\ttfamily double org.\+opencv.\+ml.\+Cv\+Param\+Grid.\+get\+\_\+step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_a20b79f13b4154a552ef128c5a17843b6}\label{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_a20b79f13b4154a552ef128c5a17843b6}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid@{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid}!set\+\_\+max\+\_\+val@{set\+\_\+max\+\_\+val}}
+\index{set\+\_\+max\+\_\+val@{set\+\_\+max\+\_\+val}!org\+::opencv\+::ml\+::\+Cv\+Param\+Grid@{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid}}
+\subsubsection{\texorpdfstring{set\+\_\+max\+\_\+val()}{set\_max\_val()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+Param\+Grid.\+set\+\_\+max\+\_\+val (\begin{DoxyParamCaption}\item[{double}]{max\+\_\+val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_ac5ee1f681067809a0cd6bb48fa411ac5}\label{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_ac5ee1f681067809a0cd6bb48fa411ac5}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid@{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid}!set\+\_\+min\+\_\+val@{set\+\_\+min\+\_\+val}}
+\index{set\+\_\+min\+\_\+val@{set\+\_\+min\+\_\+val}!org\+::opencv\+::ml\+::\+Cv\+Param\+Grid@{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid}}
+\subsubsection{\texorpdfstring{set\+\_\+min\+\_\+val()}{set\_min\_val()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+Param\+Grid.\+set\+\_\+min\+\_\+val (\begin{DoxyParamCaption}\item[{double}]{min\+\_\+val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_a4bcde1d01e8a5acc3d13b54206a0e70b}\label{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_a4bcde1d01e8a5acc3d13b54206a0e70b}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid@{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid}!set\+\_\+step@{set\+\_\+step}}
+\index{set\+\_\+step@{set\+\_\+step}!org\+::opencv\+::ml\+::\+Cv\+Param\+Grid@{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid}}
+\subsubsection{\texorpdfstring{set\+\_\+step()}{set\_step()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+Param\+Grid.\+set\+\_\+step (\begin{DoxyParamCaption}\item[{double}]{step }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_a0618043fc753d4986cdcfe1d8538e83f}\label{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_a0618043fc753d4986cdcfe1d8538e83f}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid@{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid}!native\+Obj@{native\+Obj}}
+\index{native\+Obj@{native\+Obj}!org\+::opencv\+::ml\+::\+Cv\+Param\+Grid@{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid}}
+\subsubsection{\texorpdfstring{native\+Obj}{nativeObj}}
+{\footnotesize\ttfamily final long org.\+opencv.\+ml.\+Cv\+Param\+Grid.\+native\+Obj\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_addeb58a617bc6516e19cd763cacdb633}\label{classorg_1_1opencv_1_1ml_1_1_cv_param_grid_addeb58a617bc6516e19cd763cacdb633}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid@{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid}!S\+V\+M\+\_\+C@{S\+V\+M\+\_\+C}}
+\index{S\+V\+M\+\_\+C@{S\+V\+M\+\_\+C}!org\+::opencv\+::ml\+::\+Cv\+Param\+Grid@{org\+::opencv\+::ml\+::\+Cv\+Param\+Grid}}
+\subsubsection{\texorpdfstring{S\+V\+M\+\_\+C}{SVM\_C}}
+{\footnotesize\ttfamily final int org.\+opencv.\+ml.\+Cv\+Param\+Grid.\+S\+V\+M\+\_\+C = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/ml/\mbox{\hyperlink{_cv_param_grid_8java}{Cv\+Param\+Grid.\+java}}\end{DoxyCompactItemize}

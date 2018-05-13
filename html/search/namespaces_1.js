@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['android',['android',['../namespaceorg_1_1opencv_1_1android.html',1,'org::opencv']]],
+  ['calib3d',['calib3d',['../namespaceorg_1_1opencv_1_1calib3d.html',1,'org::opencv']]],
+  ['contrib',['contrib',['../namespaceorg_1_1opencv_1_1contrib.html',1,'org::opencv']]],
+  ['core',['core',['../namespaceorg_1_1opencv_1_1core.html',1,'org::opencv']]],
+  ['engine',['engine',['../namespaceorg_1_1opencv_1_1engine.html',1,'org::opencv']]],
+  ['features2d',['features2d',['../namespaceorg_1_1opencv_1_1features2d.html',1,'org::opencv']]],
+  ['gpu',['gpu',['../namespaceorg_1_1opencv_1_1gpu.html',1,'org::opencv']]],
+  ['highgui',['highgui',['../namespaceorg_1_1opencv_1_1highgui.html',1,'org::opencv']]],
+  ['imgproc',['imgproc',['../namespaceorg_1_1opencv_1_1imgproc.html',1,'org::opencv']]],
+  ['ml',['ml',['../namespaceorg_1_1opencv_1_1ml.html',1,'org::opencv']]],
+  ['objdetect',['objdetect',['../namespaceorg_1_1opencv_1_1objdetect.html',1,'org::opencv']]],
+  ['opencv',['opencv',['../namespaceorg_1_1opencv.html',1,'org']]],
+  ['org',['org',['../namespaceorg.html',1,'']]],
+  ['photo',['photo',['../namespaceorg_1_1opencv_1_1photo.html',1,'org::opencv']]],
+  ['test',['test',['../namespaceorg_1_1opencv_1_1test.html',1,'org::opencv']]],
+  ['utils',['utils',['../namespaceorg_1_1opencv_1_1utils.html',1,'org::opencv']]],
+  ['video',['video',['../namespaceorg_1_1opencv_1_1video.html',1,'org::opencv']]]
+];

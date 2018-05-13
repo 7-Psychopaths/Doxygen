@@ -1,0 +1,283 @@
+\hypertarget{classorg_1_1opencv_1_1photo_1_1_photo}{}\section{org.\+opencv.\+photo.\+Photo Class Reference}
+\label{classorg_1_1opencv_1_1photo_1_1_photo}\index{org.\+opencv.\+photo.\+Photo@{org.\+opencv.\+photo.\+Photo}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1photo_1_1_photo_acbb2502090325d4b0e7f6cf6c5f171a0}{fast\+Nl\+Means\+Denoising}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} src, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} dst, float h, int template\+Window\+Size, int search\+Window\+Size)
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1photo_1_1_photo_a8bc43360694475a2d59ce97f2d43d956}{fast\+Nl\+Means\+Denoising}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} src, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} dst)
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1photo_1_1_photo_a445e4b8c401bc65ddd5d71d0d2e656f9}{fast\+Nl\+Means\+Denoising\+Colored}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} src, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} dst, float h, float h\+Color, int template\+Window\+Size, int search\+Window\+Size)
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1photo_1_1_photo_aa38d4845c5dc44f35e948724ad83393f}{fast\+Nl\+Means\+Denoising\+Colored}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} src, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} dst)
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1photo_1_1_photo_a8880d07c3acf6bebf7ed92d4a453e4e2}{fast\+Nl\+Means\+Denoising\+Colored\+Multi}} (List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$ src\+Imgs, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} dst, int img\+To\+Denoise\+Index, int temporal\+Window\+Size, float h, float h\+Color, int template\+Window\+Size, int search\+Window\+Size)
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1photo_1_1_photo_a532ea483d7d71b220309b47a8a255dcd}{fast\+Nl\+Means\+Denoising\+Colored\+Multi}} (List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$ src\+Imgs, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} dst, int img\+To\+Denoise\+Index, int temporal\+Window\+Size)
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1photo_1_1_photo_a1c97ec2518473abe56b2b7c3f4677ce0}{fast\+Nl\+Means\+Denoising\+Multi}} (List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$ src\+Imgs, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} dst, int img\+To\+Denoise\+Index, int temporal\+Window\+Size, float h, int template\+Window\+Size, int search\+Window\+Size)
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1photo_1_1_photo_a57edbe0ed64fa5bea7b543e3efbb4fb4}{fast\+Nl\+Means\+Denoising\+Multi}} (List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$ src\+Imgs, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} dst, int img\+To\+Denoise\+Index, int temporal\+Window\+Size)
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1photo_1_1_photo_a0636bf0f1c7381aaddd4fb3bbf2aec16}{inpaint}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} src, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} inpaint\+Mask, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} dst, double inpaint\+Radius, int flags)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1opencv_1_1photo_1_1_photo_ab5ecc2801d3e796424c564f7e09665c1}{I\+N\+P\+A\+I\+N\+T\+\_\+\+NS}} = C\+V\+\_\+\+I\+N\+P\+A\+I\+N\+T\+\_\+\+NS
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1photo_1_1_photo_acbb2502090325d4b0e7f6cf6c5f171a0}\label{classorg_1_1opencv_1_1photo_1_1_photo_acbb2502090325d4b0e7f6cf6c5f171a0}} 
+\index{org\+::opencv\+::photo\+::\+Photo@{org\+::opencv\+::photo\+::\+Photo}!fast\+Nl\+Means\+Denoising@{fast\+Nl\+Means\+Denoising}}
+\index{fast\+Nl\+Means\+Denoising@{fast\+Nl\+Means\+Denoising}!org\+::opencv\+::photo\+::\+Photo@{org\+::opencv\+::photo\+::\+Photo}}
+\subsubsection{\texorpdfstring{fast\+Nl\+Means\+Denoising()}{fastNlMeansDenoising()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void org.\+opencv.\+photo.\+Photo.\+fast\+Nl\+Means\+Denoising (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{src,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{dst,  }\item[{float}]{h,  }\item[{int}]{template\+Window\+Size,  }\item[{int}]{search\+Window\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Perform image denoising using Non-\/local Means Denoising algorithm \href{http://www.ipol.im/pub/algo/bcm_non_local_means_denoising/}{\tt http\+://www.\+ipol.\+im/pub/algo/bcm\+\_\+non\+\_\+local\+\_\+means\+\_\+denoising/} with several computational optimizations. Noise expected to be a gaussian white noise
+
+This function expected to be applied to grayscale images. For colored images look at {\ttfamily fast\+Nl\+Means\+Denoising\+Colored}. Advanced usage of this functions can be manual denoising of colored image in different colorspaces. Such approach is used in {\ttfamily fast\+Nl\+Means\+Denoising\+Colored} by converting image to C\+I\+E\+L\+AB colorspace and then separately denoise L and AB components with different h parameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & Input 8-\/bit 1-\/channel, 2-\/channel or 3-\/channel image. \\
+\hline
+{\em dst} & Output image with the same size and type as {\ttfamily src}. \\
+\hline
+{\em h} & Parameter regulating filter strength. Big h value perfectly removes noise but also removes image details, smaller h value preserves details but also preserves some noise \\
+\hline
+{\em template\+Window\+Size} & Size in pixels of the template patch that is used to compute weights. Should be odd. Recommended value 7 pixels \\
+\hline
+{\em search\+Window\+Size} & Size in pixels of the window that is used to compute weighted average for given pixel. Should be odd. Affect performance linearly\+: greater search\+Windows\+Size -\/ greater denoising time. Recommended value 21 pixels\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/photo/doc/denoising.html#fastnlmeansdenoising}{\tt org.\+opencv.\+photo.\+Photo.\+fast\+Nl\+Means\+Denoising} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1photo_1_1_photo_a8bc43360694475a2d59ce97f2d43d956}\label{classorg_1_1opencv_1_1photo_1_1_photo_a8bc43360694475a2d59ce97f2d43d956}} 
+\index{org\+::opencv\+::photo\+::\+Photo@{org\+::opencv\+::photo\+::\+Photo}!fast\+Nl\+Means\+Denoising@{fast\+Nl\+Means\+Denoising}}
+\index{fast\+Nl\+Means\+Denoising@{fast\+Nl\+Means\+Denoising}!org\+::opencv\+::photo\+::\+Photo@{org\+::opencv\+::photo\+::\+Photo}}
+\subsubsection{\texorpdfstring{fast\+Nl\+Means\+Denoising()}{fastNlMeansDenoising()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void org.\+opencv.\+photo.\+Photo.\+fast\+Nl\+Means\+Denoising (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{src,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Perform image denoising using Non-\/local Means Denoising algorithm \href{http://www.ipol.im/pub/algo/bcm_non_local_means_denoising/}{\tt http\+://www.\+ipol.\+im/pub/algo/bcm\+\_\+non\+\_\+local\+\_\+means\+\_\+denoising/} with several computational optimizations. Noise expected to be a gaussian white noise
+
+This function expected to be applied to grayscale images. For colored images look at {\ttfamily fast\+Nl\+Means\+Denoising\+Colored}. Advanced usage of this functions can be manual denoising of colored image in different colorspaces. Such approach is used in {\ttfamily fast\+Nl\+Means\+Denoising\+Colored} by converting image to C\+I\+E\+L\+AB colorspace and then separately denoise L and AB components with different h parameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & Input 8-\/bit 1-\/channel, 2-\/channel or 3-\/channel image. \\
+\hline
+{\em dst} & Output image with the same size and type as {\ttfamily src}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/photo/doc/denoising.html#fastnlmeansdenoising}{\tt org.\+opencv.\+photo.\+Photo.\+fast\+Nl\+Means\+Denoising} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1photo_1_1_photo_a445e4b8c401bc65ddd5d71d0d2e656f9}\label{classorg_1_1opencv_1_1photo_1_1_photo_a445e4b8c401bc65ddd5d71d0d2e656f9}} 
+\index{org\+::opencv\+::photo\+::\+Photo@{org\+::opencv\+::photo\+::\+Photo}!fast\+Nl\+Means\+Denoising\+Colored@{fast\+Nl\+Means\+Denoising\+Colored}}
+\index{fast\+Nl\+Means\+Denoising\+Colored@{fast\+Nl\+Means\+Denoising\+Colored}!org\+::opencv\+::photo\+::\+Photo@{org\+::opencv\+::photo\+::\+Photo}}
+\subsubsection{\texorpdfstring{fast\+Nl\+Means\+Denoising\+Colored()}{fastNlMeansDenoisingColored()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void org.\+opencv.\+photo.\+Photo.\+fast\+Nl\+Means\+Denoising\+Colored (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{src,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{dst,  }\item[{float}]{h,  }\item[{float}]{h\+Color,  }\item[{int}]{template\+Window\+Size,  }\item[{int}]{search\+Window\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Modification of {\ttfamily fast\+Nl\+Means\+Denoising} function for colored images
+
+The function converts image to C\+I\+E\+L\+AB colorspace and then separately denoise L and AB components with given h parameters using {\ttfamily fast\+Nl\+Means\+Denoising} function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & Input 8-\/bit 3-\/channel image. \\
+\hline
+{\em dst} & Output image with the same size and type as {\ttfamily src}. \\
+\hline
+{\em h} & Parameter regulating filter strength for luminance component. Bigger h value perfectly removes noise but also removes image details, smaller h value preserves details but also preserves some noise \\
+\hline
+{\em h\+Color} & a h\+Color \\
+\hline
+{\em template\+Window\+Size} & Size in pixels of the template patch that is used to compute weights. Should be odd. Recommended value 7 pixels \\
+\hline
+{\em search\+Window\+Size} & Size in pixels of the window that is used to compute weighted average for given pixel. Should be odd. Affect performance linearly\+: greater search\+Windows\+Size -\/ greater denoising time. Recommended value 21 pixels\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/photo/doc/denoising.html#fastnlmeansdenoisingcolored}{\tt org.\+opencv.\+photo.\+Photo.\+fast\+Nl\+Means\+Denoising\+Colored} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1photo_1_1_photo_aa38d4845c5dc44f35e948724ad83393f}\label{classorg_1_1opencv_1_1photo_1_1_photo_aa38d4845c5dc44f35e948724ad83393f}} 
+\index{org\+::opencv\+::photo\+::\+Photo@{org\+::opencv\+::photo\+::\+Photo}!fast\+Nl\+Means\+Denoising\+Colored@{fast\+Nl\+Means\+Denoising\+Colored}}
+\index{fast\+Nl\+Means\+Denoising\+Colored@{fast\+Nl\+Means\+Denoising\+Colored}!org\+::opencv\+::photo\+::\+Photo@{org\+::opencv\+::photo\+::\+Photo}}
+\subsubsection{\texorpdfstring{fast\+Nl\+Means\+Denoising\+Colored()}{fastNlMeansDenoisingColored()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void org.\+opencv.\+photo.\+Photo.\+fast\+Nl\+Means\+Denoising\+Colored (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{src,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Modification of {\ttfamily fast\+Nl\+Means\+Denoising} function for colored images
+
+The function converts image to C\+I\+E\+L\+AB colorspace and then separately denoise L and AB components with given h parameters using {\ttfamily fast\+Nl\+Means\+Denoising} function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & Input 8-\/bit 3-\/channel image. \\
+\hline
+{\em dst} & Output image with the same size and type as {\ttfamily src}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/photo/doc/denoising.html#fastnlmeansdenoisingcolored}{\tt org.\+opencv.\+photo.\+Photo.\+fast\+Nl\+Means\+Denoising\+Colored} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1photo_1_1_photo_a8880d07c3acf6bebf7ed92d4a453e4e2}\label{classorg_1_1opencv_1_1photo_1_1_photo_a8880d07c3acf6bebf7ed92d4a453e4e2}} 
+\index{org\+::opencv\+::photo\+::\+Photo@{org\+::opencv\+::photo\+::\+Photo}!fast\+Nl\+Means\+Denoising\+Colored\+Multi@{fast\+Nl\+Means\+Denoising\+Colored\+Multi}}
+\index{fast\+Nl\+Means\+Denoising\+Colored\+Multi@{fast\+Nl\+Means\+Denoising\+Colored\+Multi}!org\+::opencv\+::photo\+::\+Photo@{org\+::opencv\+::photo\+::\+Photo}}
+\subsubsection{\texorpdfstring{fast\+Nl\+Means\+Denoising\+Colored\+Multi()}{fastNlMeansDenoisingColoredMulti()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void org.\+opencv.\+photo.\+Photo.\+fast\+Nl\+Means\+Denoising\+Colored\+Multi (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$}]{src\+Imgs,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{dst,  }\item[{int}]{img\+To\+Denoise\+Index,  }\item[{int}]{temporal\+Window\+Size,  }\item[{float}]{h,  }\item[{float}]{h\+Color,  }\item[{int}]{template\+Window\+Size,  }\item[{int}]{search\+Window\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Modification of {\ttfamily fast\+Nl\+Means\+Denoising\+Multi} function for colored images sequences
+
+The function converts images to C\+I\+E\+L\+AB colorspace and then separately denoise L and AB components with given h parameters using {\ttfamily fast\+Nl\+Means\+Denoising\+Multi} function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em src\+Imgs} & Input 8-\/bit 3-\/channel images sequence. All images should have the same type and size. \\
+\hline
+{\em dst} & Output image with the same size and type as {\ttfamily src\+Imgs} images. \\
+\hline
+{\em img\+To\+Denoise\+Index} & Target image to denoise index in {\ttfamily src\+Imgs} sequence \\
+\hline
+{\em temporal\+Window\+Size} & Number of surrounding images to use for target image denoising. Should be odd. Images from {\ttfamily img\+To\+Denoise\+Index -\/ temporal\+Window\+Size / 2} to {\ttfamily img\+To\+Denoise\+Index -\/ temporal\+Window\+Size / 2} from {\ttfamily src\+Imgs} will be used to denoise {\ttfamily src\+Imgs\mbox{[}img\+To\+Denoise\+Index\mbox{]}} image. \\
+\hline
+{\em h} & Parameter regulating filter strength for luminance component. Bigger h value perfectly removes noise but also removes image details, smaller h value preserves details but also preserves some noise. \\
+\hline
+{\em h\+Color} & a h\+Color \\
+\hline
+{\em template\+Window\+Size} & Size in pixels of the template patch that is used to compute weights. Should be odd. Recommended value 7 pixels \\
+\hline
+{\em search\+Window\+Size} & Size in pixels of the window that is used to compute weighted average for given pixel. Should be odd. Affect performance linearly\+: greater search\+Windows\+Size -\/ greater denoising time. Recommended value 21 pixels\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/photo/doc/denoising.html#fastnlmeansdenoisingcoloredmulti}{\tt org.\+opencv.\+photo.\+Photo.\+fast\+Nl\+Means\+Denoising\+Colored\+Multi} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1photo_1_1_photo_a532ea483d7d71b220309b47a8a255dcd}\label{classorg_1_1opencv_1_1photo_1_1_photo_a532ea483d7d71b220309b47a8a255dcd}} 
+\index{org\+::opencv\+::photo\+::\+Photo@{org\+::opencv\+::photo\+::\+Photo}!fast\+Nl\+Means\+Denoising\+Colored\+Multi@{fast\+Nl\+Means\+Denoising\+Colored\+Multi}}
+\index{fast\+Nl\+Means\+Denoising\+Colored\+Multi@{fast\+Nl\+Means\+Denoising\+Colored\+Multi}!org\+::opencv\+::photo\+::\+Photo@{org\+::opencv\+::photo\+::\+Photo}}
+\subsubsection{\texorpdfstring{fast\+Nl\+Means\+Denoising\+Colored\+Multi()}{fastNlMeansDenoisingColoredMulti()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void org.\+opencv.\+photo.\+Photo.\+fast\+Nl\+Means\+Denoising\+Colored\+Multi (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$}]{src\+Imgs,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{dst,  }\item[{int}]{img\+To\+Denoise\+Index,  }\item[{int}]{temporal\+Window\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Modification of {\ttfamily fast\+Nl\+Means\+Denoising\+Multi} function for colored images sequences
+
+The function converts images to C\+I\+E\+L\+AB colorspace and then separately denoise L and AB components with given h parameters using {\ttfamily fast\+Nl\+Means\+Denoising\+Multi} function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em src\+Imgs} & Input 8-\/bit 3-\/channel images sequence. All images should have the same type and size. \\
+\hline
+{\em dst} & Output image with the same size and type as {\ttfamily src\+Imgs} images. \\
+\hline
+{\em img\+To\+Denoise\+Index} & Target image to denoise index in {\ttfamily src\+Imgs} sequence \\
+\hline
+{\em temporal\+Window\+Size} & Number of surrounding images to use for target image denoising. Should be odd. Images from {\ttfamily img\+To\+Denoise\+Index -\/ temporal\+Window\+Size / 2} to {\ttfamily img\+To\+Denoise\+Index -\/ temporal\+Window\+Size / 2} from {\ttfamily src\+Imgs} will be used to denoise {\ttfamily src\+Imgs\mbox{[}img\+To\+Denoise\+Index\mbox{]}} image.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/photo/doc/denoising.html#fastnlmeansdenoisingcoloredmulti}{\tt org.\+opencv.\+photo.\+Photo.\+fast\+Nl\+Means\+Denoising\+Colored\+Multi} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1photo_1_1_photo_a1c97ec2518473abe56b2b7c3f4677ce0}\label{classorg_1_1opencv_1_1photo_1_1_photo_a1c97ec2518473abe56b2b7c3f4677ce0}} 
+\index{org\+::opencv\+::photo\+::\+Photo@{org\+::opencv\+::photo\+::\+Photo}!fast\+Nl\+Means\+Denoising\+Multi@{fast\+Nl\+Means\+Denoising\+Multi}}
+\index{fast\+Nl\+Means\+Denoising\+Multi@{fast\+Nl\+Means\+Denoising\+Multi}!org\+::opencv\+::photo\+::\+Photo@{org\+::opencv\+::photo\+::\+Photo}}
+\subsubsection{\texorpdfstring{fast\+Nl\+Means\+Denoising\+Multi()}{fastNlMeansDenoisingMulti()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void org.\+opencv.\+photo.\+Photo.\+fast\+Nl\+Means\+Denoising\+Multi (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$}]{src\+Imgs,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{dst,  }\item[{int}]{img\+To\+Denoise\+Index,  }\item[{int}]{temporal\+Window\+Size,  }\item[{float}]{h,  }\item[{int}]{template\+Window\+Size,  }\item[{int}]{search\+Window\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Modification of {\ttfamily fast\+Nl\+Means\+Denoising} function for images sequence where consequtive images have been captured in small period of time. For example video. This version of the function is for grayscale images or for manual manipulation with colorspaces. For more details see \href{http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.131.6394}{\tt http\+://citeseerx.\+ist.\+psu.\+edu/viewdoc/summary?doi=10.\+1.\+1.\+131.\+6394}
+
+
+\begin{DoxyParams}{Parameters}
+{\em src\+Imgs} & Input 8-\/bit 1-\/channel, 2-\/channel or 3-\/channel images sequence. All images should have the same type and size. \\
+\hline
+{\em dst} & Output image with the same size and type as {\ttfamily src\+Imgs} images. \\
+\hline
+{\em img\+To\+Denoise\+Index} & Target image to denoise index in {\ttfamily src\+Imgs} sequence \\
+\hline
+{\em temporal\+Window\+Size} & Number of surrounding images to use for target image denoising. Should be odd. Images from {\ttfamily img\+To\+Denoise\+Index -\/ temporal\+Window\+Size / 2} to {\ttfamily img\+To\+Denoise\+Index -\/ temporal\+Window\+Size / 2} from {\ttfamily src\+Imgs} will be used to denoise {\ttfamily src\+Imgs\mbox{[}img\+To\+Denoise\+Index\mbox{]}} image. \\
+\hline
+{\em h} & Parameter regulating filter strength for luminance component. Bigger h value perfectly removes noise but also removes image details, smaller h value preserves details but also preserves some noise \\
+\hline
+{\em template\+Window\+Size} & Size in pixels of the template patch that is used to compute weights. Should be odd. Recommended value 7 pixels \\
+\hline
+{\em search\+Window\+Size} & Size in pixels of the window that is used to compute weighted average for given pixel. Should be odd. Affect performance linearly\+: greater search\+Windows\+Size -\/ greater denoising time. Recommended value 21 pixels\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/photo/doc/denoising.html#fastnlmeansdenoisingmulti}{\tt org.\+opencv.\+photo.\+Photo.\+fast\+Nl\+Means\+Denoising\+Multi} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1photo_1_1_photo_a57edbe0ed64fa5bea7b543e3efbb4fb4}\label{classorg_1_1opencv_1_1photo_1_1_photo_a57edbe0ed64fa5bea7b543e3efbb4fb4}} 
+\index{org\+::opencv\+::photo\+::\+Photo@{org\+::opencv\+::photo\+::\+Photo}!fast\+Nl\+Means\+Denoising\+Multi@{fast\+Nl\+Means\+Denoising\+Multi}}
+\index{fast\+Nl\+Means\+Denoising\+Multi@{fast\+Nl\+Means\+Denoising\+Multi}!org\+::opencv\+::photo\+::\+Photo@{org\+::opencv\+::photo\+::\+Photo}}
+\subsubsection{\texorpdfstring{fast\+Nl\+Means\+Denoising\+Multi()}{fastNlMeansDenoisingMulti()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void org.\+opencv.\+photo.\+Photo.\+fast\+Nl\+Means\+Denoising\+Multi (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$}]{src\+Imgs,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{dst,  }\item[{int}]{img\+To\+Denoise\+Index,  }\item[{int}]{temporal\+Window\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Modification of {\ttfamily fast\+Nl\+Means\+Denoising} function for images sequence where consequtive images have been captured in small period of time. For example video. This version of the function is for grayscale images or for manual manipulation with colorspaces. For more details see \href{http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.131.6394}{\tt http\+://citeseerx.\+ist.\+psu.\+edu/viewdoc/summary?doi=10.\+1.\+1.\+131.\+6394}
+
+
+\begin{DoxyParams}{Parameters}
+{\em src\+Imgs} & Input 8-\/bit 1-\/channel, 2-\/channel or 3-\/channel images sequence. All images should have the same type and size. \\
+\hline
+{\em dst} & Output image with the same size and type as {\ttfamily src\+Imgs} images. \\
+\hline
+{\em img\+To\+Denoise\+Index} & Target image to denoise index in {\ttfamily src\+Imgs} sequence \\
+\hline
+{\em temporal\+Window\+Size} & Number of surrounding images to use for target image denoising. Should be odd. Images from {\ttfamily img\+To\+Denoise\+Index -\/ temporal\+Window\+Size / 2} to {\ttfamily img\+To\+Denoise\+Index -\/ temporal\+Window\+Size / 2} from {\ttfamily src\+Imgs} will be used to denoise {\ttfamily src\+Imgs\mbox{[}img\+To\+Denoise\+Index\mbox{]}} image.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/photo/doc/denoising.html#fastnlmeansdenoisingmulti}{\tt org.\+opencv.\+photo.\+Photo.\+fast\+Nl\+Means\+Denoising\+Multi} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1photo_1_1_photo_a0636bf0f1c7381aaddd4fb3bbf2aec16}\label{classorg_1_1opencv_1_1photo_1_1_photo_a0636bf0f1c7381aaddd4fb3bbf2aec16}} 
+\index{org\+::opencv\+::photo\+::\+Photo@{org\+::opencv\+::photo\+::\+Photo}!inpaint@{inpaint}}
+\index{inpaint@{inpaint}!org\+::opencv\+::photo\+::\+Photo@{org\+::opencv\+::photo\+::\+Photo}}
+\subsubsection{\texorpdfstring{inpaint()}{inpaint()}}
+{\footnotesize\ttfamily static void org.\+opencv.\+photo.\+Photo.\+inpaint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{src,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{inpaint\+Mask,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{dst,  }\item[{double}]{inpaint\+Radius,  }\item[{int}]{flags }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Restores the selected region in an image using the region neighborhood.
+
+The function reconstructs the selected image area from the pixel near the area boundary. The function may be used to remove dust and scratches from a scanned photo, or to remove undesirable objects from still images or video. See \href{http://en.wikipedia.org/wiki/Inpainting}{\tt http\+://en.\+wikipedia.\+org/wiki/\+Inpainting} for more details.
+
+Note\+:
+
+
+\begin{DoxyItemize}
+\item An example using the inpainting technique can be found at opencv\+\_\+source\+\_\+code/samples/cpp/inpaint.\+cpp 
+\item (Python) An example using the inpainting technique can be found at opencv\+\_\+source\+\_\+code/samples/python2/inpaint.\+py 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & Input 8-\/bit 1-\/channel or 3-\/channel image. \\
+\hline
+{\em inpaint\+Mask} & Inpainting mask, 8-\/bit 1-\/channel image. Non-\/zero pixels indicate the area that needs to be inpainted. \\
+\hline
+{\em dst} & Output image with the same size and type as {\ttfamily src}. \\
+\hline
+{\em inpaint\+Radius} & Radius of a circular neighborhood of each point inpainted that is considered by the algorithm. \\
+\hline
+{\em flags} & Inpainting method that could be one of the following\+: 
+\begin{DoxyItemize}
+\item I\+N\+P\+A\+I\+N\+T\+\_\+\+NS Navier-\/\+Stokes based method. 
+\item I\+N\+P\+A\+I\+N\+T\+\_\+\+T\+E\+L\+EA Method by Alexandru Telea \mbox{[}Telea04\mbox{]}. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/photo/doc/inpainting.html#inpaint}{\tt org.\+opencv.\+photo.\+Photo.\+inpaint} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1photo_1_1_photo_ab5ecc2801d3e796424c564f7e09665c1}\label{classorg_1_1opencv_1_1photo_1_1_photo_ab5ecc2801d3e796424c564f7e09665c1}} 
+\index{org\+::opencv\+::photo\+::\+Photo@{org\+::opencv\+::photo\+::\+Photo}!I\+N\+P\+A\+I\+N\+T\+\_\+\+NS@{I\+N\+P\+A\+I\+N\+T\+\_\+\+NS}}
+\index{I\+N\+P\+A\+I\+N\+T\+\_\+\+NS@{I\+N\+P\+A\+I\+N\+T\+\_\+\+NS}!org\+::opencv\+::photo\+::\+Photo@{org\+::opencv\+::photo\+::\+Photo}}
+\subsubsection{\texorpdfstring{I\+N\+P\+A\+I\+N\+T\+\_\+\+NS}{INPAINT\_NS}}
+{\footnotesize\ttfamily final int org.\+opencv.\+photo.\+Photo.\+I\+N\+P\+A\+I\+N\+T\+\_\+\+NS = C\+V\+\_\+\+I\+N\+P\+A\+I\+N\+T\+\_\+\+NS\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/photo/\mbox{\hyperlink{_photo_8java}{Photo.\+java}}\end{DoxyCompactItemize}

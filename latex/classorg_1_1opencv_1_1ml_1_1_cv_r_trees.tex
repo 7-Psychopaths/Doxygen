@@ -1,0 +1,227 @@
+\hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_r_trees}{}\section{org.\+opencv.\+ml.\+Cv\+R\+Trees Class Reference}
+\label{classorg_1_1opencv_1_1ml_1_1_cv_r_trees}\index{org.\+opencv.\+ml.\+Cv\+R\+Trees@{org.\+opencv.\+ml.\+Cv\+R\+Trees}}
+Inheritance diagram for org.\+opencv.\+ml.\+Cv\+R\+Trees\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1opencv_1_1ml_1_1_cv_r_trees}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_ae161397de026b23f326f7fa926557f28}{Cv\+R\+Trees}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_afc153789837700011161eca7606383f9}{clear}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_a509bd837e63864c7006cd17765f97912}{get\+Var\+Importance}} ()
+\item 
+float \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_a3c383d14585b25b186ceb69e160a1511}{predict}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} missing)
+\item 
+float \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_a8d822b48ef528eaf388113c5a6f04b96}{predict}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample)
+\item 
+float \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_a5ba49f88f868945486251c6bbf04755c}{predict\+\_\+prob}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} missing)
+\item 
+float \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_a38b12f73af868829d57f23f4c365ad83}{predict\+\_\+prob}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_a016b976743279598c4ce0ffb9b52b7f1}{train}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Data, int tflag, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} responses, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} var\+Idx, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample\+Idx, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} var\+Type, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} missing\+Data\+Mask, \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_r_t_params}{Cv\+R\+T\+Params}} params)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_acb232fd7af5274af21e3e1963c5498a7}{train}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Data, int tflag, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} responses)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_a1ec5fd88a388610b146894ffaa342e88}{Cv\+R\+Trees}} (long addr)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_a311e7fe10c8a4d315708eaf45bcf44ac}{finalize}} ()  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The class implements the random forest predictor as described in the beginning of this section.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/random_trees.html#cvrtrees}{\tt org.\+opencv.\+ml.\+Cv\+R\+Trees \+: public Cv\+Stat\+Model} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_a1ec5fd88a388610b146894ffaa342e88}\label{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_a1ec5fd88a388610b146894ffaa342e88}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+R\+Trees@{org\+::opencv\+::ml\+::\+Cv\+R\+Trees}!Cv\+R\+Trees@{Cv\+R\+Trees}}
+\index{Cv\+R\+Trees@{Cv\+R\+Trees}!org\+::opencv\+::ml\+::\+Cv\+R\+Trees@{org\+::opencv\+::ml\+::\+Cv\+R\+Trees}}
+\subsubsection{\texorpdfstring{Cv\+R\+Trees()}{CvRTrees()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+R\+Trees.\+Cv\+R\+Trees (\begin{DoxyParamCaption}\item[{long}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_ae161397de026b23f326f7fa926557f28}\label{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_ae161397de026b23f326f7fa926557f28}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+R\+Trees@{org\+::opencv\+::ml\+::\+Cv\+R\+Trees}!Cv\+R\+Trees@{Cv\+R\+Trees}}
+\index{Cv\+R\+Trees@{Cv\+R\+Trees}!org\+::opencv\+::ml\+::\+Cv\+R\+Trees@{org\+::opencv\+::ml\+::\+Cv\+R\+Trees}}
+\subsubsection{\texorpdfstring{Cv\+R\+Trees()}{CvRTrees()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+R\+Trees.\+Cv\+R\+Trees (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_afc153789837700011161eca7606383f9}\label{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_afc153789837700011161eca7606383f9}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+R\+Trees@{org\+::opencv\+::ml\+::\+Cv\+R\+Trees}!clear@{clear}}
+\index{clear@{clear}!org\+::opencv\+::ml\+::\+Cv\+R\+Trees@{org\+::opencv\+::ml\+::\+Cv\+R\+Trees}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+R\+Trees.\+clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_a311e7fe10c8a4d315708eaf45bcf44ac}\label{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_a311e7fe10c8a4d315708eaf45bcf44ac}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+R\+Trees@{org\+::opencv\+::ml\+::\+Cv\+R\+Trees}!finalize@{finalize}}
+\index{finalize@{finalize}!org\+::opencv\+::ml\+::\+Cv\+R\+Trees@{org\+::opencv\+::ml\+::\+Cv\+R\+Trees}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+R\+Trees.\+finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Throwable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_a509bd837e63864c7006cd17765f97912}\label{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_a509bd837e63864c7006cd17765f97912}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+R\+Trees@{org\+::opencv\+::ml\+::\+Cv\+R\+Trees}!get\+Var\+Importance@{get\+Var\+Importance}}
+\index{get\+Var\+Importance@{get\+Var\+Importance}!org\+::opencv\+::ml\+::\+Cv\+R\+Trees@{org\+::opencv\+::ml\+::\+Cv\+R\+Trees}}
+\subsubsection{\texorpdfstring{get\+Var\+Importance()}{getVarImportance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} org.\+opencv.\+ml.\+Cv\+R\+Trees.\+get\+Var\+Importance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the variable importance array.
+
+The method returns the variable importance vector, computed at the training stage when {\ttfamily Cv\+R\+T\+Params.\+calc\+\_\+var\+\_\+importance} is set to true. If this flag was set to false, the {\ttfamily N\+U\+LL} pointer is returned. This differs from the decision trees where variable importance can be computed anytime after the training.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/random_trees.html#cvrtrees-getvarimportance}{\tt org.\+opencv.\+ml.\+Cv\+R\+Trees.\+get\+Var\+Importance} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_a3c383d14585b25b186ceb69e160a1511}\label{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_a3c383d14585b25b186ceb69e160a1511}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+R\+Trees@{org\+::opencv\+::ml\+::\+Cv\+R\+Trees}!predict@{predict}}
+\index{predict@{predict}!org\+::opencv\+::ml\+::\+Cv\+R\+Trees@{org\+::opencv\+::ml\+::\+Cv\+R\+Trees}}
+\subsubsection{\texorpdfstring{predict()}{predict()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float org.\+opencv.\+ml.\+Cv\+R\+Trees.\+predict (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{missing }\end{DoxyParamCaption})}
+
+Predicts the output for an input sample.
+
+The input parameters of the prediction method are the same as in \char`\"{}\+Cv\+D\+Tree.\+predict\char`\"{} but the return value type is different. This method returns the cumulative result from all the trees in the forest (the class that receives the majority of voices, or the mean of the regression function estimates).
+
+
+\begin{DoxyParams}{Parameters}
+{\em sample} & Sample for classification. \\
+\hline
+{\em missing} & Optional missing measurement mask of the sample.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/random_trees.html#cvrtrees-predict}{\tt org.\+opencv.\+ml.\+Cv\+R\+Trees.\+predict} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_a8d822b48ef528eaf388113c5a6f04b96}\label{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_a8d822b48ef528eaf388113c5a6f04b96}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+R\+Trees@{org\+::opencv\+::ml\+::\+Cv\+R\+Trees}!predict@{predict}}
+\index{predict@{predict}!org\+::opencv\+::ml\+::\+Cv\+R\+Trees@{org\+::opencv\+::ml\+::\+Cv\+R\+Trees}}
+\subsubsection{\texorpdfstring{predict()}{predict()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float org.\+opencv.\+ml.\+Cv\+R\+Trees.\+predict (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample }\end{DoxyParamCaption})}
+
+Predicts the output for an input sample.
+
+The input parameters of the prediction method are the same as in \char`\"{}\+Cv\+D\+Tree.\+predict\char`\"{} but the return value type is different. This method returns the cumulative result from all the trees in the forest (the class that receives the majority of voices, or the mean of the regression function estimates).
+
+
+\begin{DoxyParams}{Parameters}
+{\em sample} & Sample for classification.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/random_trees.html#cvrtrees-predict}{\tt org.\+opencv.\+ml.\+Cv\+R\+Trees.\+predict} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_a5ba49f88f868945486251c6bbf04755c}\label{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_a5ba49f88f868945486251c6bbf04755c}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+R\+Trees@{org\+::opencv\+::ml\+::\+Cv\+R\+Trees}!predict\+\_\+prob@{predict\+\_\+prob}}
+\index{predict\+\_\+prob@{predict\+\_\+prob}!org\+::opencv\+::ml\+::\+Cv\+R\+Trees@{org\+::opencv\+::ml\+::\+Cv\+R\+Trees}}
+\subsubsection{\texorpdfstring{predict\+\_\+prob()}{predict\_prob()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float org.\+opencv.\+ml.\+Cv\+R\+Trees.\+predict\+\_\+prob (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{missing }\end{DoxyParamCaption})}
+
+Returns a fuzzy-\/predicted class label.
+
+The function works for binary classification problems only. It returns the number between 0 and 1. This number represents probability or confidence of the sample belonging to the second class. It is calculated as the proportion of decision trees that classified the sample to the second class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sample} & Sample for classification. \\
+\hline
+{\em missing} & Optional missing measurement mask of the sample.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/random_trees.html#cvrtrees-predict-prob}{\tt org.\+opencv.\+ml.\+Cv\+R\+Trees.\+predict\+\_\+prob} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_a38b12f73af868829d57f23f4c365ad83}\label{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_a38b12f73af868829d57f23f4c365ad83}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+R\+Trees@{org\+::opencv\+::ml\+::\+Cv\+R\+Trees}!predict\+\_\+prob@{predict\+\_\+prob}}
+\index{predict\+\_\+prob@{predict\+\_\+prob}!org\+::opencv\+::ml\+::\+Cv\+R\+Trees@{org\+::opencv\+::ml\+::\+Cv\+R\+Trees}}
+\subsubsection{\texorpdfstring{predict\+\_\+prob()}{predict\_prob()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float org.\+opencv.\+ml.\+Cv\+R\+Trees.\+predict\+\_\+prob (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample }\end{DoxyParamCaption})}
+
+Returns a fuzzy-\/predicted class label.
+
+The function works for binary classification problems only. It returns the number between 0 and 1. This number represents probability or confidence of the sample belonging to the second class. It is calculated as the proportion of decision trees that classified the sample to the second class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sample} & Sample for classification.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/random_trees.html#cvrtrees-predict-prob}{\tt org.\+opencv.\+ml.\+Cv\+R\+Trees.\+predict\+\_\+prob} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_a016b976743279598c4ce0ffb9b52b7f1}\label{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_a016b976743279598c4ce0ffb9b52b7f1}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+R\+Trees@{org\+::opencv\+::ml\+::\+Cv\+R\+Trees}!train@{train}}
+\index{train@{train}!org\+::opencv\+::ml\+::\+Cv\+R\+Trees@{org\+::opencv\+::ml\+::\+Cv\+R\+Trees}}
+\subsubsection{\texorpdfstring{train()}{train()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+ml.\+Cv\+R\+Trees.\+train (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Data,  }\item[{int}]{tflag,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{responses,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{var\+Idx,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample\+Idx,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{var\+Type,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{missing\+Data\+Mask,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_r_t_params}{Cv\+R\+T\+Params}}}]{params }\end{DoxyParamCaption})}
+
+Trains the Random Trees model.
+
+The method \char`\"{}\+Cv\+R\+Trees.\+train\char`\"{} is very similar to the method \char`\"{}\+Cv\+D\+Tree.\+train\char`\"{} and follows the generic method \char`\"{}\+Cv\+Stat\+Model.\+train\char`\"{} conventions. All the parameters specific to the algorithm training are passed as a \char`\"{}\+Cv\+R\+T\+Params\char`\"{} instance. The estimate of the training error ({\ttfamily oob-\/error}) is stored in the protected class member {\ttfamily oob\+\_\+error}.
+
+The function is parallelized with the T\+BB library.
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Data} & a train\+Data \\
+\hline
+{\em tflag} & a tflag \\
+\hline
+{\em responses} & a responses \\
+\hline
+{\em var\+Idx} & a var\+Idx \\
+\hline
+{\em sample\+Idx} & a sample\+Idx \\
+\hline
+{\em var\+Type} & a var\+Type \\
+\hline
+{\em missing\+Data\+Mask} & a missing\+Data\+Mask \\
+\hline
+{\em params} & a params\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/random_trees.html#cvrtrees-train}{\tt org.\+opencv.\+ml.\+Cv\+R\+Trees.\+train} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_acb232fd7af5274af21e3e1963c5498a7}\label{classorg_1_1opencv_1_1ml_1_1_cv_r_trees_acb232fd7af5274af21e3e1963c5498a7}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+R\+Trees@{org\+::opencv\+::ml\+::\+Cv\+R\+Trees}!train@{train}}
+\index{train@{train}!org\+::opencv\+::ml\+::\+Cv\+R\+Trees@{org\+::opencv\+::ml\+::\+Cv\+R\+Trees}}
+\subsubsection{\texorpdfstring{train()}{train()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+ml.\+Cv\+R\+Trees.\+train (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Data,  }\item[{int}]{tflag,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{responses }\end{DoxyParamCaption})}
+
+Trains the Random Trees model.
+
+The method \char`\"{}\+Cv\+R\+Trees.\+train\char`\"{} is very similar to the method \char`\"{}\+Cv\+D\+Tree.\+train\char`\"{} and follows the generic method \char`\"{}\+Cv\+Stat\+Model.\+train\char`\"{} conventions. All the parameters specific to the algorithm training are passed as a \char`\"{}\+Cv\+R\+T\+Params\char`\"{} instance. The estimate of the training error ({\ttfamily oob-\/error}) is stored in the protected class member {\ttfamily oob\+\_\+error}.
+
+The function is parallelized with the T\+BB library.
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Data} & a train\+Data \\
+\hline
+{\em tflag} & a tflag \\
+\hline
+{\em responses} & a responses\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/random_trees.html#cvrtrees-train}{\tt org.\+opencv.\+ml.\+Cv\+R\+Trees.\+train} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/ml/\mbox{\hyperlink{_cv_r_trees_8java}{Cv\+R\+Trees.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,391 @@
+\hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m}{}\section{org.\+opencv.\+ml.\+Cv\+S\+VM Class Reference}
+\label{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m}\index{org.\+opencv.\+ml.\+Cv\+S\+VM@{org.\+opencv.\+ml.\+Cv\+S\+VM}}
+Inheritance diagram for org.\+opencv.\+ml.\+Cv\+S\+VM\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_ac99a9f7445996e98af48b55d396541d7}{Cv\+S\+VM}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a5ffb88bb8e1bbb45de899f51b69d943e}{Cv\+S\+VM}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Data, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} responses, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} var\+Idx, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample\+Idx, \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_params}{Cv\+S\+V\+M\+Params}} params)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a29ca272a49cf40fb9de4d37a3998dba6}{Cv\+S\+VM}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Data, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} responses)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a3c8c9c491cecb7d41b0ac0de636803ef}{clear}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_ac09d3273950c722f14668c7e227fb70e}{get\+\_\+support\+\_\+vector\+\_\+count}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_ae746960801621738e3148cb67c0835f3}{get\+\_\+var\+\_\+count}} ()
+\item 
+float \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_ae6f65370c9fee5f2959d9737d40aadd9}{predict}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample, boolean return\+D\+F\+Val)
+\item 
+float \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a92ce14aadb47b185792052fe7075a260}{predict}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a17f89e26cf9aba5794fd55d20348a453}{predict\+\_\+all}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} samples, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} results)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_af61821e7066a0d6fed7a24c858ec61a8}{train}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Data, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} responses, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} var\+Idx, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample\+Idx, \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_params}{Cv\+S\+V\+M\+Params}} params)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a49db7cc264b43448bee32b65aa3732b2}{train}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Data, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} responses)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a08af9eb5976bbf6d2fdc994a9a5554d0}{train\+\_\+auto}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Data, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} responses, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} var\+Idx, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample\+Idx, \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_params}{Cv\+S\+V\+M\+Params}} params, int k\+\_\+fold, \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_param_grid}{Cv\+Param\+Grid}} Cgrid, \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_param_grid}{Cv\+Param\+Grid}} gamma\+Grid, \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_param_grid}{Cv\+Param\+Grid}} p\+Grid, \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_param_grid}{Cv\+Param\+Grid}} nu\+Grid, \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_param_grid}{Cv\+Param\+Grid}} coeff\+Grid, \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_param_grid}{Cv\+Param\+Grid}} degree\+Grid, boolean balanced)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a7cb09e4fa9826ead1bb11c10d9847302}{train\+\_\+auto}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Data, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} responses, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} var\+Idx, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample\+Idx, \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_params}{Cv\+S\+V\+M\+Params}} params)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a8f904304af3689654b3d7de34ae54801}{C\+\_\+\+S\+VC}} = 100
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a10441681278e244e8ebfbf2ed14862c4}{Cv\+S\+VM}} (long addr)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a89982bbee2873b1213d05eb1b4ca408c}{finalize}} ()  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Support Vector Machines.
+
+Note\+:
+
+
+\begin{DoxyItemize}
+\item (Python) An example of digit recognition using S\+VM can be found at opencv\+\_\+source/samples/python2/digits.\+py 
+\item (Python) An example of grid search digit recognition using S\+VM can be found at opencv\+\_\+source/samples/python2/digits\+\_\+adjust.\+py 
+\item (Python) An example of video digit recognition using S\+VM can be found at opencv\+\_\+source/samples/python2/digits\+\_\+video.\+py 
+\end{DoxyItemize}
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/support_vector_machines.html#cvsvm}{\tt org.\+opencv.\+ml.\+Cv\+S\+VM \+: public Cv\+Stat\+Model} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a10441681278e244e8ebfbf2ed14862c4}\label{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a10441681278e244e8ebfbf2ed14862c4}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}!Cv\+S\+VM@{Cv\+S\+VM}}
+\index{Cv\+S\+VM@{Cv\+S\+VM}!org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}}
+\subsubsection{\texorpdfstring{Cv\+S\+V\+M()}{CvSVM()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+Cv\+S\+VM (\begin{DoxyParamCaption}\item[{long}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_ac99a9f7445996e98af48b55d396541d7}\label{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_ac99a9f7445996e98af48b55d396541d7}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}!Cv\+S\+VM@{Cv\+S\+VM}}
+\index{Cv\+S\+VM@{Cv\+S\+VM}!org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}}
+\subsubsection{\texorpdfstring{Cv\+S\+V\+M()}{CvSVM()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+Cv\+S\+VM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default and training constructors.
+
+The constructors follow conventions of \char`\"{}\+Cv\+Stat\+Model.\+Cv\+Stat\+Model\char`\"{}. See \char`\"{}\+Cv\+Stat\+Model.\+train\char`\"{} for parameters descriptions.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/support_vector_machines.html#cvsvm-cvsvm}{\tt org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+Cv\+S\+VM} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a5ffb88bb8e1bbb45de899f51b69d943e}\label{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a5ffb88bb8e1bbb45de899f51b69d943e}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}!Cv\+S\+VM@{Cv\+S\+VM}}
+\index{Cv\+S\+VM@{Cv\+S\+VM}!org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}}
+\subsubsection{\texorpdfstring{Cv\+S\+V\+M()}{CvSVM()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+Cv\+S\+VM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Data,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{responses,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{var\+Idx,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample\+Idx,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_params}{Cv\+S\+V\+M\+Params}}}]{params }\end{DoxyParamCaption})}
+
+Default and training constructors.
+
+The constructors follow conventions of \char`\"{}\+Cv\+Stat\+Model.\+Cv\+Stat\+Model\char`\"{}. See \char`\"{}\+Cv\+Stat\+Model.\+train\char`\"{} for parameters descriptions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Data} & a train\+Data \\
+\hline
+{\em responses} & a responses \\
+\hline
+{\em var\+Idx} & a var\+Idx \\
+\hline
+{\em sample\+Idx} & a sample\+Idx \\
+\hline
+{\em params} & a params\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/support_vector_machines.html#cvsvm-cvsvm}{\tt org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+Cv\+S\+VM} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a29ca272a49cf40fb9de4d37a3998dba6}\label{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a29ca272a49cf40fb9de4d37a3998dba6}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}!Cv\+S\+VM@{Cv\+S\+VM}}
+\index{Cv\+S\+VM@{Cv\+S\+VM}!org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}}
+\subsubsection{\texorpdfstring{Cv\+S\+V\+M()}{CvSVM()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+Cv\+S\+VM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Data,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{responses }\end{DoxyParamCaption})}
+
+Default and training constructors.
+
+The constructors follow conventions of \char`\"{}\+Cv\+Stat\+Model.\+Cv\+Stat\+Model\char`\"{}. See \char`\"{}\+Cv\+Stat\+Model.\+train\char`\"{} for parameters descriptions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Data} & a train\+Data \\
+\hline
+{\em responses} & a responses\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/support_vector_machines.html#cvsvm-cvsvm}{\tt org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+Cv\+S\+VM} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a3c8c9c491cecb7d41b0ac0de636803ef}\label{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a3c8c9c491cecb7d41b0ac0de636803ef}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}!clear@{clear}}
+\index{clear@{clear}!org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a89982bbee2873b1213d05eb1b4ca408c}\label{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a89982bbee2873b1213d05eb1b4ca408c}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}!finalize@{finalize}}
+\index{finalize@{finalize}!org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Throwable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_ac09d3273950c722f14668c7e227fb70e}\label{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_ac09d3273950c722f14668c7e227fb70e}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}!get\+\_\+support\+\_\+vector\+\_\+count@{get\+\_\+support\+\_\+vector\+\_\+count}}
+\index{get\+\_\+support\+\_\+vector\+\_\+count@{get\+\_\+support\+\_\+vector\+\_\+count}!org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}}
+\subsubsection{\texorpdfstring{get\+\_\+support\+\_\+vector\+\_\+count()}{get\_support\_vector\_count()}}
+{\footnotesize\ttfamily int org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+get\+\_\+support\+\_\+vector\+\_\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_ae746960801621738e3148cb67c0835f3}\label{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_ae746960801621738e3148cb67c0835f3}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}!get\+\_\+var\+\_\+count@{get\+\_\+var\+\_\+count}}
+\index{get\+\_\+var\+\_\+count@{get\+\_\+var\+\_\+count}!org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}}
+\subsubsection{\texorpdfstring{get\+\_\+var\+\_\+count()}{get\_var\_count()}}
+{\footnotesize\ttfamily int org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+get\+\_\+var\+\_\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the number of used features (variables count).
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/support_vector_machines.html#cvsvm-get-var-count}{\tt org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+get\+\_\+var\+\_\+count} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_ae6f65370c9fee5f2959d9737d40aadd9}\label{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_ae6f65370c9fee5f2959d9737d40aadd9}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}!predict@{predict}}
+\index{predict@{predict}!org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}}
+\subsubsection{\texorpdfstring{predict()}{predict()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+predict (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample,  }\item[{boolean}]{return\+D\+F\+Val }\end{DoxyParamCaption})}
+
+Predicts the response for input sample(s).
+
+If you pass one sample then prediction result is returned. If you want to get responses for several samples then you should pass the {\ttfamily results} matrix where prediction results will be stored.
+
+The function is parallelized with the T\+BB library.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sample} & Input sample for prediction. \\
+\hline
+{\em return\+D\+F\+Val} & Specifies a type of the return value. If {\ttfamily true} and the problem is 2-\/class classification then the method returns the decision function value that is signed distance to the margin, else the function returns a class label (classification) or estimated function value (regression).\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/support_vector_machines.html#cvsvm-predict}{\tt org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+predict} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a92ce14aadb47b185792052fe7075a260}\label{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a92ce14aadb47b185792052fe7075a260}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}!predict@{predict}}
+\index{predict@{predict}!org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}}
+\subsubsection{\texorpdfstring{predict()}{predict()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+predict (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample }\end{DoxyParamCaption})}
+
+Predicts the response for input sample(s).
+
+If you pass one sample then prediction result is returned. If you want to get responses for several samples then you should pass the {\ttfamily results} matrix where prediction results will be stored.
+
+The function is parallelized with the T\+BB library.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sample} & Input sample for prediction.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/support_vector_machines.html#cvsvm-predict}{\tt org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+predict} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a17f89e26cf9aba5794fd55d20348a453}\label{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a17f89e26cf9aba5794fd55d20348a453}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}!predict\+\_\+all@{predict\+\_\+all}}
+\index{predict\+\_\+all@{predict\+\_\+all}!org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}}
+\subsubsection{\texorpdfstring{predict\+\_\+all()}{predict\_all()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+predict\+\_\+all (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{samples,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{results }\end{DoxyParamCaption})}
+
+Predicts the response for input sample(s).
+
+If you pass one sample then prediction result is returned. If you want to get responses for several samples then you should pass the {\ttfamily results} matrix where prediction results will be stored.
+
+The function is parallelized with the T\+BB library.
+
+
+\begin{DoxyParams}{Parameters}
+{\em samples} & Input samples for prediction. \\
+\hline
+{\em results} & Output prediction responses for corresponding samples.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/support_vector_machines.html#cvsvm-predict}{\tt org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+predict} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_af61821e7066a0d6fed7a24c858ec61a8}\label{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_af61821e7066a0d6fed7a24c858ec61a8}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}!train@{train}}
+\index{train@{train}!org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}}
+\subsubsection{\texorpdfstring{train()}{train()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+train (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Data,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{responses,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{var\+Idx,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample\+Idx,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_params}{Cv\+S\+V\+M\+Params}}}]{params }\end{DoxyParamCaption})}
+
+Trains an S\+VM.
+
+The method trains the S\+VM model. It follows the conventions of the generic \char`\"{}\+Cv\+Stat\+Model.\+train\char`\"{} approach with the following limitations\+:
+
+
+\begin{DoxyItemize}
+\item Only the {\ttfamily C\+V\+\_\+\+R\+O\+W\+\_\+\+S\+A\+M\+P\+LE} data layout is supported. 
+\item Input variables are all ordered. 
+\item Output variables can be either categorical ({\ttfamily params.\+svm\+\_\+type=\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a8f904304af3689654b3d7de34ae54801}{Cv\+S\+V\+M.\+C\+\_\+\+S\+VC}}} or {\ttfamily params.\+svm\+\_\+type=Cv\+S\+V\+M.\+N\+U\+\_\+\+S\+VC}), or ordered ({\ttfamily params.\+svm\+\_\+type=Cv\+S\+V\+M.\+E\+P\+S\+\_\+\+S\+VR} or {\ttfamily params.\+svm\+\_\+type=Cv\+S\+V\+M.\+N\+U\+\_\+\+S\+VR}), or not required at all ({\ttfamily params.\+svm\+\_\+type=Cv\+S\+V\+M.\+O\+N\+E\+\_\+\+C\+L\+A\+SS}). 
+\item Missing measurements are not supported. 
+\end{DoxyItemize}
+
+All the other parameters are gathered in the \char`\"{}\+Cv\+S\+V\+M\+Params\char`\"{} structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Data} & a train\+Data \\
+\hline
+{\em responses} & a responses \\
+\hline
+{\em var\+Idx} & a var\+Idx \\
+\hline
+{\em sample\+Idx} & a sample\+Idx \\
+\hline
+{\em params} & a params\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/support_vector_machines.html#cvsvm-train}{\tt org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+train} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a49db7cc264b43448bee32b65aa3732b2}\label{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a49db7cc264b43448bee32b65aa3732b2}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}!train@{train}}
+\index{train@{train}!org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}}
+\subsubsection{\texorpdfstring{train()}{train()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+train (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Data,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{responses }\end{DoxyParamCaption})}
+
+Trains an S\+VM.
+
+The method trains the S\+VM model. It follows the conventions of the generic \char`\"{}\+Cv\+Stat\+Model.\+train\char`\"{} approach with the following limitations\+:
+
+
+\begin{DoxyItemize}
+\item Only the {\ttfamily C\+V\+\_\+\+R\+O\+W\+\_\+\+S\+A\+M\+P\+LE} data layout is supported. 
+\item Input variables are all ordered. 
+\item Output variables can be either categorical ({\ttfamily params.\+svm\+\_\+type=\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a8f904304af3689654b3d7de34ae54801}{Cv\+S\+V\+M.\+C\+\_\+\+S\+VC}}} or {\ttfamily params.\+svm\+\_\+type=Cv\+S\+V\+M.\+N\+U\+\_\+\+S\+VC}), or ordered ({\ttfamily params.\+svm\+\_\+type=Cv\+S\+V\+M.\+E\+P\+S\+\_\+\+S\+VR} or {\ttfamily params.\+svm\+\_\+type=Cv\+S\+V\+M.\+N\+U\+\_\+\+S\+VR}), or not required at all ({\ttfamily params.\+svm\+\_\+type=Cv\+S\+V\+M.\+O\+N\+E\+\_\+\+C\+L\+A\+SS}). 
+\item Missing measurements are not supported. 
+\end{DoxyItemize}
+
+All the other parameters are gathered in the \char`\"{}\+Cv\+S\+V\+M\+Params\char`\"{} structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Data} & a train\+Data \\
+\hline
+{\em responses} & a responses\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/support_vector_machines.html#cvsvm-train}{\tt org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+train} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a08af9eb5976bbf6d2fdc994a9a5554d0}\label{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a08af9eb5976bbf6d2fdc994a9a5554d0}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}!train\+\_\+auto@{train\+\_\+auto}}
+\index{train\+\_\+auto@{train\+\_\+auto}!org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}}
+\subsubsection{\texorpdfstring{train\+\_\+auto()}{train\_auto()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+train\+\_\+auto (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Data,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{responses,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{var\+Idx,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample\+Idx,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_params}{Cv\+S\+V\+M\+Params}}}]{params,  }\item[{int}]{k\+\_\+fold,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_param_grid}{Cv\+Param\+Grid}}}]{Cgrid,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_param_grid}{Cv\+Param\+Grid}}}]{gamma\+Grid,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_param_grid}{Cv\+Param\+Grid}}}]{p\+Grid,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_param_grid}{Cv\+Param\+Grid}}}]{nu\+Grid,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_param_grid}{Cv\+Param\+Grid}}}]{coeff\+Grid,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_param_grid}{Cv\+Param\+Grid}}}]{degree\+Grid,  }\item[{boolean}]{balanced }\end{DoxyParamCaption})}
+
+Trains an S\+VM with optimal parameters.
+
+The method trains the S\+VM model automatically by choosing the optimal parameters {\ttfamily C}, {\ttfamily gamma}, {\ttfamily p}, {\ttfamily nu}, {\ttfamily coef0}, {\ttfamily degree} from \char`\"{}\+Cv\+S\+V\+M\+Params\char`\"{}. Parameters are considered optimal when the cross-\/validation estimate of the test set error is minimal.
+
+If there is no need to optimize a parameter, the corresponding grid step should be set to any value less than or equal to 1. For example, to avoid optimization in {\ttfamily gamma}, set {\ttfamily gamma\+\_\+grid.\+step = 0}, {\ttfamily gamma\+\_\+grid.\+min\+\_\+val}, {\ttfamily gamma\+\_\+grid.\+max\+\_\+val} as arbitrary numbers. In this case, the value {\ttfamily params.\+gamma} is taken for {\ttfamily gamma}.
+
+And, finally, if the optimization in a parameter is required but the corresponding grid is unknown, you may call the function \char`\"{}\+Cv\+S\+V\+M.\+get\+\_\+default\+\_\+grid\char`\"{}. To generate a grid, for example, for {\ttfamily gamma}, call {\ttfamily Cv\+S\+V\+M.\+get\+\_\+default\+\_\+grid(Cv\+S\+V\+M.\+G\+A\+M\+MA)}.
+
+This function works for the classification ({\ttfamily params.\+svm\+\_\+type=\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a8f904304af3689654b3d7de34ae54801}{Cv\+S\+V\+M.\+C\+\_\+\+S\+VC}}} or {\ttfamily params.\+svm\+\_\+type=Cv\+S\+V\+M.\+N\+U\+\_\+\+S\+VC}) as well as for the regression ({\ttfamily params.\+svm\+\_\+type=Cv\+S\+V\+M.\+E\+P\+S\+\_\+\+S\+VR} or {\ttfamily params.\+svm\+\_\+type=Cv\+S\+V\+M.\+N\+U\+\_\+\+S\+VR}). If {\ttfamily params.\+svm\+\_\+type=Cv\+S\+V\+M.\+O\+N\+E\+\_\+\+C\+L\+A\+SS}, no optimization is made and the usual S\+VM with parameters specified in {\ttfamily params} is executed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Data} & a train\+Data \\
+\hline
+{\em responses} & a responses \\
+\hline
+{\em var\+Idx} & a var\+Idx \\
+\hline
+{\em sample\+Idx} & a sample\+Idx \\
+\hline
+{\em params} & a params \\
+\hline
+{\em k\+\_\+fold} & Cross-\/validation parameter. The training set is divided into {\ttfamily k\+\_\+fold} subsets. One subset is used to test the model, the others form the train set. So, the S\+VM algorithm is executed {\ttfamily k\+\_\+fold} times. \\
+\hline
+{\em Cgrid} & a Cgrid \\
+\hline
+{\em gamma\+Grid} & Iteration grid for the corresponding S\+VM parameter. \\
+\hline
+{\em p\+Grid} & Iteration grid for the corresponding S\+VM parameter. \\
+\hline
+{\em nu\+Grid} & Iteration grid for the corresponding S\+VM parameter. \\
+\hline
+{\em coeff\+Grid} & Iteration grid for the corresponding S\+VM parameter. \\
+\hline
+{\em degree\+Grid} & Iteration grid for the corresponding S\+VM parameter. \\
+\hline
+{\em balanced} & If {\ttfamily true} and the problem is 2-\/class classification then the method creates more balanced cross-\/validation subsets that is proportions between classes in subsets are close to such proportion in the whole train dataset.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/support_vector_machines.html#cvsvm-train-auto}{\tt org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+train\+\_\+auto} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a7cb09e4fa9826ead1bb11c10d9847302}\label{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a7cb09e4fa9826ead1bb11c10d9847302}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}!train\+\_\+auto@{train\+\_\+auto}}
+\index{train\+\_\+auto@{train\+\_\+auto}!org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}}
+\subsubsection{\texorpdfstring{train\+\_\+auto()}{train\_auto()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+train\+\_\+auto (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Data,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{responses,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{var\+Idx,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample\+Idx,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_params}{Cv\+S\+V\+M\+Params}}}]{params }\end{DoxyParamCaption})}
+
+Trains an S\+VM with optimal parameters.
+
+The method trains the S\+VM model automatically by choosing the optimal parameters {\ttfamily C}, {\ttfamily gamma}, {\ttfamily p}, {\ttfamily nu}, {\ttfamily coef0}, {\ttfamily degree} from \char`\"{}\+Cv\+S\+V\+M\+Params\char`\"{}. Parameters are considered optimal when the cross-\/validation estimate of the test set error is minimal.
+
+If there is no need to optimize a parameter, the corresponding grid step should be set to any value less than or equal to 1. For example, to avoid optimization in {\ttfamily gamma}, set {\ttfamily gamma\+\_\+grid.\+step = 0}, {\ttfamily gamma\+\_\+grid.\+min\+\_\+val}, {\ttfamily gamma\+\_\+grid.\+max\+\_\+val} as arbitrary numbers. In this case, the value {\ttfamily params.\+gamma} is taken for {\ttfamily gamma}.
+
+And, finally, if the optimization in a parameter is required but the corresponding grid is unknown, you may call the function \char`\"{}\+Cv\+S\+V\+M.\+get\+\_\+default\+\_\+grid\char`\"{}. To generate a grid, for example, for {\ttfamily gamma}, call {\ttfamily Cv\+S\+V\+M.\+get\+\_\+default\+\_\+grid(Cv\+S\+V\+M.\+G\+A\+M\+MA)}.
+
+This function works for the classification ({\ttfamily params.\+svm\+\_\+type=\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a8f904304af3689654b3d7de34ae54801}{Cv\+S\+V\+M.\+C\+\_\+\+S\+VC}}} or {\ttfamily params.\+svm\+\_\+type=Cv\+S\+V\+M.\+N\+U\+\_\+\+S\+VC}) as well as for the regression ({\ttfamily params.\+svm\+\_\+type=Cv\+S\+V\+M.\+E\+P\+S\+\_\+\+S\+VR} or {\ttfamily params.\+svm\+\_\+type=Cv\+S\+V\+M.\+N\+U\+\_\+\+S\+VR}). If {\ttfamily params.\+svm\+\_\+type=Cv\+S\+V\+M.\+O\+N\+E\+\_\+\+C\+L\+A\+SS}, no optimization is made and the usual S\+VM with parameters specified in {\ttfamily params} is executed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Data} & a train\+Data \\
+\hline
+{\em responses} & a responses \\
+\hline
+{\em var\+Idx} & a var\+Idx \\
+\hline
+{\em sample\+Idx} & a sample\+Idx \\
+\hline
+{\em params} & a params\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/support_vector_machines.html#cvsvm-train-auto}{\tt org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+train\+\_\+auto} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a8f904304af3689654b3d7de34ae54801}\label{classorg_1_1opencv_1_1ml_1_1_cv_s_v_m_a8f904304af3689654b3d7de34ae54801}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}!C\+\_\+\+S\+VC@{C\+\_\+\+S\+VC}}
+\index{C\+\_\+\+S\+VC@{C\+\_\+\+S\+VC}!org\+::opencv\+::ml\+::\+Cv\+S\+VM@{org\+::opencv\+::ml\+::\+Cv\+S\+VM}}
+\subsubsection{\texorpdfstring{C\+\_\+\+S\+VC}{C\_SVC}}
+{\footnotesize\ttfamily final int org.\+opencv.\+ml.\+Cv\+S\+V\+M.\+C\+\_\+\+S\+VC = 100\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/ml/\mbox{\hyperlink{_cv_s_v_m_8java}{Cv\+S\+V\+M.\+java}}\end{DoxyCompactItemize}

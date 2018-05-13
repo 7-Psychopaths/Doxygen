@@ -1,0 +1,281 @@
+\hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor}{}\section{org.\+opencv.\+features2d.\+Descriptor\+Extractor Class Reference}
+\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor}\index{org.\+opencv.\+features2d.\+Descriptor\+Extractor@{org.\+opencv.\+features2d.\+Descriptor\+Extractor}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_afed8df31872201e6e6e001a1e8be8df9}{compute}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} keypoints, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} descriptors)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_a9c1fad7c9e6052255289777b5a41bebe}{compute}} (List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$ images, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} $>$ keypoints, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$ descriptors)
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_ace3eea1d18bd6aa3a14f2190c9e78d0b}{descriptor\+Size}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_a2aa67b3b66dd6b31944d1e490affe945}{descriptor\+Type}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_a0a1f0fe44bf8a7abb3d4ad8ec43de78d}{empty}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_ac82ce2557d69fefff8baed09d1a7abe8}{read}} (String file\+Name)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_a7471115609875fd874fbf896309cab7d}{write}} (String file\+Name)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor}{Descriptor\+Extractor}} \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_a07e4b587ceb856176699c4947611b5f6}{create}} (int extractor\+Type)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_a5e5b1fabe0cb02e586331914421ef495}{S\+I\+FT}} = 1
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_a59eb1d9c4273594cc3d925e3ec3ed70f}{Descriptor\+Extractor}} (long addr)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_a4052f36afab6c14392994eaae66c79db}{finalize}} ()  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final long \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_abe19e832e72a6c51ebae5099e7378941}{native\+Obj}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract base class for computing descriptors for image keypoints.
+
+class C\+V\+\_\+\+E\+X\+P\+O\+R\+TS \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor}{Descriptor\+Extractor}} {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily public\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual $\sim$\+Descriptor\+Extractor();}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily void compute(const Mat\& image, vector$<$\+Key\+Point$>$\& keypoints,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Mat\& descriptors) const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily void compute(const vector$<$\+Mat$>$\& images, vector$<$vector$<$\+Key\+Point$>$ $>$\& keypoints,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily vector$<$\+Mat$>$\& descriptors) const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void read(const File\+Node\&);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void write(\+File\+Storage\&) const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual int descriptor\+Size() const = 0;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual int descriptor\+Type() const = 0;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily static Ptr$<$\+Descriptor\+Extractor$>$ create(const string\& descriptor\+Extractor\+Type);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily protected\+:...}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \};}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily In this interface, a keypoint descriptor can be represented as a }
+
+dense, fixed-\/dimension vector of a basic type. Most descriptors follow this pattern as it simplifies computing distances between descriptors. Therefore, a collection of descriptors is represented as \char`\"{}\+Mat\char`\"{}, where each row is a keypoint descriptor.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_extractors.html#descriptorextractor}{\tt org.\+opencv.\+features2d.\+Descriptor\+Extractor \+: public Algorithm} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_a59eb1d9c4273594cc3d925e3ec3ed70f}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_a59eb1d9c4273594cc3d925e3ec3ed70f}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor@{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor}!Descriptor\+Extractor@{Descriptor\+Extractor}}
+\index{Descriptor\+Extractor@{Descriptor\+Extractor}!org\+::opencv\+::features2d\+::\+Descriptor\+Extractor@{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor}}
+\subsubsection{\texorpdfstring{Descriptor\+Extractor()}{DescriptorExtractor()}}
+{\footnotesize\ttfamily org.\+opencv.\+features2d.\+Descriptor\+Extractor.\+Descriptor\+Extractor (\begin{DoxyParamCaption}\item[{long}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_afed8df31872201e6e6e001a1e8be8df9}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_afed8df31872201e6e6e001a1e8be8df9}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor@{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor}!compute@{compute}}
+\index{compute@{compute}!org\+::opencv\+::features2d\+::\+Descriptor\+Extractor@{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor}}
+\subsubsection{\texorpdfstring{compute()}{compute()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Descriptor\+Extractor.\+compute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}}}]{keypoints,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{descriptors }\end{DoxyParamCaption})}
+
+Computes the descriptors for a set of keypoints detected in an image (first variant) or image set (second variant).
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & Image. \\
+\hline
+{\em keypoints} & Input collection of keypoints. Keypoints for which a descriptor cannot be computed are removed. Sometimes new keypoints can be added, for example\+: {\ttfamily S\+I\+FT} duplicates keypoint with several dominant orientations (for each orientation). \\
+\hline
+{\em descriptors} & Computed descriptors. In the second variant of the method {\ttfamily descriptors\mbox{[}i\mbox{]}} are descriptors computed for a {\ttfamily keypoints\mbox{[}i\mbox{]}}. Row {\ttfamily j} is the {\ttfamily keypoints} (or {\ttfamily keypoints\mbox{[}i\mbox{]}}) is the descriptor for keypoint {\ttfamily j}-\/th keypoint.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_extractors.html#descriptorextractor-compute}{\tt org.\+opencv.\+features2d.\+Descriptor\+Extractor.\+compute} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_a9c1fad7c9e6052255289777b5a41bebe}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_a9c1fad7c9e6052255289777b5a41bebe}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor@{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor}!compute@{compute}}
+\index{compute@{compute}!org\+::opencv\+::features2d\+::\+Descriptor\+Extractor@{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor}}
+\subsubsection{\texorpdfstring{compute()}{compute()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Descriptor\+Extractor.\+compute (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$}]{images,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} $>$}]{keypoints,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$}]{descriptors }\end{DoxyParamCaption})}
+
+Computes the descriptors for a set of keypoints detected in an image (first variant) or image set (second variant).
+
+
+\begin{DoxyParams}{Parameters}
+{\em images} & Image set. \\
+\hline
+{\em keypoints} & Input collection of keypoints. Keypoints for which a descriptor cannot be computed are removed. Sometimes new keypoints can be added, for example\+: {\ttfamily S\+I\+FT} duplicates keypoint with several dominant orientations (for each orientation). \\
+\hline
+{\em descriptors} & Computed descriptors. In the second variant of the method {\ttfamily descriptors\mbox{[}i\mbox{]}} are descriptors computed for a {\ttfamily keypoints\mbox{[}i\mbox{]}}. Row {\ttfamily j} is the {\ttfamily keypoints} (or {\ttfamily keypoints\mbox{[}i\mbox{]}}) is the descriptor for keypoint {\ttfamily j}-\/th keypoint.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_extractors.html#descriptorextractor-compute}{\tt org.\+opencv.\+features2d.\+Descriptor\+Extractor.\+compute} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_a07e4b587ceb856176699c4947611b5f6}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_a07e4b587ceb856176699c4947611b5f6}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor@{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor}!create@{create}}
+\index{create@{create}!org\+::opencv\+::features2d\+::\+Descriptor\+Extractor@{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor}{Descriptor\+Extractor}} org.\+opencv.\+features2d.\+Descriptor\+Extractor.\+create (\begin{DoxyParamCaption}\item[{int}]{extractor\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a descriptor extractor by name.
+
+The current implementation supports the following types of a descriptor extractor\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily \char`\"{}\+S\+I\+F\+T\char`\"{}} -- \char`\"{}\+S\+I\+F\+T\char`\"{} 
+\item {\ttfamily \char`\"{}\+S\+U\+R\+F\char`\"{}} -- \char`\"{}\+S\+U\+R\+F\char`\"{} 
+\item {\ttfamily \char`\"{}\+B\+R\+I\+E\+F\char`\"{}} -- \char`\"{}\+Brief\+Descriptor\+Extractor\char`\"{} 
+\item {\ttfamily \char`\"{}\+B\+R\+I\+S\+K\char`\"{}} -- \char`\"{}\+B\+R\+I\+S\+K\char`\"{} 
+\item {\ttfamily \char`\"{}\+O\+R\+B\char`\"{}} -- \char`\"{}\+O\+R\+B\char`\"{} 
+\item {\ttfamily \char`\"{}\+F\+R\+E\+A\+K\char`\"{}} -- \char`\"{}\+F\+R\+E\+A\+K\char`\"{} 
+\end{DoxyItemize}
+
+A combined format is also supported\+: descriptor extractor adapter name ({\ttfamily \char`\"{}\+Opponent\char`\"{}} -- \char`\"{}\+Opponent\+Color\+Descriptor\+Extractor\char`\"{}) + descriptor extractor name (see above), for example\+: {\ttfamily \char`\"{}\+Opponent\+S\+I\+F\+T\char`\"{}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em extractor\+Type} & a extractor\+Type\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_extractors.html#descriptorextractor-create}{\tt org.\+opencv.\+features2d.\+Descriptor\+Extractor.\+create} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_ace3eea1d18bd6aa3a14f2190c9e78d0b}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_ace3eea1d18bd6aa3a14f2190c9e78d0b}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor@{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor}!descriptor\+Size@{descriptor\+Size}}
+\index{descriptor\+Size@{descriptor\+Size}!org\+::opencv\+::features2d\+::\+Descriptor\+Extractor@{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor}}
+\subsubsection{\texorpdfstring{descriptor\+Size()}{descriptorSize()}}
+{\footnotesize\ttfamily int org.\+opencv.\+features2d.\+Descriptor\+Extractor.\+descriptor\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_a2aa67b3b66dd6b31944d1e490affe945}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_a2aa67b3b66dd6b31944d1e490affe945}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor@{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor}!descriptor\+Type@{descriptor\+Type}}
+\index{descriptor\+Type@{descriptor\+Type}!org\+::opencv\+::features2d\+::\+Descriptor\+Extractor@{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor}}
+\subsubsection{\texorpdfstring{descriptor\+Type()}{descriptorType()}}
+{\footnotesize\ttfamily int org.\+opencv.\+features2d.\+Descriptor\+Extractor.\+descriptor\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_a0a1f0fe44bf8a7abb3d4ad8ec43de78d}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_a0a1f0fe44bf8a7abb3d4ad8ec43de78d}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor@{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor}!empty@{empty}}
+\index{empty@{empty}!org\+::opencv\+::features2d\+::\+Descriptor\+Extractor@{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+features2d.\+Descriptor\+Extractor.\+empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_a4052f36afab6c14392994eaae66c79db}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_a4052f36afab6c14392994eaae66c79db}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor@{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor}!finalize@{finalize}}
+\index{finalize@{finalize}!org\+::opencv\+::features2d\+::\+Descriptor\+Extractor@{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Descriptor\+Extractor.\+finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Throwable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_ac82ce2557d69fefff8baed09d1a7abe8}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_ac82ce2557d69fefff8baed09d1a7abe8}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor@{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor}!read@{read}}
+\index{read@{read}!org\+::opencv\+::features2d\+::\+Descriptor\+Extractor@{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Descriptor\+Extractor.\+read (\begin{DoxyParamCaption}\item[{String}]{file\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_a7471115609875fd874fbf896309cab7d}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_a7471115609875fd874fbf896309cab7d}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor@{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor}!write@{write}}
+\index{write@{write}!org\+::opencv\+::features2d\+::\+Descriptor\+Extractor@{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Descriptor\+Extractor.\+write (\begin{DoxyParamCaption}\item[{String}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_abe19e832e72a6c51ebae5099e7378941}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_abe19e832e72a6c51ebae5099e7378941}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor@{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor}!native\+Obj@{native\+Obj}}
+\index{native\+Obj@{native\+Obj}!org\+::opencv\+::features2d\+::\+Descriptor\+Extractor@{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor}}
+\subsubsection{\texorpdfstring{native\+Obj}{nativeObj}}
+{\footnotesize\ttfamily final long org.\+opencv.\+features2d.\+Descriptor\+Extractor.\+native\+Obj\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_a5e5b1fabe0cb02e586331914421ef495}\label{classorg_1_1opencv_1_1features2d_1_1_descriptor_extractor_a5e5b1fabe0cb02e586331914421ef495}} 
+\index{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor@{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor}!S\+I\+FT@{S\+I\+FT}}
+\index{S\+I\+FT@{S\+I\+FT}!org\+::opencv\+::features2d\+::\+Descriptor\+Extractor@{org\+::opencv\+::features2d\+::\+Descriptor\+Extractor}}
+\subsubsection{\texorpdfstring{S\+I\+FT}{SIFT}}
+{\footnotesize\ttfamily final int org.\+opencv.\+features2d.\+Descriptor\+Extractor.\+S\+I\+FT = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/features2d/\mbox{\hyperlink{_descriptor_extractor_8java}{Descriptor\+Extractor.\+java}}\end{DoxyCompactItemize}

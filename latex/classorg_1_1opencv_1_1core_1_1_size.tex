@@ -1,0 +1,272 @@
+\hypertarget{classorg_1_1opencv_1_1core_1_1_size}{}\section{org.\+opencv.\+core.\+Size Class Reference}
+\label{classorg_1_1opencv_1_1core_1_1_size}\index{org.\+opencv.\+core.\+Size@{org.\+opencv.\+core.\+Size}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size_aaa2bd47901a6a258743307f77615f1b7}{Size}} (double \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size_a7119ef5de69592ee53b253977ec86867}{width}}, double height)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size_a13601fb7ccb9fd63c532ecc92dbac417}{Size}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size_a39437e6790a44e7a42d3026804f5123e}{Size}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point}{Point}} p)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size_adf9d40704fe62c098ca5f0212f166c79}{Size}} (double\mbox{[}$\,$\mbox{]} vals)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size_a0f76e5d50518a624e3f45bd7d4090089}{set}} (double\mbox{[}$\,$\mbox{]} vals)
+\item 
+double \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size_a7c1f2ab61f2ee4aa5b5856c313dc1d27}{area}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size_a9292f9172f23b7fbb1f22a04042f4a39}{clone}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size_a044377a2502bc4b1d07a0a493785e74c}{hash\+Code}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size_a6ad61f587c7a94872da9c8033bd317dc}{equals}} (Object obj)
+\item 
+String \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size_a6def71949e570165a90058d5c0f50254}{to\+String}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size_a7119ef5de69592ee53b253977ec86867}{width}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+template$<$typename \+\_\+\+Tp$>$ class C\+V\+\_\+\+E\+X\+P\+O\+R\+TS Size\+\_\+ {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily public\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily typedef \+\_\+\+Tp value\+\_\+type;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //! various constructors}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Size\+\_\+();}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Size\+\_\+(\+\_\+\+Tp \+\_\+width, \+\_\+\+Tp \+\_\+height);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Size\+\_\+(const Size\+\_\+\& sz);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Size\+\_\+(const Cv\+Size\& sz);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Size\+\_\+(const Cv\+Size2\+D32f\& sz);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Size\+\_\+(const Point\+\_\+$<$\+\_\+\+Tp$>$\& pt);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Size\+\_\+\& operator = (const Size\+\_\+\& sz);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //! the area (width$\ast$height)}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \+\_\+\+Tp area() const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //! conversion of another data type.}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily template$<$typename \+\_\+\+Tp2$>$ operator Size\+\_\+$<$\+\_\+\+Tp2$>$() const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //! conversion to the old-\/style Open\+CV types}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily operator Cv\+Size() const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily operator Cv\+Size2\+D32f() const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \+\_\+\+Tp width, height; // the width and the height}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \};}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Template class for specifying the size of an image or rectangle. The class includes two members called {\ttfamily width} and {\ttfamily height}. The structure can be converted to and from the old Open\+CV structures }
+
+{\ttfamily Cv\+Size} and {\ttfamily Cv\+Size2\+D32f}. The same set of arithmetic and comparison operations as for {\ttfamily Point\+\_\+} is available. Open\+CV defines the following {\ttfamily Size\+\_\+$<$$>$} aliases\+: {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily typedef Size\+\_\+$<$int$>$ Size2i;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily typedef Size2i \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}};}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily typedef Size\+\_\+$<$float$>$ Size2f;}
+
+{\ttfamily }
+
+{\ttfamily \begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/core/doc/basic_structures.html#size}{\tt org.\+opencv.\+core.\+Size\+\_\+} 
+\end{DoxySeeAlso}
+}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_size_aaa2bd47901a6a258743307f77615f1b7}\label{classorg_1_1opencv_1_1core_1_1_size_aaa2bd47901a6a258743307f77615f1b7}} 
+\index{org\+::opencv\+::core\+::\+Size@{org\+::opencv\+::core\+::\+Size}!Size@{Size}}
+\index{Size@{Size}!org\+::opencv\+::core\+::\+Size@{org\+::opencv\+::core\+::\+Size}}
+\subsubsection{\texorpdfstring{Size()}{Size()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+core.\+Size.\+Size (\begin{DoxyParamCaption}\item[{double}]{width,  }\item[{double}]{height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_size_a13601fb7ccb9fd63c532ecc92dbac417}\label{classorg_1_1opencv_1_1core_1_1_size_a13601fb7ccb9fd63c532ecc92dbac417}} 
+\index{org\+::opencv\+::core\+::\+Size@{org\+::opencv\+::core\+::\+Size}!Size@{Size}}
+\index{Size@{Size}!org\+::opencv\+::core\+::\+Size@{org\+::opencv\+::core\+::\+Size}}
+\subsubsection{\texorpdfstring{Size()}{Size()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+core.\+Size.\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_size_a39437e6790a44e7a42d3026804f5123e}\label{classorg_1_1opencv_1_1core_1_1_size_a39437e6790a44e7a42d3026804f5123e}} 
+\index{org\+::opencv\+::core\+::\+Size@{org\+::opencv\+::core\+::\+Size}!Size@{Size}}
+\index{Size@{Size}!org\+::opencv\+::core\+::\+Size@{org\+::opencv\+::core\+::\+Size}}
+\subsubsection{\texorpdfstring{Size()}{Size()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+core.\+Size.\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point}{Point}}}]{p }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_size_adf9d40704fe62c098ca5f0212f166c79}\label{classorg_1_1opencv_1_1core_1_1_size_adf9d40704fe62c098ca5f0212f166c79}} 
+\index{org\+::opencv\+::core\+::\+Size@{org\+::opencv\+::core\+::\+Size}!Size@{Size}}
+\index{Size@{Size}!org\+::opencv\+::core\+::\+Size@{org\+::opencv\+::core\+::\+Size}}
+\subsubsection{\texorpdfstring{Size()}{Size()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+core.\+Size.\+Size (\begin{DoxyParamCaption}\item[{double \mbox{[}$\,$\mbox{]}}]{vals }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_size_a7c1f2ab61f2ee4aa5b5856c313dc1d27}\label{classorg_1_1opencv_1_1core_1_1_size_a7c1f2ab61f2ee4aa5b5856c313dc1d27}} 
+\index{org\+::opencv\+::core\+::\+Size@{org\+::opencv\+::core\+::\+Size}!area@{area}}
+\index{area@{area}!org\+::opencv\+::core\+::\+Size@{org\+::opencv\+::core\+::\+Size}}
+\subsubsection{\texorpdfstring{area()}{area()}}
+{\footnotesize\ttfamily double org.\+opencv.\+core.\+Size.\+area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_size_a9292f9172f23b7fbb1f22a04042f4a39}\label{classorg_1_1opencv_1_1core_1_1_size_a9292f9172f23b7fbb1f22a04042f4a39}} 
+\index{org\+::opencv\+::core\+::\+Size@{org\+::opencv\+::core\+::\+Size}!clone@{clone}}
+\index{clone@{clone}!org\+::opencv\+::core\+::\+Size@{org\+::opencv\+::core\+::\+Size}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} org.\+opencv.\+core.\+Size.\+clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_size_a6ad61f587c7a94872da9c8033bd317dc}\label{classorg_1_1opencv_1_1core_1_1_size_a6ad61f587c7a94872da9c8033bd317dc}} 
+\index{org\+::opencv\+::core\+::\+Size@{org\+::opencv\+::core\+::\+Size}!equals@{equals}}
+\index{equals@{equals}!org\+::opencv\+::core\+::\+Size@{org\+::opencv\+::core\+::\+Size}}
+\subsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+core.\+Size.\+equals (\begin{DoxyParamCaption}\item[{Object}]{obj }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_size_a044377a2502bc4b1d07a0a493785e74c}\label{classorg_1_1opencv_1_1core_1_1_size_a044377a2502bc4b1d07a0a493785e74c}} 
+\index{org\+::opencv\+::core\+::\+Size@{org\+::opencv\+::core\+::\+Size}!hash\+Code@{hash\+Code}}
+\index{hash\+Code@{hash\+Code}!org\+::opencv\+::core\+::\+Size@{org\+::opencv\+::core\+::\+Size}}
+\subsubsection{\texorpdfstring{hash\+Code()}{hashCode()}}
+{\footnotesize\ttfamily int org.\+opencv.\+core.\+Size.\+hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_size_a0f76e5d50518a624e3f45bd7d4090089}\label{classorg_1_1opencv_1_1core_1_1_size_a0f76e5d50518a624e3f45bd7d4090089}} 
+\index{org\+::opencv\+::core\+::\+Size@{org\+::opencv\+::core\+::\+Size}!set@{set}}
+\index{set@{set}!org\+::opencv\+::core\+::\+Size@{org\+::opencv\+::core\+::\+Size}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void org.\+opencv.\+core.\+Size.\+set (\begin{DoxyParamCaption}\item[{double \mbox{[}$\,$\mbox{]}}]{vals }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_size_a6def71949e570165a90058d5c0f50254}\label{classorg_1_1opencv_1_1core_1_1_size_a6def71949e570165a90058d5c0f50254}} 
+\index{org\+::opencv\+::core\+::\+Size@{org\+::opencv\+::core\+::\+Size}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!org\+::opencv\+::core\+::\+Size@{org\+::opencv\+::core\+::\+Size}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily String org.\+opencv.\+core.\+Size.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_size_a7119ef5de69592ee53b253977ec86867}\label{classorg_1_1opencv_1_1core_1_1_size_a7119ef5de69592ee53b253977ec86867}} 
+\index{org\+::opencv\+::core\+::\+Size@{org\+::opencv\+::core\+::\+Size}!width@{width}}
+\index{width@{width}!org\+::opencv\+::core\+::\+Size@{org\+::opencv\+::core\+::\+Size}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily double org.\+opencv.\+core.\+Size.\+width}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/core/\mbox{\hyperlink{_size_8java}{Size.\+java}}\end{DoxyCompactItemize}

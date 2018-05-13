@@ -1,0 +1,122 @@
+\hypertarget{classorg_1_1opencv_1_1android_1_1_utils}{}\section{org.\+opencv.\+android.\+Utils Class Reference}
+\label{classorg_1_1opencv_1_1android_1_1_utils}\index{org.\+opencv.\+android.\+Utils@{org.\+opencv.\+android.\+Utils}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_utils_a26a7a38f69c5de24bb2b4c15dca27567}{export\+Resource}} (Context context, int resource\+Id)
+\item 
+static String \mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_utils_a495b57da9aab4d1793222fd749f22330}{export\+Resource}} (Context context, int resource\+Id, String dirname)
+\item 
+static \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} \mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_utils_a59d62bc6ac6bea5f9bc7c158dab3114a}{load\+Resource}} (Context context, int resource\+Id)  throws I\+O\+Exception     
+\item 
+static \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} \mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_utils_a5df87829300a23ef0c91bd641a76adb0}{load\+Resource}} (Context context, int resource\+Id, int flags)  throws I\+O\+Exception     
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_utils_a6f6725aea74948d60a7f6e7dddfabf13}{bitmap\+To\+Mat}} (Bitmap bmp, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} mat, boolean un\+Premultiply\+Alpha)
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_utils_a73261b5ffc4fedb2f0eff22d96d795d1}{bitmap\+To\+Mat}} (Bitmap bmp, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} mat)
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_utils_a97b0bf6900d7a26528d121565c8f824a}{mat\+To\+Bitmap}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} mat, Bitmap bmp, boolean premultiply\+Alpha)
+\item 
+static void \mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_utils_a234945b6367c9072a6a94d68dedc888c}{mat\+To\+Bitmap}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} mat, Bitmap bmp)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_utils_a6f6725aea74948d60a7f6e7dddfabf13}\label{classorg_1_1opencv_1_1android_1_1_utils_a6f6725aea74948d60a7f6e7dddfabf13}} 
+\index{org\+::opencv\+::android\+::\+Utils@{org\+::opencv\+::android\+::\+Utils}!bitmap\+To\+Mat@{bitmap\+To\+Mat}}
+\index{bitmap\+To\+Mat@{bitmap\+To\+Mat}!org\+::opencv\+::android\+::\+Utils@{org\+::opencv\+::android\+::\+Utils}}
+\subsubsection{\texorpdfstring{bitmap\+To\+Mat()}{bitmapToMat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void org.\+opencv.\+android.\+Utils.\+bitmap\+To\+Mat (\begin{DoxyParamCaption}\item[{Bitmap}]{bmp,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{mat,  }\item[{boolean}]{un\+Premultiply\+Alpha }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts Android Bitmap to Open\+CV Mat. 
+
+This function converts an Android Bitmap image to the Open\+CV Mat. ~\newline
+\textquotesingle{}A\+R\+G\+B\+\_\+8888\textquotesingle{} and \textquotesingle{}R\+G\+B\+\_\+565\textquotesingle{} input Bitmap formats are supported. ~\newline
+The output Mat is always created of the same size as the input Bitmap and of the \textquotesingle{}C\+V\+\_\+8\+U\+C4\textquotesingle{} type, it keeps the image in R\+G\+BA format. ~\newline
+This function throws an exception if the conversion fails. 
+\begin{DoxyParams}{Parameters}
+{\em bmp} & is a valid input Bitmap object of the type \textquotesingle{}A\+R\+G\+B\+\_\+8888\textquotesingle{} or \textquotesingle{}R\+G\+B\+\_\+565\textquotesingle{}. \\
+\hline
+{\em mat} & is a valid output Mat object, it will be reallocated if needed, so it may be empty. \\
+\hline
+{\em un\+Premultiply\+Alpha} & is a flag, that determines, whether the bitmap needs to be converted from alpha premultiplied format (like Android keeps \textquotesingle{}A\+R\+G\+B\+\_\+8888\textquotesingle{} ones) to regular one; this flag is ignored for \textquotesingle{}R\+G\+B\+\_\+565\textquotesingle{} bitmaps. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_utils_a73261b5ffc4fedb2f0eff22d96d795d1}\label{classorg_1_1opencv_1_1android_1_1_utils_a73261b5ffc4fedb2f0eff22d96d795d1}} 
+\index{org\+::opencv\+::android\+::\+Utils@{org\+::opencv\+::android\+::\+Utils}!bitmap\+To\+Mat@{bitmap\+To\+Mat}}
+\index{bitmap\+To\+Mat@{bitmap\+To\+Mat}!org\+::opencv\+::android\+::\+Utils@{org\+::opencv\+::android\+::\+Utils}}
+\subsubsection{\texorpdfstring{bitmap\+To\+Mat()}{bitmapToMat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void org.\+opencv.\+android.\+Utils.\+bitmap\+To\+Mat (\begin{DoxyParamCaption}\item[{Bitmap}]{bmp,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Short form of the bitmap\+To\+Mat(bmp, mat, un\+Premultiply\+Alpha=false). 
+\begin{DoxyParams}{Parameters}
+{\em bmp} & is a valid input Bitmap object of the type \textquotesingle{}A\+R\+G\+B\+\_\+8888\textquotesingle{} or \textquotesingle{}R\+G\+B\+\_\+565\textquotesingle{}. \\
+\hline
+{\em mat} & is a valid output Mat object, it will be reallocated if needed, so Mat may be empty. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_utils_a26a7a38f69c5de24bb2b4c15dca27567}\label{classorg_1_1opencv_1_1android_1_1_utils_a26a7a38f69c5de24bb2b4c15dca27567}} 
+\index{org\+::opencv\+::android\+::\+Utils@{org\+::opencv\+::android\+::\+Utils}!export\+Resource@{export\+Resource}}
+\index{export\+Resource@{export\+Resource}!org\+::opencv\+::android\+::\+Utils@{org\+::opencv\+::android\+::\+Utils}}
+\subsubsection{\texorpdfstring{export\+Resource()}{exportResource()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static String org.\+opencv.\+android.\+Utils.\+export\+Resource (\begin{DoxyParamCaption}\item[{Context}]{context,  }\item[{int}]{resource\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_utils_a495b57da9aab4d1793222fd749f22330}\label{classorg_1_1opencv_1_1android_1_1_utils_a495b57da9aab4d1793222fd749f22330}} 
+\index{org\+::opencv\+::android\+::\+Utils@{org\+::opencv\+::android\+::\+Utils}!export\+Resource@{export\+Resource}}
+\index{export\+Resource@{export\+Resource}!org\+::opencv\+::android\+::\+Utils@{org\+::opencv\+::android\+::\+Utils}}
+\subsubsection{\texorpdfstring{export\+Resource()}{exportResource()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static String org.\+opencv.\+android.\+Utils.\+export\+Resource (\begin{DoxyParamCaption}\item[{Context}]{context,  }\item[{int}]{resource\+Id,  }\item[{String}]{dirname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_utils_a59d62bc6ac6bea5f9bc7c158dab3114a}\label{classorg_1_1opencv_1_1android_1_1_utils_a59d62bc6ac6bea5f9bc7c158dab3114a}} 
+\index{org\+::opencv\+::android\+::\+Utils@{org\+::opencv\+::android\+::\+Utils}!load\+Resource@{load\+Resource}}
+\index{load\+Resource@{load\+Resource}!org\+::opencv\+::android\+::\+Utils@{org\+::opencv\+::android\+::\+Utils}}
+\subsubsection{\texorpdfstring{load\+Resource()}{loadResource()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} org.\+opencv.\+android.\+Utils.\+load\+Resource (\begin{DoxyParamCaption}\item[{Context}]{context,  }\item[{int}]{resource\+Id }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_utils_a5df87829300a23ef0c91bd641a76adb0}\label{classorg_1_1opencv_1_1android_1_1_utils_a5df87829300a23ef0c91bd641a76adb0}} 
+\index{org\+::opencv\+::android\+::\+Utils@{org\+::opencv\+::android\+::\+Utils}!load\+Resource@{load\+Resource}}
+\index{load\+Resource@{load\+Resource}!org\+::opencv\+::android\+::\+Utils@{org\+::opencv\+::android\+::\+Utils}}
+\subsubsection{\texorpdfstring{load\+Resource()}{loadResource()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} org.\+opencv.\+android.\+Utils.\+load\+Resource (\begin{DoxyParamCaption}\item[{Context}]{context,  }\item[{int}]{resource\+Id,  }\item[{int}]{flags }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_utils_a97b0bf6900d7a26528d121565c8f824a}\label{classorg_1_1opencv_1_1android_1_1_utils_a97b0bf6900d7a26528d121565c8f824a}} 
+\index{org\+::opencv\+::android\+::\+Utils@{org\+::opencv\+::android\+::\+Utils}!mat\+To\+Bitmap@{mat\+To\+Bitmap}}
+\index{mat\+To\+Bitmap@{mat\+To\+Bitmap}!org\+::opencv\+::android\+::\+Utils@{org\+::opencv\+::android\+::\+Utils}}
+\subsubsection{\texorpdfstring{mat\+To\+Bitmap()}{matToBitmap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void org.\+opencv.\+android.\+Utils.\+mat\+To\+Bitmap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{mat,  }\item[{Bitmap}]{bmp,  }\item[{boolean}]{premultiply\+Alpha }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts Open\+CV Mat to Android Bitmap. 
+
+~\newline
+This function converts an image in the Open\+CV Mat representation to the Android Bitmap. ~\newline
+The input Mat object has to be of the types \textquotesingle{}C\+V\+\_\+8\+U\+C1\textquotesingle{} (gray-\/scale), \textquotesingle{}C\+V\+\_\+8\+U\+C3\textquotesingle{} (R\+GB) or \textquotesingle{}C\+V\+\_\+8\+U\+C4\textquotesingle{} (R\+G\+BA). ~\newline
+The output Bitmap object has to be of the same size as the input Mat and of the types \textquotesingle{}A\+R\+G\+B\+\_\+8888\textquotesingle{} or \textquotesingle{}R\+G\+B\+\_\+565\textquotesingle{}. ~\newline
+This function throws an exception if the conversion fails.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & is a valid input Mat object of types \textquotesingle{}C\+V\+\_\+8\+U\+C1\textquotesingle{}, \textquotesingle{}C\+V\+\_\+8\+U\+C3\textquotesingle{} or \textquotesingle{}C\+V\+\_\+8\+U\+C4\textquotesingle{}. \\
+\hline
+{\em bmp} & is a valid Bitmap object of the same size as the Mat and of type \textquotesingle{}A\+R\+G\+B\+\_\+8888\textquotesingle{} or \textquotesingle{}R\+G\+B\+\_\+565\textquotesingle{}. \\
+\hline
+{\em premultiply\+Alpha} & is a flag, that determines, whether the Mat needs to be converted to alpha premultiplied format (like Android keeps \textquotesingle{}A\+R\+G\+B\+\_\+8888\textquotesingle{} bitmaps); the flag is ignored for \textquotesingle{}R\+G\+B\+\_\+565\textquotesingle{} bitmaps. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_utils_a234945b6367c9072a6a94d68dedc888c}\label{classorg_1_1opencv_1_1android_1_1_utils_a234945b6367c9072a6a94d68dedc888c}} 
+\index{org\+::opencv\+::android\+::\+Utils@{org\+::opencv\+::android\+::\+Utils}!mat\+To\+Bitmap@{mat\+To\+Bitmap}}
+\index{mat\+To\+Bitmap@{mat\+To\+Bitmap}!org\+::opencv\+::android\+::\+Utils@{org\+::opencv\+::android\+::\+Utils}}
+\subsubsection{\texorpdfstring{mat\+To\+Bitmap()}{matToBitmap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void org.\+opencv.\+android.\+Utils.\+mat\+To\+Bitmap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{mat,  }\item[{Bitmap}]{bmp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Short form of the {\bfseries mat\+To\+Bitmap(mat, bmp, premultiply\+Alpha=false)} 
+\begin{DoxyParams}{Parameters}
+{\em mat} & is a valid input Mat object of the types \textquotesingle{}C\+V\+\_\+8\+U\+C1\textquotesingle{}, \textquotesingle{}C\+V\+\_\+8\+U\+C3\textquotesingle{} or \textquotesingle{}C\+V\+\_\+8\+U\+C4\textquotesingle{}. \\
+\hline
+{\em bmp} & is a valid Bitmap object of the same size as the Mat and of type \textquotesingle{}A\+R\+G\+B\+\_\+8888\textquotesingle{} or \textquotesingle{}R\+G\+B\+\_\+565\textquotesingle{}. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/android/\mbox{\hyperlink{_utils_8java}{Utils.\+java}}\end{DoxyCompactItemize}

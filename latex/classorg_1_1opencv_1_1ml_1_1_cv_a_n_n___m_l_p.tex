@@ -1,0 +1,272 @@
+\hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p}{}\section{org.\+opencv.\+ml.\+Cv\+A\+N\+N\+\_\+\+M\+LP Class Reference}
+\label{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p}\index{org.\+opencv.\+ml.\+Cv\+A\+N\+N\+\_\+\+M\+LP@{org.\+opencv.\+ml.\+Cv\+A\+N\+N\+\_\+\+M\+LP}}
+Inheritance diagram for org.\+opencv.\+ml.\+Cv\+A\+N\+N\+\_\+\+M\+LP\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_a01276619fc9e17aa4f57ea71b1dfb702}{Cv\+A\+N\+N\+\_\+\+M\+LP}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_a77edc6845f525ca36bea415cb1610f4f}{Cv\+A\+N\+N\+\_\+\+M\+LP}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} layer\+Sizes, int activate\+Func, double fparam1, double fparam2)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_a7c931c4344de2afa2eb694bfe23a39d3}{Cv\+A\+N\+N\+\_\+\+M\+LP}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} layer\+Sizes)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_ac0470568d2d81e55c095df852e849b10}{clear}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_a907ad923ff5493dde694e49e8d02ca47}{create}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} layer\+Sizes, int activate\+Func, double fparam1, double fparam2)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_a9a2158f88f0093884a5bb0804fd96e63}{create}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} layer\+Sizes)
+\item 
+float \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_ab694e4722b8f4f8af388a690be40e511}{predict}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} inputs, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} outputs)
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_a76ca0f8c604ca656557e9349ae92d4dc}{train}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} inputs, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} outputs, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample\+Weights, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample\+Idx, \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p___train_params}{Cv\+A\+N\+N\+\_\+\+M\+L\+P\+\_\+\+Train\+Params}} params, int flags)
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_ae0d619b9a3ae8bcb5e8838181d38ec1f}{train}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} inputs, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} outputs, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample\+Weights)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_aefd633244286d7dfa041049f7a21d1c0}{I\+D\+E\+N\+T\+I\+TY}} = 0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_a930f8905ac5fb30c3a078af937db77f9}{Cv\+A\+N\+N\+\_\+\+M\+LP}} (long addr)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_a3f1c0f088a3b739fb6ddd63d7a9d5f9c}{finalize}} ()  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+M\+LP model.
+
+Unlike many other models in ML that are constructed and trained at once, in the M\+LP model these steps are separated. First, a network with the specified topology is created using the non-\/default constructor or the method \char`\"{}\+Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+create\char`\"{}. All the weights are set to zeros. Then, the network is trained using a set of input and output vectors. The training procedure can be repeated more than once, that is, the weights can be adjusted based on the new training data.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/neural_networks.html#cvann-mlp}{\tt org.\+opencv.\+ml.\+Cv\+A\+N\+N\+\_\+\+M\+LP \+: public Cv\+Stat\+Model} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_a930f8905ac5fb30c3a078af937db77f9}\label{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_a930f8905ac5fb30c3a078af937db77f9}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP@{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP}!Cv\+A\+N\+N\+\_\+\+M\+LP@{Cv\+A\+N\+N\+\_\+\+M\+LP}}
+\index{Cv\+A\+N\+N\+\_\+\+M\+LP@{Cv\+A\+N\+N\+\_\+\+M\+LP}!org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP@{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP}}
+\subsubsection{\texorpdfstring{Cv\+A\+N\+N\+\_\+\+M\+L\+P()}{CvANN\_MLP()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+Cv\+A\+N\+N\+\_\+\+M\+LP (\begin{DoxyParamCaption}\item[{long}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_a01276619fc9e17aa4f57ea71b1dfb702}\label{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_a01276619fc9e17aa4f57ea71b1dfb702}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP@{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP}!Cv\+A\+N\+N\+\_\+\+M\+LP@{Cv\+A\+N\+N\+\_\+\+M\+LP}}
+\index{Cv\+A\+N\+N\+\_\+\+M\+LP@{Cv\+A\+N\+N\+\_\+\+M\+LP}!org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP@{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP}}
+\subsubsection{\texorpdfstring{Cv\+A\+N\+N\+\_\+\+M\+L\+P()}{CvANN\_MLP()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+Cv\+A\+N\+N\+\_\+\+M\+LP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The constructors.
+
+The advanced constructor allows to create M\+LP with the specified topology. See \char`\"{}\+Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+create\char`\"{} for details.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/neural_networks.html#cvann-mlp-cvann-mlp}{\tt org.\+opencv.\+ml.\+Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+Cv\+A\+N\+N\+\_\+\+M\+LP} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_a77edc6845f525ca36bea415cb1610f4f}\label{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_a77edc6845f525ca36bea415cb1610f4f}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP@{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP}!Cv\+A\+N\+N\+\_\+\+M\+LP@{Cv\+A\+N\+N\+\_\+\+M\+LP}}
+\index{Cv\+A\+N\+N\+\_\+\+M\+LP@{Cv\+A\+N\+N\+\_\+\+M\+LP}!org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP@{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP}}
+\subsubsection{\texorpdfstring{Cv\+A\+N\+N\+\_\+\+M\+L\+P()}{CvANN\_MLP()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+Cv\+A\+N\+N\+\_\+\+M\+LP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{layer\+Sizes,  }\item[{int}]{activate\+Func,  }\item[{double}]{fparam1,  }\item[{double}]{fparam2 }\end{DoxyParamCaption})}
+
+The constructors.
+
+The advanced constructor allows to create M\+LP with the specified topology. See \char`\"{}\+Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+create\char`\"{} for details.
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer\+Sizes} & a layer\+Sizes \\
+\hline
+{\em activate\+Func} & a activate\+Func \\
+\hline
+{\em fparam1} & a fparam1 \\
+\hline
+{\em fparam2} & a fparam2\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/neural_networks.html#cvann-mlp-cvann-mlp}{\tt org.\+opencv.\+ml.\+Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+Cv\+A\+N\+N\+\_\+\+M\+LP} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_a7c931c4344de2afa2eb694bfe23a39d3}\label{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_a7c931c4344de2afa2eb694bfe23a39d3}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP@{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP}!Cv\+A\+N\+N\+\_\+\+M\+LP@{Cv\+A\+N\+N\+\_\+\+M\+LP}}
+\index{Cv\+A\+N\+N\+\_\+\+M\+LP@{Cv\+A\+N\+N\+\_\+\+M\+LP}!org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP@{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP}}
+\subsubsection{\texorpdfstring{Cv\+A\+N\+N\+\_\+\+M\+L\+P()}{CvANN\_MLP()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+Cv\+A\+N\+N\+\_\+\+M\+LP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{layer\+Sizes }\end{DoxyParamCaption})}
+
+The constructors.
+
+The advanced constructor allows to create M\+LP with the specified topology. See \char`\"{}\+Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+create\char`\"{} for details.
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer\+Sizes} & a layer\+Sizes\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/neural_networks.html#cvann-mlp-cvann-mlp}{\tt org.\+opencv.\+ml.\+Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+Cv\+A\+N\+N\+\_\+\+M\+LP} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_ac0470568d2d81e55c095df852e849b10}\label{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_ac0470568d2d81e55c095df852e849b10}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP@{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP}!clear@{clear}}
+\index{clear@{clear}!org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP@{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_a907ad923ff5493dde694e49e8d02ca47}\label{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_a907ad923ff5493dde694e49e8d02ca47}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP@{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP}!create@{create}}
+\index{create@{create}!org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP@{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{layer\+Sizes,  }\item[{int}]{activate\+Func,  }\item[{double}]{fparam1,  }\item[{double}]{fparam2 }\end{DoxyParamCaption})}
+
+Constructs M\+LP with the specified topology.
+
+The method creates an M\+LP network with the specified topology and assigns the same activation function to all the neurons.
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer\+Sizes} & Integer vector specifying the number of neurons in each layer including the input and output layers. \\
+\hline
+{\em activate\+Func} & Parameter specifying the activation function for each neuron\+: one of {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_aefd633244286d7dfa041049f7a21d1c0}{Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+I\+D\+E\+N\+T\+I\+TY}}}, {\ttfamily Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+S\+I\+G\+M\+O\+I\+D\+\_\+\+S\+YM}, and {\ttfamily Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+G\+A\+U\+S\+S\+I\+AN}. \\
+\hline
+{\em fparam1} & Free parameter of the activation function, {\itshape alpha}. See the formulas in the introduction section. \\
+\hline
+{\em fparam2} & Free parameter of the activation function, {\itshape beta}. See the formulas in the introduction section.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/neural_networks.html#cvann-mlp-create}{\tt org.\+opencv.\+ml.\+Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+create} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_a9a2158f88f0093884a5bb0804fd96e63}\label{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_a9a2158f88f0093884a5bb0804fd96e63}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP@{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP}!create@{create}}
+\index{create@{create}!org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP@{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{layer\+Sizes }\end{DoxyParamCaption})}
+
+Constructs M\+LP with the specified topology.
+
+The method creates an M\+LP network with the specified topology and assigns the same activation function to all the neurons.
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer\+Sizes} & Integer vector specifying the number of neurons in each layer including the input and output layers.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/neural_networks.html#cvann-mlp-create}{\tt org.\+opencv.\+ml.\+Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+create} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_a3f1c0f088a3b739fb6ddd63d7a9d5f9c}\label{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_a3f1c0f088a3b739fb6ddd63d7a9d5f9c}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP@{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP}!finalize@{finalize}}
+\index{finalize@{finalize}!org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP@{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Throwable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_ab694e4722b8f4f8af388a690be40e511}\label{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_ab694e4722b8f4f8af388a690be40e511}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP@{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP}!predict@{predict}}
+\index{predict@{predict}!org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP@{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP}}
+\subsubsection{\texorpdfstring{predict()}{predict()}}
+{\footnotesize\ttfamily float org.\+opencv.\+ml.\+Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+predict (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{inputs,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{outputs }\end{DoxyParamCaption})}
+
+Predicts responses for input samples.
+
+The method returns a dummy value which should be ignored.
+
+If you are using the default {\ttfamily cv\+A\+N\+N\+\_\+\+M\+L\+P.\+S\+I\+G\+M\+O\+I\+D\+\_\+\+S\+YM} activation function with the default parameter values fparam1=0 and fparam2=0 then the function used is y = 1.\+7159$\ast$tanh(2/3 $\ast$ x), so the output will range from \mbox{[}-\/1.\+7159, 1.\+7159\mbox{]}, instead of \mbox{[}0,1\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputs} & Input samples. \\
+\hline
+{\em outputs} & Predicted responses for corresponding samples.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/neural_networks.html#cvann-mlp-predict}{\tt org.\+opencv.\+ml.\+Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+predict} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_a76ca0f8c604ca656557e9349ae92d4dc}\label{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_a76ca0f8c604ca656557e9349ae92d4dc}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP@{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP}!train@{train}}
+\index{train@{train}!org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP@{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP}}
+\subsubsection{\texorpdfstring{train()}{train()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int org.\+opencv.\+ml.\+Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+train (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{inputs,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{outputs,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample\+Weights,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample\+Idx,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p___train_params}{Cv\+A\+N\+N\+\_\+\+M\+L\+P\+\_\+\+Train\+Params}}}]{params,  }\item[{int}]{flags }\end{DoxyParamCaption})}
+
+Trains/updates M\+LP.
+
+This method applies the specified training algorithm to computing/adjusting the network weights. It returns the number of done iterations.
+
+The R\+P\+R\+OP training algorithm is parallelized with the T\+BB library.
+
+If you are using the default {\ttfamily cv\+A\+N\+N\+\_\+\+M\+L\+P.\+S\+I\+G\+M\+O\+I\+D\+\_\+\+S\+YM} activation function then the output should be in the range \mbox{[}-\/1,1\mbox{]}, instead of \mbox{[}0,1\mbox{]}, for optimal results.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputs} & Floating-\/point matrix of input vectors, one vector per row. \\
+\hline
+{\em outputs} & Floating-\/point matrix of the corresponding output vectors, one vector per row. \\
+\hline
+{\em sample\+Weights} & (R\+P\+R\+OP only) Optional floating-\/point vector of weights for each sample. Some samples may be more important than others for training. You may want to raise the weight of certain classes to find the right balance between hit-\/rate and false-\/alarm rate, and so on. \\
+\hline
+{\em sample\+Idx} & Optional integer vector indicating the samples (rows of {\ttfamily inputs} and {\ttfamily outputs}) that are taken into account. \\
+\hline
+{\em params} & Training parameters. See the \char`\"{}\+Cv\+A\+N\+N\+\_\+\+M\+L\+P\+\_\+\+Train\+Params\char`\"{} description. \\
+\hline
+{\em flags} & Various parameters to control the training algorithm. A combination of the following parameters is possible\+: 
+\begin{DoxyItemize}
+\item U\+P\+D\+A\+T\+E\+\_\+\+W\+E\+I\+G\+H\+TS Algorithm updates the network weights, rather than computes them from scratch. In the latter case the weights are initialized using the Nguyen-\/\+Widrow algorithm. 
+\item N\+O\+\_\+\+I\+N\+P\+U\+T\+\_\+\+S\+C\+A\+LE Algorithm does not normalize the input vectors. If this flag is not set, the training algorithm normalizes each input feature independently, shifting its mean value to 0 and making the standard deviation equal to 1. If the network is assumed to be updated frequently, the new training data could be much different from original one. In this case, you should take care of proper normalization. 
+\item N\+O\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+S\+C\+A\+LE Algorithm does not normalize the output vectors. If the flag is not set, the training algorithm normalizes each output feature independently, by transforming it to the certain range depending on the used activation function. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/neural_networks.html#cvann-mlp-train}{\tt org.\+opencv.\+ml.\+Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+train} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_ae0d619b9a3ae8bcb5e8838181d38ec1f}\label{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_ae0d619b9a3ae8bcb5e8838181d38ec1f}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP@{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP}!train@{train}}
+\index{train@{train}!org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP@{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP}}
+\subsubsection{\texorpdfstring{train()}{train()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int org.\+opencv.\+ml.\+Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+train (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{inputs,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{outputs,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample\+Weights }\end{DoxyParamCaption})}
+
+Trains/updates M\+LP.
+
+This method applies the specified training algorithm to computing/adjusting the network weights. It returns the number of done iterations.
+
+The R\+P\+R\+OP training algorithm is parallelized with the T\+BB library.
+
+If you are using the default {\ttfamily cv\+A\+N\+N\+\_\+\+M\+L\+P.\+S\+I\+G\+M\+O\+I\+D\+\_\+\+S\+YM} activation function then the output should be in the range \mbox{[}-\/1,1\mbox{]}, instead of \mbox{[}0,1\mbox{]}, for optimal results.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputs} & Floating-\/point matrix of input vectors, one vector per row. \\
+\hline
+{\em outputs} & Floating-\/point matrix of the corresponding output vectors, one vector per row. \\
+\hline
+{\em sample\+Weights} & (R\+P\+R\+OP only) Optional floating-\/point vector of weights for each sample. Some samples may be more important than others for training. You may want to raise the weight of certain classes to find the right balance between hit-\/rate and false-\/alarm rate, and so on.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/neural_networks.html#cvann-mlp-train}{\tt org.\+opencv.\+ml.\+Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+train} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_aefd633244286d7dfa041049f7a21d1c0}\label{classorg_1_1opencv_1_1ml_1_1_cv_a_n_n___m_l_p_aefd633244286d7dfa041049f7a21d1c0}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP@{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP}!I\+D\+E\+N\+T\+I\+TY@{I\+D\+E\+N\+T\+I\+TY}}
+\index{I\+D\+E\+N\+T\+I\+TY@{I\+D\+E\+N\+T\+I\+TY}!org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP@{org\+::opencv\+::ml\+::\+Cv\+A\+N\+N\+\_\+\+M\+LP}}
+\subsubsection{\texorpdfstring{I\+D\+E\+N\+T\+I\+TY}{IDENTITY}}
+{\footnotesize\ttfamily final int org.\+opencv.\+ml.\+Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+I\+D\+E\+N\+T\+I\+TY = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/ml/\mbox{\hyperlink{_cv_a_n_n___m_l_p_8java}{Cv\+A\+N\+N\+\_\+\+M\+L\+P.\+java}}\end{DoxyCompactItemize}

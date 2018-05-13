@@ -1,0 +1,275 @@
+\hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_boost}{}\section{org.\+opencv.\+ml.\+Cv\+Boost Class Reference}
+\label{classorg_1_1opencv_1_1ml_1_1_cv_boost}\index{org.\+opencv.\+ml.\+Cv\+Boost@{org.\+opencv.\+ml.\+Cv\+Boost}}
+Inheritance diagram for org.\+opencv.\+ml.\+Cv\+Boost\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1opencv_1_1ml_1_1_cv_boost}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_a7ccc8580af0866ddaaba2842dc1d5cb2}{Cv\+Boost}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_a3e5a0bc801060bef92562e993ce2df83}{Cv\+Boost}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Data, int tflag, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} responses, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} var\+Idx, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample\+Idx, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} var\+Type, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} missing\+Data\+Mask, \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_params}{Cv\+Boost\+Params}} params)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_a2eda204881d5ea08dd747b9361d607a3}{Cv\+Boost}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Data, int tflag, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} responses)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_ae689bc50fbe7f450720bab2bfa08f775}{clear}} ()
+\item 
+float \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_ae00e623e3bfb9cd65b15d4b785a3d7ee}{predict}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} missing, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range}{Range}} slice, boolean raw\+Mode, boolean return\+Sum)
+\item 
+float \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_aec5ee77e6c78a8ca7bea92e8c063d839}{predict}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_ade20760514ef7ea629c4985369453f4e}{prune}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range}{Range}} slice)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_acedbe8d37fcbe7789132b0e8b65e6d38}{train}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Data, int tflag, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} responses, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} var\+Idx, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample\+Idx, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} var\+Type, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} missing\+Data\+Mask, \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_params}{Cv\+Boost\+Params}} params, boolean update)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_a913a03f5eefe4f24b5bfec56e8ed6347}{train}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Data, int tflag, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} responses)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_a20b84a69a44020106f6985b51a456804}{D\+I\+S\+C\+R\+E\+TE}} = 0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_a2789d3ee991108259e19fe37a816c0ca}{Cv\+Boost}} (long addr)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_ac0bd199ed6a084cf601666acccfa54cb}{finalize}} ()  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Boosted tree classifier derived from \char`\"{}\+Cv\+Stat\+Model\char`\"{}.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/boosting.html#cvboost}{\tt org.\+opencv.\+ml.\+Cv\+Boost \+: public Cv\+Stat\+Model} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_boost_a2789d3ee991108259e19fe37a816c0ca}\label{classorg_1_1opencv_1_1ml_1_1_cv_boost_a2789d3ee991108259e19fe37a816c0ca}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Boost@{org\+::opencv\+::ml\+::\+Cv\+Boost}!Cv\+Boost@{Cv\+Boost}}
+\index{Cv\+Boost@{Cv\+Boost}!org\+::opencv\+::ml\+::\+Cv\+Boost@{org\+::opencv\+::ml\+::\+Cv\+Boost}}
+\subsubsection{\texorpdfstring{Cv\+Boost()}{CvBoost()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+Boost.\+Cv\+Boost (\begin{DoxyParamCaption}\item[{long}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_boost_a7ccc8580af0866ddaaba2842dc1d5cb2}\label{classorg_1_1opencv_1_1ml_1_1_cv_boost_a7ccc8580af0866ddaaba2842dc1d5cb2}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Boost@{org\+::opencv\+::ml\+::\+Cv\+Boost}!Cv\+Boost@{Cv\+Boost}}
+\index{Cv\+Boost@{Cv\+Boost}!org\+::opencv\+::ml\+::\+Cv\+Boost@{org\+::opencv\+::ml\+::\+Cv\+Boost}}
+\subsubsection{\texorpdfstring{Cv\+Boost()}{CvBoost()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+Boost.\+Cv\+Boost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default and training constructors.
+
+The constructors follow conventions of \char`\"{}\+Cv\+Stat\+Model.\+Cv\+Stat\+Model\char`\"{}. See \char`\"{}\+Cv\+Stat\+Model.\+train\char`\"{} for parameters descriptions.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/boosting.html#cvboost-cvboost}{\tt org.\+opencv.\+ml.\+Cv\+Boost.\+Cv\+Boost} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_boost_a3e5a0bc801060bef92562e993ce2df83}\label{classorg_1_1opencv_1_1ml_1_1_cv_boost_a3e5a0bc801060bef92562e993ce2df83}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Boost@{org\+::opencv\+::ml\+::\+Cv\+Boost}!Cv\+Boost@{Cv\+Boost}}
+\index{Cv\+Boost@{Cv\+Boost}!org\+::opencv\+::ml\+::\+Cv\+Boost@{org\+::opencv\+::ml\+::\+Cv\+Boost}}
+\subsubsection{\texorpdfstring{Cv\+Boost()}{CvBoost()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+Boost.\+Cv\+Boost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Data,  }\item[{int}]{tflag,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{responses,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{var\+Idx,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample\+Idx,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{var\+Type,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{missing\+Data\+Mask,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_params}{Cv\+Boost\+Params}}}]{params }\end{DoxyParamCaption})}
+
+Default and training constructors.
+
+The constructors follow conventions of \char`\"{}\+Cv\+Stat\+Model.\+Cv\+Stat\+Model\char`\"{}. See \char`\"{}\+Cv\+Stat\+Model.\+train\char`\"{} for parameters descriptions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Data} & a train\+Data \\
+\hline
+{\em tflag} & a tflag \\
+\hline
+{\em responses} & a responses \\
+\hline
+{\em var\+Idx} & a var\+Idx \\
+\hline
+{\em sample\+Idx} & a sample\+Idx \\
+\hline
+{\em var\+Type} & a var\+Type \\
+\hline
+{\em missing\+Data\+Mask} & a missing\+Data\+Mask \\
+\hline
+{\em params} & a params\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/boosting.html#cvboost-cvboost}{\tt org.\+opencv.\+ml.\+Cv\+Boost.\+Cv\+Boost} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_boost_a2eda204881d5ea08dd747b9361d607a3}\label{classorg_1_1opencv_1_1ml_1_1_cv_boost_a2eda204881d5ea08dd747b9361d607a3}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Boost@{org\+::opencv\+::ml\+::\+Cv\+Boost}!Cv\+Boost@{Cv\+Boost}}
+\index{Cv\+Boost@{Cv\+Boost}!org\+::opencv\+::ml\+::\+Cv\+Boost@{org\+::opencv\+::ml\+::\+Cv\+Boost}}
+\subsubsection{\texorpdfstring{Cv\+Boost()}{CvBoost()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+Boost.\+Cv\+Boost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Data,  }\item[{int}]{tflag,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{responses }\end{DoxyParamCaption})}
+
+Default and training constructors.
+
+The constructors follow conventions of \char`\"{}\+Cv\+Stat\+Model.\+Cv\+Stat\+Model\char`\"{}. See \char`\"{}\+Cv\+Stat\+Model.\+train\char`\"{} for parameters descriptions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Data} & a train\+Data \\
+\hline
+{\em tflag} & a tflag \\
+\hline
+{\em responses} & a responses\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/boosting.html#cvboost-cvboost}{\tt org.\+opencv.\+ml.\+Cv\+Boost.\+Cv\+Boost} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_boost_ae689bc50fbe7f450720bab2bfa08f775}\label{classorg_1_1opencv_1_1ml_1_1_cv_boost_ae689bc50fbe7f450720bab2bfa08f775}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Boost@{org\+::opencv\+::ml\+::\+Cv\+Boost}!clear@{clear}}
+\index{clear@{clear}!org\+::opencv\+::ml\+::\+Cv\+Boost@{org\+::opencv\+::ml\+::\+Cv\+Boost}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+Boost.\+clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_boost_ac0bd199ed6a084cf601666acccfa54cb}\label{classorg_1_1opencv_1_1ml_1_1_cv_boost_ac0bd199ed6a084cf601666acccfa54cb}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Boost@{org\+::opencv\+::ml\+::\+Cv\+Boost}!finalize@{finalize}}
+\index{finalize@{finalize}!org\+::opencv\+::ml\+::\+Cv\+Boost@{org\+::opencv\+::ml\+::\+Cv\+Boost}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+Boost.\+finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Throwable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_boost_ae00e623e3bfb9cd65b15d4b785a3d7ee}\label{classorg_1_1opencv_1_1ml_1_1_cv_boost_ae00e623e3bfb9cd65b15d4b785a3d7ee}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Boost@{org\+::opencv\+::ml\+::\+Cv\+Boost}!predict@{predict}}
+\index{predict@{predict}!org\+::opencv\+::ml\+::\+Cv\+Boost@{org\+::opencv\+::ml\+::\+Cv\+Boost}}
+\subsubsection{\texorpdfstring{predict()}{predict()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float org.\+opencv.\+ml.\+Cv\+Boost.\+predict (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{missing,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range}{Range}}}]{slice,  }\item[{boolean}]{raw\+Mode,  }\item[{boolean}]{return\+Sum }\end{DoxyParamCaption})}
+
+Predicts a response for an input sample.
+
+The method runs the sample through the trees in the ensemble and returns the output class label based on the weighted voting.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sample} & Input sample. \\
+\hline
+{\em missing} & Optional mask of missing measurements. To handle missing measurements, the weak classifiers must include surrogate splits (see {\ttfamily Cv\+D\+Tree\+Params.\+use\+\_\+surrogates}). \\
+\hline
+{\em slice} & Continuous subset of the sequence of weak classifiers to be used for prediction. By default, all the weak classifiers are used. \\
+\hline
+{\em raw\+Mode} & Normally, it should be set to {\ttfamily false}. \\
+\hline
+{\em return\+Sum} & If {\ttfamily true} then return sum of votes instead of the class label.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/boosting.html#cvboost-predict}{\tt org.\+opencv.\+ml.\+Cv\+Boost.\+predict} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_boost_aec5ee77e6c78a8ca7bea92e8c063d839}\label{classorg_1_1opencv_1_1ml_1_1_cv_boost_aec5ee77e6c78a8ca7bea92e8c063d839}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Boost@{org\+::opencv\+::ml\+::\+Cv\+Boost}!predict@{predict}}
+\index{predict@{predict}!org\+::opencv\+::ml\+::\+Cv\+Boost@{org\+::opencv\+::ml\+::\+Cv\+Boost}}
+\subsubsection{\texorpdfstring{predict()}{predict()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float org.\+opencv.\+ml.\+Cv\+Boost.\+predict (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample }\end{DoxyParamCaption})}
+
+Predicts a response for an input sample.
+
+The method runs the sample through the trees in the ensemble and returns the output class label based on the weighted voting.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sample} & Input sample.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/boosting.html#cvboost-predict}{\tt org.\+opencv.\+ml.\+Cv\+Boost.\+predict} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_boost_ade20760514ef7ea629c4985369453f4e}\label{classorg_1_1opencv_1_1ml_1_1_cv_boost_ade20760514ef7ea629c4985369453f4e}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Boost@{org\+::opencv\+::ml\+::\+Cv\+Boost}!prune@{prune}}
+\index{prune@{prune}!org\+::opencv\+::ml\+::\+Cv\+Boost@{org\+::opencv\+::ml\+::\+Cv\+Boost}}
+\subsubsection{\texorpdfstring{prune()}{prune()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+Boost.\+prune (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range}{Range}}}]{slice }\end{DoxyParamCaption})}
+
+Removes the specified weak classifiers.
+
+The method removes the specified weak classifiers from the sequence.
+
+Note\+: Do not confuse this method with the pruning of individual decision trees, which is currently not supported.
+
+
+\begin{DoxyParams}{Parameters}
+{\em slice} & Continuous subset of the sequence of weak classifiers to be removed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/boosting.html#cvboost-prune}{\tt org.\+opencv.\+ml.\+Cv\+Boost.\+prune} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_boost_acedbe8d37fcbe7789132b0e8b65e6d38}\label{classorg_1_1opencv_1_1ml_1_1_cv_boost_acedbe8d37fcbe7789132b0e8b65e6d38}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Boost@{org\+::opencv\+::ml\+::\+Cv\+Boost}!train@{train}}
+\index{train@{train}!org\+::opencv\+::ml\+::\+Cv\+Boost@{org\+::opencv\+::ml\+::\+Cv\+Boost}}
+\subsubsection{\texorpdfstring{train()}{train()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+ml.\+Cv\+Boost.\+train (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Data,  }\item[{int}]{tflag,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{responses,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{var\+Idx,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample\+Idx,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{var\+Type,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{missing\+Data\+Mask,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_boost_params}{Cv\+Boost\+Params}}}]{params,  }\item[{boolean}]{update }\end{DoxyParamCaption})}
+
+Trains a boosted tree classifier.
+
+The train method follows the common template of \char`\"{}\+Cv\+Stat\+Model.\+train\char`\"{}. The responses must be categorical, which means that boosted trees cannot be built for regression, and there should be two classes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Data} & a train\+Data \\
+\hline
+{\em tflag} & a tflag \\
+\hline
+{\em responses} & a responses \\
+\hline
+{\em var\+Idx} & a var\+Idx \\
+\hline
+{\em sample\+Idx} & a sample\+Idx \\
+\hline
+{\em var\+Type} & a var\+Type \\
+\hline
+{\em missing\+Data\+Mask} & a missing\+Data\+Mask \\
+\hline
+{\em params} & a params \\
+\hline
+{\em update} & Specifies whether the classifier needs to be updated ({\ttfamily true}, the new weak tree classifiers added to the existing ensemble) or the classifier needs to be rebuilt from scratch ({\ttfamily false}).\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/boosting.html#cvboost-train}{\tt org.\+opencv.\+ml.\+Cv\+Boost.\+train} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_boost_a913a03f5eefe4f24b5bfec56e8ed6347}\label{classorg_1_1opencv_1_1ml_1_1_cv_boost_a913a03f5eefe4f24b5bfec56e8ed6347}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Boost@{org\+::opencv\+::ml\+::\+Cv\+Boost}!train@{train}}
+\index{train@{train}!org\+::opencv\+::ml\+::\+Cv\+Boost@{org\+::opencv\+::ml\+::\+Cv\+Boost}}
+\subsubsection{\texorpdfstring{train()}{train()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+ml.\+Cv\+Boost.\+train (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Data,  }\item[{int}]{tflag,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{responses }\end{DoxyParamCaption})}
+
+Trains a boosted tree classifier.
+
+The train method follows the common template of \char`\"{}\+Cv\+Stat\+Model.\+train\char`\"{}. The responses must be categorical, which means that boosted trees cannot be built for regression, and there should be two classes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Data} & a train\+Data \\
+\hline
+{\em tflag} & a tflag \\
+\hline
+{\em responses} & a responses\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/boosting.html#cvboost-train}{\tt org.\+opencv.\+ml.\+Cv\+Boost.\+train} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_boost_a20b84a69a44020106f6985b51a456804}\label{classorg_1_1opencv_1_1ml_1_1_cv_boost_a20b84a69a44020106f6985b51a456804}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Boost@{org\+::opencv\+::ml\+::\+Cv\+Boost}!D\+I\+S\+C\+R\+E\+TE@{D\+I\+S\+C\+R\+E\+TE}}
+\index{D\+I\+S\+C\+R\+E\+TE@{D\+I\+S\+C\+R\+E\+TE}!org\+::opencv\+::ml\+::\+Cv\+Boost@{org\+::opencv\+::ml\+::\+Cv\+Boost}}
+\subsubsection{\texorpdfstring{D\+I\+S\+C\+R\+E\+TE}{DISCRETE}}
+{\footnotesize\ttfamily final int org.\+opencv.\+ml.\+Cv\+Boost.\+D\+I\+S\+C\+R\+E\+TE = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/ml/\mbox{\hyperlink{_cv_boost_8java}{Cv\+Boost.\+java}}\end{DoxyCompactItemize}

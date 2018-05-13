@@ -1,0 +1,260 @@
+\hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_stat_model}{}\section{org.\+opencv.\+ml.\+Cv\+Stat\+Model Class Reference}
+\label{classorg_1_1opencv_1_1ml_1_1_cv_stat_model}\index{org.\+opencv.\+ml.\+Cv\+Stat\+Model@{org.\+opencv.\+ml.\+Cv\+Stat\+Model}}
+Inheritance diagram for org.\+opencv.\+ml.\+Cv\+Stat\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{classorg_1_1opencv_1_1ml_1_1_cv_stat_model}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_stat_model_abb430a8a52c81e78bdcec2f4e15af735}{load}} (String filename, String name)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_stat_model_ae9355b39253491887827c8385cf0779d}{load}} (String filename)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_stat_model_ae9d5b22ad37f528258cc5165af9f3f61}{save}} (String filename, String name)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_stat_model_a48a3e488b527a6236709db13fe88112a}{save}} (String filename)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_stat_model_a9b196b1edff5a2616dbc574505274848}{Cv\+Stat\+Model}} (long addr)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_stat_model_a367b6d9b41e7ebbe5f960e8b7c480a26}{finalize}} ()  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final long \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_stat_model_a61dd522c3b9e472bffe468f00d53ca50}{native\+Obj}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for statistical models in ML.
+
+class \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_stat_model}{Cv\+Stat\+Model}} {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily public\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily / $\ast$ \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_stat_model_a9b196b1edff5a2616dbc574505274848}{Cv\+Stat\+Model()}}; $\ast$ /}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily / $\ast$ \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_stat_model}{Cv\+Stat\+Model}}(const Mat\& train\+\_\+data...); $\ast$ /}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual $\sim$\+Cv\+Stat\+Model();}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void clear()=0;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily / $\ast$ virtual bool train(const Mat\& train\+\_\+data, \mbox{[}int tflag,\mbox{]}..., const}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Mat\& responses,...,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \mbox{[}const Mat\& var\+\_\+idx,\mbox{]}..., \mbox{[}const Mat\& sample\+\_\+idx,\mbox{]}...}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \mbox{[}const Mat\& var\+\_\+type,\mbox{]}..., \mbox{[}const Mat\& missing\+\_\+mask,\mbox{]}}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily $<$misc\+\_\+training\+\_\+alg\+\_\+params$>$...)=0;}
+
+{\ttfamily  
+\begin{DoxyItemize}
+\item / 
+\end{DoxyItemize}}
+
+{\ttfamily }
+
+{\ttfamily / $\ast$ virtual float predict(const Mat\& sample...) const=0; $\ast$ /}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void save(const char$\ast$ filename, const char$\ast$ name=0)=0;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void load(const char$\ast$ filename, const char$\ast$ name=0)=0;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void write(\+Cv\+File\+Storage$\ast$ storage, const char$\ast$ name)=0;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void read(\+Cv\+File\+Storage$\ast$ storage, Cv\+File\+Node$\ast$ node)=0;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \};}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily In this declaration, some methods are commented off. These are methods for which there is no unified A\+PI (with the exception of the default constructor). However, there are many similarities in the syntax and semantics that are briefly described below in this section, as if they are part of the base class. }
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/statistical_models.html#cvstatmodel}{\tt org.\+opencv.\+ml.\+Cv\+Stat\+Model} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_stat_model_a9b196b1edff5a2616dbc574505274848}\label{classorg_1_1opencv_1_1ml_1_1_cv_stat_model_a9b196b1edff5a2616dbc574505274848}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Stat\+Model@{org\+::opencv\+::ml\+::\+Cv\+Stat\+Model}!Cv\+Stat\+Model@{Cv\+Stat\+Model}}
+\index{Cv\+Stat\+Model@{Cv\+Stat\+Model}!org\+::opencv\+::ml\+::\+Cv\+Stat\+Model@{org\+::opencv\+::ml\+::\+Cv\+Stat\+Model}}
+\subsubsection{\texorpdfstring{Cv\+Stat\+Model()}{CvStatModel()}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+Stat\+Model.\+Cv\+Stat\+Model (\begin{DoxyParamCaption}\item[{long}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_stat_model_a367b6d9b41e7ebbe5f960e8b7c480a26}\label{classorg_1_1opencv_1_1ml_1_1_cv_stat_model_a367b6d9b41e7ebbe5f960e8b7c480a26}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Stat\+Model@{org\+::opencv\+::ml\+::\+Cv\+Stat\+Model}!finalize@{finalize}}
+\index{finalize@{finalize}!org\+::opencv\+::ml\+::\+Cv\+Stat\+Model@{org\+::opencv\+::ml\+::\+Cv\+Stat\+Model}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+Stat\+Model.\+finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Throwable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_stat_model_abb430a8a52c81e78bdcec2f4e15af735}\label{classorg_1_1opencv_1_1ml_1_1_cv_stat_model_abb430a8a52c81e78bdcec2f4e15af735}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Stat\+Model@{org\+::opencv\+::ml\+::\+Cv\+Stat\+Model}!load@{load}}
+\index{load@{load}!org\+::opencv\+::ml\+::\+Cv\+Stat\+Model@{org\+::opencv\+::ml\+::\+Cv\+Stat\+Model}}
+\subsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+Stat\+Model.\+load (\begin{DoxyParamCaption}\item[{String}]{filename,  }\item[{String}]{name }\end{DoxyParamCaption})}
+
+Loads the model from a file.
+
+The method {\ttfamily load} loads the complete model state with the specified name (or default model-\/dependent name) from the specified X\+ML or Y\+A\+ML file. The previous model state is cleared by \char`\"{}\+Cv\+Stat\+Model.\+clear\char`\"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & a filename \\
+\hline
+{\em name} & a name\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/statistical_models.html#cvstatmodel-load}{\tt org.\+opencv.\+ml.\+Cv\+Stat\+Model.\+load} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_stat_model_ae9355b39253491887827c8385cf0779d}\label{classorg_1_1opencv_1_1ml_1_1_cv_stat_model_ae9355b39253491887827c8385cf0779d}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Stat\+Model@{org\+::opencv\+::ml\+::\+Cv\+Stat\+Model}!load@{load}}
+\index{load@{load}!org\+::opencv\+::ml\+::\+Cv\+Stat\+Model@{org\+::opencv\+::ml\+::\+Cv\+Stat\+Model}}
+\subsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+Stat\+Model.\+load (\begin{DoxyParamCaption}\item[{String}]{filename }\end{DoxyParamCaption})}
+
+Loads the model from a file.
+
+The method {\ttfamily load} loads the complete model state with the specified name (or default model-\/dependent name) from the specified X\+ML or Y\+A\+ML file. The previous model state is cleared by \char`\"{}\+Cv\+Stat\+Model.\+clear\char`\"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & a filename\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/statistical_models.html#cvstatmodel-load}{\tt org.\+opencv.\+ml.\+Cv\+Stat\+Model.\+load} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_stat_model_ae9d5b22ad37f528258cc5165af9f3f61}\label{classorg_1_1opencv_1_1ml_1_1_cv_stat_model_ae9d5b22ad37f528258cc5165af9f3f61}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Stat\+Model@{org\+::opencv\+::ml\+::\+Cv\+Stat\+Model}!save@{save}}
+\index{save@{save}!org\+::opencv\+::ml\+::\+Cv\+Stat\+Model@{org\+::opencv\+::ml\+::\+Cv\+Stat\+Model}}
+\subsubsection{\texorpdfstring{save()}{save()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+Stat\+Model.\+save (\begin{DoxyParamCaption}\item[{String}]{filename,  }\item[{String}]{name }\end{DoxyParamCaption})}
+
+Saves the model to a file.
+
+The method {\ttfamily save} saves the complete model state to the specified X\+ML or Y\+A\+ML file with the specified name or default name (which depends on a particular class). {\itshape Data persistence} functionality from {\ttfamily Cx\+Core} is used.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & a filename \\
+\hline
+{\em name} & a name\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/statistical_models.html#cvstatmodel-save}{\tt org.\+opencv.\+ml.\+Cv\+Stat\+Model.\+save} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_stat_model_a48a3e488b527a6236709db13fe88112a}\label{classorg_1_1opencv_1_1ml_1_1_cv_stat_model_a48a3e488b527a6236709db13fe88112a}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Stat\+Model@{org\+::opencv\+::ml\+::\+Cv\+Stat\+Model}!save@{save}}
+\index{save@{save}!org\+::opencv\+::ml\+::\+Cv\+Stat\+Model@{org\+::opencv\+::ml\+::\+Cv\+Stat\+Model}}
+\subsubsection{\texorpdfstring{save()}{save()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+Stat\+Model.\+save (\begin{DoxyParamCaption}\item[{String}]{filename }\end{DoxyParamCaption})}
+
+Saves the model to a file.
+
+The method {\ttfamily save} saves the complete model state to the specified X\+ML or Y\+A\+ML file with the specified name or default name (which depends on a particular class). {\itshape Data persistence} functionality from {\ttfamily Cx\+Core} is used.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & a filename\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/statistical_models.html#cvstatmodel-save}{\tt org.\+opencv.\+ml.\+Cv\+Stat\+Model.\+save} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_stat_model_a61dd522c3b9e472bffe468f00d53ca50}\label{classorg_1_1opencv_1_1ml_1_1_cv_stat_model_a61dd522c3b9e472bffe468f00d53ca50}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Stat\+Model@{org\+::opencv\+::ml\+::\+Cv\+Stat\+Model}!native\+Obj@{native\+Obj}}
+\index{native\+Obj@{native\+Obj}!org\+::opencv\+::ml\+::\+Cv\+Stat\+Model@{org\+::opencv\+::ml\+::\+Cv\+Stat\+Model}}
+\subsubsection{\texorpdfstring{native\+Obj}{nativeObj}}
+{\footnotesize\ttfamily final long org.\+opencv.\+ml.\+Cv\+Stat\+Model.\+native\+Obj\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/ml/\mbox{\hyperlink{_cv_stat_model_8java}{Cv\+Stat\+Model.\+java}}\end{DoxyCompactItemize}

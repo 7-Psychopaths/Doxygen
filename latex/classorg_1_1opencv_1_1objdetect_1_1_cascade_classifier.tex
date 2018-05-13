@@ -1,0 +1,265 @@
+\hypertarget{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier}{}\section{org.\+opencv.\+objdetect.\+Cascade\+Classifier Class Reference}
+\label{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier}\index{org.\+opencv.\+objdetect.\+Cascade\+Classifier@{org.\+opencv.\+objdetect.\+Cascade\+Classifier}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a07936214dad18488bc97bfd9dd3fa98d}{Cascade\+Classifier}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a5f2b38d9bebf5affc64c7db03abb94ce}{Cascade\+Classifier}} (String filename)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a9973e656c2fd194c81567349bc6be03e}{detect\+Multi\+Scale}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_rect}{Mat\+Of\+Rect}} objects, double scale\+Factor, int min\+Neighbors, int flags, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} min\+Size, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} max\+Size)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a6eddc10b5daa401fd64d30d51d96795c}{detect\+Multi\+Scale}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_rect}{Mat\+Of\+Rect}} objects)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_ad40f12ae7e118541479558a2b07e4d01}{detect\+Multi\+Scale}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_rect}{Mat\+Of\+Rect}} objects, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_int}{Mat\+Of\+Int}} reject\+Levels, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_double}{Mat\+Of\+Double}} level\+Weights, double scale\+Factor, int min\+Neighbors, int flags, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} min\+Size, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}} max\+Size, boolean output\+Reject\+Levels)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a01becad39db73d702e7d673b4fea6238}{detect\+Multi\+Scale}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_rect}{Mat\+Of\+Rect}} objects, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_int}{Mat\+Of\+Int}} reject\+Levels, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_double}{Mat\+Of\+Double}} level\+Weights)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_ab14fbe3e74cc1c35885fcaa422de69ac}{empty}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a5335f53219be85c1192ce1d788504a42}{load}} (String filename)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a2a930372ce6f7c2576af96ad63fb0d1b}{Cascade\+Classifier}} (long addr)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a3982599d115781cebe9c6489281c2bd4}{finalize}} ()  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final long \mbox{\hyperlink{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a62f0151eeb441d9e90f5f2df9fa29ae9}{native\+Obj}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Cascade classifier class for object detection.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/objdetect/doc/cascade_classification.html#cascadeclassifier}{\tt org.\+opencv.\+objdetect.\+Cascade\+Classifier} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a2a930372ce6f7c2576af96ad63fb0d1b}\label{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a2a930372ce6f7c2576af96ad63fb0d1b}} 
+\index{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier@{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier}!Cascade\+Classifier@{Cascade\+Classifier}}
+\index{Cascade\+Classifier@{Cascade\+Classifier}!org\+::opencv\+::objdetect\+::\+Cascade\+Classifier@{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier}}
+\subsubsection{\texorpdfstring{Cascade\+Classifier()}{CascadeClassifier()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily org.\+opencv.\+objdetect.\+Cascade\+Classifier.\+Cascade\+Classifier (\begin{DoxyParamCaption}\item[{long}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a07936214dad18488bc97bfd9dd3fa98d}\label{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a07936214dad18488bc97bfd9dd3fa98d}} 
+\index{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier@{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier}!Cascade\+Classifier@{Cascade\+Classifier}}
+\index{Cascade\+Classifier@{Cascade\+Classifier}!org\+::opencv\+::objdetect\+::\+Cascade\+Classifier@{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier}}
+\subsubsection{\texorpdfstring{Cascade\+Classifier()}{CascadeClassifier()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily org.\+opencv.\+objdetect.\+Cascade\+Classifier.\+Cascade\+Classifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Loads a classifier from a file.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/objdetect/doc/cascade_classification.html#cascadeclassifier-cascadeclassifier}{\tt org.\+opencv.\+objdetect.\+Cascade\+Classifier.\+Cascade\+Classifier} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a5f2b38d9bebf5affc64c7db03abb94ce}\label{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a5f2b38d9bebf5affc64c7db03abb94ce}} 
+\index{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier@{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier}!Cascade\+Classifier@{Cascade\+Classifier}}
+\index{Cascade\+Classifier@{Cascade\+Classifier}!org\+::opencv\+::objdetect\+::\+Cascade\+Classifier@{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier}}
+\subsubsection{\texorpdfstring{Cascade\+Classifier()}{CascadeClassifier()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily org.\+opencv.\+objdetect.\+Cascade\+Classifier.\+Cascade\+Classifier (\begin{DoxyParamCaption}\item[{String}]{filename }\end{DoxyParamCaption})}
+
+Loads a classifier from a file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of the file from which the classifier is loaded.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/objdetect/doc/cascade_classification.html#cascadeclassifier-cascadeclassifier}{\tt org.\+opencv.\+objdetect.\+Cascade\+Classifier.\+Cascade\+Classifier} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a9973e656c2fd194c81567349bc6be03e}\label{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a9973e656c2fd194c81567349bc6be03e}} 
+\index{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier@{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier}!detect\+Multi\+Scale@{detect\+Multi\+Scale}}
+\index{detect\+Multi\+Scale@{detect\+Multi\+Scale}!org\+::opencv\+::objdetect\+::\+Cascade\+Classifier@{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier}}
+\subsubsection{\texorpdfstring{detect\+Multi\+Scale()}{detectMultiScale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+objdetect.\+Cascade\+Classifier.\+detect\+Multi\+Scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_rect}{Mat\+Of\+Rect}}}]{objects,  }\item[{double}]{scale\+Factor,  }\item[{int}]{min\+Neighbors,  }\item[{int}]{flags,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}}}]{min\+Size,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}}}]{max\+Size }\end{DoxyParamCaption})}
+
+Detects objects of different sizes in the input image. The detected objects are returned as a list of rectangles.
+
+The function is parallelized with the T\+BB library.
+
+Note\+:
+
+
+\begin{DoxyItemize}
+\item (Python) A face detection example using cascade classifiers can be found at opencv\+\_\+source\+\_\+code/samples/python2/facedetect.\+py 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & Matrix of the type {\ttfamily C\+V\+\_\+8U} containing an image where objects are detected. \\
+\hline
+{\em objects} & Vector of rectangles where each rectangle contains the detected object. \\
+\hline
+{\em scale\+Factor} & Parameter specifying how much the image size is reduced at each image scale. \\
+\hline
+{\em min\+Neighbors} & Parameter specifying how many neighbors each candidate rectangle should have to retain it. \\
+\hline
+{\em flags} & Parameter with the same meaning for an old cascade as in the function {\ttfamily cv\+Haar\+Detect\+Objects}. It is not used for a new cascade. \\
+\hline
+{\em min\+Size} & Minimum possible object size. Objects smaller than that are ignored. \\
+\hline
+{\em max\+Size} & Maximum possible object size. Objects larger than that are ignored.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/objdetect/doc/cascade_classification.html#cascadeclassifier-detectmultiscale}{\tt org.\+opencv.\+objdetect.\+Cascade\+Classifier.\+detect\+Multi\+Scale} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a6eddc10b5daa401fd64d30d51d96795c}\label{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a6eddc10b5daa401fd64d30d51d96795c}} 
+\index{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier@{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier}!detect\+Multi\+Scale@{detect\+Multi\+Scale}}
+\index{detect\+Multi\+Scale@{detect\+Multi\+Scale}!org\+::opencv\+::objdetect\+::\+Cascade\+Classifier@{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier}}
+\subsubsection{\texorpdfstring{detect\+Multi\+Scale()}{detectMultiScale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+objdetect.\+Cascade\+Classifier.\+detect\+Multi\+Scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_rect}{Mat\+Of\+Rect}}}]{objects }\end{DoxyParamCaption})}
+
+Detects objects of different sizes in the input image. The detected objects are returned as a list of rectangles.
+
+The function is parallelized with the T\+BB library.
+
+Note\+:
+
+
+\begin{DoxyItemize}
+\item (Python) A face detection example using cascade classifiers can be found at opencv\+\_\+source\+\_\+code/samples/python2/facedetect.\+py 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & Matrix of the type {\ttfamily C\+V\+\_\+8U} containing an image where objects are detected. \\
+\hline
+{\em objects} & Vector of rectangles where each rectangle contains the detected object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/objdetect/doc/cascade_classification.html#cascadeclassifier-detectmultiscale}{\tt org.\+opencv.\+objdetect.\+Cascade\+Classifier.\+detect\+Multi\+Scale} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_ad40f12ae7e118541479558a2b07e4d01}\label{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_ad40f12ae7e118541479558a2b07e4d01}} 
+\index{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier@{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier}!detect\+Multi\+Scale@{detect\+Multi\+Scale}}
+\index{detect\+Multi\+Scale@{detect\+Multi\+Scale}!org\+::opencv\+::objdetect\+::\+Cascade\+Classifier@{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier}}
+\subsubsection{\texorpdfstring{detect\+Multi\+Scale()}{detectMultiScale()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+objdetect.\+Cascade\+Classifier.\+detect\+Multi\+Scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_rect}{Mat\+Of\+Rect}}}]{objects,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_int}{Mat\+Of\+Int}}}]{reject\+Levels,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_double}{Mat\+Of\+Double}}}]{level\+Weights,  }\item[{double}]{scale\+Factor,  }\item[{int}]{min\+Neighbors,  }\item[{int}]{flags,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}}}]{min\+Size,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_size}{Size}}}]{max\+Size,  }\item[{boolean}]{output\+Reject\+Levels }\end{DoxyParamCaption})}
+
+Detects objects of different sizes in the input image. The detected objects are returned as a list of rectangles.
+
+The function is parallelized with the T\+BB library.
+
+Note\+:
+
+
+\begin{DoxyItemize}
+\item (Python) A face detection example using cascade classifiers can be found at opencv\+\_\+source\+\_\+code/samples/python2/facedetect.\+py 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & Matrix of the type {\ttfamily C\+V\+\_\+8U} containing an image where objects are detected. \\
+\hline
+{\em objects} & Vector of rectangles where each rectangle contains the detected object. \\
+\hline
+{\em reject\+Levels} & a reject\+Levels \\
+\hline
+{\em level\+Weights} & a level\+Weights \\
+\hline
+{\em scale\+Factor} & Parameter specifying how much the image size is reduced at each image scale. \\
+\hline
+{\em min\+Neighbors} & Parameter specifying how many neighbors each candidate rectangle should have to retain it. \\
+\hline
+{\em flags} & Parameter with the same meaning for an old cascade as in the function {\ttfamily cv\+Haar\+Detect\+Objects}. It is not used for a new cascade. \\
+\hline
+{\em min\+Size} & Minimum possible object size. Objects smaller than that are ignored. \\
+\hline
+{\em max\+Size} & Maximum possible object size. Objects larger than that are ignored. \\
+\hline
+{\em output\+Reject\+Levels} & a output\+Reject\+Levels\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/objdetect/doc/cascade_classification.html#cascadeclassifier-detectmultiscale}{\tt org.\+opencv.\+objdetect.\+Cascade\+Classifier.\+detect\+Multi\+Scale} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a01becad39db73d702e7d673b4fea6238}\label{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a01becad39db73d702e7d673b4fea6238}} 
+\index{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier@{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier}!detect\+Multi\+Scale@{detect\+Multi\+Scale}}
+\index{detect\+Multi\+Scale@{detect\+Multi\+Scale}!org\+::opencv\+::objdetect\+::\+Cascade\+Classifier@{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier}}
+\subsubsection{\texorpdfstring{detect\+Multi\+Scale()}{detectMultiScale()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+objdetect.\+Cascade\+Classifier.\+detect\+Multi\+Scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_rect}{Mat\+Of\+Rect}}}]{objects,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_int}{Mat\+Of\+Int}}}]{reject\+Levels,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_double}{Mat\+Of\+Double}}}]{level\+Weights }\end{DoxyParamCaption})}
+
+Detects objects of different sizes in the input image. The detected objects are returned as a list of rectangles.
+
+The function is parallelized with the T\+BB library.
+
+Note\+:
+
+
+\begin{DoxyItemize}
+\item (Python) A face detection example using cascade classifiers can be found at opencv\+\_\+source\+\_\+code/samples/python2/facedetect.\+py 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & Matrix of the type {\ttfamily C\+V\+\_\+8U} containing an image where objects are detected. \\
+\hline
+{\em objects} & Vector of rectangles where each rectangle contains the detected object. \\
+\hline
+{\em reject\+Levels} & a reject\+Levels \\
+\hline
+{\em level\+Weights} & a level\+Weights\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/objdetect/doc/cascade_classification.html#cascadeclassifier-detectmultiscale}{\tt org.\+opencv.\+objdetect.\+Cascade\+Classifier.\+detect\+Multi\+Scale} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_ab14fbe3e74cc1c35885fcaa422de69ac}\label{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_ab14fbe3e74cc1c35885fcaa422de69ac}} 
+\index{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier@{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier}!empty@{empty}}
+\index{empty@{empty}!org\+::opencv\+::objdetect\+::\+Cascade\+Classifier@{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+objdetect.\+Cascade\+Classifier.\+empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Checks whether the classifier has been loaded.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/objdetect/doc/cascade_classification.html#cascadeclassifier-empty}{\tt org.\+opencv.\+objdetect.\+Cascade\+Classifier.\+empty} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a3982599d115781cebe9c6489281c2bd4}\label{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a3982599d115781cebe9c6489281c2bd4}} 
+\index{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier@{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier}!finalize@{finalize}}
+\index{finalize@{finalize}!org\+::opencv\+::objdetect\+::\+Cascade\+Classifier@{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily void org.\+opencv.\+objdetect.\+Cascade\+Classifier.\+finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Throwable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a5335f53219be85c1192ce1d788504a42}\label{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a5335f53219be85c1192ce1d788504a42}} 
+\index{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier@{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier}!load@{load}}
+\index{load@{load}!org\+::opencv\+::objdetect\+::\+Cascade\+Classifier@{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+objdetect.\+Cascade\+Classifier.\+load (\begin{DoxyParamCaption}\item[{String}]{filename }\end{DoxyParamCaption})}
+
+Loads a classifier from a file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of the file from which the classifier is loaded. The file may contain an old H\+A\+AR classifier trained by the haartraining application or a new cascade classifier trained by the traincascade application.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/objdetect/doc/cascade_classification.html#cascadeclassifier-load}{\tt org.\+opencv.\+objdetect.\+Cascade\+Classifier.\+load} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a62f0151eeb441d9e90f5f2df9fa29ae9}\label{classorg_1_1opencv_1_1objdetect_1_1_cascade_classifier_a62f0151eeb441d9e90f5f2df9fa29ae9}} 
+\index{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier@{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier}!native\+Obj@{native\+Obj}}
+\index{native\+Obj@{native\+Obj}!org\+::opencv\+::objdetect\+::\+Cascade\+Classifier@{org\+::opencv\+::objdetect\+::\+Cascade\+Classifier}}
+\subsubsection{\texorpdfstring{native\+Obj}{nativeObj}}
+{\footnotesize\ttfamily final long org.\+opencv.\+objdetect.\+Cascade\+Classifier.\+native\+Obj\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/objdetect/\mbox{\hyperlink{_cascade_classifier_8java}{Cascade\+Classifier.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,908 @@
+\hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher}{}\section{org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher Class Reference}
+\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher}\index{org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher@{org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_ad0e0a234636c370c74fdd4086ac5c716}{add}} (List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$ images, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} $>$ keypoints)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_aad6739fde6c8aea642a80de25d498ce1}{classify}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} query\+Keypoints, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} train\+Keypoints)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_aa5fdedf03124f2831e85ed0780deb8c0}{classify}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} query\+Keypoints)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_aa5902c8aca6b21e07f0ea6709b632530}{clear}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher}{Generic\+Descriptor\+Matcher}} \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_aacf1be1b878d2532bd04685e46a6d25e}{clone}} (boolean empty\+Train\+Data)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher}{Generic\+Descriptor\+Matcher}} \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a007e317ad3a73e1d0df4809d614d7b72}{clone}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a9abc040599bc74e5b3d877d393ab58a0}{empty}} ()
+\item 
+List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$ \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a016fab98a353a2e823130d7b0d6668c3}{get\+Train\+Images}} ()
+\item 
+List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} $>$ \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a334b393c4b8d79b117797ddc5dfcd940}{get\+Train\+Keypoints}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_aaeb65b1ba87c1babb2d37fa7f2f4fa71}{is\+Mask\+Supported}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_af6815bbb6335022c81da415b79da82e7}{knn\+Match}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} query\+Keypoints, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} train\+Keypoints, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$ matches, int k, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} mask, boolean compact\+Result)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_ab8a37a7d1349e7c3bfc7d26f51c065b5}{knn\+Match}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} query\+Keypoints, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} train\+Keypoints, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$ matches, int k)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a4f5cf4fe824db96ba3b9a038a4925a23}{knn\+Match}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} query\+Keypoints, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$ matches, int k, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$ masks, boolean compact\+Result)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a66926e61feba1ba7562d6b23d1d49e28}{knn\+Match}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} query\+Keypoints, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$ matches, int k)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_ab02d6f8f1fa4c188b431bc6fcc5a4cac}{match}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} query\+Keypoints, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} train\+Keypoints, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} matches, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} mask)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_af88c9bd04ba58ac1daf5a04e1c771a10}{match}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} query\+Keypoints, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} train\+Keypoints, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} matches)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a03f59c4582495f33f1a08a0b3cfc7352}{match}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} query\+Keypoints, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} matches, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$ masks)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_aee63b63a3294244e08d130a8c8391bb3}{match}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} query\+Keypoints, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} matches)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_acb8573df1d9182c66a2a22298fa29ca9}{radius\+Match}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} query\+Keypoints, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} train\+Keypoints, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$ matches, float max\+Distance, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} mask, boolean compact\+Result)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a517eb5459d58a1925807ac24941e7961}{radius\+Match}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} query\+Keypoints, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} train\+Keypoints, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$ matches, float max\+Distance)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a11a5917274ec694e43597b9fe9b19c4d}{radius\+Match}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} query\+Keypoints, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$ matches, float max\+Distance, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$ masks, boolean compact\+Result)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a435e2b77834a7a4bb26c53a7e8b53fd5}{radius\+Match}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} query\+Image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} query\+Keypoints, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$ matches, float max\+Distance)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_ace5615a832b9156b6f934ae1b3351753}{read}} (String file\+Name)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a6e18cfac8850372f13893af1534a6570}{train}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_afe6a58bb4c1210dd0701d0514fa58d5a}{write}} (String file\+Name)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher}{Generic\+Descriptor\+Matcher}} \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a64b3829be52d49dd4718dda5bef37c2c}{create}} (int matcher\+Type)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a25d70df2a066237f808035e02f5d1433}{O\+N\+E\+W\+AY}} = 1
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a0a76a002983674ac66ea7419b901231c}{Generic\+Descriptor\+Matcher}} (long addr)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_ab777f44ccc3724359edf49ba042c777b}{finalize}} ()  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final long \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a8f0f09b5348c9df2c938c54740d7fb8c}{native\+Obj}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract interface for extracting and matching a keypoint descriptor. There are also \char`\"{}\+Descriptor\+Extractor\char`\"{} and \char`\"{}\+Descriptor\+Matcher\char`\"{} for these purposes but their interfaces are intended for descriptors represented as vectors in a multidimensional space. {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher}{Generic\+Descriptor\+Matcher}}} is a more generic interface for descriptors. {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher}{Descriptor\+Matcher}}} and {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher}{Generic\+Descriptor\+Matcher}}} have two groups of match methods\+: for matching keypoints of an image with another image or with an image set.
+
+class \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher}{Generic\+Descriptor\+Matcher}} {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily public\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a0a76a002983674ac66ea7419b901231c}{Generic\+Descriptor\+Matcher()}};}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual $\sim$\+Generic\+Descriptor\+Matcher();}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void add(const vector$<$\+Mat$>$\& images,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily vector$<$vector$<$\+Key\+Point$>$ $>$\& keypoints);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily const vector$<$\+Mat$>$\& get\+Train\+Images() const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily const vector$<$vector$<$\+Key\+Point$>$ $>$\& get\+Train\+Keypoints() const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_aa5902c8aca6b21e07f0ea6709b632530}{clear()}};}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a6e18cfac8850372f13893af1534a6570}{train()}} = 0;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual bool \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_aaeb65b1ba87c1babb2d37fa7f2f4fa71}{is\+Mask\+Supported()}} = 0;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily void classify(const Mat\& query\+Image,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily vector$<$\+Key\+Point$>$\& query\+Keypoints,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily const Mat\& train\+Image,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily vector$<$\+Key\+Point$>$\& train\+Keypoints) const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily void classify(const Mat\& query\+Image,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily vector$<$\+Key\+Point$>$\& query\+Keypoints);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily / $\ast$}
+
+{\ttfamily  
+\begin{DoxyItemize}
+\item Group of methods to match keypoints from an image pair. 
+\item / 
+\end{DoxyItemize}}
+
+{\ttfamily }
+
+{\ttfamily void match(const Mat\& query\+Image, vector$<$\+Key\+Point$>$\& query\+Keypoints,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily const Mat\& train\+Image, vector$<$\+Key\+Point$>$\& train\+Keypoints,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily vector$<$\+D\+Match$>$\& matches, const Mat\& mask=Mat()) const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily void knn\+Match(const Mat\& query\+Image, vector$<$\+Key\+Point$>$\& query\+Keypoints,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily const Mat\& train\+Image, vector$<$\+Key\+Point$>$\& train\+Keypoints,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily vector$<$vector$<$\+D\+Match$>$ $>$\& matches, int k,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily const Mat\& mask=Mat(), bool compact\+Result=false) const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily void radius\+Match(const Mat\& query\+Image, vector$<$\+Key\+Point$>$\& query\+Keypoints,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily const Mat\& train\+Image, vector$<$\+Key\+Point$>$\& train\+Keypoints,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily vector$<$vector$<$\+D\+Match$>$ $>$\& matches, float max\+Distance,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily const Mat\& mask=Mat(), bool compact\+Result=false) const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily / $\ast$}
+
+{\ttfamily  
+\begin{DoxyItemize}
+\item Group of methods to match keypoints from one image to an image set. 
+\item / 
+\end{DoxyItemize}}
+
+{\ttfamily }
+
+{\ttfamily void match(const Mat\& query\+Image, vector$<$\+Key\+Point$>$\& query\+Keypoints,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily vector$<$\+D\+Match$>$\& matches, const vector$<$\+Mat$>$\& masks=vector$<$\+Mat$>$());}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily void knn\+Match(const Mat\& query\+Image, vector$<$\+Key\+Point$>$\& query\+Keypoints,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily vector$<$vector$<$\+D\+Match$>$ $>$\& matches, int k,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily const vector$<$\+Mat$>$\& masks=vector$<$\+Mat$>$(), bool compact\+Result=false);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily void radius\+Match(const Mat\& query\+Image, vector$<$\+Key\+Point$>$\& query\+Keypoints,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily vector$<$vector$<$\+D\+Match$>$ $>$\& matches, float max\+Distance,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily const vector$<$\+Mat$>$\& masks=vector$<$\+Mat$>$(), bool compact\+Result=false);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void read(const File\+Node\&);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void write(\+File\+Storage\&) const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual Ptr$<$\+Generic\+Descriptor\+Matcher$>$ clone(bool empty\+Train\+Data=false) const = 0;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily protected\+:...}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \};}
+
+{\ttfamily }
+
+{\ttfamily \begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_generic_descriptor_matchers.html#genericdescriptormatcher}{\tt org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher} 
+\end{DoxySeeAlso}
+}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a0a76a002983674ac66ea7419b901231c}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a0a76a002983674ac66ea7419b901231c}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!Generic\+Descriptor\+Matcher@{Generic\+Descriptor\+Matcher}}
+\index{Generic\+Descriptor\+Matcher@{Generic\+Descriptor\+Matcher}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{Generic\+Descriptor\+Matcher()}{GenericDescriptorMatcher()}}
+{\footnotesize\ttfamily org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+Generic\+Descriptor\+Matcher (\begin{DoxyParamCaption}\item[{long}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_ad0e0a234636c370c74fdd4086ac5c716}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_ad0e0a234636c370c74fdd4086ac5c716}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!add@{add}}
+\index{add@{add}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+add (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$}]{images,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}} $>$}]{keypoints }\end{DoxyParamCaption})}
+
+Adds images and their keypoints to the training collection stored in the class instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em images} & Image collection. \\
+\hline
+{\em keypoints} & Point collection. It is assumed that {\ttfamily keypoints\mbox{[}i\mbox{]}} are keypoints detected in the image {\ttfamily images\mbox{[}i\mbox{]}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_generic_descriptor_matchers.html#genericdescriptormatcher-add}{\tt org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+add} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_aad6739fde6c8aea642a80de25d498ce1}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_aad6739fde6c8aea642a80de25d498ce1}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!classify@{classify}}
+\index{classify@{classify}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{classify()}{classify()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+classify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}}}]{query\+Keypoints,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}}}]{train\+Keypoints }\end{DoxyParamCaption})}
+
+Classifies keypoints from a query set.
+
+The method classifies each keypoint from a query set. The first variant of the method takes a train image and its keypoints as an input argument. The second variant uses the internally stored training collection that can be built using the {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_ad0e0a234636c370c74fdd4086ac5c716}{Generic\+Descriptor\+Matcher.\+add}}} method.
+
+The methods do the following\+:
+
+
+\begin{DoxyItemize}
+\item Call the {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_ab02d6f8f1fa4c188b431bc6fcc5a4cac}{Generic\+Descriptor\+Matcher.\+match}}} method to find correspondence between the query set and the training set. 
+\item Set the {\ttfamily class\+\_\+id} field of each keypoint from the query set to {\ttfamily class\+\_\+id} of the corresponding keypoint from the training set. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Image} & Query image. \\
+\hline
+{\em query\+Keypoints} & Keypoints from a query image. \\
+\hline
+{\em train\+Image} & Train image. \\
+\hline
+{\em train\+Keypoints} & Keypoints from a train image.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_generic_descriptor_matchers.html#genericdescriptormatcher-classify}{\tt org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+classify} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_aa5fdedf03124f2831e85ed0780deb8c0}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_aa5fdedf03124f2831e85ed0780deb8c0}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!classify@{classify}}
+\index{classify@{classify}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{classify()}{classify()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+classify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}}}]{query\+Keypoints }\end{DoxyParamCaption})}
+
+Classifies keypoints from a query set.
+
+The method classifies each keypoint from a query set. The first variant of the method takes a train image and its keypoints as an input argument. The second variant uses the internally stored training collection that can be built using the {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_ad0e0a234636c370c74fdd4086ac5c716}{Generic\+Descriptor\+Matcher.\+add}}} method.
+
+The methods do the following\+:
+
+
+\begin{DoxyItemize}
+\item Call the {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_ab02d6f8f1fa4c188b431bc6fcc5a4cac}{Generic\+Descriptor\+Matcher.\+match}}} method to find correspondence between the query set and the training set. 
+\item Set the {\ttfamily class\+\_\+id} field of each keypoint from the query set to {\ttfamily class\+\_\+id} of the corresponding keypoint from the training set. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Image} & Query image. \\
+\hline
+{\em query\+Keypoints} & Keypoints from a query image.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_generic_descriptor_matchers.html#genericdescriptormatcher-classify}{\tt org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+classify} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_aa5902c8aca6b21e07f0ea6709b632530}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_aa5902c8aca6b21e07f0ea6709b632530}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!clear@{clear}}
+\index{clear@{clear}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clears a train collection (images and keypoints).
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_generic_descriptor_matchers.html#genericdescriptormatcher-clear}{\tt org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+clear} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_aacf1be1b878d2532bd04685e46a6d25e}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_aacf1be1b878d2532bd04685e46a6d25e}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!clone@{clone}}
+\index{clone@{clone}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{clone()}{clone()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher}{Generic\+Descriptor\+Matcher}} org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+clone (\begin{DoxyParamCaption}\item[{boolean}]{empty\+Train\+Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a007e317ad3a73e1d0df4809d614d7b72}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a007e317ad3a73e1d0df4809d614d7b72}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!clone@{clone}}
+\index{clone@{clone}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{clone()}{clone()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher}{Generic\+Descriptor\+Matcher}} org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a64b3829be52d49dd4718dda5bef37c2c}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a64b3829be52d49dd4718dda5bef37c2c}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!create@{create}}
+\index{create@{create}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher}{Generic\+Descriptor\+Matcher}} org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+create (\begin{DoxyParamCaption}\item[{int}]{matcher\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a9abc040599bc74e5b3d877d393ab58a0}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a9abc040599bc74e5b3d877d393ab58a0}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!empty@{empty}}
+\index{empty@{empty}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_ab777f44ccc3724359edf49ba042c777b}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_ab777f44ccc3724359edf49ba042c777b}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!finalize@{finalize}}
+\index{finalize@{finalize}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Throwable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a016fab98a353a2e823130d7b0d6668c3}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a016fab98a353a2e823130d7b0d6668c3}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!get\+Train\+Images@{get\+Train\+Images}}
+\index{get\+Train\+Images@{get\+Train\+Images}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{get\+Train\+Images()}{getTrainImages()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}$>$ org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+get\+Train\+Images (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a train image collection.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_generic_descriptor_matchers.html#genericdescriptormatcher-gettrainimages}{\tt org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+get\+Train\+Images} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a334b393c4b8d79b117797ddc5dfcd940}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a334b393c4b8d79b117797ddc5dfcd940}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!get\+Train\+Keypoints@{get\+Train\+Keypoints}}
+\index{get\+Train\+Keypoints@{get\+Train\+Keypoints}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{get\+Train\+Keypoints()}{getTrainKeypoints()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}}$>$ org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+get\+Train\+Keypoints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a train keypoints collection.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_generic_descriptor_matchers.html#genericdescriptormatcher-gettrainkeypoints}{\tt org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+get\+Train\+Keypoints} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_aaeb65b1ba87c1babb2d37fa7f2f4fa71}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_aaeb65b1ba87c1babb2d37fa7f2f4fa71}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!is\+Mask\+Supported@{is\+Mask\+Supported}}
+\index{is\+Mask\+Supported@{is\+Mask\+Supported}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{is\+Mask\+Supported()}{isMaskSupported()}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+is\+Mask\+Supported (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns {\ttfamily true} if a generic descriptor matcher supports masking permissible matches.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_generic_descriptor_matchers.html#genericdescriptormatcher-ismasksupported}{\tt org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+is\+Mask\+Supported} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_af6815bbb6335022c81da415b79da82e7}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_af6815bbb6335022c81da415b79da82e7}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!knn\+Match@{knn\+Match}}
+\index{knn\+Match@{knn\+Match}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{knn\+Match()}{knnMatch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+knn\+Match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}}}]{query\+Keypoints,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}}}]{train\+Keypoints,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$}]{matches,  }\item[{int}]{k,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{mask,  }\item[{boolean}]{compact\+Result }\end{DoxyParamCaption})}
+
+Finds the {\ttfamily k} best matches for each query keypoint.
+
+The methods are extended variants of {\ttfamily Generic\+Descriptor\+Match.\+match}. The parameters are similar, and the semantics is similar to {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_ac00ee4a90434accdd31bac8edbb3a39f}{Descriptor\+Matcher.\+knn\+Match}}}. But this class does not require explicitly computed keypoint descriptors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Image} & a query\+Image \\
+\hline
+{\em query\+Keypoints} & a query\+Keypoints \\
+\hline
+{\em train\+Image} & a train\+Image \\
+\hline
+{\em train\+Keypoints} & a train\+Keypoints \\
+\hline
+{\em matches} & a matches \\
+\hline
+{\em k} & a k \\
+\hline
+{\em mask} & a mask \\
+\hline
+{\em compact\+Result} & a compact\+Result\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_generic_descriptor_matchers.html#genericdescriptormatcher-knnmatch}{\tt org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+knn\+Match} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_ab8a37a7d1349e7c3bfc7d26f51c065b5}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_ab8a37a7d1349e7c3bfc7d26f51c065b5}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!knn\+Match@{knn\+Match}}
+\index{knn\+Match@{knn\+Match}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{knn\+Match()}{knnMatch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+knn\+Match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}}}]{query\+Keypoints,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}}}]{train\+Keypoints,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$}]{matches,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+Finds the {\ttfamily k} best matches for each query keypoint.
+
+The methods are extended variants of {\ttfamily Generic\+Descriptor\+Match.\+match}. The parameters are similar, and the semantics is similar to {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_ac00ee4a90434accdd31bac8edbb3a39f}{Descriptor\+Matcher.\+knn\+Match}}}. But this class does not require explicitly computed keypoint descriptors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Image} & a query\+Image \\
+\hline
+{\em query\+Keypoints} & a query\+Keypoints \\
+\hline
+{\em train\+Image} & a train\+Image \\
+\hline
+{\em train\+Keypoints} & a train\+Keypoints \\
+\hline
+{\em matches} & a matches \\
+\hline
+{\em k} & a k\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_generic_descriptor_matchers.html#genericdescriptormatcher-knnmatch}{\tt org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+knn\+Match} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a4f5cf4fe824db96ba3b9a038a4925a23}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a4f5cf4fe824db96ba3b9a038a4925a23}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!knn\+Match@{knn\+Match}}
+\index{knn\+Match@{knn\+Match}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{knn\+Match()}{knnMatch()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+knn\+Match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}}}]{query\+Keypoints,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$}]{matches,  }\item[{int}]{k,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$}]{masks,  }\item[{boolean}]{compact\+Result }\end{DoxyParamCaption})}
+
+Finds the {\ttfamily k} best matches for each query keypoint.
+
+The methods are extended variants of {\ttfamily Generic\+Descriptor\+Match.\+match}. The parameters are similar, and the semantics is similar to {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_ac00ee4a90434accdd31bac8edbb3a39f}{Descriptor\+Matcher.\+knn\+Match}}}. But this class does not require explicitly computed keypoint descriptors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Image} & a query\+Image \\
+\hline
+{\em query\+Keypoints} & a query\+Keypoints \\
+\hline
+{\em matches} & a matches \\
+\hline
+{\em k} & a k \\
+\hline
+{\em masks} & a masks \\
+\hline
+{\em compact\+Result} & a compact\+Result\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_generic_descriptor_matchers.html#genericdescriptormatcher-knnmatch}{\tt org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+knn\+Match} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a66926e61feba1ba7562d6b23d1d49e28}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a66926e61feba1ba7562d6b23d1d49e28}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!knn\+Match@{knn\+Match}}
+\index{knn\+Match@{knn\+Match}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{knn\+Match()}{knnMatch()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+knn\+Match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}}}]{query\+Keypoints,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$}]{matches,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+Finds the {\ttfamily k} best matches for each query keypoint.
+
+The methods are extended variants of {\ttfamily Generic\+Descriptor\+Match.\+match}. The parameters are similar, and the semantics is similar to {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_descriptor_matcher_ac00ee4a90434accdd31bac8edbb3a39f}{Descriptor\+Matcher.\+knn\+Match}}}. But this class does not require explicitly computed keypoint descriptors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Image} & a query\+Image \\
+\hline
+{\em query\+Keypoints} & a query\+Keypoints \\
+\hline
+{\em matches} & a matches \\
+\hline
+{\em k} & a k\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_generic_descriptor_matchers.html#genericdescriptormatcher-knnmatch}{\tt org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+knn\+Match} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_ab02d6f8f1fa4c188b431bc6fcc5a4cac}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_ab02d6f8f1fa4c188b431bc6fcc5a4cac}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!match@{match}}
+\index{match@{match}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{match()}{match()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}}}]{query\+Keypoints,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}}}]{train\+Keypoints,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}}}]{matches,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{mask }\end{DoxyParamCaption})}
+
+Finds the best match in the training set for each keypoint from the query set.
+
+The methods find the best match for each query keypoint. In the first variant of the method, a train image and its keypoints are the input arguments. In the second variant, query keypoints are matched to the internally stored training collection that can be built using the {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_ad0e0a234636c370c74fdd4086ac5c716}{Generic\+Descriptor\+Matcher.\+add}}} method. Optional mask (or masks) can be passed to specify which query and training descriptors can be matched. Namely, {\ttfamily query\+Keypoints\mbox{[}i\mbox{]}} can be matched with {\ttfamily train\+Keypoints\mbox{[}j\mbox{]}} only if {\ttfamily mask.\+at$<$uchar$>$(i,j)} is non-\/zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Image} & Query image. \\
+\hline
+{\em query\+Keypoints} & Keypoints detected in {\ttfamily query\+Image}. \\
+\hline
+{\em train\+Image} & Train image. It is not added to a train image collection stored in the class object. \\
+\hline
+{\em train\+Keypoints} & Keypoints detected in {\ttfamily train\+Image}. They are not added to a train points collection stored in the class object. \\
+\hline
+{\em matches} & Matches. If a query descriptor (keypoint) is masked out in {\ttfamily mask}, match is added for this descriptor. So, {\ttfamily matches} size may be smaller than the query keypoints count. \\
+\hline
+{\em mask} & Mask specifying permissible matches between an input query and train keypoints.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_generic_descriptor_matchers.html#genericdescriptormatcher-match}{\tt org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+match} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_af88c9bd04ba58ac1daf5a04e1c771a10}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_af88c9bd04ba58ac1daf5a04e1c771a10}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!match@{match}}
+\index{match@{match}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{match()}{match()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}}}]{query\+Keypoints,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}}}]{train\+Keypoints,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}}}]{matches }\end{DoxyParamCaption})}
+
+Finds the best match in the training set for each keypoint from the query set.
+
+The methods find the best match for each query keypoint. In the first variant of the method, a train image and its keypoints are the input arguments. In the second variant, query keypoints are matched to the internally stored training collection that can be built using the {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_ad0e0a234636c370c74fdd4086ac5c716}{Generic\+Descriptor\+Matcher.\+add}}} method. Optional mask (or masks) can be passed to specify which query and training descriptors can be matched. Namely, {\ttfamily query\+Keypoints\mbox{[}i\mbox{]}} can be matched with {\ttfamily train\+Keypoints\mbox{[}j\mbox{]}} only if {\ttfamily mask.\+at$<$uchar$>$(i,j)} is non-\/zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Image} & Query image. \\
+\hline
+{\em query\+Keypoints} & Keypoints detected in {\ttfamily query\+Image}. \\
+\hline
+{\em train\+Image} & Train image. It is not added to a train image collection stored in the class object. \\
+\hline
+{\em train\+Keypoints} & Keypoints detected in {\ttfamily train\+Image}. They are not added to a train points collection stored in the class object. \\
+\hline
+{\em matches} & Matches. If a query descriptor (keypoint) is masked out in {\ttfamily mask}, match is added for this descriptor. So, {\ttfamily matches} size may be smaller than the query keypoints count.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_generic_descriptor_matchers.html#genericdescriptormatcher-match}{\tt org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+match} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a03f59c4582495f33f1a08a0b3cfc7352}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a03f59c4582495f33f1a08a0b3cfc7352}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!match@{match}}
+\index{match@{match}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{match()}{match()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}}}]{query\+Keypoints,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}}}]{matches,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$}]{masks }\end{DoxyParamCaption})}
+
+Finds the best match in the training set for each keypoint from the query set.
+
+The methods find the best match for each query keypoint. In the first variant of the method, a train image and its keypoints are the input arguments. In the second variant, query keypoints are matched to the internally stored training collection that can be built using the {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_ad0e0a234636c370c74fdd4086ac5c716}{Generic\+Descriptor\+Matcher.\+add}}} method. Optional mask (or masks) can be passed to specify which query and training descriptors can be matched. Namely, {\ttfamily query\+Keypoints\mbox{[}i\mbox{]}} can be matched with {\ttfamily train\+Keypoints\mbox{[}j\mbox{]}} only if {\ttfamily mask.\+at$<$uchar$>$(i,j)} is non-\/zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Image} & Query image. \\
+\hline
+{\em query\+Keypoints} & Keypoints detected in {\ttfamily query\+Image}. \\
+\hline
+{\em matches} & Matches. If a query descriptor (keypoint) is masked out in {\ttfamily mask}, match is added for this descriptor. So, {\ttfamily matches} size may be smaller than the query keypoints count. \\
+\hline
+{\em masks} & Set of masks. Each {\ttfamily masks\mbox{[}i\mbox{]}} specifies permissible matches between input query keypoints and stored train keypoints from the i-\/th image.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_generic_descriptor_matchers.html#genericdescriptormatcher-match}{\tt org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+match} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_aee63b63a3294244e08d130a8c8391bb3}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_aee63b63a3294244e08d130a8c8391bb3}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!match@{match}}
+\index{match@{match}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{match()}{match()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}}}]{query\+Keypoints,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}}}]{matches }\end{DoxyParamCaption})}
+
+Finds the best match in the training set for each keypoint from the query set.
+
+The methods find the best match for each query keypoint. In the first variant of the method, a train image and its keypoints are the input arguments. In the second variant, query keypoints are matched to the internally stored training collection that can be built using the {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_ad0e0a234636c370c74fdd4086ac5c716}{Generic\+Descriptor\+Matcher.\+add}}} method. Optional mask (or masks) can be passed to specify which query and training descriptors can be matched. Namely, {\ttfamily query\+Keypoints\mbox{[}i\mbox{]}} can be matched with {\ttfamily train\+Keypoints\mbox{[}j\mbox{]}} only if {\ttfamily mask.\+at$<$uchar$>$(i,j)} is non-\/zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Image} & Query image. \\
+\hline
+{\em query\+Keypoints} & Keypoints detected in {\ttfamily query\+Image}. \\
+\hline
+{\em matches} & Matches. If a query descriptor (keypoint) is masked out in {\ttfamily mask}, match is added for this descriptor. So, {\ttfamily matches} size may be smaller than the query keypoints count.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_generic_descriptor_matchers.html#genericdescriptormatcher-match}{\tt org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+match} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_acb8573df1d9182c66a2a22298fa29ca9}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_acb8573df1d9182c66a2a22298fa29ca9}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!radius\+Match@{radius\+Match}}
+\index{radius\+Match@{radius\+Match}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{radius\+Match()}{radiusMatch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+radius\+Match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}}}]{query\+Keypoints,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}}}]{train\+Keypoints,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$}]{matches,  }\item[{float}]{max\+Distance,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{mask,  }\item[{boolean}]{compact\+Result }\end{DoxyParamCaption})}
+
+For each query keypoint, finds the training keypoints not farther than the specified distance.
+
+The methods are similar to {\ttfamily Descriptor\+Matcher.\+radius}. But this class does not require explicitly computed keypoint descriptors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Image} & a query\+Image \\
+\hline
+{\em query\+Keypoints} & a query\+Keypoints \\
+\hline
+{\em train\+Image} & a train\+Image \\
+\hline
+{\em train\+Keypoints} & a train\+Keypoints \\
+\hline
+{\em matches} & a matches \\
+\hline
+{\em max\+Distance} & a max\+Distance \\
+\hline
+{\em mask} & a mask \\
+\hline
+{\em compact\+Result} & a compact\+Result\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_generic_descriptor_matchers.html#genericdescriptormatcher-radiusmatch}{\tt org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+radius\+Match} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a517eb5459d58a1925807ac24941e7961}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a517eb5459d58a1925807ac24941e7961}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!radius\+Match@{radius\+Match}}
+\index{radius\+Match@{radius\+Match}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{radius\+Match()}{radiusMatch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+radius\+Match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}}}]{query\+Keypoints,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}}}]{train\+Keypoints,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$}]{matches,  }\item[{float}]{max\+Distance }\end{DoxyParamCaption})}
+
+For each query keypoint, finds the training keypoints not farther than the specified distance.
+
+The methods are similar to {\ttfamily Descriptor\+Matcher.\+radius}. But this class does not require explicitly computed keypoint descriptors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Image} & a query\+Image \\
+\hline
+{\em query\+Keypoints} & a query\+Keypoints \\
+\hline
+{\em train\+Image} & a train\+Image \\
+\hline
+{\em train\+Keypoints} & a train\+Keypoints \\
+\hline
+{\em matches} & a matches \\
+\hline
+{\em max\+Distance} & a max\+Distance\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_generic_descriptor_matchers.html#genericdescriptormatcher-radiusmatch}{\tt org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+radius\+Match} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a11a5917274ec694e43597b9fe9b19c4d}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a11a5917274ec694e43597b9fe9b19c4d}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!radius\+Match@{radius\+Match}}
+\index{radius\+Match@{radius\+Match}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{radius\+Match()}{radiusMatch()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+radius\+Match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}}}]{query\+Keypoints,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$}]{matches,  }\item[{float}]{max\+Distance,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} $>$}]{masks,  }\item[{boolean}]{compact\+Result }\end{DoxyParamCaption})}
+
+For each query keypoint, finds the training keypoints not farther than the specified distance.
+
+The methods are similar to {\ttfamily Descriptor\+Matcher.\+radius}. But this class does not require explicitly computed keypoint descriptors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Image} & a query\+Image \\
+\hline
+{\em query\+Keypoints} & a query\+Keypoints \\
+\hline
+{\em matches} & a matches \\
+\hline
+{\em max\+Distance} & a max\+Distance \\
+\hline
+{\em masks} & a masks \\
+\hline
+{\em compact\+Result} & a compact\+Result\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_generic_descriptor_matchers.html#genericdescriptormatcher-radiusmatch}{\tt org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+radius\+Match} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a435e2b77834a7a4bb26c53a7e8b53fd5}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a435e2b77834a7a4bb26c53a7e8b53fd5}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!radius\+Match@{radius\+Match}}
+\index{radius\+Match@{radius\+Match}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{radius\+Match()}{radiusMatch()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+radius\+Match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{query\+Image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_key_point}{Mat\+Of\+Key\+Point}}}]{query\+Keypoints,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_d_match}{Mat\+Of\+D\+Match}} $>$}]{matches,  }\item[{float}]{max\+Distance }\end{DoxyParamCaption})}
+
+For each query keypoint, finds the training keypoints not farther than the specified distance.
+
+The methods are similar to {\ttfamily Descriptor\+Matcher.\+radius}. But this class does not require explicitly computed keypoint descriptors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Image} & a query\+Image \\
+\hline
+{\em query\+Keypoints} & a query\+Keypoints \\
+\hline
+{\em matches} & a matches \\
+\hline
+{\em max\+Distance} & a max\+Distance\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_generic_descriptor_matchers.html#genericdescriptormatcher-radiusmatch}{\tt org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+radius\+Match} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_ace5615a832b9156b6f934ae1b3351753}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_ace5615a832b9156b6f934ae1b3351753}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!read@{read}}
+\index{read@{read}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+read (\begin{DoxyParamCaption}\item[{String}]{file\+Name }\end{DoxyParamCaption})}
+
+Reads a matcher object from a file node.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & a file\+Name\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_generic_descriptor_matchers.html#genericdescriptormatcher-read}{\tt org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+read} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a6e18cfac8850372f13893af1534a6570}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a6e18cfac8850372f13893af1534a6570}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!train@{train}}
+\index{train@{train}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{train()}{train()}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+train (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Trains descriptor matcher
+
+Prepares descriptor matcher, for example, creates a tree-\/based structure, to extract descriptors or to optimize descriptors matching.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_generic_descriptor_matchers.html#genericdescriptormatcher-train}{\tt org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+train} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_afe6a58bb4c1210dd0701d0514fa58d5a}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_afe6a58bb4c1210dd0701d0514fa58d5a}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!write@{write}}
+\index{write@{write}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+write (\begin{DoxyParamCaption}\item[{String}]{file\+Name }\end{DoxyParamCaption})}
+
+Writes a match object to a file storage.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & a file\+Name\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_generic_descriptor_matchers.html#genericdescriptormatcher-write}{\tt org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+write} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a8f0f09b5348c9df2c938c54740d7fb8c}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a8f0f09b5348c9df2c938c54740d7fb8c}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!native\+Obj@{native\+Obj}}
+\index{native\+Obj@{native\+Obj}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{native\+Obj}{nativeObj}}
+{\footnotesize\ttfamily final long org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+native\+Obj\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a25d70df2a066237f808035e02f5d1433}\label{classorg_1_1opencv_1_1features2d_1_1_generic_descriptor_matcher_a25d70df2a066237f808035e02f5d1433}} 
+\index{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}!O\+N\+E\+W\+AY@{O\+N\+E\+W\+AY}}
+\index{O\+N\+E\+W\+AY@{O\+N\+E\+W\+AY}!org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher@{org\+::opencv\+::features2d\+::\+Generic\+Descriptor\+Matcher}}
+\subsubsection{\texorpdfstring{O\+N\+E\+W\+AY}{ONEWAY}}
+{\footnotesize\ttfamily final int org.\+opencv.\+features2d.\+Generic\+Descriptor\+Matcher.\+O\+N\+E\+W\+AY = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/features2d/\mbox{\hyperlink{_generic_descriptor_matcher_8java}{Generic\+Descriptor\+Matcher.\+java}}\end{DoxyCompactItemize}

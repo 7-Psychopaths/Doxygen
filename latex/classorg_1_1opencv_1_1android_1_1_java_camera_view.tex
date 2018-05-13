@@ -1,0 +1,112 @@
+\hypertarget{classorg_1_1opencv_1_1android_1_1_java_camera_view}{}\section{org.\+opencv.\+android.\+Java\+Camera\+View Class Reference}
+\label{classorg_1_1opencv_1_1android_1_1_java_camera_view}\index{org.\+opencv.\+android.\+Java\+Camera\+View@{org.\+opencv.\+android.\+Java\+Camera\+View}}
+Inheritance diagram for org.\+opencv.\+android.\+Java\+Camera\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.051282cm]{classorg_1_1opencv_1_1android_1_1_java_camera_view}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Java\+Camera\+Size\+Accessor}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_java_camera_view_aba18d30cb50b833f3bf8281c1758adf1}{Java\+Camera\+View}} (Context context, int camera\+Id)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_java_camera_view_ade245d8e3c82c62e512cd031cc041a76}{Java\+Camera\+View}} (Context context, Attribute\+Set attrs)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_java_camera_view_a16ba3b94c94ca2afe069e82a2cf20e58}{on\+Preview\+Frame}} (byte\mbox{[}$\,$\mbox{]} frame, Camera arg1)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_java_camera_view_a29141b72435ba44645056d5005feb06f}{initialize\+Camera}} (int width, int height)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_java_camera_view_ac5b5afc09c654c912647e52110845c78}{release\+Camera}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_java_camera_view_ace3c5843b95670a26e01292ea0acb84b}{connect\+Camera}} (int width, int height)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_java_camera_view_a557657f3020c986d5ab05c74119a1a95}{disconnect\+Camera}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Camera \mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_java_camera_view_a117a6e6ce3694460b39132e0e78f46af}{m\+Camera}}
+\item 
+Java\+Camera\+Frame \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_java_camera_view_aa7ed7f3c25792dd2161af56887beb627}{m\+Camera\+Frame}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is an implementation of the Bridge View between Open\+CV and Java Camera. This class relays on the functionality available in base class and only implements required functions\+: connect\+Camera -\/ opens Java camera and sets the Preview\+Callback to be delivered. disconnect\+Camera -\/ closes the camera and stops preview. When frame is delivered via callback from Camera -\/ it processed via Open\+CV to be converted to R\+G\+B\+A32 and then passed to the external callback for modifications if required. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_java_camera_view_aba18d30cb50b833f3bf8281c1758adf1}\label{classorg_1_1opencv_1_1android_1_1_java_camera_view_aba18d30cb50b833f3bf8281c1758adf1}} 
+\index{org\+::opencv\+::android\+::\+Java\+Camera\+View@{org\+::opencv\+::android\+::\+Java\+Camera\+View}!Java\+Camera\+View@{Java\+Camera\+View}}
+\index{Java\+Camera\+View@{Java\+Camera\+View}!org\+::opencv\+::android\+::\+Java\+Camera\+View@{org\+::opencv\+::android\+::\+Java\+Camera\+View}}
+\subsubsection{\texorpdfstring{Java\+Camera\+View()}{JavaCameraView()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily org.\+opencv.\+android.\+Java\+Camera\+View.\+Java\+Camera\+View (\begin{DoxyParamCaption}\item[{Context}]{context,  }\item[{int}]{camera\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_java_camera_view_ade245d8e3c82c62e512cd031cc041a76}\label{classorg_1_1opencv_1_1android_1_1_java_camera_view_ade245d8e3c82c62e512cd031cc041a76}} 
+\index{org\+::opencv\+::android\+::\+Java\+Camera\+View@{org\+::opencv\+::android\+::\+Java\+Camera\+View}!Java\+Camera\+View@{Java\+Camera\+View}}
+\index{Java\+Camera\+View@{Java\+Camera\+View}!org\+::opencv\+::android\+::\+Java\+Camera\+View@{org\+::opencv\+::android\+::\+Java\+Camera\+View}}
+\subsubsection{\texorpdfstring{Java\+Camera\+View()}{JavaCameraView()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily org.\+opencv.\+android.\+Java\+Camera\+View.\+Java\+Camera\+View (\begin{DoxyParamCaption}\item[{Context}]{context,  }\item[{Attribute\+Set}]{attrs }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_java_camera_view_ace3c5843b95670a26e01292ea0acb84b}\label{classorg_1_1opencv_1_1android_1_1_java_camera_view_ace3c5843b95670a26e01292ea0acb84b}} 
+\index{org\+::opencv\+::android\+::\+Java\+Camera\+View@{org\+::opencv\+::android\+::\+Java\+Camera\+View}!connect\+Camera@{connect\+Camera}}
+\index{connect\+Camera@{connect\+Camera}!org\+::opencv\+::android\+::\+Java\+Camera\+View@{org\+::opencv\+::android\+::\+Java\+Camera\+View}}
+\subsubsection{\texorpdfstring{connect\+Camera()}{connectCamera()}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+android.\+Java\+Camera\+View.\+connect\+Camera (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_java_camera_view_a557657f3020c986d5ab05c74119a1a95}\label{classorg_1_1opencv_1_1android_1_1_java_camera_view_a557657f3020c986d5ab05c74119a1a95}} 
+\index{org\+::opencv\+::android\+::\+Java\+Camera\+View@{org\+::opencv\+::android\+::\+Java\+Camera\+View}!disconnect\+Camera@{disconnect\+Camera}}
+\index{disconnect\+Camera@{disconnect\+Camera}!org\+::opencv\+::android\+::\+Java\+Camera\+View@{org\+::opencv\+::android\+::\+Java\+Camera\+View}}
+\subsubsection{\texorpdfstring{disconnect\+Camera()}{disconnectCamera()}}
+{\footnotesize\ttfamily void org.\+opencv.\+android.\+Java\+Camera\+View.\+disconnect\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_java_camera_view_a29141b72435ba44645056d5005feb06f}\label{classorg_1_1opencv_1_1android_1_1_java_camera_view_a29141b72435ba44645056d5005feb06f}} 
+\index{org\+::opencv\+::android\+::\+Java\+Camera\+View@{org\+::opencv\+::android\+::\+Java\+Camera\+View}!initialize\+Camera@{initialize\+Camera}}
+\index{initialize\+Camera@{initialize\+Camera}!org\+::opencv\+::android\+::\+Java\+Camera\+View@{org\+::opencv\+::android\+::\+Java\+Camera\+View}}
+\subsubsection{\texorpdfstring{initialize\+Camera()}{initializeCamera()}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+android.\+Java\+Camera\+View.\+initialize\+Camera (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_java_camera_view_a16ba3b94c94ca2afe069e82a2cf20e58}\label{classorg_1_1opencv_1_1android_1_1_java_camera_view_a16ba3b94c94ca2afe069e82a2cf20e58}} 
+\index{org\+::opencv\+::android\+::\+Java\+Camera\+View@{org\+::opencv\+::android\+::\+Java\+Camera\+View}!on\+Preview\+Frame@{on\+Preview\+Frame}}
+\index{on\+Preview\+Frame@{on\+Preview\+Frame}!org\+::opencv\+::android\+::\+Java\+Camera\+View@{org\+::opencv\+::android\+::\+Java\+Camera\+View}}
+\subsubsection{\texorpdfstring{on\+Preview\+Frame()}{onPreviewFrame()}}
+{\footnotesize\ttfamily void org.\+opencv.\+android.\+Java\+Camera\+View.\+on\+Preview\+Frame (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{frame,  }\item[{Camera}]{arg1 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_java_camera_view_ac5b5afc09c654c912647e52110845c78}\label{classorg_1_1opencv_1_1android_1_1_java_camera_view_ac5b5afc09c654c912647e52110845c78}} 
+\index{org\+::opencv\+::android\+::\+Java\+Camera\+View@{org\+::opencv\+::android\+::\+Java\+Camera\+View}!release\+Camera@{release\+Camera}}
+\index{release\+Camera@{release\+Camera}!org\+::opencv\+::android\+::\+Java\+Camera\+View@{org\+::opencv\+::android\+::\+Java\+Camera\+View}}
+\subsubsection{\texorpdfstring{release\+Camera()}{releaseCamera()}}
+{\footnotesize\ttfamily void org.\+opencv.\+android.\+Java\+Camera\+View.\+release\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_java_camera_view_a117a6e6ce3694460b39132e0e78f46af}\label{classorg_1_1opencv_1_1android_1_1_java_camera_view_a117a6e6ce3694460b39132e0e78f46af}} 
+\index{org\+::opencv\+::android\+::\+Java\+Camera\+View@{org\+::opencv\+::android\+::\+Java\+Camera\+View}!m\+Camera@{m\+Camera}}
+\index{m\+Camera@{m\+Camera}!org\+::opencv\+::android\+::\+Java\+Camera\+View@{org\+::opencv\+::android\+::\+Java\+Camera\+View}}
+\subsubsection{\texorpdfstring{m\+Camera}{mCamera}}
+{\footnotesize\ttfamily Camera org.\+opencv.\+android.\+Java\+Camera\+View.\+m\+Camera\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_java_camera_view_aa7ed7f3c25792dd2161af56887beb627}\label{classorg_1_1opencv_1_1android_1_1_java_camera_view_aa7ed7f3c25792dd2161af56887beb627}} 
+\index{org\+::opencv\+::android\+::\+Java\+Camera\+View@{org\+::opencv\+::android\+::\+Java\+Camera\+View}!m\+Camera\+Frame@{m\+Camera\+Frame}}
+\index{m\+Camera\+Frame@{m\+Camera\+Frame}!org\+::opencv\+::android\+::\+Java\+Camera\+View@{org\+::opencv\+::android\+::\+Java\+Camera\+View}}
+\subsubsection{\texorpdfstring{m\+Camera\+Frame}{mCameraFrame}}
+{\footnotesize\ttfamily Java\+Camera\+Frame \mbox{[}$\,$\mbox{]} org.\+opencv.\+android.\+Java\+Camera\+View.\+m\+Camera\+Frame\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/android/\mbox{\hyperlink{_java_camera_view_8java}{Java\+Camera\+View.\+java}}\end{DoxyCompactItemize}

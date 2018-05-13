@@ -1,0 +1,73 @@
+\hypertarget{interfaceorg_1_1opencv_1_1android_1_1_install_callback_interface}{}\section{org.\+opencv.\+android.\+Install\+Callback\+Interface Interface Reference}
+\label{interfaceorg_1_1opencv_1_1android_1_1_install_callback_interface}\index{org.\+opencv.\+android.\+Install\+Callback\+Interface@{org.\+opencv.\+android.\+Install\+Callback\+Interface}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{interfaceorg_1_1opencv_1_1android_1_1_install_callback_interface_abed262bf1da0198af872b7ca7bba4045}{get\+Package\+Name}} ()
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1opencv_1_1android_1_1_install_callback_interface_a28b70ef6e9437493ac640372939fab1b}{install}} ()
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1opencv_1_1android_1_1_install_callback_interface_a30287ea96247aedda19a431ac159c420}{cancel}} ()
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1opencv_1_1android_1_1_install_callback_interface_a4aa5d4a790e2439da16e91092c2dd4b4}{wait\+\_\+install}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{interfaceorg_1_1opencv_1_1android_1_1_install_callback_interface_ad04e1ef7ec6ca29f561c40cc7aa1ace7}{N\+E\+W\+\_\+\+I\+N\+S\+T\+A\+L\+L\+A\+T\+I\+ON}} = 0
+\item 
+static final int \mbox{\hyperlink{interfaceorg_1_1opencv_1_1android_1_1_install_callback_interface_a8269eb8d4f021c551f010b33c58d6e5c}{I\+N\+S\+T\+A\+L\+L\+A\+T\+I\+O\+N\+\_\+\+P\+R\+O\+G\+R\+E\+SS}} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Installation callback interface. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1opencv_1_1android_1_1_install_callback_interface_a30287ea96247aedda19a431ac159c420}\label{interfaceorg_1_1opencv_1_1android_1_1_install_callback_interface_a30287ea96247aedda19a431ac159c420}} 
+\index{org\+::opencv\+::android\+::\+Install\+Callback\+Interface@{org\+::opencv\+::android\+::\+Install\+Callback\+Interface}!cancel@{cancel}}
+\index{cancel@{cancel}!org\+::opencv\+::android\+::\+Install\+Callback\+Interface@{org\+::opencv\+::android\+::\+Install\+Callback\+Interface}}
+\subsubsection{\texorpdfstring{cancel()}{cancel()}}
+{\footnotesize\ttfamily void org.\+opencv.\+android.\+Install\+Callback\+Interface.\+cancel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Installation is canceled. \mbox{\Hypertarget{interfaceorg_1_1opencv_1_1android_1_1_install_callback_interface_abed262bf1da0198af872b7ca7bba4045}\label{interfaceorg_1_1opencv_1_1android_1_1_install_callback_interface_abed262bf1da0198af872b7ca7bba4045}} 
+\index{org\+::opencv\+::android\+::\+Install\+Callback\+Interface@{org\+::opencv\+::android\+::\+Install\+Callback\+Interface}!get\+Package\+Name@{get\+Package\+Name}}
+\index{get\+Package\+Name@{get\+Package\+Name}!org\+::opencv\+::android\+::\+Install\+Callback\+Interface@{org\+::opencv\+::android\+::\+Install\+Callback\+Interface}}
+\subsubsection{\texorpdfstring{get\+Package\+Name()}{getPackageName()}}
+{\footnotesize\ttfamily String org.\+opencv.\+android.\+Install\+Callback\+Interface.\+get\+Package\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Target package name. \begin{DoxyReturn}{Returns}
+Return target package name. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceorg_1_1opencv_1_1android_1_1_install_callback_interface_a28b70ef6e9437493ac640372939fab1b}\label{interfaceorg_1_1opencv_1_1android_1_1_install_callback_interface_a28b70ef6e9437493ac640372939fab1b}} 
+\index{org\+::opencv\+::android\+::\+Install\+Callback\+Interface@{org\+::opencv\+::android\+::\+Install\+Callback\+Interface}!install@{install}}
+\index{install@{install}!org\+::opencv\+::android\+::\+Install\+Callback\+Interface@{org\+::opencv\+::android\+::\+Install\+Callback\+Interface}}
+\subsubsection{\texorpdfstring{install()}{install()}}
+{\footnotesize\ttfamily void org.\+opencv.\+android.\+Install\+Callback\+Interface.\+install (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Installation is approved. \mbox{\Hypertarget{interfaceorg_1_1opencv_1_1android_1_1_install_callback_interface_a4aa5d4a790e2439da16e91092c2dd4b4}\label{interfaceorg_1_1opencv_1_1android_1_1_install_callback_interface_a4aa5d4a790e2439da16e91092c2dd4b4}} 
+\index{org\+::opencv\+::android\+::\+Install\+Callback\+Interface@{org\+::opencv\+::android\+::\+Install\+Callback\+Interface}!wait\+\_\+install@{wait\+\_\+install}}
+\index{wait\+\_\+install@{wait\+\_\+install}!org\+::opencv\+::android\+::\+Install\+Callback\+Interface@{org\+::opencv\+::android\+::\+Install\+Callback\+Interface}}
+\subsubsection{\texorpdfstring{wait\+\_\+install()}{wait\_install()}}
+{\footnotesize\ttfamily void org.\+opencv.\+android.\+Install\+Callback\+Interface.\+wait\+\_\+install (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Wait for package installation. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1opencv_1_1android_1_1_install_callback_interface_a8269eb8d4f021c551f010b33c58d6e5c}\label{interfaceorg_1_1opencv_1_1android_1_1_install_callback_interface_a8269eb8d4f021c551f010b33c58d6e5c}} 
+\index{org\+::opencv\+::android\+::\+Install\+Callback\+Interface@{org\+::opencv\+::android\+::\+Install\+Callback\+Interface}!I\+N\+S\+T\+A\+L\+L\+A\+T\+I\+O\+N\+\_\+\+P\+R\+O\+G\+R\+E\+SS@{I\+N\+S\+T\+A\+L\+L\+A\+T\+I\+O\+N\+\_\+\+P\+R\+O\+G\+R\+E\+SS}}
+\index{I\+N\+S\+T\+A\+L\+L\+A\+T\+I\+O\+N\+\_\+\+P\+R\+O\+G\+R\+E\+SS@{I\+N\+S\+T\+A\+L\+L\+A\+T\+I\+O\+N\+\_\+\+P\+R\+O\+G\+R\+E\+SS}!org\+::opencv\+::android\+::\+Install\+Callback\+Interface@{org\+::opencv\+::android\+::\+Install\+Callback\+Interface}}
+\subsubsection{\texorpdfstring{I\+N\+S\+T\+A\+L\+L\+A\+T\+I\+O\+N\+\_\+\+P\+R\+O\+G\+R\+E\+SS}{INSTALLATION\_PROGRESS}}
+{\footnotesize\ttfamily final int org.\+opencv.\+android.\+Install\+Callback\+Interface.\+I\+N\+S\+T\+A\+L\+L\+A\+T\+I\+O\+N\+\_\+\+P\+R\+O\+G\+R\+E\+SS = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+Current package installation is in progress. \mbox{\Hypertarget{interfaceorg_1_1opencv_1_1android_1_1_install_callback_interface_ad04e1ef7ec6ca29f561c40cc7aa1ace7}\label{interfaceorg_1_1opencv_1_1android_1_1_install_callback_interface_ad04e1ef7ec6ca29f561c40cc7aa1ace7}} 
+\index{org\+::opencv\+::android\+::\+Install\+Callback\+Interface@{org\+::opencv\+::android\+::\+Install\+Callback\+Interface}!N\+E\+W\+\_\+\+I\+N\+S\+T\+A\+L\+L\+A\+T\+I\+ON@{N\+E\+W\+\_\+\+I\+N\+S\+T\+A\+L\+L\+A\+T\+I\+ON}}
+\index{N\+E\+W\+\_\+\+I\+N\+S\+T\+A\+L\+L\+A\+T\+I\+ON@{N\+E\+W\+\_\+\+I\+N\+S\+T\+A\+L\+L\+A\+T\+I\+ON}!org\+::opencv\+::android\+::\+Install\+Callback\+Interface@{org\+::opencv\+::android\+::\+Install\+Callback\+Interface}}
+\subsubsection{\texorpdfstring{N\+E\+W\+\_\+\+I\+N\+S\+T\+A\+L\+L\+A\+T\+I\+ON}{NEW\_INSTALLATION}}
+{\footnotesize\ttfamily final int org.\+opencv.\+android.\+Install\+Callback\+Interface.\+N\+E\+W\+\_\+\+I\+N\+S\+T\+A\+L\+L\+A\+T\+I\+ON = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+New package installation is required. 
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/android/\mbox{\hyperlink{_install_callback_interface_8java}{Install\+Callback\+Interface.\+java}}\end{DoxyCompactItemize}

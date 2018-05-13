@@ -1,0 +1,136 @@
+\hypertarget{classorg_1_1opencv_1_1video_1_1_background_subtractor}{}\section{org.\+opencv.\+video.\+Background\+Subtractor Class Reference}
+\label{classorg_1_1opencv_1_1video_1_1_background_subtractor}\index{org.\+opencv.\+video.\+Background\+Subtractor@{org.\+opencv.\+video.\+Background\+Subtractor}}
+Inheritance diagram for org.\+opencv.\+video.\+Background\+Subtractor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.916667cm]{classorg_1_1opencv_1_1video_1_1_background_subtractor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_background_subtractor_a290ed6795a4c1e74474c3046fc888c62}{apply}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} fgmask, double learning\+Rate)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_background_subtractor_a0789ad256c915e8ae06199a99e73cda9}{apply}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} image, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} fgmask)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_background_subtractor_a1d5f3d01bd917289c673cdfe056a8687}{Background\+Subtractor}} (long addr)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_background_subtractor_aa3a3526a938ecced2581fb34f93f0825}{finalize}} ()  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Base class for background/foreground segmentation.
+
+class \mbox{\hyperlink{classorg_1_1opencv_1_1video_1_1_background_subtractor}{Background\+Subtractor}} \+: public Algorithm {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily public\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual $\sim$\+Background\+Subtractor();}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void operator()(Input\+Array image, Output\+Array fgmask, double learning\+Rate=0);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily virtual void get\+Background\+Image(\+Output\+Array background\+Image) const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \};}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily The class is only used to define the common interface for the whole family of background/foreground segmentation algorithms. }
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#backgroundsubtractor}{\tt org.\+opencv.\+video.\+Background\+Subtractor \+: public Algorithm} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_background_subtractor_a1d5f3d01bd917289c673cdfe056a8687}\label{classorg_1_1opencv_1_1video_1_1_background_subtractor_a1d5f3d01bd917289c673cdfe056a8687}} 
+\index{org\+::opencv\+::video\+::\+Background\+Subtractor@{org\+::opencv\+::video\+::\+Background\+Subtractor}!Background\+Subtractor@{Background\+Subtractor}}
+\index{Background\+Subtractor@{Background\+Subtractor}!org\+::opencv\+::video\+::\+Background\+Subtractor@{org\+::opencv\+::video\+::\+Background\+Subtractor}}
+\subsubsection{\texorpdfstring{Background\+Subtractor()}{BackgroundSubtractor()}}
+{\footnotesize\ttfamily org.\+opencv.\+video.\+Background\+Subtractor.\+Background\+Subtractor (\begin{DoxyParamCaption}\item[{long}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_background_subtractor_a290ed6795a4c1e74474c3046fc888c62}\label{classorg_1_1opencv_1_1video_1_1_background_subtractor_a290ed6795a4c1e74474c3046fc888c62}} 
+\index{org\+::opencv\+::video\+::\+Background\+Subtractor@{org\+::opencv\+::video\+::\+Background\+Subtractor}!apply@{apply}}
+\index{apply@{apply}!org\+::opencv\+::video\+::\+Background\+Subtractor@{org\+::opencv\+::video\+::\+Background\+Subtractor}}
+\subsubsection{\texorpdfstring{apply()}{apply()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void org.\+opencv.\+video.\+Background\+Subtractor.\+apply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{fgmask,  }\item[{double}]{learning\+Rate }\end{DoxyParamCaption})}
+
+Computes a foreground mask.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & Next video frame. \\
+\hline
+{\em fgmask} & The output foreground mask as an 8-\/bit binary image. \\
+\hline
+{\em learning\+Rate} & a learning\+Rate\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#backgroundsubtractor-operator}{\tt org.\+opencv.\+video.\+Background\+Subtractor.\+operator()} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_background_subtractor_a0789ad256c915e8ae06199a99e73cda9}\label{classorg_1_1opencv_1_1video_1_1_background_subtractor_a0789ad256c915e8ae06199a99e73cda9}} 
+\index{org\+::opencv\+::video\+::\+Background\+Subtractor@{org\+::opencv\+::video\+::\+Background\+Subtractor}!apply@{apply}}
+\index{apply@{apply}!org\+::opencv\+::video\+::\+Background\+Subtractor@{org\+::opencv\+::video\+::\+Background\+Subtractor}}
+\subsubsection{\texorpdfstring{apply()}{apply()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void org.\+opencv.\+video.\+Background\+Subtractor.\+apply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{image,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{fgmask }\end{DoxyParamCaption})}
+
+Computes a foreground mask.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & Next video frame. \\
+\hline
+{\em fgmask} & The output foreground mask as an 8-\/bit binary image.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#backgroundsubtractor-operator}{\tt org.\+opencv.\+video.\+Background\+Subtractor.\+operator()} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1video_1_1_background_subtractor_aa3a3526a938ecced2581fb34f93f0825}\label{classorg_1_1opencv_1_1video_1_1_background_subtractor_aa3a3526a938ecced2581fb34f93f0825}} 
+\index{org\+::opencv\+::video\+::\+Background\+Subtractor@{org\+::opencv\+::video\+::\+Background\+Subtractor}!finalize@{finalize}}
+\index{finalize@{finalize}!org\+::opencv\+::video\+::\+Background\+Subtractor@{org\+::opencv\+::video\+::\+Background\+Subtractor}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily void org.\+opencv.\+video.\+Background\+Subtractor.\+finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Throwable\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/video/\mbox{\hyperlink{_background_subtractor_8java}{Background\+Subtractor.\+java}}\end{DoxyCompactItemize}

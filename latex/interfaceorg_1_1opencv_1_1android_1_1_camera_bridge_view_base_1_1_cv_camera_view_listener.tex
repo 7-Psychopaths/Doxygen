@@ -1,0 +1,44 @@
+\hypertarget{interfaceorg_1_1opencv_1_1android_1_1_camera_bridge_view_base_1_1_cv_camera_view_listener}{}\section{org.\+opencv.\+android.\+Camera\+Bridge\+View\+Base.\+Cv\+Camera\+View\+Listener Interface Reference}
+\label{interfaceorg_1_1opencv_1_1android_1_1_camera_bridge_view_base_1_1_cv_camera_view_listener}\index{org.\+opencv.\+android.\+Camera\+Bridge\+View\+Base.\+Cv\+Camera\+View\+Listener@{org.\+opencv.\+android.\+Camera\+Bridge\+View\+Base.\+Cv\+Camera\+View\+Listener}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1opencv_1_1android_1_1_camera_bridge_view_base_1_1_cv_camera_view_listener_a7f908e34834761c8c1d6622989bb5a90}{on\+Camera\+View\+Started}} (int width, int height)
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1opencv_1_1android_1_1_camera_bridge_view_base_1_1_cv_camera_view_listener_a23d02d02b84ae6496da2ac1d8b7c3b45}{on\+Camera\+View\+Stopped}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} \mbox{\hyperlink{interfaceorg_1_1opencv_1_1android_1_1_camera_bridge_view_base_1_1_cv_camera_view_listener_a727a5b35122315b9278e5104c80749aa}{on\+Camera\+Frame}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} input\+Frame)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1opencv_1_1android_1_1_camera_bridge_view_base_1_1_cv_camera_view_listener_a727a5b35122315b9278e5104c80749aa}\label{interfaceorg_1_1opencv_1_1android_1_1_camera_bridge_view_base_1_1_cv_camera_view_listener_a727a5b35122315b9278e5104c80749aa}} 
+\index{org\+::opencv\+::android\+::\+Camera\+Bridge\+View\+Base\+::\+Cv\+Camera\+View\+Listener@{org\+::opencv\+::android\+::\+Camera\+Bridge\+View\+Base\+::\+Cv\+Camera\+View\+Listener}!on\+Camera\+Frame@{on\+Camera\+Frame}}
+\index{on\+Camera\+Frame@{on\+Camera\+Frame}!org\+::opencv\+::android\+::\+Camera\+Bridge\+View\+Base\+::\+Cv\+Camera\+View\+Listener@{org\+::opencv\+::android\+::\+Camera\+Bridge\+View\+Base\+::\+Cv\+Camera\+View\+Listener}}
+\subsubsection{\texorpdfstring{on\+Camera\+Frame()}{onCameraFrame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} org.\+opencv.\+android.\+Camera\+Bridge\+View\+Base.\+Cv\+Camera\+View\+Listener.\+on\+Camera\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{input\+Frame }\end{DoxyParamCaption})}
+
+This method is invoked when delivery of the frame needs to be done. The returned values -\/ is a modified frame which needs to be displayed on the screen. T\+O\+DO\+: pass the parameters specifying the format of the frame (B\+PP, Y\+UV or R\+GB and etc) \mbox{\Hypertarget{interfaceorg_1_1opencv_1_1android_1_1_camera_bridge_view_base_1_1_cv_camera_view_listener_a7f908e34834761c8c1d6622989bb5a90}\label{interfaceorg_1_1opencv_1_1android_1_1_camera_bridge_view_base_1_1_cv_camera_view_listener_a7f908e34834761c8c1d6622989bb5a90}} 
+\index{org\+::opencv\+::android\+::\+Camera\+Bridge\+View\+Base\+::\+Cv\+Camera\+View\+Listener@{org\+::opencv\+::android\+::\+Camera\+Bridge\+View\+Base\+::\+Cv\+Camera\+View\+Listener}!on\+Camera\+View\+Started@{on\+Camera\+View\+Started}}
+\index{on\+Camera\+View\+Started@{on\+Camera\+View\+Started}!org\+::opencv\+::android\+::\+Camera\+Bridge\+View\+Base\+::\+Cv\+Camera\+View\+Listener@{org\+::opencv\+::android\+::\+Camera\+Bridge\+View\+Base\+::\+Cv\+Camera\+View\+Listener}}
+\subsubsection{\texorpdfstring{on\+Camera\+View\+Started()}{onCameraViewStarted()}}
+{\footnotesize\ttfamily void org.\+opencv.\+android.\+Camera\+Bridge\+View\+Base.\+Cv\+Camera\+View\+Listener.\+on\+Camera\+View\+Started (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+This method is invoked when camera preview has started. After this method is invoked the frames will start to be delivered to client via the \mbox{\hyperlink{interfaceorg_1_1opencv_1_1android_1_1_camera_bridge_view_base_1_1_cv_camera_view_listener_a727a5b35122315b9278e5104c80749aa}{on\+Camera\+Frame()}} callback. 
+\begin{DoxyParams}{Parameters}
+{\em width} & -\/ the width of the frames that will be delivered \\
+\hline
+{\em height} & -\/ the height of the frames that will be delivered \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceorg_1_1opencv_1_1android_1_1_camera_bridge_view_base_1_1_cv_camera_view_listener_a23d02d02b84ae6496da2ac1d8b7c3b45}\label{interfaceorg_1_1opencv_1_1android_1_1_camera_bridge_view_base_1_1_cv_camera_view_listener_a23d02d02b84ae6496da2ac1d8b7c3b45}} 
+\index{org\+::opencv\+::android\+::\+Camera\+Bridge\+View\+Base\+::\+Cv\+Camera\+View\+Listener@{org\+::opencv\+::android\+::\+Camera\+Bridge\+View\+Base\+::\+Cv\+Camera\+View\+Listener}!on\+Camera\+View\+Stopped@{on\+Camera\+View\+Stopped}}
+\index{on\+Camera\+View\+Stopped@{on\+Camera\+View\+Stopped}!org\+::opencv\+::android\+::\+Camera\+Bridge\+View\+Base\+::\+Cv\+Camera\+View\+Listener@{org\+::opencv\+::android\+::\+Camera\+Bridge\+View\+Base\+::\+Cv\+Camera\+View\+Listener}}
+\subsubsection{\texorpdfstring{on\+Camera\+View\+Stopped()}{onCameraViewStopped()}}
+{\footnotesize\ttfamily void org.\+opencv.\+android.\+Camera\+Bridge\+View\+Base.\+Cv\+Camera\+View\+Listener.\+on\+Camera\+View\+Stopped (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method is invoked when camera preview has been stopped for some reason. No frames will be delivered via \mbox{\hyperlink{interfaceorg_1_1opencv_1_1android_1_1_camera_bridge_view_base_1_1_cv_camera_view_listener_a727a5b35122315b9278e5104c80749aa}{on\+Camera\+Frame()}} callback after this method is called. 
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/android/\mbox{\hyperlink{_camera_bridge_view_base_8java}{Camera\+Bridge\+View\+Base.\+java}}\end{DoxyCompactItemize}

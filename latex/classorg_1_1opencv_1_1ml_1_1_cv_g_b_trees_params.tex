@@ -1,0 +1,143 @@
+\hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params}{}\section{org.\+opencv.\+ml.\+Cv\+G\+B\+Trees\+Params Class Reference}
+\label{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params}\index{org.\+opencv.\+ml.\+Cv\+G\+B\+Trees\+Params@{org.\+opencv.\+ml.\+Cv\+G\+B\+Trees\+Params}}
+Inheritance diagram for org.\+opencv.\+ml.\+Cv\+G\+B\+Trees\+Params\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_a6322c0c66b392664076255036cecca37}{Cv\+G\+B\+Trees\+Params}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_ad5ef66e04fea3b027f8780fbed64cfe6}{get\+\_\+weak\+\_\+count}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_a9c8636507d06f54e1e03ffecfd7cc62d}{set\+\_\+weak\+\_\+count}} (int weak\+\_\+count)
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_a3c9fe177b40d63b8a1e5c8c4c84083f9}{get\+\_\+loss\+\_\+function\+\_\+type}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_ad724b62f5b3397df44856589e734c31d}{set\+\_\+loss\+\_\+function\+\_\+type}} (int loss\+\_\+function\+\_\+type)
+\item 
+float \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_a571c8c6a30847f32a147c715b5805aea}{get\+\_\+subsample\+\_\+portion}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_ae15182d898ddeba56788dd7332ab293d}{set\+\_\+subsample\+\_\+portion}} (float subsample\+\_\+portion)
+\item 
+float \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_a0676dfe63e08c54cc4ffd02c00367566}{get\+\_\+shrinkage}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_a51af964f656aeedc0431dabf35b6b67e}{set\+\_\+shrinkage}} (float shrinkage)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_ab0efc5fc555e680406a9cd06a528e4ab}{Cv\+G\+B\+Trees\+Params}} (long addr)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_acc8c49e3e09e85e0e626a6c3906bafed}{finalize}} ()  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+G\+BT training parameters.
+
+The structure contains parameters for each single decision tree in the ensemble, as well as the whole model characteristics. The structure is derived from \char`\"{}\+Cv\+D\+Tree\+Params\char`\"{} but not all of the decision tree parameters are supported\+: cross-\/validation, pruning, and class priorities are not used.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/gradient_boosted_trees.html#cvgbtreesparams}{\tt org.\+opencv.\+ml.\+Cv\+G\+B\+Trees\+Params \+: public Cv\+D\+Tree\+Params} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_ab0efc5fc555e680406a9cd06a528e4ab}\label{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_ab0efc5fc555e680406a9cd06a528e4ab}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params}!Cv\+G\+B\+Trees\+Params@{Cv\+G\+B\+Trees\+Params}}
+\index{Cv\+G\+B\+Trees\+Params@{Cv\+G\+B\+Trees\+Params}!org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params}}
+\subsubsection{\texorpdfstring{Cv\+G\+B\+Trees\+Params()}{CvGBTreesParams()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+G\+B\+Trees\+Params.\+Cv\+G\+B\+Trees\+Params (\begin{DoxyParamCaption}\item[{long}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_a6322c0c66b392664076255036cecca37}\label{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_a6322c0c66b392664076255036cecca37}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params}!Cv\+G\+B\+Trees\+Params@{Cv\+G\+B\+Trees\+Params}}
+\index{Cv\+G\+B\+Trees\+Params@{Cv\+G\+B\+Trees\+Params}!org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params}}
+\subsubsection{\texorpdfstring{Cv\+G\+B\+Trees\+Params()}{CvGBTreesParams()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+G\+B\+Trees\+Params.\+Cv\+G\+B\+Trees\+Params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+By default the following constructor is used\+: \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params}{Cv\+G\+B\+Trees\+Params}}(\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_a2fa66daa8dd429f356068b3856b891fd}{Cv\+G\+B\+Trees.\+S\+Q\+U\+A\+R\+E\+D\+\_\+\+L\+O\+SS}}, 200, 0.\+8f, 0.\+01f, 3, false) {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \+: Cv\+D\+Tree\+Params(3, 10, 0, false, 10, 0, false, false, 0)}
+
+{\ttfamily }
+
+{\ttfamily \begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/gradient_boosted_trees.html#cvgbtreesparams-cvgbtreesparams}{\tt org.\+opencv.\+ml.\+Cv\+G\+B\+Trees\+Params.\+Cv\+G\+B\+Trees\+Params} 
+\end{DoxySeeAlso}
+}
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_acc8c49e3e09e85e0e626a6c3906bafed}\label{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_acc8c49e3e09e85e0e626a6c3906bafed}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params}!finalize@{finalize}}
+\index{finalize@{finalize}!org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+G\+B\+Trees\+Params.\+finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Throwable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_a3c9fe177b40d63b8a1e5c8c4c84083f9}\label{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_a3c9fe177b40d63b8a1e5c8c4c84083f9}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params}!get\+\_\+loss\+\_\+function\+\_\+type@{get\+\_\+loss\+\_\+function\+\_\+type}}
+\index{get\+\_\+loss\+\_\+function\+\_\+type@{get\+\_\+loss\+\_\+function\+\_\+type}!org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params}}
+\subsubsection{\texorpdfstring{get\+\_\+loss\+\_\+function\+\_\+type()}{get\_loss\_function\_type()}}
+{\footnotesize\ttfamily int org.\+opencv.\+ml.\+Cv\+G\+B\+Trees\+Params.\+get\+\_\+loss\+\_\+function\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_a0676dfe63e08c54cc4ffd02c00367566}\label{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_a0676dfe63e08c54cc4ffd02c00367566}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params}!get\+\_\+shrinkage@{get\+\_\+shrinkage}}
+\index{get\+\_\+shrinkage@{get\+\_\+shrinkage}!org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params}}
+\subsubsection{\texorpdfstring{get\+\_\+shrinkage()}{get\_shrinkage()}}
+{\footnotesize\ttfamily float org.\+opencv.\+ml.\+Cv\+G\+B\+Trees\+Params.\+get\+\_\+shrinkage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_a571c8c6a30847f32a147c715b5805aea}\label{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_a571c8c6a30847f32a147c715b5805aea}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params}!get\+\_\+subsample\+\_\+portion@{get\+\_\+subsample\+\_\+portion}}
+\index{get\+\_\+subsample\+\_\+portion@{get\+\_\+subsample\+\_\+portion}!org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params}}
+\subsubsection{\texorpdfstring{get\+\_\+subsample\+\_\+portion()}{get\_subsample\_portion()}}
+{\footnotesize\ttfamily float org.\+opencv.\+ml.\+Cv\+G\+B\+Trees\+Params.\+get\+\_\+subsample\+\_\+portion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_ad5ef66e04fea3b027f8780fbed64cfe6}\label{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_ad5ef66e04fea3b027f8780fbed64cfe6}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params}!get\+\_\+weak\+\_\+count@{get\+\_\+weak\+\_\+count}}
+\index{get\+\_\+weak\+\_\+count@{get\+\_\+weak\+\_\+count}!org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params}}
+\subsubsection{\texorpdfstring{get\+\_\+weak\+\_\+count()}{get\_weak\_count()}}
+{\footnotesize\ttfamily int org.\+opencv.\+ml.\+Cv\+G\+B\+Trees\+Params.\+get\+\_\+weak\+\_\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_ad724b62f5b3397df44856589e734c31d}\label{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_ad724b62f5b3397df44856589e734c31d}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params}!set\+\_\+loss\+\_\+function\+\_\+type@{set\+\_\+loss\+\_\+function\+\_\+type}}
+\index{set\+\_\+loss\+\_\+function\+\_\+type@{set\+\_\+loss\+\_\+function\+\_\+type}!org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params}}
+\subsubsection{\texorpdfstring{set\+\_\+loss\+\_\+function\+\_\+type()}{set\_loss\_function\_type()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+G\+B\+Trees\+Params.\+set\+\_\+loss\+\_\+function\+\_\+type (\begin{DoxyParamCaption}\item[{int}]{loss\+\_\+function\+\_\+type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_a51af964f656aeedc0431dabf35b6b67e}\label{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_a51af964f656aeedc0431dabf35b6b67e}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params}!set\+\_\+shrinkage@{set\+\_\+shrinkage}}
+\index{set\+\_\+shrinkage@{set\+\_\+shrinkage}!org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params}}
+\subsubsection{\texorpdfstring{set\+\_\+shrinkage()}{set\_shrinkage()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+G\+B\+Trees\+Params.\+set\+\_\+shrinkage (\begin{DoxyParamCaption}\item[{float}]{shrinkage }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_ae15182d898ddeba56788dd7332ab293d}\label{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_ae15182d898ddeba56788dd7332ab293d}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params}!set\+\_\+subsample\+\_\+portion@{set\+\_\+subsample\+\_\+portion}}
+\index{set\+\_\+subsample\+\_\+portion@{set\+\_\+subsample\+\_\+portion}!org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params}}
+\subsubsection{\texorpdfstring{set\+\_\+subsample\+\_\+portion()}{set\_subsample\_portion()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+G\+B\+Trees\+Params.\+set\+\_\+subsample\+\_\+portion (\begin{DoxyParamCaption}\item[{float}]{subsample\+\_\+portion }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_a9c8636507d06f54e1e03ffecfd7cc62d}\label{classorg_1_1opencv_1_1ml_1_1_cv_g_b_trees_params_a9c8636507d06f54e1e03ffecfd7cc62d}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params}!set\+\_\+weak\+\_\+count@{set\+\_\+weak\+\_\+count}}
+\index{set\+\_\+weak\+\_\+count@{set\+\_\+weak\+\_\+count}!org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params@{org\+::opencv\+::ml\+::\+Cv\+G\+B\+Trees\+Params}}
+\subsubsection{\texorpdfstring{set\+\_\+weak\+\_\+count()}{set\_weak\_count()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+G\+B\+Trees\+Params.\+set\+\_\+weak\+\_\+count (\begin{DoxyParamCaption}\item[{int}]{weak\+\_\+count }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/ml/\mbox{\hyperlink{_cv_g_b_trees_params_8java}{Cv\+G\+B\+Trees\+Params.\+java}}\end{DoxyCompactItemize}

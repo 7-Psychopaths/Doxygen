@@ -1,0 +1,228 @@
+\hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d}{}\section{org.\+opencv.\+imgproc.\+Subdiv2D Class Reference}
+\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d}\index{org.\+opencv.\+imgproc.\+Subdiv2D@{org.\+opencv.\+imgproc.\+Subdiv2D}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_ae9146884810c532d8a7869efb6cd91ea}{Subdiv2D}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_ac113aca459a341c83020d016fee23bb9}{Subdiv2D}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_rect}{Rect}} rect)
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_ace23bc9d8c745e4153366e7050f3f61d}{edge\+Dst}} (int edge, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point}{Point}} dstpt)
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a7755ad8fcb9c0b5a4a6eda9415b0d8f1}{edge\+Dst}} (int edge)
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_abc54b2a9d95aac6f4e3f5851103afa35}{edge\+Org}} (int edge, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point}{Point}} orgpt)
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a85f94b9e5e650132e36122ecb0988149}{edge\+Org}} (int edge)
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a162c34979523383534b32c283b1597d3}{find\+Nearest}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point}{Point}} pt, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point}{Point}} nearest\+Pt)
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_ad5c21858191527c8650aeab2203aa8ab}{find\+Nearest}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point}{Point}} pt)
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a604a0ffdd5341dcc756594d81cfc5f7f}{get\+Edge}} (int edge, int next\+Edge\+Type)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_acc4709236533b8f54829e77b1fdc91f3}{get\+Edge\+List}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_float4}{Mat\+Of\+Float4}} edge\+List)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a4e772bf7eeec11ef789b445c485bf4ba}{get\+Triangle\+List}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_float6}{Mat\+Of\+Float6}} triangle\+List)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point}{Point}} \mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a58c403c768834b543ef6f813f748be12}{get\+Vertex}} (int vertex, int\mbox{[}$\,$\mbox{]} first\+Edge)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point}{Point}} \mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_af326c77ee5406972650418ddda481fc7}{get\+Vertex}} (int vertex)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a48829316fa03d30c1dcd95f5dddf25d7}{get\+Voronoi\+Facet\+List}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_int}{Mat\+Of\+Int}} idx, List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point2f}{Mat\+Of\+Point2f}} $>$ facet\+List, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point2f}{Mat\+Of\+Point2f}} facet\+Centers)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a8f12a6f7f41d7efd750f0bfc9a574d90}{init\+Delaunay}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_rect}{Rect}} rect)
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_aac9c8eacdac3bcc8346cac08a0ce06e9}{insert}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point}{Point}} pt)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_aa95284b221d6b0c5338bfa1ed04db76c}{insert}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point2f}{Mat\+Of\+Point2f}} ptvec)
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_af8c8b676d79b7cea1d19c6a931d90c63}{locate}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point}{Point}} pt, int\mbox{[}$\,$\mbox{]} edge, int\mbox{[}$\,$\mbox{]} vertex)
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_aeb95cdc777f3a9a182d896a8be6f6182}{next\+Edge}} (int edge)
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a31aa122175e559b7e3c565edfec48277}{rotate\+Edge}} (int edge, int rotate)
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a3386e5ffc9193f2cff46ab87a86e41a0}{sym\+Edge}} (int edge)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_ae015896ce5d676fae5d25eeb4d6f9089}{P\+T\+L\+O\+C\+\_\+\+E\+R\+R\+OR}} = -\/2
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_ac329a1e20b3aaf0da25372cb625da7af}{Subdiv2D}} (long addr)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a3aa8c0bdab3b8daade72404f5b317738}{finalize}} ()  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final long \mbox{\hyperlink{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a58adbff7dac08d56d3b5f476170bbd83}{native\+Obj}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_ac329a1e20b3aaf0da25372cb625da7af}\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_ac329a1e20b3aaf0da25372cb625da7af}} 
+\index{org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}!Subdiv2D@{Subdiv2D}}
+\index{Subdiv2D@{Subdiv2D}!org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}}
+\subsubsection{\texorpdfstring{Subdiv2\+D()}{Subdiv2D()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily org.\+opencv.\+imgproc.\+Subdiv2\+D.\+Subdiv2D (\begin{DoxyParamCaption}\item[{long}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_ae9146884810c532d8a7869efb6cd91ea}\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_ae9146884810c532d8a7869efb6cd91ea}} 
+\index{org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}!Subdiv2D@{Subdiv2D}}
+\index{Subdiv2D@{Subdiv2D}!org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}}
+\subsubsection{\texorpdfstring{Subdiv2\+D()}{Subdiv2D()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily org.\+opencv.\+imgproc.\+Subdiv2\+D.\+Subdiv2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_ac113aca459a341c83020d016fee23bb9}\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_ac113aca459a341c83020d016fee23bb9}} 
+\index{org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}!Subdiv2D@{Subdiv2D}}
+\index{Subdiv2D@{Subdiv2D}!org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}}
+\subsubsection{\texorpdfstring{Subdiv2\+D()}{Subdiv2D()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily org.\+opencv.\+imgproc.\+Subdiv2\+D.\+Subdiv2D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_rect}{Rect}}}]{rect }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_ace23bc9d8c745e4153366e7050f3f61d}\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_ace23bc9d8c745e4153366e7050f3f61d}} 
+\index{org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}!edge\+Dst@{edge\+Dst}}
+\index{edge\+Dst@{edge\+Dst}!org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}}
+\subsubsection{\texorpdfstring{edge\+Dst()}{edgeDst()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int org.\+opencv.\+imgproc.\+Subdiv2\+D.\+edge\+Dst (\begin{DoxyParamCaption}\item[{int}]{edge,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point}{Point}}}]{dstpt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a7755ad8fcb9c0b5a4a6eda9415b0d8f1}\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a7755ad8fcb9c0b5a4a6eda9415b0d8f1}} 
+\index{org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}!edge\+Dst@{edge\+Dst}}
+\index{edge\+Dst@{edge\+Dst}!org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}}
+\subsubsection{\texorpdfstring{edge\+Dst()}{edgeDst()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int org.\+opencv.\+imgproc.\+Subdiv2\+D.\+edge\+Dst (\begin{DoxyParamCaption}\item[{int}]{edge }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_abc54b2a9d95aac6f4e3f5851103afa35}\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_abc54b2a9d95aac6f4e3f5851103afa35}} 
+\index{org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}!edge\+Org@{edge\+Org}}
+\index{edge\+Org@{edge\+Org}!org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}}
+\subsubsection{\texorpdfstring{edge\+Org()}{edgeOrg()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int org.\+opencv.\+imgproc.\+Subdiv2\+D.\+edge\+Org (\begin{DoxyParamCaption}\item[{int}]{edge,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point}{Point}}}]{orgpt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a85f94b9e5e650132e36122ecb0988149}\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a85f94b9e5e650132e36122ecb0988149}} 
+\index{org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}!edge\+Org@{edge\+Org}}
+\index{edge\+Org@{edge\+Org}!org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}}
+\subsubsection{\texorpdfstring{edge\+Org()}{edgeOrg()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int org.\+opencv.\+imgproc.\+Subdiv2\+D.\+edge\+Org (\begin{DoxyParamCaption}\item[{int}]{edge }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a3aa8c0bdab3b8daade72404f5b317738}\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a3aa8c0bdab3b8daade72404f5b317738}} 
+\index{org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}!finalize@{finalize}}
+\index{finalize@{finalize}!org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily void org.\+opencv.\+imgproc.\+Subdiv2\+D.\+finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Throwable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a162c34979523383534b32c283b1597d3}\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a162c34979523383534b32c283b1597d3}} 
+\index{org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}!find\+Nearest@{find\+Nearest}}
+\index{find\+Nearest@{find\+Nearest}!org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}}
+\subsubsection{\texorpdfstring{find\+Nearest()}{findNearest()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int org.\+opencv.\+imgproc.\+Subdiv2\+D.\+find\+Nearest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point}{Point}}}]{pt,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point}{Point}}}]{nearest\+Pt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_ad5c21858191527c8650aeab2203aa8ab}\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_ad5c21858191527c8650aeab2203aa8ab}} 
+\index{org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}!find\+Nearest@{find\+Nearest}}
+\index{find\+Nearest@{find\+Nearest}!org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}}
+\subsubsection{\texorpdfstring{find\+Nearest()}{findNearest()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int org.\+opencv.\+imgproc.\+Subdiv2\+D.\+find\+Nearest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point}{Point}}}]{pt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a604a0ffdd5341dcc756594d81cfc5f7f}\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a604a0ffdd5341dcc756594d81cfc5f7f}} 
+\index{org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}!get\+Edge@{get\+Edge}}
+\index{get\+Edge@{get\+Edge}!org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}}
+\subsubsection{\texorpdfstring{get\+Edge()}{getEdge()}}
+{\footnotesize\ttfamily int org.\+opencv.\+imgproc.\+Subdiv2\+D.\+get\+Edge (\begin{DoxyParamCaption}\item[{int}]{edge,  }\item[{int}]{next\+Edge\+Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_acc4709236533b8f54829e77b1fdc91f3}\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_acc4709236533b8f54829e77b1fdc91f3}} 
+\index{org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}!get\+Edge\+List@{get\+Edge\+List}}
+\index{get\+Edge\+List@{get\+Edge\+List}!org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}}
+\subsubsection{\texorpdfstring{get\+Edge\+List()}{getEdgeList()}}
+{\footnotesize\ttfamily void org.\+opencv.\+imgproc.\+Subdiv2\+D.\+get\+Edge\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_float4}{Mat\+Of\+Float4}}}]{edge\+List }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a4e772bf7eeec11ef789b445c485bf4ba}\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a4e772bf7eeec11ef789b445c485bf4ba}} 
+\index{org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}!get\+Triangle\+List@{get\+Triangle\+List}}
+\index{get\+Triangle\+List@{get\+Triangle\+List}!org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}}
+\subsubsection{\texorpdfstring{get\+Triangle\+List()}{getTriangleList()}}
+{\footnotesize\ttfamily void org.\+opencv.\+imgproc.\+Subdiv2\+D.\+get\+Triangle\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_float6}{Mat\+Of\+Float6}}}]{triangle\+List }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a58c403c768834b543ef6f813f748be12}\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a58c403c768834b543ef6f813f748be12}} 
+\index{org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}!get\+Vertex@{get\+Vertex}}
+\index{get\+Vertex@{get\+Vertex}!org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}}
+\subsubsection{\texorpdfstring{get\+Vertex()}{getVertex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point}{Point}} org.\+opencv.\+imgproc.\+Subdiv2\+D.\+get\+Vertex (\begin{DoxyParamCaption}\item[{int}]{vertex,  }\item[{int \mbox{[}$\,$\mbox{]}}]{first\+Edge }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_af326c77ee5406972650418ddda481fc7}\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_af326c77ee5406972650418ddda481fc7}} 
+\index{org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}!get\+Vertex@{get\+Vertex}}
+\index{get\+Vertex@{get\+Vertex}!org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}}
+\subsubsection{\texorpdfstring{get\+Vertex()}{getVertex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point}{Point}} org.\+opencv.\+imgproc.\+Subdiv2\+D.\+get\+Vertex (\begin{DoxyParamCaption}\item[{int}]{vertex }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a48829316fa03d30c1dcd95f5dddf25d7}\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a48829316fa03d30c1dcd95f5dddf25d7}} 
+\index{org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}!get\+Voronoi\+Facet\+List@{get\+Voronoi\+Facet\+List}}
+\index{get\+Voronoi\+Facet\+List@{get\+Voronoi\+Facet\+List}!org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}}
+\subsubsection{\texorpdfstring{get\+Voronoi\+Facet\+List()}{getVoronoiFacetList()}}
+{\footnotesize\ttfamily void org.\+opencv.\+imgproc.\+Subdiv2\+D.\+get\+Voronoi\+Facet\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_int}{Mat\+Of\+Int}}}]{idx,  }\item[{List$<$ \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point2f}{Mat\+Of\+Point2f}} $>$}]{facet\+List,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point2f}{Mat\+Of\+Point2f}}}]{facet\+Centers }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a8f12a6f7f41d7efd750f0bfc9a574d90}\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a8f12a6f7f41d7efd750f0bfc9a574d90}} 
+\index{org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}!init\+Delaunay@{init\+Delaunay}}
+\index{init\+Delaunay@{init\+Delaunay}!org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}}
+\subsubsection{\texorpdfstring{init\+Delaunay()}{initDelaunay()}}
+{\footnotesize\ttfamily void org.\+opencv.\+imgproc.\+Subdiv2\+D.\+init\+Delaunay (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_rect}{Rect}}}]{rect }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_aac9c8eacdac3bcc8346cac08a0ce06e9}\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_aac9c8eacdac3bcc8346cac08a0ce06e9}} 
+\index{org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}!insert@{insert}}
+\index{insert@{insert}!org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}}
+\subsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int org.\+opencv.\+imgproc.\+Subdiv2\+D.\+insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point}{Point}}}]{pt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_aa95284b221d6b0c5338bfa1ed04db76c}\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_aa95284b221d6b0c5338bfa1ed04db76c}} 
+\index{org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}!insert@{insert}}
+\index{insert@{insert}!org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}}
+\subsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void org.\+opencv.\+imgproc.\+Subdiv2\+D.\+insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat_of_point2f}{Mat\+Of\+Point2f}}}]{ptvec }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_af8c8b676d79b7cea1d19c6a931d90c63}\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_af8c8b676d79b7cea1d19c6a931d90c63}} 
+\index{org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}!locate@{locate}}
+\index{locate@{locate}!org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}}
+\subsubsection{\texorpdfstring{locate()}{locate()}}
+{\footnotesize\ttfamily int org.\+opencv.\+imgproc.\+Subdiv2\+D.\+locate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point}{Point}}}]{pt,  }\item[{int \mbox{[}$\,$\mbox{]}}]{edge,  }\item[{int \mbox{[}$\,$\mbox{]}}]{vertex }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_aeb95cdc777f3a9a182d896a8be6f6182}\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_aeb95cdc777f3a9a182d896a8be6f6182}} 
+\index{org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}!next\+Edge@{next\+Edge}}
+\index{next\+Edge@{next\+Edge}!org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}}
+\subsubsection{\texorpdfstring{next\+Edge()}{nextEdge()}}
+{\footnotesize\ttfamily int org.\+opencv.\+imgproc.\+Subdiv2\+D.\+next\+Edge (\begin{DoxyParamCaption}\item[{int}]{edge }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a31aa122175e559b7e3c565edfec48277}\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a31aa122175e559b7e3c565edfec48277}} 
+\index{org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}!rotate\+Edge@{rotate\+Edge}}
+\index{rotate\+Edge@{rotate\+Edge}!org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}}
+\subsubsection{\texorpdfstring{rotate\+Edge()}{rotateEdge()}}
+{\footnotesize\ttfamily int org.\+opencv.\+imgproc.\+Subdiv2\+D.\+rotate\+Edge (\begin{DoxyParamCaption}\item[{int}]{edge,  }\item[{int}]{rotate }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a3386e5ffc9193f2cff46ab87a86e41a0}\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a3386e5ffc9193f2cff46ab87a86e41a0}} 
+\index{org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}!sym\+Edge@{sym\+Edge}}
+\index{sym\+Edge@{sym\+Edge}!org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}}
+\subsubsection{\texorpdfstring{sym\+Edge()}{symEdge()}}
+{\footnotesize\ttfamily int org.\+opencv.\+imgproc.\+Subdiv2\+D.\+sym\+Edge (\begin{DoxyParamCaption}\item[{int}]{edge }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a58adbff7dac08d56d3b5f476170bbd83}\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_a58adbff7dac08d56d3b5f476170bbd83}} 
+\index{org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}!native\+Obj@{native\+Obj}}
+\index{native\+Obj@{native\+Obj}!org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}}
+\subsubsection{\texorpdfstring{native\+Obj}{nativeObj}}
+{\footnotesize\ttfamily final long org.\+opencv.\+imgproc.\+Subdiv2\+D.\+native\+Obj\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_ae015896ce5d676fae5d25eeb4d6f9089}\label{classorg_1_1opencv_1_1imgproc_1_1_subdiv2_d_ae015896ce5d676fae5d25eeb4d6f9089}} 
+\index{org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}!P\+T\+L\+O\+C\+\_\+\+E\+R\+R\+OR@{P\+T\+L\+O\+C\+\_\+\+E\+R\+R\+OR}}
+\index{P\+T\+L\+O\+C\+\_\+\+E\+R\+R\+OR@{P\+T\+L\+O\+C\+\_\+\+E\+R\+R\+OR}!org\+::opencv\+::imgproc\+::\+Subdiv2D@{org\+::opencv\+::imgproc\+::\+Subdiv2D}}
+\subsubsection{\texorpdfstring{P\+T\+L\+O\+C\+\_\+\+E\+R\+R\+OR}{PTLOC\_ERROR}}
+{\footnotesize\ttfamily final int org.\+opencv.\+imgproc.\+Subdiv2\+D.\+P\+T\+L\+O\+C\+\_\+\+E\+R\+R\+OR = -\/2\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/imgproc/\mbox{\hyperlink{_subdiv2_d_8java}{Subdiv2\+D.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,263 @@
+\hypertarget{classorg_1_1opencv_1_1core_1_1_range}{}\section{org.\+opencv.\+core.\+Range Class Reference}
+\label{classorg_1_1opencv_1_1core_1_1_range}\index{org.\+opencv.\+core.\+Range@{org.\+opencv.\+core.\+Range}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range_a1089f14e7fa40016a6cbd17991c2dae4}{Range}} (int s, int e)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range_a9f31905b8ce03ab215e5a9fbefb69fb0}{Range}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range_a9f49af680d1e21fb48822a996763c13c}{Range}} (double\mbox{[}$\,$\mbox{]} vals)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range_a7ac5b704800aa60dccd49d6aace060c4}{set}} (double\mbox{[}$\,$\mbox{]} vals)
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range_a07e501f7d563301c3102bf119b9c9d48}{size}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range_a55a75bcfc883b7c46d789e6f42b6d8ed}{empty}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range}{Range}} \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range_a01210a548b2bd66cdede08f42459b129}{intersection}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range}{Range}} r1)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range}{Range}} \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range_a3aaebb51d9bfc18cd8dcce1a7252e898}{shift}} (int delta)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range}{Range}} \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range_a6a7a79f6fd9119be153b79f3d97c900a}{clone}} ()
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range_a23c0f048ccc10b8adaec877948d9d398}{hash\+Code}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range_ab8c1038aec09a58d5a28bc3b4af1da6b}{equals}} (Object obj)
+\item 
+String \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range_a4be73b3a1ad9cc1e29149cdb5037993c}{to\+String}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range}{Range}} \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range_a2dd4a07a9715665aacee5c7cdf79a175}{all}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range_a6229f6093afc24bfa44c18a8ccfdbcb4}{start}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Template class specifying a continuous subsequence (slice) of a sequence.
+
+class C\+V\+\_\+\+E\+X\+P\+O\+R\+TS \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range}{Range}} {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily public\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range_a9f31905b8ce03ab215e5a9fbefb69fb0}{Range()}};}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range_a1089f14e7fa40016a6cbd17991c2dae4}{Range(int \+\_\+start, int \+\_\+end)}};}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Range(const Cv\+Slice\& slice);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily int size() const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily bool empty() const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily static \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range}{Range}} \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range_a2dd4a07a9715665aacee5c7cdf79a175}{all()}};}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily operator Cv\+Slice() const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily int start, end;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \};}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily The class is used to specify a row or a column span in a matrix (}
+
+\char`\"{}\+Mat\char`\"{}) and for many other purposes. {\ttfamily Range(a,b)} is basically the same as {\ttfamily a\+:b} in Matlab or {\ttfamily a..b} in Python. As in Python, {\ttfamily start} is an inclusive left boundary of the range and {\ttfamily end} is an exclusive right boundary of the range. Such a half-\/opened interval is usually denoted as {\itshape \mbox{[}start,end)}. The static method {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range_a2dd4a07a9715665aacee5c7cdf79a175}{Range.\+all()}}} returns a special variable that means \char`\"{}the whole sequence\char`\"{} or \char`\"{}the whole range\char`\"{}, just like \char`\"{} $<$code$>$\+:$<$/code$>$ \char`\"{} in Matlab or \char`\"{} $<$code$>$...$<$/code$>$ \char`\"{} in Python. All the methods and functions in Open\+CV that take {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range}{Range}}} support this special {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range_a2dd4a07a9715665aacee5c7cdf79a175}{Range.\+all()}}} value. But, of course, in case of your own custom processing, you will probably have to check and handle it explicitly\+: {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily void my\+\_\+function(..., const \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range}{Range}}\& r,....)}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily if(r == \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range_a2dd4a07a9715665aacee5c7cdf79a175}{Range.\+all()}}) \{}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // process all the data}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily else \{}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // process \mbox{[}r.\+start, r.\+end)}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/core/doc/basic_structures.html#range}{\tt org.\+opencv.\+core.\+Range} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_range_a1089f14e7fa40016a6cbd17991c2dae4}\label{classorg_1_1opencv_1_1core_1_1_range_a1089f14e7fa40016a6cbd17991c2dae4}} 
+\index{org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}!Range@{Range}}
+\index{Range@{Range}!org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}}
+\subsubsection{\texorpdfstring{Range()}{Range()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily org.\+opencv.\+core.\+Range.\+Range (\begin{DoxyParamCaption}\item[{int}]{s,  }\item[{int}]{e }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_range_a9f31905b8ce03ab215e5a9fbefb69fb0}\label{classorg_1_1opencv_1_1core_1_1_range_a9f31905b8ce03ab215e5a9fbefb69fb0}} 
+\index{org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}!Range@{Range}}
+\index{Range@{Range}!org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}}
+\subsubsection{\texorpdfstring{Range()}{Range()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily org.\+opencv.\+core.\+Range.\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_range_a9f49af680d1e21fb48822a996763c13c}\label{classorg_1_1opencv_1_1core_1_1_range_a9f49af680d1e21fb48822a996763c13c}} 
+\index{org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}!Range@{Range}}
+\index{Range@{Range}!org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}}
+\subsubsection{\texorpdfstring{Range()}{Range()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily org.\+opencv.\+core.\+Range.\+Range (\begin{DoxyParamCaption}\item[{double \mbox{[}$\,$\mbox{]}}]{vals }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_range_a2dd4a07a9715665aacee5c7cdf79a175}\label{classorg_1_1opencv_1_1core_1_1_range_a2dd4a07a9715665aacee5c7cdf79a175}} 
+\index{org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}!all@{all}}
+\index{all@{all}!org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}}
+\subsubsection{\texorpdfstring{all()}{all()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range}{Range}} org.\+opencv.\+core.\+Range.\+all (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_range_a6a7a79f6fd9119be153b79f3d97c900a}\label{classorg_1_1opencv_1_1core_1_1_range_a6a7a79f6fd9119be153b79f3d97c900a}} 
+\index{org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}!clone@{clone}}
+\index{clone@{clone}!org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range}{Range}} org.\+opencv.\+core.\+Range.\+clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_range_a55a75bcfc883b7c46d789e6f42b6d8ed}\label{classorg_1_1opencv_1_1core_1_1_range_a55a75bcfc883b7c46d789e6f42b6d8ed}} 
+\index{org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}!empty@{empty}}
+\index{empty@{empty}!org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+core.\+Range.\+empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_range_ab8c1038aec09a58d5a28bc3b4af1da6b}\label{classorg_1_1opencv_1_1core_1_1_range_ab8c1038aec09a58d5a28bc3b4af1da6b}} 
+\index{org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}!equals@{equals}}
+\index{equals@{equals}!org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}}
+\subsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+core.\+Range.\+equals (\begin{DoxyParamCaption}\item[{Object}]{obj }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_range_a23c0f048ccc10b8adaec877948d9d398}\label{classorg_1_1opencv_1_1core_1_1_range_a23c0f048ccc10b8adaec877948d9d398}} 
+\index{org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}!hash\+Code@{hash\+Code}}
+\index{hash\+Code@{hash\+Code}!org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}}
+\subsubsection{\texorpdfstring{hash\+Code()}{hashCode()}}
+{\footnotesize\ttfamily int org.\+opencv.\+core.\+Range.\+hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_range_a01210a548b2bd66cdede08f42459b129}\label{classorg_1_1opencv_1_1core_1_1_range_a01210a548b2bd66cdede08f42459b129}} 
+\index{org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}!intersection@{intersection}}
+\index{intersection@{intersection}!org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}}
+\subsubsection{\texorpdfstring{intersection()}{intersection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range}{Range}} org.\+opencv.\+core.\+Range.\+intersection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range}{Range}}}]{r1 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_range_a7ac5b704800aa60dccd49d6aace060c4}\label{classorg_1_1opencv_1_1core_1_1_range_a7ac5b704800aa60dccd49d6aace060c4}} 
+\index{org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}!set@{set}}
+\index{set@{set}!org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void org.\+opencv.\+core.\+Range.\+set (\begin{DoxyParamCaption}\item[{double \mbox{[}$\,$\mbox{]}}]{vals }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_range_a3aaebb51d9bfc18cd8dcce1a7252e898}\label{classorg_1_1opencv_1_1core_1_1_range_a3aaebb51d9bfc18cd8dcce1a7252e898}} 
+\index{org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}!shift@{shift}}
+\index{shift@{shift}!org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}}
+\subsubsection{\texorpdfstring{shift()}{shift()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_range}{Range}} org.\+opencv.\+core.\+Range.\+shift (\begin{DoxyParamCaption}\item[{int}]{delta }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_range_a07e501f7d563301c3102bf119b9c9d48}\label{classorg_1_1opencv_1_1core_1_1_range_a07e501f7d563301c3102bf119b9c9d48}} 
+\index{org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}!size@{size}}
+\index{size@{size}!org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int org.\+opencv.\+core.\+Range.\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_range_a4be73b3a1ad9cc1e29149cdb5037993c}\label{classorg_1_1opencv_1_1core_1_1_range_a4be73b3a1ad9cc1e29149cdb5037993c}} 
+\index{org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily String org.\+opencv.\+core.\+Range.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_range_a6229f6093afc24bfa44c18a8ccfdbcb4}\label{classorg_1_1opencv_1_1core_1_1_range_a6229f6093afc24bfa44c18a8ccfdbcb4}} 
+\index{org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}!start@{start}}
+\index{start@{start}!org\+::opencv\+::core\+::\+Range@{org\+::opencv\+::core\+::\+Range}}
+\subsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily int org.\+opencv.\+core.\+Range.\+start}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/core/\mbox{\hyperlink{_range_8java}{Range.\+java}}\end{DoxyCompactItemize}

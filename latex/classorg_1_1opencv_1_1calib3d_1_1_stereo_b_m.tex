@@ -1,0 +1,330 @@
+\hypertarget{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m}{}\section{org.\+opencv.\+calib3d.\+Stereo\+BM Class Reference}
+\label{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m}\index{org.\+opencv.\+calib3d.\+Stereo\+BM@{org.\+opencv.\+calib3d.\+Stereo\+BM}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_acabf14c02b9ecb03e9e642284f0dfa81}{Stereo\+BM}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_af541fc22f204f29fa8a8a7585fb7d588}{Stereo\+BM}} (int preset, int ndisparities, int S\+A\+D\+Window\+Size)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_a6720bd533e4f05bc35092c955882eb52}{Stereo\+BM}} (int preset)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_a5d60b89080ccec2d781e2b1e4c3b5571}{compute}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} left, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} right, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} disparity, int disptype)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_a0cdb853d83f15c94bb05ac4e00111236}{compute}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} left, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} right, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} disparity)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_ad7e163278bb28f109a0e3031d21b2cc6}{P\+R\+E\+F\+I\+L\+T\+E\+R\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E\+D\+\_\+\+R\+E\+S\+P\+O\+N\+SE}} = 0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_a50bd97cac119f57c04226fee83eec15d}{Stereo\+BM}} (long addr)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_a1ea8aa0a5ea447ec32b4fffcf783b239}{finalize}} ()  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final long \mbox{\hyperlink{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_a1498072235c0ce625b0eeef22c817a34}{native\+Obj}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for computing stereo correspondence using the block matching algorithm.
+
+// Block matching stereo correspondence algorithm class \mbox{\hyperlink{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m}{Stereo\+BM}} {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily enum \{ N\+O\+R\+M\+A\+L\+I\+Z\+E\+D\+\_\+\+R\+E\+S\+P\+O\+N\+SE = C\+V\+\_\+\+S\+T\+E\+R\+E\+O\+\_\+\+B\+M\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E\+D\+\_\+\+R\+E\+S\+P\+O\+N\+SE,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily B\+A\+S\+I\+C\+\_\+\+P\+R\+E\+S\+ET=C\+V\+\_\+\+S\+T\+E\+R\+E\+O\+\_\+\+B\+M\+\_\+\+B\+A\+S\+IC,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily F\+I\+S\+H\+\_\+\+E\+Y\+E\+\_\+\+P\+R\+E\+S\+ET=C\+V\+\_\+\+S\+T\+E\+R\+E\+O\+\_\+\+B\+M\+\_\+\+F\+I\+S\+H\+\_\+\+E\+YE,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily N\+A\+R\+R\+O\+W\+\_\+\+P\+R\+E\+S\+ET=C\+V\+\_\+\+S\+T\+E\+R\+E\+O\+\_\+\+B\+M\+\_\+\+N\+A\+R\+R\+OW \};}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_acabf14c02b9ecb03e9e642284f0dfa81}{Stereo\+B\+M()}};}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // the preset is one of...\+\_\+\+P\+R\+E\+S\+ET above.}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // ndisparities is the size of disparity range,}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // in which the optimal disparity at each pixel is searched for.}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // S\+A\+D\+Window\+Size is the size of averaging window used to match pixel blocks}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // (larger values mean better robustness to noise, but yield blurry disparity maps)}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m}{Stereo\+BM}}(int preset, int ndisparities=0, int S\+A\+D\+Window\+Size=21);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // separate initialization function}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily void init(int preset, int ndisparities=0, int S\+A\+D\+Window\+Size=21);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // computes the disparity for the two rectified 8-\/bit single-\/channel images.}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // the disparity will be 16-\/bit signed (fixed-\/point) or 32-\/bit floating-\/point image of the same size as left.}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily void operator()(Input\+Array left, Input\+Array right, Output\+Array disparity, int disptype=C\+V\+\_\+16S);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Ptr$<$\+Cv\+Stereo\+B\+M\+State$>$ state;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \};}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily The class is a C++ wrapper for the associated functions. In particular, \+:ocv\+:funcx\+:\char`\"{}\+Stereo\+B\+M.\+operator()\char`\"{} is the wrapper for }
+
+\char`\"{}cv\+Find\+Stereo\+Correspondence\+B\+M\char`\"{}... Sample code\+:
+
+(Ocl) An example for using the stereo\+BM matching algorithm can be found at opencv\+\_\+source\+\_\+code/samples/ocl/stereo\+\_\+match.\+cpp
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html#stereobm}{\tt org.\+opencv.\+calib3d.\+Stereo\+BM} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_a50bd97cac119f57c04226fee83eec15d}\label{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_a50bd97cac119f57c04226fee83eec15d}} 
+\index{org\+::opencv\+::calib3d\+::\+Stereo\+BM@{org\+::opencv\+::calib3d\+::\+Stereo\+BM}!Stereo\+BM@{Stereo\+BM}}
+\index{Stereo\+BM@{Stereo\+BM}!org\+::opencv\+::calib3d\+::\+Stereo\+BM@{org\+::opencv\+::calib3d\+::\+Stereo\+BM}}
+\subsubsection{\texorpdfstring{Stereo\+B\+M()}{StereoBM()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+calib3d.\+Stereo\+B\+M.\+Stereo\+BM (\begin{DoxyParamCaption}\item[{long}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_acabf14c02b9ecb03e9e642284f0dfa81}\label{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_acabf14c02b9ecb03e9e642284f0dfa81}} 
+\index{org\+::opencv\+::calib3d\+::\+Stereo\+BM@{org\+::opencv\+::calib3d\+::\+Stereo\+BM}!Stereo\+BM@{Stereo\+BM}}
+\index{Stereo\+BM@{Stereo\+BM}!org\+::opencv\+::calib3d\+::\+Stereo\+BM@{org\+::opencv\+::calib3d\+::\+Stereo\+BM}}
+\subsubsection{\texorpdfstring{Stereo\+B\+M()}{StereoBM()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+calib3d.\+Stereo\+B\+M.\+Stereo\+BM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The constructors.
+
+The constructors initialize {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m}{Stereo\+BM}}} state. You can then call {\ttfamily Stereo\+B\+M.\+operator()} to compute disparity for a specific stereo pair.
+
+Note\+: In the C A\+PI you need to deallocate {\ttfamily Cv\+Stereo\+BM} state when it is not needed anymore using {\ttfamily cv\+Release\+Stereo\+B\+M\+State(\&stereobm)}.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html#stereobm-stereobm}{\tt org.\+opencv.\+calib3d.\+Stereo\+B\+M.\+Stereo\+BM} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_af541fc22f204f29fa8a8a7585fb7d588}\label{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_af541fc22f204f29fa8a8a7585fb7d588}} 
+\index{org\+::opencv\+::calib3d\+::\+Stereo\+BM@{org\+::opencv\+::calib3d\+::\+Stereo\+BM}!Stereo\+BM@{Stereo\+BM}}
+\index{Stereo\+BM@{Stereo\+BM}!org\+::opencv\+::calib3d\+::\+Stereo\+BM@{org\+::opencv\+::calib3d\+::\+Stereo\+BM}}
+\subsubsection{\texorpdfstring{Stereo\+B\+M()}{StereoBM()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+calib3d.\+Stereo\+B\+M.\+Stereo\+BM (\begin{DoxyParamCaption}\item[{int}]{preset,  }\item[{int}]{ndisparities,  }\item[{int}]{S\+A\+D\+Window\+Size }\end{DoxyParamCaption})}
+
+The constructors.
+
+The constructors initialize {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m}{Stereo\+BM}}} state. You can then call {\ttfamily Stereo\+B\+M.\+operator()} to compute disparity for a specific stereo pair.
+
+Note\+: In the C A\+PI you need to deallocate {\ttfamily Cv\+Stereo\+BM} state when it is not needed anymore using {\ttfamily cv\+Release\+Stereo\+B\+M\+State(\&stereobm)}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em preset} & specifies the whole set of algorithm parameters, one of\+: 
+\begin{DoxyItemize}
+\item B\+A\+S\+I\+C\+\_\+\+P\+R\+E\+S\+ET -\/ parameters suitable for general cameras 
+\item F\+I\+S\+H\+\_\+\+E\+Y\+E\+\_\+\+P\+R\+E\+S\+ET -\/ parameters suitable for wide-\/angle cameras 
+\item N\+A\+R\+R\+O\+W\+\_\+\+P\+R\+E\+S\+ET -\/ parameters suitable for narrow-\/angle cameras 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+
+
+After constructing the class, you can override any parameters set by the preset.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ndisparities} & the disparity search range. For each pixel algorithm will find the best disparity from 0 (default minimum disparity) to {\ttfamily ndisparities}. The search range can then be shifted by changing the minimum disparity. \\
+\hline
+{\em S\+A\+D\+Window\+Size} & the linear size of the blocks compared by the algorithm. The size should be odd (as the block is centered at the current pixel). Larger block size implies smoother, though less accurate disparity map. Smaller block size gives more detailed disparity map, but there is higher chance for algorithm to find a wrong correspondence.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html#stereobm-stereobm}{\tt org.\+opencv.\+calib3d.\+Stereo\+B\+M.\+Stereo\+BM} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_a6720bd533e4f05bc35092c955882eb52}\label{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_a6720bd533e4f05bc35092c955882eb52}} 
+\index{org\+::opencv\+::calib3d\+::\+Stereo\+BM@{org\+::opencv\+::calib3d\+::\+Stereo\+BM}!Stereo\+BM@{Stereo\+BM}}
+\index{Stereo\+BM@{Stereo\+BM}!org\+::opencv\+::calib3d\+::\+Stereo\+BM@{org\+::opencv\+::calib3d\+::\+Stereo\+BM}}
+\subsubsection{\texorpdfstring{Stereo\+B\+M()}{StereoBM()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+calib3d.\+Stereo\+B\+M.\+Stereo\+BM (\begin{DoxyParamCaption}\item[{int}]{preset }\end{DoxyParamCaption})}
+
+The constructors.
+
+The constructors initialize {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m}{Stereo\+BM}}} state. You can then call {\ttfamily Stereo\+B\+M.\+operator()} to compute disparity for a specific stereo pair.
+
+Note\+: In the C A\+PI you need to deallocate {\ttfamily Cv\+Stereo\+BM} state when it is not needed anymore using {\ttfamily cv\+Release\+Stereo\+B\+M\+State(\&stereobm)}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em preset} & specifies the whole set of algorithm parameters, one of\+: 
+\begin{DoxyItemize}
+\item B\+A\+S\+I\+C\+\_\+\+P\+R\+E\+S\+ET -\/ parameters suitable for general cameras 
+\item F\+I\+S\+H\+\_\+\+E\+Y\+E\+\_\+\+P\+R\+E\+S\+ET -\/ parameters suitable for wide-\/angle cameras 
+\item N\+A\+R\+R\+O\+W\+\_\+\+P\+R\+E\+S\+ET -\/ parameters suitable for narrow-\/angle cameras 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+
+
+After constructing the class, you can override any parameters set by the preset.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html#stereobm-stereobm}{\tt org.\+opencv.\+calib3d.\+Stereo\+B\+M.\+Stereo\+BM} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_a5d60b89080ccec2d781e2b1e4c3b5571}\label{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_a5d60b89080ccec2d781e2b1e4c3b5571}} 
+\index{org\+::opencv\+::calib3d\+::\+Stereo\+BM@{org\+::opencv\+::calib3d\+::\+Stereo\+BM}!compute@{compute}}
+\index{compute@{compute}!org\+::opencv\+::calib3d\+::\+Stereo\+BM@{org\+::opencv\+::calib3d\+::\+Stereo\+BM}}
+\subsubsection{\texorpdfstring{compute()}{compute()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void org.\+opencv.\+calib3d.\+Stereo\+B\+M.\+compute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{left,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{right,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{disparity,  }\item[{int}]{disptype }\end{DoxyParamCaption})}
+
+Computes disparity using the BM algorithm for a rectified stereo pair.
+
+The method executes the BM algorithm on a rectified stereo pair. See the {\ttfamily stereo\+\_\+match.\+cpp} Open\+CV sample on how to prepare images and call the method. Note that the method is not constant, thus you should not use the same {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m}{Stereo\+BM}}} instance from within different threads simultaneously. The function is parallelized with the T\+BB library.
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & Left 8-\/bit single-\/channel image. \\
+\hline
+{\em right} & Right image of the same size and the same type as the left one. \\
+\hline
+{\em disparity} & Output disparity map. It has the same size as the input images. When {\ttfamily disptype==C\+V\+\_\+16S}, the map is a 16-\/bit signed single-\/channel image, containing disparity values scaled by 16. To get the true disparity values from such fixed-\/point representation, you will need to divide each {\ttfamily disp} element by 16. If {\ttfamily disptype==C\+V\+\_\+32F}, the disparity map will already contain the real disparity values on output. \\
+\hline
+{\em disptype} & Type of the output disparity map, {\ttfamily C\+V\+\_\+16S} (default) or {\ttfamily C\+V\+\_\+32F}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html#stereobm-operator}{\tt org.\+opencv.\+calib3d.\+Stereo\+B\+M.\+operator()} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_a0cdb853d83f15c94bb05ac4e00111236}\label{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_a0cdb853d83f15c94bb05ac4e00111236}} 
+\index{org\+::opencv\+::calib3d\+::\+Stereo\+BM@{org\+::opencv\+::calib3d\+::\+Stereo\+BM}!compute@{compute}}
+\index{compute@{compute}!org\+::opencv\+::calib3d\+::\+Stereo\+BM@{org\+::opencv\+::calib3d\+::\+Stereo\+BM}}
+\subsubsection{\texorpdfstring{compute()}{compute()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void org.\+opencv.\+calib3d.\+Stereo\+B\+M.\+compute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{left,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{right,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{disparity }\end{DoxyParamCaption})}
+
+Computes disparity using the BM algorithm for a rectified stereo pair.
+
+The method executes the BM algorithm on a rectified stereo pair. See the {\ttfamily stereo\+\_\+match.\+cpp} Open\+CV sample on how to prepare images and call the method. Note that the method is not constant, thus you should not use the same {\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m}{Stereo\+BM}}} instance from within different threads simultaneously. The function is parallelized with the T\+BB library.
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & Left 8-\/bit single-\/channel image. \\
+\hline
+{\em right} & Right image of the same size and the same type as the left one. \\
+\hline
+{\em disparity} & Output disparity map. It has the same size as the input images. When {\ttfamily disptype==C\+V\+\_\+16S}, the map is a 16-\/bit signed single-\/channel image, containing disparity values scaled by 16. To get the true disparity values from such fixed-\/point representation, you will need to divide each {\ttfamily disp} element by 16. If {\ttfamily disptype==C\+V\+\_\+32F}, the disparity map will already contain the real disparity values on output.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html#stereobm-operator}{\tt org.\+opencv.\+calib3d.\+Stereo\+B\+M.\+operator()} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_a1ea8aa0a5ea447ec32b4fffcf783b239}\label{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_a1ea8aa0a5ea447ec32b4fffcf783b239}} 
+\index{org\+::opencv\+::calib3d\+::\+Stereo\+BM@{org\+::opencv\+::calib3d\+::\+Stereo\+BM}!finalize@{finalize}}
+\index{finalize@{finalize}!org\+::opencv\+::calib3d\+::\+Stereo\+BM@{org\+::opencv\+::calib3d\+::\+Stereo\+BM}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily void org.\+opencv.\+calib3d.\+Stereo\+B\+M.\+finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Throwable\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_a1498072235c0ce625b0eeef22c817a34}\label{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_a1498072235c0ce625b0eeef22c817a34}} 
+\index{org\+::opencv\+::calib3d\+::\+Stereo\+BM@{org\+::opencv\+::calib3d\+::\+Stereo\+BM}!native\+Obj@{native\+Obj}}
+\index{native\+Obj@{native\+Obj}!org\+::opencv\+::calib3d\+::\+Stereo\+BM@{org\+::opencv\+::calib3d\+::\+Stereo\+BM}}
+\subsubsection{\texorpdfstring{native\+Obj}{nativeObj}}
+{\footnotesize\ttfamily final long org.\+opencv.\+calib3d.\+Stereo\+B\+M.\+native\+Obj\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_ad7e163278bb28f109a0e3031d21b2cc6}\label{classorg_1_1opencv_1_1calib3d_1_1_stereo_b_m_ad7e163278bb28f109a0e3031d21b2cc6}} 
+\index{org\+::opencv\+::calib3d\+::\+Stereo\+BM@{org\+::opencv\+::calib3d\+::\+Stereo\+BM}!P\+R\+E\+F\+I\+L\+T\+E\+R\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E\+D\+\_\+\+R\+E\+S\+P\+O\+N\+SE@{P\+R\+E\+F\+I\+L\+T\+E\+R\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E\+D\+\_\+\+R\+E\+S\+P\+O\+N\+SE}}
+\index{P\+R\+E\+F\+I\+L\+T\+E\+R\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E\+D\+\_\+\+R\+E\+S\+P\+O\+N\+SE@{P\+R\+E\+F\+I\+L\+T\+E\+R\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E\+D\+\_\+\+R\+E\+S\+P\+O\+N\+SE}!org\+::opencv\+::calib3d\+::\+Stereo\+BM@{org\+::opencv\+::calib3d\+::\+Stereo\+BM}}
+\subsubsection{\texorpdfstring{P\+R\+E\+F\+I\+L\+T\+E\+R\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E\+D\+\_\+\+R\+E\+S\+P\+O\+N\+SE}{PREFILTER\_NORMALIZED\_RESPONSE}}
+{\footnotesize\ttfamily final int org.\+opencv.\+calib3d.\+Stereo\+B\+M.\+P\+R\+E\+F\+I\+L\+T\+E\+R\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E\+D\+\_\+\+R\+E\+S\+P\+O\+N\+SE = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/calib3d/\mbox{\hyperlink{_stereo_b_m_8java}{Stereo\+B\+M.\+java}}\end{DoxyCompactItemize}

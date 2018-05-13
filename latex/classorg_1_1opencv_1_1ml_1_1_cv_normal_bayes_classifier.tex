@@ -1,0 +1,233 @@
+\hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier}{}\section{org.\+opencv.\+ml.\+Cv\+Normal\+Bayes\+Classifier Class Reference}
+\label{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier}\index{org.\+opencv.\+ml.\+Cv\+Normal\+Bayes\+Classifier@{org.\+opencv.\+ml.\+Cv\+Normal\+Bayes\+Classifier}}
+Inheritance diagram for org.\+opencv.\+ml.\+Cv\+Normal\+Bayes\+Classifier\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_a45d221f75ab929ee490df493ef604247}{Cv\+Normal\+Bayes\+Classifier}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_a9d9bfab59a40a9f425fa3dd3e0572bc2}{Cv\+Normal\+Bayes\+Classifier}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Data, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} responses, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} var\+Idx, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample\+Idx)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_ad1f4ccb77cf4311804598fca4d7cd494}{Cv\+Normal\+Bayes\+Classifier}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Data, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} responses)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_a87af297ad4ac9585a3a5c7ae25934058}{clear}} ()
+\item 
+float \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_a58960674387d3a7a1ea0b0cb544ab269}{predict}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} samples, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} results)
+\item 
+float \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_aa27915628eb042dc68ab7a1bd97b94f8}{predict}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} samples)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_a89391c9f8a1d8b796b83000e74f155e1}{train}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Data, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} responses, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} var\+Idx, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} sample\+Idx, boolean update)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_a86c0843794fdedbf232894507a7abb24}{train}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} train\+Data, \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}} responses)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_a70fa4bc248fba3e565c19518870eefbd}{Cv\+Normal\+Bayes\+Classifier}} (long addr)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_a14105f5cb61fa92b6b3990690b16f247}{finalize}} ()  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Bayes classifier for normally distributed data.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/normal_bayes_classifier.html#cvnormalbayesclassifier}{\tt org.\+opencv.\+ml.\+Cv\+Normal\+Bayes\+Classifier \+: public Cv\+Stat\+Model} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_a70fa4bc248fba3e565c19518870eefbd}\label{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_a70fa4bc248fba3e565c19518870eefbd}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier@{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier}!Cv\+Normal\+Bayes\+Classifier@{Cv\+Normal\+Bayes\+Classifier}}
+\index{Cv\+Normal\+Bayes\+Classifier@{Cv\+Normal\+Bayes\+Classifier}!org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier@{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier}}
+\subsubsection{\texorpdfstring{Cv\+Normal\+Bayes\+Classifier()}{CvNormalBayesClassifier()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+Normal\+Bayes\+Classifier.\+Cv\+Normal\+Bayes\+Classifier (\begin{DoxyParamCaption}\item[{long}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_a45d221f75ab929ee490df493ef604247}\label{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_a45d221f75ab929ee490df493ef604247}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier@{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier}!Cv\+Normal\+Bayes\+Classifier@{Cv\+Normal\+Bayes\+Classifier}}
+\index{Cv\+Normal\+Bayes\+Classifier@{Cv\+Normal\+Bayes\+Classifier}!org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier@{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier}}
+\subsubsection{\texorpdfstring{Cv\+Normal\+Bayes\+Classifier()}{CvNormalBayesClassifier()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+Normal\+Bayes\+Classifier.\+Cv\+Normal\+Bayes\+Classifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default and training constructors.
+
+The constructors follow conventions of \char`\"{}\+Cv\+Stat\+Model.\+Cv\+Stat\+Model\char`\"{}. See \char`\"{}\+Cv\+Stat\+Model.\+train\char`\"{} for parameters descriptions.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/normal_bayes_classifier.html#cvnormalbayesclassifier-cvnormalbayesclassifier}{\tt org.\+opencv.\+ml.\+Cv\+Normal\+Bayes\+Classifier.\+Cv\+Normal\+Bayes\+Classifier} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_a9d9bfab59a40a9f425fa3dd3e0572bc2}\label{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_a9d9bfab59a40a9f425fa3dd3e0572bc2}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier@{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier}!Cv\+Normal\+Bayes\+Classifier@{Cv\+Normal\+Bayes\+Classifier}}
+\index{Cv\+Normal\+Bayes\+Classifier@{Cv\+Normal\+Bayes\+Classifier}!org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier@{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier}}
+\subsubsection{\texorpdfstring{Cv\+Normal\+Bayes\+Classifier()}{CvNormalBayesClassifier()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+Normal\+Bayes\+Classifier.\+Cv\+Normal\+Bayes\+Classifier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Data,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{responses,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{var\+Idx,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample\+Idx }\end{DoxyParamCaption})}
+
+Default and training constructors.
+
+The constructors follow conventions of \char`\"{}\+Cv\+Stat\+Model.\+Cv\+Stat\+Model\char`\"{}. See \char`\"{}\+Cv\+Stat\+Model.\+train\char`\"{} for parameters descriptions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Data} & a train\+Data \\
+\hline
+{\em responses} & a responses \\
+\hline
+{\em var\+Idx} & a var\+Idx \\
+\hline
+{\em sample\+Idx} & a sample\+Idx\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/normal_bayes_classifier.html#cvnormalbayesclassifier-cvnormalbayesclassifier}{\tt org.\+opencv.\+ml.\+Cv\+Normal\+Bayes\+Classifier.\+Cv\+Normal\+Bayes\+Classifier} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_ad1f4ccb77cf4311804598fca4d7cd494}\label{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_ad1f4ccb77cf4311804598fca4d7cd494}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier@{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier}!Cv\+Normal\+Bayes\+Classifier@{Cv\+Normal\+Bayes\+Classifier}}
+\index{Cv\+Normal\+Bayes\+Classifier@{Cv\+Normal\+Bayes\+Classifier}!org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier@{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier}}
+\subsubsection{\texorpdfstring{Cv\+Normal\+Bayes\+Classifier()}{CvNormalBayesClassifier()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+ml.\+Cv\+Normal\+Bayes\+Classifier.\+Cv\+Normal\+Bayes\+Classifier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Data,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{responses }\end{DoxyParamCaption})}
+
+Default and training constructors.
+
+The constructors follow conventions of \char`\"{}\+Cv\+Stat\+Model.\+Cv\+Stat\+Model\char`\"{}. See \char`\"{}\+Cv\+Stat\+Model.\+train\char`\"{} for parameters descriptions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Data} & a train\+Data \\
+\hline
+{\em responses} & a responses\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/normal_bayes_classifier.html#cvnormalbayesclassifier-cvnormalbayesclassifier}{\tt org.\+opencv.\+ml.\+Cv\+Normal\+Bayes\+Classifier.\+Cv\+Normal\+Bayes\+Classifier} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_a87af297ad4ac9585a3a5c7ae25934058}\label{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_a87af297ad4ac9585a3a5c7ae25934058}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier@{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier}!clear@{clear}}
+\index{clear@{clear}!org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier@{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+Normal\+Bayes\+Classifier.\+clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_a14105f5cb61fa92b6b3990690b16f247}\label{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_a14105f5cb61fa92b6b3990690b16f247}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier@{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier}!finalize@{finalize}}
+\index{finalize@{finalize}!org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier@{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily void org.\+opencv.\+ml.\+Cv\+Normal\+Bayes\+Classifier.\+finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Throwable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_a58960674387d3a7a1ea0b0cb544ab269}\label{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_a58960674387d3a7a1ea0b0cb544ab269}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier@{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier}!predict@{predict}}
+\index{predict@{predict}!org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier@{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier}}
+\subsubsection{\texorpdfstring{predict()}{predict()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float org.\+opencv.\+ml.\+Cv\+Normal\+Bayes\+Classifier.\+predict (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{samples,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{results }\end{DoxyParamCaption})}
+
+Predicts the response for sample(s).
+
+The method estimates the most probable classes for input vectors. Input vectors (one or more) are stored as rows of the matrix {\ttfamily samples}. In case of multiple input vectors, there should be one output vector {\ttfamily results}. The predicted class for a single input vector is returned by the method.
+
+The function is parallelized with the T\+BB library.
+
+
+\begin{DoxyParams}{Parameters}
+{\em samples} & a samples \\
+\hline
+{\em results} & a results\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/normal_bayes_classifier.html#cvnormalbayesclassifier-predict}{\tt org.\+opencv.\+ml.\+Cv\+Normal\+Bayes\+Classifier.\+predict} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_aa27915628eb042dc68ab7a1bd97b94f8}\label{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_aa27915628eb042dc68ab7a1bd97b94f8}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier@{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier}!predict@{predict}}
+\index{predict@{predict}!org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier@{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier}}
+\subsubsection{\texorpdfstring{predict()}{predict()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float org.\+opencv.\+ml.\+Cv\+Normal\+Bayes\+Classifier.\+predict (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{samples }\end{DoxyParamCaption})}
+
+Predicts the response for sample(s).
+
+The method estimates the most probable classes for input vectors. Input vectors (one or more) are stored as rows of the matrix {\ttfamily samples}. In case of multiple input vectors, there should be one output vector {\ttfamily results}. The predicted class for a single input vector is returned by the method.
+
+The function is parallelized with the T\+BB library.
+
+
+\begin{DoxyParams}{Parameters}
+{\em samples} & a samples\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/normal_bayes_classifier.html#cvnormalbayesclassifier-predict}{\tt org.\+opencv.\+ml.\+Cv\+Normal\+Bayes\+Classifier.\+predict} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_a89391c9f8a1d8b796b83000e74f155e1}\label{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_a89391c9f8a1d8b796b83000e74f155e1}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier@{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier}!train@{train}}
+\index{train@{train}!org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier@{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier}}
+\subsubsection{\texorpdfstring{train()}{train()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+ml.\+Cv\+Normal\+Bayes\+Classifier.\+train (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Data,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{responses,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{var\+Idx,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{sample\+Idx,  }\item[{boolean}]{update }\end{DoxyParamCaption})}
+
+Trains the model.
+
+The method trains the Normal Bayes classifier. It follows the conventions of the generic \char`\"{}\+Cv\+Stat\+Model.\+train\char`\"{} approach with the following limitations\+:
+
+
+\begin{DoxyItemize}
+\item Only {\ttfamily C\+V\+\_\+\+R\+O\+W\+\_\+\+S\+A\+M\+P\+LE} data layout is supported. 
+\item Input variables are all ordered. 
+\item Output variable is categorical, which means that elements of {\ttfamily responses} must be integer numbers, though the vector may have the {\ttfamily C\+V\+\_\+32\+F\+C1} type. 
+\item Missing measurements are not supported. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Data} & a train\+Data \\
+\hline
+{\em responses} & a responses \\
+\hline
+{\em var\+Idx} & a var\+Idx \\
+\hline
+{\em sample\+Idx} & a sample\+Idx \\
+\hline
+{\em update} & Identifies whether the model should be trained from scratch ({\ttfamily update=false}) or should be updated using the new training data ({\ttfamily update=true}).\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/normal_bayes_classifier.html#cvnormalbayesclassifier-train}{\tt org.\+opencv.\+ml.\+Cv\+Normal\+Bayes\+Classifier.\+train} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_a86c0843794fdedbf232894507a7abb24}\label{classorg_1_1opencv_1_1ml_1_1_cv_normal_bayes_classifier_a86c0843794fdedbf232894507a7abb24}} 
+\index{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier@{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier}!train@{train}}
+\index{train@{train}!org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier@{org\+::opencv\+::ml\+::\+Cv\+Normal\+Bayes\+Classifier}}
+\subsubsection{\texorpdfstring{train()}{train()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+ml.\+Cv\+Normal\+Bayes\+Classifier.\+train (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{train\+Data,  }\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_mat}{Mat}}}]{responses }\end{DoxyParamCaption})}
+
+Trains the model.
+
+The method trains the Normal Bayes classifier. It follows the conventions of the generic \char`\"{}\+Cv\+Stat\+Model.\+train\char`\"{} approach with the following limitations\+:
+
+
+\begin{DoxyItemize}
+\item Only {\ttfamily C\+V\+\_\+\+R\+O\+W\+\_\+\+S\+A\+M\+P\+LE} data layout is supported. 
+\item Input variables are all ordered. 
+\item Output variable is categorical, which means that elements of {\ttfamily responses} must be integer numbers, though the vector may have the {\ttfamily C\+V\+\_\+32\+F\+C1} type. 
+\item Missing measurements are not supported. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Data} & a train\+Data \\
+\hline
+{\em responses} & a responses\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/ml/doc/normal_bayes_classifier.html#cvnormalbayesclassifier-train}{\tt org.\+opencv.\+ml.\+Cv\+Normal\+Bayes\+Classifier.\+train} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/ml/\mbox{\hyperlink{_cv_normal_bayes_classifier_8java}{Cv\+Normal\+Bayes\+Classifier.\+java}}\end{DoxyCompactItemize}

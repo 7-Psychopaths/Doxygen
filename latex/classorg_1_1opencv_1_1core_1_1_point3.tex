@@ -1,0 +1,310 @@
+\hypertarget{classorg_1_1opencv_1_1core_1_1_point3}{}\section{org.\+opencv.\+core.\+Point3 Class Reference}
+\label{classorg_1_1opencv_1_1core_1_1_point3}\index{org.\+opencv.\+core.\+Point3@{org.\+opencv.\+core.\+Point3}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point3_ae57de7c64ddb712748d49f7314b59219}{Point3}} (double \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point3_a0f6ddd298923e45df4b250ef1c97c270}{x}}, double y, double z)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point3_a1df984d9d2d8a01c30867c360e39fbc7}{Point3}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point3_a3de02bfb7c1ec68bb449719c6013c4d1}{Point3}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point}{Point}} p)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point3_a93d79d65734ef3a9cf9e807fe796ad99}{Point3}} (double\mbox{[}$\,$\mbox{]} vals)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point3_af2e7834d731c39649945d569c720c00d}{set}} (double\mbox{[}$\,$\mbox{]} vals)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point3}{Point3}} \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point3_a404fb453332aad5afb445c648a016ddd}{clone}} ()
+\item 
+double \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point3_a5a0448003928e22db5862037f26207e8}{dot}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point3}{Point3}} p)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point3}{Point3}} \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point3_a20def3867d163176e98d49a97bb5e3f2}{cross}} (\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point3}{Point3}} p)
+\item 
+int \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point3_a08347311270e767b198ec19b4aae2444}{hash\+Code}} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point3_afd19df6008c557cd287086ac4214beb8}{equals}} (Object obj)
+\item 
+String \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point3_a009debefdc9246adf04a2c1f4a3dd2f4}{to\+String}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point3_a0f6ddd298923e45df4b250ef1c97c270}{x}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+template$<$typename \+\_\+\+Tp$>$ class C\+V\+\_\+\+E\+X\+P\+O\+R\+TS Point3\+\_\+ {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily public\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily typedef \+\_\+\+Tp value\+\_\+type;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // various constructors}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Point3\+\_\+();}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Point3\+\_\+(\+\_\+\+Tp \+\_\+x, \+\_\+\+Tp \+\_\+y, \+\_\+\+Tp \+\_\+z);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Point3\+\_\+(const Point3\+\_\+\& pt);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily explicit Point3\+\_\+(const Point\+\_\+$<$\+\_\+\+Tp$>$\& pt);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Point3\+\_\+(const Cv\+Point3\+D32f\& pt);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Point3\+\_\+(const Vec$<$\+\_\+\+Tp, 3$>$\& v);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Point3\+\_\+\& operator = (const Point3\+\_\+\& pt);}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //! conversion to another data type}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily template$<$typename \+\_\+\+Tp2$>$ operator Point3\+\_\+$<$\+\_\+\+Tp2$>$() const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //! conversion to the old-\/style Cv\+Point...}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily operator Cv\+Point3\+D32f() const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //! conversion to cv.\+Vec$<$$>$}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily operator Vec$<$\+\_\+\+Tp, 3$>$() const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //! dot product}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \+\_\+\+Tp dot(const Point3\+\_\+\& pt) const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //! dot product computed in double-\/precision arithmetics}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily double ddot(const Point3\+\_\+\& pt) const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily //! cross product of the 2 3D points}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Point3\+\_\+ cross(const Point3\+\_\+\& pt) const;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \+\_\+\+Tp x, y, z; //$<$ the point coordinates}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily \};}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily Template class for 3D points specified by its coordinates }
+
+{\itshape x}, {\itshape y} and {\itshape z}. An instance of the class is interchangeable with the C structure {\ttfamily Cv\+Point2\+D32f}. Similarly to {\ttfamily Point\+\_\+}, the coordinates of 3D points can be converted to another type. The vector arithmetic and comparison operations are also supported. The following {\ttfamily Point3\+\_\+$<$$>$} aliases are available\+: {\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily // C++ code\+:}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily typedef Point3\+\_\+$<$int$>$ Point3i;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily typedef Point3\+\_\+$<$float$>$ Point3f;}
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily typedef Point3\+\_\+$<$double$>$ Point3d;}
+
+{\ttfamily }
+
+{\ttfamily \begin{DoxySeeAlso}{See also}
+\href{http://docs.opencv.org/modules/core/doc/basic_structures.html#point3}{\tt org.\+opencv.\+core.\+Point3\+\_\+} 
+\end{DoxySeeAlso}
+}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_point3_ae57de7c64ddb712748d49f7314b59219}\label{classorg_1_1opencv_1_1core_1_1_point3_ae57de7c64ddb712748d49f7314b59219}} 
+\index{org\+::opencv\+::core\+::\+Point3@{org\+::opencv\+::core\+::\+Point3}!Point3@{Point3}}
+\index{Point3@{Point3}!org\+::opencv\+::core\+::\+Point3@{org\+::opencv\+::core\+::\+Point3}}
+\subsubsection{\texorpdfstring{Point3()}{Point3()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+core.\+Point3.\+Point3 (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_point3_a1df984d9d2d8a01c30867c360e39fbc7}\label{classorg_1_1opencv_1_1core_1_1_point3_a1df984d9d2d8a01c30867c360e39fbc7}} 
+\index{org\+::opencv\+::core\+::\+Point3@{org\+::opencv\+::core\+::\+Point3}!Point3@{Point3}}
+\index{Point3@{Point3}!org\+::opencv\+::core\+::\+Point3@{org\+::opencv\+::core\+::\+Point3}}
+\subsubsection{\texorpdfstring{Point3()}{Point3()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+core.\+Point3.\+Point3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_point3_a3de02bfb7c1ec68bb449719c6013c4d1}\label{classorg_1_1opencv_1_1core_1_1_point3_a3de02bfb7c1ec68bb449719c6013c4d1}} 
+\index{org\+::opencv\+::core\+::\+Point3@{org\+::opencv\+::core\+::\+Point3}!Point3@{Point3}}
+\index{Point3@{Point3}!org\+::opencv\+::core\+::\+Point3@{org\+::opencv\+::core\+::\+Point3}}
+\subsubsection{\texorpdfstring{Point3()}{Point3()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+core.\+Point3.\+Point3 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point}{Point}}}]{p }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_point3_a93d79d65734ef3a9cf9e807fe796ad99}\label{classorg_1_1opencv_1_1core_1_1_point3_a93d79d65734ef3a9cf9e807fe796ad99}} 
+\index{org\+::opencv\+::core\+::\+Point3@{org\+::opencv\+::core\+::\+Point3}!Point3@{Point3}}
+\index{Point3@{Point3}!org\+::opencv\+::core\+::\+Point3@{org\+::opencv\+::core\+::\+Point3}}
+\subsubsection{\texorpdfstring{Point3()}{Point3()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily org.\+opencv.\+core.\+Point3.\+Point3 (\begin{DoxyParamCaption}\item[{double \mbox{[}$\,$\mbox{]}}]{vals }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_point3_a404fb453332aad5afb445c648a016ddd}\label{classorg_1_1opencv_1_1core_1_1_point3_a404fb453332aad5afb445c648a016ddd}} 
+\index{org\+::opencv\+::core\+::\+Point3@{org\+::opencv\+::core\+::\+Point3}!clone@{clone}}
+\index{clone@{clone}!org\+::opencv\+::core\+::\+Point3@{org\+::opencv\+::core\+::\+Point3}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point3}{Point3}} org.\+opencv.\+core.\+Point3.\+clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_point3_a20def3867d163176e98d49a97bb5e3f2}\label{classorg_1_1opencv_1_1core_1_1_point3_a20def3867d163176e98d49a97bb5e3f2}} 
+\index{org\+::opencv\+::core\+::\+Point3@{org\+::opencv\+::core\+::\+Point3}!cross@{cross}}
+\index{cross@{cross}!org\+::opencv\+::core\+::\+Point3@{org\+::opencv\+::core\+::\+Point3}}
+\subsubsection{\texorpdfstring{cross()}{cross()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point3}{Point3}} org.\+opencv.\+core.\+Point3.\+cross (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point3}{Point3}}}]{p }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_point3_a5a0448003928e22db5862037f26207e8}\label{classorg_1_1opencv_1_1core_1_1_point3_a5a0448003928e22db5862037f26207e8}} 
+\index{org\+::opencv\+::core\+::\+Point3@{org\+::opencv\+::core\+::\+Point3}!dot@{dot}}
+\index{dot@{dot}!org\+::opencv\+::core\+::\+Point3@{org\+::opencv\+::core\+::\+Point3}}
+\subsubsection{\texorpdfstring{dot()}{dot()}}
+{\footnotesize\ttfamily double org.\+opencv.\+core.\+Point3.\+dot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1opencv_1_1core_1_1_point3}{Point3}}}]{p }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_point3_afd19df6008c557cd287086ac4214beb8}\label{classorg_1_1opencv_1_1core_1_1_point3_afd19df6008c557cd287086ac4214beb8}} 
+\index{org\+::opencv\+::core\+::\+Point3@{org\+::opencv\+::core\+::\+Point3}!equals@{equals}}
+\index{equals@{equals}!org\+::opencv\+::core\+::\+Point3@{org\+::opencv\+::core\+::\+Point3}}
+\subsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+core.\+Point3.\+equals (\begin{DoxyParamCaption}\item[{Object}]{obj }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_point3_a08347311270e767b198ec19b4aae2444}\label{classorg_1_1opencv_1_1core_1_1_point3_a08347311270e767b198ec19b4aae2444}} 
+\index{org\+::opencv\+::core\+::\+Point3@{org\+::opencv\+::core\+::\+Point3}!hash\+Code@{hash\+Code}}
+\index{hash\+Code@{hash\+Code}!org\+::opencv\+::core\+::\+Point3@{org\+::opencv\+::core\+::\+Point3}}
+\subsubsection{\texorpdfstring{hash\+Code()}{hashCode()}}
+{\footnotesize\ttfamily int org.\+opencv.\+core.\+Point3.\+hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_point3_af2e7834d731c39649945d569c720c00d}\label{classorg_1_1opencv_1_1core_1_1_point3_af2e7834d731c39649945d569c720c00d}} 
+\index{org\+::opencv\+::core\+::\+Point3@{org\+::opencv\+::core\+::\+Point3}!set@{set}}
+\index{set@{set}!org\+::opencv\+::core\+::\+Point3@{org\+::opencv\+::core\+::\+Point3}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void org.\+opencv.\+core.\+Point3.\+set (\begin{DoxyParamCaption}\item[{double \mbox{[}$\,$\mbox{]}}]{vals }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_point3_a009debefdc9246adf04a2c1f4a3dd2f4}\label{classorg_1_1opencv_1_1core_1_1_point3_a009debefdc9246adf04a2c1f4a3dd2f4}} 
+\index{org\+::opencv\+::core\+::\+Point3@{org\+::opencv\+::core\+::\+Point3}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!org\+::opencv\+::core\+::\+Point3@{org\+::opencv\+::core\+::\+Point3}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily String org.\+opencv.\+core.\+Point3.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1core_1_1_point3_a0f6ddd298923e45df4b250ef1c97c270}\label{classorg_1_1opencv_1_1core_1_1_point3_a0f6ddd298923e45df4b250ef1c97c270}} 
+\index{org\+::opencv\+::core\+::\+Point3@{org\+::opencv\+::core\+::\+Point3}!x@{x}}
+\index{x@{x}!org\+::opencv\+::core\+::\+Point3@{org\+::opencv\+::core\+::\+Point3}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily double org.\+opencv.\+core.\+Point3.\+x}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/core/\mbox{\hyperlink{_point3_8java}{Point3.\+java}}\end{DoxyCompactItemize}

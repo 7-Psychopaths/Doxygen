@@ -1,0 +1,98 @@
+\hypertarget{classorg_1_1opencv_1_1android_1_1_native_camera_view}{}\section{org.\+opencv.\+android.\+Native\+Camera\+View Class Reference}
+\label{classorg_1_1opencv_1_1android_1_1_native_camera_view}\index{org.\+opencv.\+android.\+Native\+Camera\+View@{org.\+opencv.\+android.\+Native\+Camera\+View}}
+Inheritance diagram for org.\+opencv.\+android.\+Native\+Camera\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1opencv_1_1android_1_1_native_camera_view}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Open\+Cv\+Size\+Accessor}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_native_camera_view_a5443d2ef3ae99f3e45843da42f4a7548}{Native\+Camera\+View}} (Context context, int camera\+Id)
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_native_camera_view_afe565ded8527994cacc31fbb624b9971}{Native\+Camera\+View}} (Context context, Attribute\+Set attrs)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_native_camera_view_a404b4651270913f2ae1d80a340430d4a}{T\+AG}} = \char`\"{}Native\+Camera\+View\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_native_camera_view_aac18d107ffde4f8f1c05e684490aab1a}{connect\+Camera}} (int width, int height)
+\item 
+void \mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_native_camera_view_ae685ed7e3c4b774dd72f0964f0cea032}{disconnect\+Camera}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture}{Video\+Capture}} \mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_native_camera_view_a00ebc0483a18511d6e4311b209bc1f22}{m\+Camera}}
+\item 
+Native\+Camera\+Frame \mbox{\hyperlink{classorg_1_1opencv_1_1android_1_1_native_camera_view_ad130fc7f3d4b4600f50dd0b7945a6ded}{m\+Frame}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is an implementation of a bridge between Surface\+View and native Open\+CV camera. Due to the big amount of work done, by the base class this child is only responsible for creating camera, destroying camera and delivering frames while camera is enabled 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_native_camera_view_a5443d2ef3ae99f3e45843da42f4a7548}\label{classorg_1_1opencv_1_1android_1_1_native_camera_view_a5443d2ef3ae99f3e45843da42f4a7548}} 
+\index{org\+::opencv\+::android\+::\+Native\+Camera\+View@{org\+::opencv\+::android\+::\+Native\+Camera\+View}!Native\+Camera\+View@{Native\+Camera\+View}}
+\index{Native\+Camera\+View@{Native\+Camera\+View}!org\+::opencv\+::android\+::\+Native\+Camera\+View@{org\+::opencv\+::android\+::\+Native\+Camera\+View}}
+\subsubsection{\texorpdfstring{Native\+Camera\+View()}{NativeCameraView()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily org.\+opencv.\+android.\+Native\+Camera\+View.\+Native\+Camera\+View (\begin{DoxyParamCaption}\item[{Context}]{context,  }\item[{int}]{camera\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_native_camera_view_afe565ded8527994cacc31fbb624b9971}\label{classorg_1_1opencv_1_1android_1_1_native_camera_view_afe565ded8527994cacc31fbb624b9971}} 
+\index{org\+::opencv\+::android\+::\+Native\+Camera\+View@{org\+::opencv\+::android\+::\+Native\+Camera\+View}!Native\+Camera\+View@{Native\+Camera\+View}}
+\index{Native\+Camera\+View@{Native\+Camera\+View}!org\+::opencv\+::android\+::\+Native\+Camera\+View@{org\+::opencv\+::android\+::\+Native\+Camera\+View}}
+\subsubsection{\texorpdfstring{Native\+Camera\+View()}{NativeCameraView()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily org.\+opencv.\+android.\+Native\+Camera\+View.\+Native\+Camera\+View (\begin{DoxyParamCaption}\item[{Context}]{context,  }\item[{Attribute\+Set}]{attrs }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_native_camera_view_aac18d107ffde4f8f1c05e684490aab1a}\label{classorg_1_1opencv_1_1android_1_1_native_camera_view_aac18d107ffde4f8f1c05e684490aab1a}} 
+\index{org\+::opencv\+::android\+::\+Native\+Camera\+View@{org\+::opencv\+::android\+::\+Native\+Camera\+View}!connect\+Camera@{connect\+Camera}}
+\index{connect\+Camera@{connect\+Camera}!org\+::opencv\+::android\+::\+Native\+Camera\+View@{org\+::opencv\+::android\+::\+Native\+Camera\+View}}
+\subsubsection{\texorpdfstring{connect\+Camera()}{connectCamera()}}
+{\footnotesize\ttfamily boolean org.\+opencv.\+android.\+Native\+Camera\+View.\+connect\+Camera (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_native_camera_view_ae685ed7e3c4b774dd72f0964f0cea032}\label{classorg_1_1opencv_1_1android_1_1_native_camera_view_ae685ed7e3c4b774dd72f0964f0cea032}} 
+\index{org\+::opencv\+::android\+::\+Native\+Camera\+View@{org\+::opencv\+::android\+::\+Native\+Camera\+View}!disconnect\+Camera@{disconnect\+Camera}}
+\index{disconnect\+Camera@{disconnect\+Camera}!org\+::opencv\+::android\+::\+Native\+Camera\+View@{org\+::opencv\+::android\+::\+Native\+Camera\+View}}
+\subsubsection{\texorpdfstring{disconnect\+Camera()}{disconnectCamera()}}
+{\footnotesize\ttfamily void org.\+opencv.\+android.\+Native\+Camera\+View.\+disconnect\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_native_camera_view_a00ebc0483a18511d6e4311b209bc1f22}\label{classorg_1_1opencv_1_1android_1_1_native_camera_view_a00ebc0483a18511d6e4311b209bc1f22}} 
+\index{org\+::opencv\+::android\+::\+Native\+Camera\+View@{org\+::opencv\+::android\+::\+Native\+Camera\+View}!m\+Camera@{m\+Camera}}
+\index{m\+Camera@{m\+Camera}!org\+::opencv\+::android\+::\+Native\+Camera\+View@{org\+::opencv\+::android\+::\+Native\+Camera\+View}}
+\subsubsection{\texorpdfstring{m\+Camera}{mCamera}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1opencv_1_1highgui_1_1_video_capture}{Video\+Capture}} org.\+opencv.\+android.\+Native\+Camera\+View.\+m\+Camera\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_native_camera_view_ad130fc7f3d4b4600f50dd0b7945a6ded}\label{classorg_1_1opencv_1_1android_1_1_native_camera_view_ad130fc7f3d4b4600f50dd0b7945a6ded}} 
+\index{org\+::opencv\+::android\+::\+Native\+Camera\+View@{org\+::opencv\+::android\+::\+Native\+Camera\+View}!m\+Frame@{m\+Frame}}
+\index{m\+Frame@{m\+Frame}!org\+::opencv\+::android\+::\+Native\+Camera\+View@{org\+::opencv\+::android\+::\+Native\+Camera\+View}}
+\subsubsection{\texorpdfstring{m\+Frame}{mFrame}}
+{\footnotesize\ttfamily Native\+Camera\+Frame org.\+opencv.\+android.\+Native\+Camera\+View.\+m\+Frame\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classorg_1_1opencv_1_1android_1_1_native_camera_view_a404b4651270913f2ae1d80a340430d4a}\label{classorg_1_1opencv_1_1android_1_1_native_camera_view_a404b4651270913f2ae1d80a340430d4a}} 
+\index{org\+::opencv\+::android\+::\+Native\+Camera\+View@{org\+::opencv\+::android\+::\+Native\+Camera\+View}!T\+AG@{T\+AG}}
+\index{T\+AG@{T\+AG}!org\+::opencv\+::android\+::\+Native\+Camera\+View@{org\+::opencv\+::android\+::\+Native\+Camera\+View}}
+\subsubsection{\texorpdfstring{T\+AG}{TAG}}
+{\footnotesize\ttfamily final String org.\+opencv.\+android.\+Native\+Camera\+View.\+T\+AG = \char`\"{}Native\+Camera\+View\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Marcius/\+Documents/\+Git\+Hub/\+Skaitliuko-\/\+Skeneris/open\+C\+V\+Library249/src/main/java/org/opencv/android/\mbox{\hyperlink{_native_camera_view_8java}{Native\+Camera\+View.\+java}}\end{DoxyCompactItemize}

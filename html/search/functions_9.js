@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['java_5fcom_5fa7psychopaths_5fskaitliukoskeneris_5frecognition_5fgetdigits',['Java_com_a7psychopaths_skaitliukoskeneris_Recognition_getDigits',['../com__a7psychopaths__skaitliukoskeneris___recognition_8cpp.html#a909d9e19dc15dcd925f10c3fe2b88f8d',1,'Java_com_a7psychopaths_skaitliukoskeneris_Recognition_getDigits(JNIEnv *env, jclass, jlong addrRgba, jstring path):&#160;com_a7psychopaths_skaitliukoskeneris_Recognition.cpp'],['../com__a7psychopaths__skaitliukoskeneris___recognition_8h.html#a5a54c1993a3f05b9cc71361ab0f4cdd2',1,'Java_com_a7psychopaths_skaitliukoskeneris_Recognition_getDigits(JNIEnv *, jclass, jlong, jstring path):&#160;com_a7psychopaths_skaitliukoskeneris_Recognition.cpp']]],
+  ['javacameraview',['JavaCameraView',['../classorg_1_1opencv_1_1android_1_1_java_camera_view.html#aba18d30cb50b833f3bf8281c1758adf1',1,'org.opencv.android.JavaCameraView.JavaCameraView(Context context, int cameraId)'],['../classorg_1_1opencv_1_1android_1_1_java_camera_view.html#ade245d8e3c82c62e512cd031cc041a76',1,'org.opencv.android.JavaCameraView.JavaCameraView(Context context, AttributeSet attrs)']]]
+];
